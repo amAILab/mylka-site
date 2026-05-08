@@ -297,6 +297,16 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 .mylco-trust-strip__item{display:flex;align-items:flex-start;gap:10px;border:1px solid #dcefe4;background:#fff;border-radius:16px;padding:13px 14px;color:#173529;box-shadow:0 8px 20px rgba(18,50,37,.05)}
 .mylco-trust-strip__icon{display:flex;align-items:center;justify-content:center;flex:0 0 32px;height:32px;border-radius:10px;background:#eaf8f0;color:#139b50;font-weight:900}
 .mylco-trust-strip__item b{display:block;color:#123225;font-size:14px;line-height:1.2;margin-bottom:3px}.mylco-trust-strip__item span{display:block;color:#58665f;line-height:1.3;font-size:13px}.mylco-trust-strip__item a{color:#139b50!important;text-decoration:none;font-weight:800}
+
+.mylco-b2b-strip{background:#fff;border-bottom:1px solid #e8f1eb}
+.mylco-b2b-strip__wrap{max-width:1320px;margin:0 auto;padding:26px 24px;display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:18px;align-items:stretch}
+.mylco-b2b-strip__intro{border-radius:24px;background:linear-gradient(135deg,#f0fbf5,#ffffff);border:1px solid #dcefe4;padding:24px;color:#173529}
+.mylco-b2b-strip__intro h2{font-size:clamp(24px,2.6vw,34px);line-height:1.12;margin:0 0 10px;color:#123225}.mylco-b2b-strip__intro p{margin:0;color:#58665f;line-height:1.48;font-size:16px}
+.mylco-b2b-strip__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.mylco-b2b-strip__card{display:flex;flex-direction:column;gap:8px;border-radius:20px;border:1px solid #dcefe4;background:#fbfefc;padding:18px;color:#173529;min-height:150px;box-shadow:0 10px 24px rgba(18,50,37,.05)}
+.mylco-b2b-strip__card b{color:#123225;font-size:17px;line-height:1.2}.mylco-b2b-strip__card span{color:#58665f;line-height:1.36}.mylco-b2b-strip__card a{margin-top:auto;color:#139b50!important;font-weight:900;text-decoration:none}
+@media (max-width:960px){.mylco-b2b-strip__wrap{grid-template-columns:1fr}.mylco-b2b-strip__grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.mylco-b2b-strip__wrap{padding:20px 18px}.mylco-b2b-strip__grid{grid-template-columns:1fr}.mylco-b2b-strip__intro{padding:20px}.mylco-b2b-strip__card{min-height:auto}}
 .mylco-mobile-cta{display:none}
 @media (max-width:960px){.mylco-trust-strip__wrap{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:760px){.mylco-lead-strip__wrap{grid-template-columns:1fr;padding:15px 18px}.mylco-lead-strip__actions{justify-content:stretch}.mylco-lead-strip__btn{flex:1}.mylco-trust-strip__wrap{grid-template-columns:1fr;padding:12px 18px}.mylco-mobile-cta{position:fixed;left:10px;right:10px;bottom:10px;z-index:9998;display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;background:rgba(18,50,37,.96);border:1px solid rgba(255,255,255,.18);box-shadow:0 14px 34px rgba(0,0,0,.28);border-radius:18px;padding:8px}.mylco-mobile-cta a{display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:13px;text-decoration:none;font-weight:900;text-align:center}.mylco-mobile-cta__catalog{background:#fff;color:#123225!important}.mylco-mobile-cta__brief{background:#2dcc70;color:#123225!important}.mylco-mobile-cta__call{background:#eefaf4;color:#123225!important}body{padding-bottom:76px}}
@@ -1632,6 +1642,21 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
             <div class="mylco-trust-strip__item"><span class="mylco-trust-strip__icon">@</span><div><b>Заявка с фото</b><span><a href="mailto:order@mylco.ru">order@mylco.ru</a> — эскиз, размеры, тираж и срок.</span></div></div>
             <div class="mylco-trust-strip__item"><span class="mylco-trust-strip__icon">⌂</span><div><b>Самовывоз в Москве</b><span>Востряковский проезд, д. 11, к. 2 — удобно для срочных задач.</span></div></div>
             <div class="mylco-trust-strip__item"><span class="mylco-trust-strip__icon">✓</span><div><b>Магазин + производство</b><span>Каталог Mylco в основе, STEP 3D — только как усиление под модель или прототип.</span></div></div>
+          </div>
+        </section>
+
+
+        <section class="mylco-b2b-strip" aria-label="B2B закупки и срочные заказы Mylco">
+          <div class="mylco-b2b-strip__wrap">
+            <div class="mylco-b2b-strip__intro">
+              <h2>Для мастерских, производств и срочных закупок</h2>
+              <p>Mylco выглядит сильнее, когда сразу понятно: здесь можно не только купить материал, но и быстро закрыть рабочую задачу — подобрать аналог, собрать комплект, оформить заказ для юрлица и забрать в Москве.</p>
+            </div>
+            <div class="mylco-b2b-strip__grid">
+              <div class="mylco-b2b-strip__card"><b>Счёт и комплект под задачу</b><span>Силикон, полиуретан, смола, разделитель и вакуум — менеджер соберёт связку без лишних позиций.</span><a href="mailto:order@mylco.ru?subject=Mylco%3A%20%D1%81%D1%87%D1%91%D1%82%20%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82%20%D0%BF%D0%BE%D0%B4%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D1%83">Запросить счёт →</a></div>
+              <div class="mylco-b2b-strip__card"><b>Быстрая замена материала</b><span>Если нужной позиции нет или срок горит — подберём близкий материал по твёрдости, прозрачности и условиям работы.</span><a href="contact-us.html">Подобрать аналог →</a></div>
+              <div class="mylco-b2b-strip__card"><b>Самовывоз и консультация</b><span>Москва, Востряковский проезд: удобно забрать ходовые материалы и уточнить технологию применения.</span><a href="tel:+74950058314">Позвонить →</a></div>
+            </div>
           </div>
         </section>
 
