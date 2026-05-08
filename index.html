@@ -215,6 +215,13 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 .mylco-partner-trust__item strong{font-size:18px;line-height:1.18;color:#123225;margin-bottom:9px}.mylco-partner-trust__item span{color:#58665f;line-height:1.4}.mylco-partner-trust__item a{margin-top:auto;color:#139b50!important;font-weight:900;text-decoration:none}
 @media (max-width:1000px){.mylco-partner-trust__wrap{grid-template-columns:1fr}.mylco-partner-trust__grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:760px){.mylco-partner-trust{padding:20px 0 26px}.mylco-partner-trust__wrap{padding:0 18px}.mylco-partner-trust__grid{grid-template-columns:1fr}.mylco-partner-trust__item{min-height:auto}}
+
+.mylco-lead-strip{background:#123225;color:#fff;border-bottom:1px solid rgba(45,204,112,.28)}
+.mylco-lead-strip__wrap{max-width:1320px;margin:0 auto;padding:16px 24px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:center}
+.mylco-lead-strip__title{font-weight:900;font-size:20px;line-height:1.2;margin-bottom:4px}.mylco-lead-strip__text{color:rgba(255,255,255,.82);line-height:1.4}.mylco-lead-strip__text b{color:#fff}
+.mylco-lead-strip__actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}.mylco-lead-strip__btn{display:inline-flex;align-items:center;justify-content:center;border-radius:13px;padding:12px 15px;font-weight:900;text-decoration:none;white-space:nowrap;border:1px solid rgba(255,255,255,.28);color:#fff!important}.mylco-lead-strip__btn--main{background:#2dcc70;border-color:#2dcc70;color:#123225!important}.mylco-lead-strip__btn--light{background:#fff;color:#123225!important}
+.mylco-mobile-cta{display:none}
+@media (max-width:760px){.mylco-lead-strip__wrap{grid-template-columns:1fr;padding:15px 18px}.mylco-lead-strip__actions{justify-content:stretch}.mylco-lead-strip__btn{flex:1}.mylco-mobile-cta{position:fixed;left:10px;right:10px;bottom:10px;z-index:9998;display:grid;grid-template-columns:1fr 1fr;gap:8px;background:rgba(18,50,37,.96);border:1px solid rgba(255,255,255,.18);box-shadow:0 14px 34px rgba(0,0,0,.28);border-radius:18px;padding:8px}.mylco-mobile-cta a{display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:13px;text-decoration:none;font-weight:900;text-align:center}.mylco-mobile-cta__catalog{background:#fff;color:#123225!important}.mylco-mobile-cta__brief{background:#2dcc70;color:#123225!important}body{padding-bottom:76px}}
  
 	
 </style>
@@ -1518,6 +1525,25 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
             </aside>
           </div>
         </section>
+
+        <section class="mylco-lead-strip" aria-label="Быстрая заявка Mylco">
+          <div class="mylco-lead-strip__wrap">
+            <div>
+              <div class="mylco-lead-strip__title">Нужен материал, форма или прототип к сроку?</div>
+              <div class="mylco-lead-strip__text">Начните с каталога Mylco: <b>силиконы, полиуретаны, смолы, жидкие пластики и вакуум</b>. Если нужна модель или скан — подключим производственные услуги без смешивания с обучением.</div>
+            </div>
+            <div class="mylco-lead-strip__actions">
+              <a class="mylco-lead-strip__btn mylco-lead-strip__btn--light" href="kupit-silikon-v-moskve/">Каталог материалов</a>
+              <a class="mylco-lead-strip__btn mylco-lead-strip__btn--main" href="mailto:order@mylco.ru?subject=Mylco%3A%20%D0%BF%D0%BE%D0%B4%D0%B1%D0%BE%D1%80%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B0%20%D0%B8%D0%BB%D0%B8%20%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8&body=%D0%9E%D0%BF%D0%B8%D1%88%D0%B8%D1%82%D0%B5%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D1%83%3A%20%D0%B8%D0%B7%D0%B4%D0%B5%D0%BB%D0%B8%D0%B5%2C%20%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%80%D1%8B%2C%20%D1%82%D0%B8%D1%80%D0%B0%D0%B6%2C%20%D1%81%D1%80%D0%BE%D0%BA%2C%20%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F%20%D1%8D%D0%BA%D1%81%D0%BF%D0%BB%D1%83%D0%B0%D1%82%D0%B0%D1%86%D0%B8%D0%B8.%20%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B8%D1%82%D0%B5%20%D1%84%D0%BE%D1%82%D0%BE%20%D0%B8%D0%BB%D0%B8%20%D1%8D%D1%81%D0%BA%D0%B8%D0%B7.%0A">Отправить задачу</a>
+              <a class="mylco-lead-strip__btn" href="tel:+74950058314">Позвонить</a>
+            </div>
+          </div>
+        </section>
+
+        <div class="mylco-mobile-cta" aria-label="Быстрые действия Mylco">
+          <a class="mylco-mobile-cta__catalog" href="kupit-silikon-v-moskve/">Каталог</a>
+          <a class="mylco-mobile-cta__brief" href="mailto:order@mylco.ru?subject=Mylco%3A%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0%20%D0%BF%D0%BE%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B0%D0%BC&body=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0%3A%20%D1%84%D0%BE%D1%82%D0%BE%2F%D1%8D%D1%81%D0%BA%D0%B8%D0%B7%2C%20%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%80%D1%8B%2C%20%D1%82%D0%B8%D1%80%D0%B0%D0%B6%2C%20%D1%81%D1%80%D0%BE%D0%BA.%0A">Заявка</a>
+        </div>
 
         <section class="mylco-solution-finder" aria-label="Быстрый подбор решения Mylco">
           <div class="mylco-solution-finder__wrap">
