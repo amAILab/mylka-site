@@ -220,6 +220,17 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 @media (max-width:1000px){.mylco-consumption-calc__wrap{grid-template-columns:1fr}.mylco-consumption-calc__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mylco-consumption-calc__result{grid-template-columns:1fr}.mylco-consumption-calc__result a{width:100%}}
 @media (max-width:560px){.mylco-consumption-calc{padding:24px 0 28px}.mylco-consumption-calc__wrap{padding:0 18px}.mylco-consumption-calc__grid{grid-template-columns:1fr}.mylco-consumption-calc__panel{padding:18px}.mylco-consumption-calc__result strong{font-size:24px}}
 
+.mylco-choice-matrix{background:#f6fbf8;padding:32px 0 36px;border-bottom:1px solid #dcefe4}
+.mylco-choice-matrix__wrap{max-width:1320px;margin:0 auto;padding:0 24px}
+.mylco-choice-matrix__head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:16px}
+.mylco-choice-matrix__head h2{font-size:clamp(26px,3vw,38px);line-height:1.12;margin:0;color:#123225}.mylco-choice-matrix__head p{max-width:620px;margin:0;color:#58665f;font-size:16px;line-height:1.45}
+.mylco-choice-matrix__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.mylco-choice-cell{background:#fff;border:1px solid #dcefe4;border-radius:20px;padding:18px;box-shadow:0 12px 28px rgba(18,50,37,.06);display:flex;flex-direction:column;color:#173529}
+.mylco-choice-cell b{display:inline-flex;align-self:flex-start;background:#eaf8f0;color:#178346;border-radius:999px;padding:6px 10px;font-size:12px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px}.mylco-choice-cell h3{margin:0 0 8px;color:#123225;font-size:20px;line-height:1.15}.mylco-choice-cell p{margin:0 0 14px;color:#53615a;line-height:1.4}.mylco-choice-cell a{margin-top:auto;color:#139b50!important;font-weight:900;text-decoration:none}
+.mylco-choice-matrix__cta{margin-top:14px;border-radius:22px;background:#123225;color:#fff;padding:18px 20px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center}.mylco-choice-matrix__cta b{display:block;font-size:18px;margin-bottom:4px}.mylco-choice-matrix__cta span{color:rgba(255,255,255,.82);line-height:1.4}.mylco-choice-matrix__cta a{display:inline-flex;align-items:center;justify-content:center;border-radius:13px;background:#2dcc70;color:#123225!important;padding:13px 18px;text-decoration:none;font-weight:900;white-space:nowrap}
+@media (max-width:1000px){.mylco-choice-matrix__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mylco-choice-matrix__head{display:block}.mylco-choice-matrix__head p{margin-top:10px}.mylco-choice-matrix__cta{grid-template-columns:1fr}.mylco-choice-matrix__cta a{width:100%}}
+@media (max-width:560px){.mylco-choice-matrix{padding:24px 0 28px}.mylco-choice-matrix__wrap{padding:0 18px}.mylco-choice-matrix__grid{grid-template-columns:1fr}}
+
 .mylco-solution-finder{background:#f6fbf8;padding:34px 0 18px;border-bottom:1px solid #e2f3e9}
 .mylco-solution-finder__wrap{max-width:1320px;margin:0 auto;padding:0 24px}
 .mylco-solution-finder__head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:18px}
@@ -1780,6 +1791,25 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
                 <a data-calc-mail href="mailto:order@mylco.ru?subject=Mylco%3A%20%D1%80%D0%B0%D1%81%D1%87%D1%91%D1%82%20%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%D0%B0%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B0">Отправить расчёт</a>
               </div>
               <div class="mylco-consumption-calc__hint">Формула: объём опалубки минус примерный объём модели, затем плотность материала и запас. Если модель сложная — лучше приложить фото или STL к заявке.</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mylco-choice-matrix" aria-label="Шпаргалка выбора материалов Mylco">
+          <div class="mylco-choice-matrix__wrap">
+            <div class="mylco-choice-matrix__head">
+              <h2>Шпаргалка выбора: куда нажать, если нужна конкретная задача</h2>
+              <p>Блок снимает главный страх покупателя: «я не знаю, какой материал нужен». Основные товары Mylco остаются первым маршрутом, а заявка становится точнее.</p>
+            </div>
+            <div class="mylco-choice-matrix__grid">
+              <div class="mylco-choice-cell"><b>мягкая форма</b><h3>Силикон 10–20 Shore A</h3><p>Для сложного рельефа, мыла, воска, декора и аккуратного извлечения хрупких отливок.</p><a href="kupit-silikon-v-moskve/">Смотреть силиконы →</a></div>
+              <div class="mylco-choice-cell"><b>универсально</b><h3>Силикон 25–40 Shore A</h3><p>Частый выбор для форм под гипс, смолу, малые серии и мастерские задачи.</p><a href="kupit-silikon-v-moskve/">Подобрать силикон →</a></div>
+              <div class="mylco-choice-cell"><b>прочная деталь</b><h3>Полиуретан / жидкий пластик</h3><p>Когда важны ресурс, жёсткость, ударопрочность, корпусная деталь или оснастка.</p><a href="kupit-poliuretan-v-moskve/">Смотреть полиуретаны →</a></div>
+              <div class="mylco-choice-cell"><b>меньше брака</b><h3>Вакуум + разделители</h3><p>Для дегазации, чистой поверхности, стабильных заливок и повторяемого результата.</p><a href="vakuumnye-kamery.html">Подобрать оборудование →</a></div>
+            </div>
+            <div class="mylco-choice-matrix__cta">
+              <div><b>Не знаете твёрдость Shore или расход?</b><span>Пришлите фото, размеры, материал отливки и тираж — Mylco предложит связку: материал, добавки, вакуум и при необходимости мастер-модель.</span></div>
+              <a href="mailto:order@mylco.ru?subject=Mylco%3A%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%87%D1%8C%20%D1%81%20%D0%B2%D1%8B%D0%B1%D0%BE%D1%80%D0%BE%D0%BC%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B0&body=%D0%A4%D0%BE%D1%82%D0%BE%2F%D1%8D%D1%81%D0%BA%D0%B8%D0%B7%3A%0A%D0%A0%D0%B0%D0%B7%D0%BC%D0%B5%D1%80%D1%8B%3A%0A%D0%A7%D1%82%D0%BE%20%D0%BE%D1%82%D0%BB%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC%3A%0A%D0%A2%D0%B8%D1%80%D0%B0%D0%B6%3A%0A%D0%A1%D1%80%D0%BE%D0%BA%3A%0A%D0%9D%D1%83%D0%B6%D0%B5%D0%BD%20%D0%BB%D0%B8%20%D0%B2%D0%B0%D0%BA%D1%83%D1%83%D0%BC%2F%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%3A%0A">Спросить специалиста</a>
             </div>
           </div>
         </section>
