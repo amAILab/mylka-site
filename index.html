@@ -175,6 +175,21 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 @media (max-width:900px){.mylco-wow-hero__wrap{grid-template-columns:1fr;padding:34px 18px}.mylco-wow-hero__proof{grid-template-columns:1fr}.mylco-wow-hero__catalog{grid-template-columns:repeat(2,minmax(0,1fr))}.mylco-wow-hero__card{border-radius:22px}.mylco-preview-ribbon{font-size:12px;line-height:1.35}}
 @media (max-width:560px){.mylco-wow-hero__catalog{grid-template-columns:1fr}.mylco-wow-hero__actions a{width:100%}.mylco-wow-hero__card-actions{grid-template-columns:1fr}}
 
+.mylco-quick-picker{background:linear-gradient(180deg,#fbfefc 0%,#f1faf5 100%);padding:30px 0 34px;border-bottom:1px solid #dcefe4}
+.mylco-quick-picker__wrap{max-width:1320px;margin:0 auto;padding:0 24px}
+.mylco-quick-picker__head{display:flex;align-items:flex-end;justify-content:space-between;gap:22px;margin-bottom:16px}
+.mylco-quick-picker__head h2{font-size:clamp(26px,3vw,38px);line-height:1.12;margin:0;color:#123225}.mylco-quick-picker__head p{max-width:620px;margin:0;color:#58665f;font-size:16px;line-height:1.45}
+.mylco-quick-picker__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.mylco-quick-choice{position:relative;display:flex;flex-direction:column;min-height:270px;border:1px solid #dcefe4;border-radius:24px;background:#fff;padding:20px;color:#173529!important;text-decoration:none;box-shadow:0 14px 30px rgba(18,50,37,.07);overflow:hidden;transition:.18s ease}
+.mylco-quick-choice:before{content:"";position:absolute;right:-42px;top:-42px;width:110px;height:110px;border-radius:50%;background:rgba(45,204,112,.12)}
+.mylco-quick-choice:hover{transform:translateY(-2px);box-shadow:0 20px 40px rgba(18,50,37,.12);color:#173529!important}
+.mylco-quick-choice__step{position:relative;align-self:flex-start;background:#123225;color:#fff;border-radius:999px;padding:6px 10px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px}
+.mylco-quick-choice h3{position:relative;font-size:21px;line-height:1.16;margin:0 0 10px;color:#123225}.mylco-quick-choice p{position:relative;margin:0 0 14px;color:#53615a;line-height:1.42}
+.mylco-quick-choice__list{position:relative;margin:0 0 16px;padding:0;list-style:none;color:#173529}.mylco-quick-choice__list li{padding:6px 0 6px 24px;position:relative;line-height:1.32}.mylco-quick-choice__list li:before{content:"✓";position:absolute;left:0;top:6px;color:#2dcc70;font-weight:900}
+.mylco-quick-choice__link{position:relative;margin-top:auto;color:#139b50;font-weight:900}.mylco-quick-picker__footer{margin-top:14px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center;border-radius:22px;background:#123225;color:#fff;padding:18px 20px}.mylco-quick-picker__footer b{display:block;font-size:18px;margin-bottom:4px}.mylco-quick-picker__footer span{color:rgba(255,255,255,.82);line-height:1.4}.mylco-quick-picker__footer a{display:inline-flex;align-items:center;justify-content:center;border-radius:13px;background:#2dcc70;color:#123225!important;padding:13px 18px;text-decoration:none;font-weight:900;white-space:nowrap}
+@media (max-width:1100px){.mylco-quick-picker__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mylco-quick-picker__head{display:block}.mylco-quick-picker__head p{margin-top:10px}}
+@media (max-width:640px){.mylco-quick-picker{padding:24px 0 28px}.mylco-quick-picker__wrap{padding:0 18px}.mylco-quick-picker__grid{grid-template-columns:1fr}.mylco-quick-choice{min-height:auto}.mylco-quick-picker__footer{grid-template-columns:1fr}.mylco-quick-picker__footer a{width:100%}}
+
 .mylco-solution-finder{background:#f6fbf8;padding:34px 0 18px;border-bottom:1px solid #e2f3e9}
 .mylco-solution-finder__wrap{max-width:1320px;margin:0 auto;padding:0 24px}
 .mylco-solution-finder__head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:18px}
@@ -1560,6 +1575,66 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
             </div>
           </div>
         </section>
+
+        <section class="mylco-quick-picker" aria-label="Подбор материала Mylco по задаче">
+          <div class="mylco-quick-picker__wrap">
+            <div class="mylco-quick-picker__head">
+              <h2>Подбор материала за 60 секунд</h2>
+              <p>Клиенту не нужно разбираться во всём каталоге сразу: выбираем сценарий, видим основные категории Mylco и быстро отправляем понятную заявку менеджеру.</p>
+            </div>
+            <div class="mylco-quick-picker__grid">
+              <a class="mylco-quick-choice" href="kupit-silikon-v-moskve/">
+                <span class="mylco-quick-choice__step">форма</span>
+                <h3>Нужна гибкая форма</h3>
+                <p>Для гипса, смолы, воска, мыла, декора и малых серий.</p>
+                <ul class="mylco-quick-choice__list">
+                  <li>силиконы на олове и платине</li>
+                  <li>разделители и герметики</li>
+                  <li>подбор твёрдости Shore</li>
+                </ul>
+                <span class="mylco-quick-choice__link">Смотреть силиконы →</span>
+              </a>
+              <a class="mylco-quick-choice" href="kupit-poliuretan-v-moskve/">
+                <span class="mylco-quick-choice__step">деталь</span>
+                <h3>Нужна прочная заливка</h3>
+                <p>Для форм, прототипов, элементов оснастки и деталей под нагрузку.</p>
+                <ul class="mylco-quick-choice__list">
+                  <li>полиуретаны разной жёсткости</li>
+                  <li>жидкие пластики и добавки</li>
+                  <li>сценарии под тираж и ресурс</li>
+                </ul>
+                <span class="mylco-quick-choice__link">Выбрать полиуретан →</span>
+              </a>
+              <a class="mylco-quick-choice" href="epoksidnaya-smola.html">
+                <span class="mylco-quick-choice__step">заливка</span>
+                <h3>Нужна прозрачность или декор</h3>
+                <p>Для макетов, покрытий, столешниц, сувениров и декоративных изделий.</p>
+                <ul class="mylco-quick-choice__list">
+                  <li>эпоксидные смолы и компаунды</li>
+                  <li>пигменты, наполнители, добавки</li>
+                  <li>подбор по слою и времени жизни</li>
+                </ul>
+                <span class="mylco-quick-choice__link">Открыть смолы →</span>
+              </a>
+              <a class="mylco-quick-choice" href="vakuumnye-kamery.html">
+                <span class="mylco-quick-choice__step">качество</span>
+                <h3>Нужно меньше пузырей и брака</h3>
+                <p>Для стабильного литья силиконов, пластиков, смол и производства серий.</p>
+                <ul class="mylco-quick-choice__list">
+                  <li>вакуумные камеры и насосы</li>
+                  <li>комплекты для дегазации</li>
+                  <li>оснастка под рабочий процесс</li>
+                </ul>
+                <span class="mylco-quick-choice__link">Подобрать вакуум →</span>
+              </a>
+            </div>
+            <div class="mylco-quick-picker__footer">
+              <div><b>Если есть фото, эскиз или готовая деталь — приложите к заявке.</b><span>Сначала подберём материал и оборудование Mylco; если нужна мастер-модель, 3D-печать или сканирование, подключим производственную услугу как следующий шаг.</span></div>
+              <a href="mailto:order@mylco.ru?subject=Mylco%3A%20%D0%BF%D0%BE%D0%B4%D0%B1%D0%BE%D1%80%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B0&body=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0%3A%0A%D0%9C%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%2F%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%3A%0A%D0%A4%D0%BE%D1%82%D0%BE%2F%D1%8D%D1%81%D0%BA%D0%B8%D0%B7%3A%0A%D0%A0%D0%B0%D0%B7%D0%BC%D0%B5%D1%80%D1%8B%3A%0A%D0%A2%D0%B8%D1%80%D0%B0%D0%B6%3A%0A%D0%A1%D1%80%D0%BE%D0%BA%3A%0A%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F%20%D1%8D%D0%BA%D1%81%D0%BF%D0%BB%D1%83%D0%B0%D1%82%D0%B0%D1%86%D0%B8%D0%B8%3A%0A">Отправить заявку</a>
+            </div>
+          </div>
+        </section>
+
 
         <section class="mylco-popular-products" aria-label="Популярные товары Mylco">
           <div class="mylco-popular-products__wrap">
