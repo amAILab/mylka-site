@@ -153,6 +153,23 @@ button#button-cart + a {padding: 0 0.7rem;}
 div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 .ui-check:hover {color: #444;}
 .ui-check__checkbox {border: .15rem solid #444;}
+
+.mylco-preview-ribbon{background:#123225;color:#fff;padding:10px 18px;text-align:center;font-family:Arial,Helvetica,sans-serif;position:relative;z-index:9999;font-weight:700;letter-spacing:.01em}
+.mylco-wow-hero{background:linear-gradient(135deg,#0f2e22 0%,#174635 48%,#2dcc70 100%);color:#fff;overflow:hidden;position:relative}
+.mylco-wow-hero:before{content:"";position:absolute;inset:-20% -10% auto auto;width:48rem;height:48rem;background:rgba(255,255,255,.13);border-radius:50%;filter:blur(2px)}
+.mylco-wow-hero__wrap{max-width:1320px;margin:0 auto;padding:54px 24px 46px;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);gap:34px;align-items:center;position:relative;z-index:1}
+.mylco-wow-hero__eyebrow{display:inline-flex;gap:8px;align-items:center;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.14);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:12px;margin-bottom:16px}
+.mylco-wow-hero h1{font-size:clamp(34px,5vw,64px);line-height:1.02;margin:0 0 18px;font-weight:800;color:#fff;max-width:880px}
+.mylco-wow-hero__lead{font-size:clamp(17px,2vw,23px);line-height:1.45;max-width:780px;margin:0 0 26px;color:rgba(255,255,255,.92)}
+.mylco-wow-hero__actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.mylco-wow-hero__btn{display:inline-flex;align-items:center;justify-content:center;border-radius:14px;padding:14px 20px;font-weight:800;text-decoration:none;box-shadow:0 12px 30px rgba(0,0,0,.18);transition:.18s ease}
+.mylco-wow-hero__btn--primary{background:#fff;color:#123225!important}.mylco-wow-hero__btn--primary:hover{transform:translateY(-1px);color:#123225!important}
+.mylco-wow-hero__btn--ghost{background:rgba(255,255,255,.12);color:#fff!important;border:1px solid rgba(255,255,255,.42)}.mylco-wow-hero__btn--ghost:hover{background:rgba(255,255,255,.2);color:#fff!important}
+.mylco-wow-hero__proof{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:850px}
+.mylco-wow-hero__proof span{display:block;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:13px 14px;font-weight:700;line-height:1.25}
+.mylco-wow-hero__card{background:#fff;color:#173529;border-radius:28px;padding:26px;box-shadow:0 24px 70px rgba(0,0,0,.25)}
+.mylco-wow-hero__card h2{font-size:24px;line-height:1.15;margin:0 0 14px;color:#123225}.mylco-wow-hero__card ul{margin:0 0 18px;padding:0;list-style:none}.mylco-wow-hero__card li{padding:9px 0 9px 30px;position:relative;line-height:1.35}.mylco-wow-hero__card li:before{content:"✓";position:absolute;left:0;top:9px;color:#2dcc70;font-weight:900}.mylco-wow-hero__note{background:#eefaf4;border-radius:16px;padding:14px;font-weight:700;color:#123225}
+@media (max-width:900px){.mylco-wow-hero__wrap{grid-template-columns:1fr;padding:34px 18px}.mylco-wow-hero__proof{grid-template-columns:1fr}.mylco-wow-hero__card{border-radius:22px}.mylco-preview-ribbon{font-size:12px;line-height:1.35}}
  
 	
 </style>
@@ -503,10 +520,7 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
                     }
                 </style> </head>
   <body class="page-homepage">
-<div class="mylco-step3d-banner" style="background:#123225;color:#fff;padding:14px 18px;text-align:center;font-family:Arial,Helvetica,sans-serif;position:relative;z-index:9999;">
-  <b>Новая услуга Mylco:</b> 3D-сканирование, 3D-печать, реверс-инжиниринг и прототипирование.
-  <a href="services-step3d.html" style="color:#fff;text-decoration:underline;font-weight:700;margin-left:8px;">Подробнее</a>
-</div>
+<div class="mylco-preview-ribbon">Preview-версия Mylco: каталог материалов + производственные услуги. Основной сайт mylco.ru не изменён.</div>
 
     <div class="app app--v4">
       <!-- Popups :: Start-->
@@ -1423,8 +1437,36 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
       </header>
       <!-- Header v4 :: End-->    
 	<main class="content">
-	 
-		 
+
+        <section class="mylco-wow-hero" aria-label="Mylco: материалы и производственные услуги">
+          <div class="mylco-wow-hero__wrap">
+            <div>
+              <div class="mylco-wow-hero__eyebrow">Материалы · мастерская · инженерная поддержка</div>
+              <h1>Mylco помогает быстро перейти от идеи к готовому изделию</h1>
+              <p class="mylco-wow-hero__lead">Подбираем силиконы, пластики, смолы и оборудование, а теперь закрываем полный цикл: 3D-сканирование, прототипирование, печать, реверс-инжиниринг и мелкосерийное производство.</p>
+              <div class="mylco-wow-hero__actions">
+                <a class="mylco-wow-hero__btn mylco-wow-hero__btn--primary" href="services-step3d.html">Посмотреть услуги 3D-производства</a>
+                <a class="mylco-wow-hero__btn mylco-wow-hero__btn--ghost" href="contact-us.html">Обсудить задачу</a>
+                <a class="mylco-wow-hero__btn mylco-wow-hero__btn--ghost" href="kupit-silikon-v-moskve/">Перейти в каталог</a>
+              </div>
+              <div class="mylco-wow-hero__proof">
+                <span>500+ материалов для форм, литья, макетов и декора</span>
+                <span>Собственная производственная база и тестирование материалов</span>
+                <span>Помогаем выбрать технологию под бюджет и срок</span>
+              </div>
+            </div>
+            <aside class="mylco-wow-hero__card">
+              <h2>Что можно отправить партнёру уже сейчас</h2>
+              <ul>
+                <li>Запрос на прототип, мастер-модель или замену детали</li>
+                <li>Подбор материала под форму, заливку или изделие</li>
+                <li>Расчёт по 3D-печати, сканированию и реверс-инжинирингу</li>
+              </ul>
+              <div class="mylco-wow-hero__note">Москва · консультация по телефону и через форму заявки</div>
+            </aside>
+          </div>
+        </section>
+
         <!-- Slides :: Start-->
       <div class="slider">
         <div class="slides slides--width-full slides--scale js-slick-slides" data-slick='{"autoplay": true,"autoplaySpeed": 5000,"speed": 500,"fade": false}'>
