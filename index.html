@@ -175,6 +175,15 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 @media (max-width:900px){.mylco-wow-hero__wrap{grid-template-columns:1fr;padding:34px 18px}.mylco-wow-hero__proof{grid-template-columns:1fr}.mylco-wow-hero__catalog{grid-template-columns:repeat(2,minmax(0,1fr))}.mylco-wow-hero__card{border-radius:22px}.mylco-preview-ribbon{font-size:12px;line-height:1.35}}
 @media (max-width:560px){.mylco-wow-hero__catalog{grid-template-columns:1fr}.mylco-wow-hero__actions a{width:100%}.mylco-wow-hero__card-actions{grid-template-columns:1fr}}
 
+.mylco-partner-snapshot{background:#0f2e22;color:#fff;border-bottom:1px solid rgba(45,204,112,.25)}
+.mylco-partner-snapshot__wrap{max-width:1320px;margin:0 auto;padding:18px 24px;display:grid;grid-template-columns:minmax(0,.85fr) repeat(3,minmax(0,1fr));gap:12px;align-items:stretch}
+.mylco-partner-snapshot__title{border:1px solid rgba(255,255,255,.16);border-radius:18px;padding:16px;background:rgba(255,255,255,.06)}
+.mylco-partner-snapshot__title b{display:block;color:#8cf0b6;text-transform:uppercase;letter-spacing:.06em;font-size:12px;margin-bottom:6px}.mylco-partner-snapshot__title span{display:block;font-weight:900;font-size:20px;line-height:1.15}
+.mylco-partner-snapshot__item{border:1px solid rgba(255,255,255,.16);border-radius:18px;padding:16px;background:rgba(255,255,255,.08)}
+.mylco-partner-snapshot__item b{display:block;color:#fff;font-size:16px;line-height:1.2;margin-bottom:6px}.mylco-partner-snapshot__item span{display:block;color:rgba(255,255,255,.78);line-height:1.35;font-size:14px}
+@media (max-width:1000px){.mylco-partner-snapshot__wrap{grid-template-columns:1fr 1fr}.mylco-partner-snapshot__title{grid-column:1/-1}}
+@media (max-width:560px){.mylco-partner-snapshot__wrap{grid-template-columns:1fr;padding:14px 18px}.mylco-partner-snapshot__title{grid-column:auto}}
+
 .mylco-demo-nav{background:#fff;border-bottom:1px solid #dcefe4;position:relative;z-index:3}
 .mylco-demo-nav__wrap{max-width:1320px;margin:0 auto;padding:14px 24px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
 .mylco-demo-nav a{display:flex;flex-direction:column;gap:4px;border:1px solid #dcefe4;border-radius:16px;background:linear-gradient(180deg,#fbfefc 0%,#fff 100%);padding:13px 14px;text-decoration:none;color:#123225!important;box-shadow:0 10px 24px rgba(18,50,37,.05);transition:.18s ease}
@@ -1634,6 +1643,15 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
           </div>
         </section>
 
+
+        <section class="mylco-partner-snapshot" aria-label="Что усиливает preview Mylco для партнёра">
+          <div class="mylco-partner-snapshot__wrap">
+            <div class="mylco-partner-snapshot__title"><b>Preview для партнёра</b><span>Коммерческое ядро Mylco видно за 10 секунд</span></div>
+            <div class="mylco-partner-snapshot__item"><b>1. Каталог не потерян</b><span>Силиконы, полиуретаны, смолы, пластики и вакуум остаются главным маршрутом.</span></div>
+            <div class="mylco-partner-snapshot__item"><b>2. Заявка стала проще</b><span>Клиент быстро выбирает сценарий, отправляет фото, размеры, тираж и срок.</span></div>
+            <div class="mylco-partner-snapshot__item"><b>3. Услуги — как апсейл</b><span>STEP 3D подключается только для модели, скана, прототипа или реверса. Без курсов и обучения.</span></div>
+          </div>
+        </section>
         <nav class="mylco-demo-nav" aria-label="Быстрая навигация по preview Mylco">
           <div class="mylco-demo-nav__wrap">
             <a href="#mylco-popular"><b>Ходовые товары</b><span>силиконы, полиуретаны, смолы, вакуум</span></a>
