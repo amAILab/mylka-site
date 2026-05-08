@@ -221,6 +221,18 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 @media (max-width:1100px){.mylco-popular-products__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mylco-popular-products__head{display:block}.mylco-popular-products__head p{margin-top:10px}}
 @media (max-width:560px){.mylco-popular-products{padding:24px 0 28px}.mylco-popular-products__wrap{padding:0 18px}.mylco-popular-products__grid{grid-template-columns:1fr}.mylco-product-card{min-height:auto}}
 
+
+.mylco-ready-kits{background:linear-gradient(180deg,#f7fcf9 0%,#fff 100%);padding:30px 0 34px;border-bottom:1px solid #eef3ef}
+.mylco-ready-kits__wrap{max-width:1320px;margin:0 auto;padding:0 24px}
+.mylco-ready-kits__head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:16px}
+.mylco-ready-kits__head h2{font-size:clamp(26px,3vw,38px);line-height:1.12;margin:0;color:#123225}.mylco-ready-kits__head p{max-width:650px;margin:0;color:#58665f;font-size:16px;line-height:1.45}
+.mylco-ready-kits__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.mylco-kit-card{display:flex;flex-direction:column;border:1px solid #dcefe4;border-radius:24px;background:#fff;padding:22px;min-height:286px;box-shadow:0 14px 32px rgba(18,50,37,.07);color:#173529}
+.mylco-kit-card__tag{align-self:flex-start;background:#123225;color:#fff;border-radius:999px;padding:6px 10px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px}.mylco-kit-card h3{font-size:22px;line-height:1.16;margin:0 0 10px;color:#123225}.mylco-kit-card p{margin:0 0 14px;color:#53615a;line-height:1.42}.mylco-kit-card ul{margin:0 0 18px;padding:0;list-style:none}.mylco-kit-card li{padding:6px 0 6px 24px;position:relative;line-height:1.32}.mylco-kit-card li:before{content:"✓";position:absolute;left:0;top:6px;color:#2dcc70;font-weight:900}
+.mylco-kit-card__actions{margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:10px}.mylco-kit-card__actions a{display:flex;align-items:center;justify-content:center;border-radius:13px;padding:11px 12px;text-align:center;text-decoration:none;font-weight:900}.mylco-kit-card__actions a:first-child{background:#2dcc70;color:#123225!important}.mylco-kit-card__actions a:last-child{background:#eefaf4;color:#123225!important;border:1px solid #cfeedd}
+@media (max-width:1000px){.mylco-ready-kits__grid{grid-template-columns:1fr}.mylco-ready-kits__head{display:block}.mylco-ready-kits__head p{margin-top:10px}.mylco-kit-card{min-height:auto}}
+@media (max-width:560px){.mylco-ready-kits{padding:24px 0 28px}.mylco-ready-kits__wrap{padding:0 18px}.mylco-kit-card__actions{grid-template-columns:1fr}}
+
 .mylco-material-guide{background:#fff;padding:30px 0 34px;border-bottom:1px solid #eef3ef}
 .mylco-material-guide__wrap{max-width:1320px;margin:0 auto;padding:0 24px}
 .mylco-material-guide__head{display:flex;justify-content:space-between;gap:20px;align-items:flex-end;margin-bottom:16px}
@@ -1669,6 +1681,61 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
               </a>
             </div>
             <div class="mylco-popular-products__note">STEP 3D остаётся производственным усилением: сначала клиент видит товары Mylco, затем при необходимости подключает модель, сканирование или прототип.</div>
+          </div>
+        </section>
+
+
+
+        <section class="mylco-ready-kits" aria-label="Готовые комплекты Mylco под задачи">
+          <div class="mylco-ready-kits__wrap">
+            <div class="mylco-ready-kits__head">
+              <h2>Готовые маршруты закупки под задачу</h2>
+              <p>Чтобы партнёру было проще показать ценность Mylco: не просто отдельные позиции, а понятные наборы материалов и оборудования, которые закрывают реальные производственные сценарии.</p>
+            </div>
+            <div class="mylco-ready-kits__grid">
+              <article class="mylco-kit-card">
+                <span class="mylco-kit-card__tag">формы и литьё</span>
+                <h3>Старт для формы под гипс, смолу или воск</h3>
+                <p>Быстрый путь для клиента, которому нужна стабильная гибкая форма и меньше брака на заливке.</p>
+                <ul>
+                  <li>силикон под нужную твёрдость Shore</li>
+                  <li>разделитель или герметик для мастер-модели</li>
+                  <li>вакуумная дегазация при серийной работе</li>
+                </ul>
+                <div class="mylco-kit-card__actions">
+                  <a href="kupit-silikon-v-moskve/">Силиконы</a>
+                  <a href="razdelitelnye-agenty-i-germetiki.html">Разделители</a>
+                </div>
+              </article>
+              <article class="mylco-kit-card">
+                <span class="mylco-kit-card__tag">прочная деталь</span>
+                <h3>Комплект для прототипа или малой серии</h3>
+                <p>Когда нужна не только форма, но и прочная отливка, корпус, техническая деталь или мастер-модель.</p>
+                <ul>
+                  <li>полиуретан или жидкий пластик под нагрузку</li>
+                  <li>пигменты, наполнители и технологические добавки</li>
+                  <li>3D-печать или сканирование — только если нужна исходная модель</li>
+                </ul>
+                <div class="mylco-kit-card__actions">
+                  <a href="kupit-poliuretan-v-moskve/">Полиуретаны</a>
+                  <a href="zhidkiy-plastik/">Жидкий пластик</a>
+                </div>
+              </article>
+              <article class="mylco-kit-card">
+                <span class="mylco-kit-card__tag">чистая заливка</span>
+                <h3>Набор для прозрачной смолы и декора</h3>
+                <p>Для макетов, сувениров, столешниц, декоративных изделий и задач, где важны внешний вид и повторяемость.</p>
+                <ul>
+                  <li>эпоксидная смола под слой и время жизни</li>
+                  <li>красители, пудры, глиттеры и наполнители</li>
+                  <li>вакуумная камера для снижения пузырей</li>
+                </ul>
+                <div class="mylco-kit-card__actions">
+                  <a href="epoksidnaya-smola.html">Смолы</a>
+                  <a href="vakuumnye-kamery.html">Вакуум</a>
+                </div>
+              </article>
+            </div>
           </div>
         </section>
 
