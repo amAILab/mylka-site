@@ -218,6 +218,18 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 @media (max-width:560px){.mylco-solution-finder{padding-top:24px}.mylco-solution-finder__wrap{padding:0 18px}.mylco-solution-finder__grid{grid-template-columns:1fr}.mylco-solution-card{min-height:auto}.mylco-solution-finder__brief a{width:100%;text-align:center}}
 
 
+.mylco-buying-map{background:#fff;padding:30px 0 34px;border-bottom:1px solid #eef3ef}
+.mylco-buying-map__wrap{max-width:1320px;margin:0 auto;padding:0 24px}
+.mylco-buying-map__head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:16px}
+.mylco-buying-map__head h2{font-size:clamp(26px,3vw,38px);line-height:1.12;margin:0;color:#123225}.mylco-buying-map__head p{max-width:650px;margin:0;color:#58665f;font-size:16px;line-height:1.45}
+.mylco-buying-map__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.mylco-buying-card{display:flex;flex-direction:column;border:1px solid #dcefe4;border-radius:22px;background:linear-gradient(180deg,#fbfefc 0%,#fff 100%);padding:20px;min-height:244px;color:#173529!important;text-decoration:none;box-shadow:0 12px 28px rgba(18,50,37,.06);transition:.18s ease}
+.mylco-buying-card:hover{transform:translateY(-2px);box-shadow:0 18px 36px rgba(18,50,37,.11);color:#173529!important}.mylco-buying-card__tag{align-self:flex-start;background:#eaf8f0;color:#178346;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;margin-bottom:12px}
+.mylco-buying-card h3{font-size:21px;line-height:1.16;margin:0 0 9px;color:#123225}.mylco-buying-card p{margin:0 0 13px;color:#53615a;line-height:1.42}.mylco-buying-card ul{margin:0 0 16px;padding:0;list-style:none}.mylco-buying-card li{padding:5px 0 5px 22px;position:relative;line-height:1.32}.mylco-buying-card li:before{content:"→";position:absolute;left:0;top:5px;color:#2dcc70;font-weight:900}.mylco-buying-card__link{margin-top:auto;color:#139b50;font-weight:900}
+.mylco-buying-map__service{margin-top:14px;border:1px solid #cfeedd;border-radius:20px;background:#eefaf4;color:#123225;padding:16px 18px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center}.mylco-buying-map__service b{display:block;font-size:18px;margin-bottom:4px}.mylco-buying-map__service span{color:#53615a;line-height:1.4}.mylco-buying-map__service a{display:inline-flex;align-items:center;justify-content:center;border-radius:13px;background:#123225;color:#fff!important;padding:12px 15px;text-decoration:none;font-weight:900;white-space:nowrap}
+@media (max-width:1000px){.mylco-buying-map__grid{grid-template-columns:1fr 1fr}.mylco-buying-map__head{display:block}.mylco-buying-map__head p{margin-top:10px}.mylco-buying-map__service{grid-template-columns:1fr}.mylco-buying-map__service a{width:100%}}
+@media (max-width:560px){.mylco-buying-map{padding:24px 0 28px}.mylco-buying-map__wrap{padding:0 18px}.mylco-buying-map__grid{grid-template-columns:1fr}.mylco-buying-card{min-height:auto}}
+
 .mylco-popular-products{background:#fff;padding:30px 0 34px;border-bottom:1px solid #eef3ef}
 .mylco-popular-products__wrap{max-width:1320px;margin:0 auto;padding:0 24px}
 .mylco-popular-products__head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:16px}
@@ -1706,6 +1718,64 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
             </div>
           </div>
         </section>
+
+        <section class="mylco-buying-map" aria-label="Маршруты покупки Mylco по задачам">
+          <div class="mylco-buying-map__wrap">
+            <div class="mylco-buying-map__head">
+              <h2>Что купить под вашу задачу</h2>
+              <p>Короткая карта для партнёра и клиента: сначала видны основные коммерческие категории Mylco, затем — понятный переход к покупке или заявке.</p>
+            </div>
+            <div class="mylco-buying-map__grid">
+              <a class="mylco-buying-card" href="kupit-silikon-v-moskve/">
+                <span class="mylco-buying-card__tag">формы</span>
+                <h3>Силиконы для форм</h3>
+                <p>Когда нужно снять форму с модели и стабильно отливать гипс, смолу, воск, мыло или декор.</p>
+                <ul><li>олово / платина</li><li>подбор твёрдости Shore</li><li>разделители и герметики рядом</li></ul>
+                <span class="mylco-buying-card__link">Открыть силиконы →</span>
+              </a>
+              <a class="mylco-buying-card" href="kupit-poliuretan-v-moskve/">
+                <span class="mylco-buying-card__tag">литьё</span>
+                <h3>Полиуретаны и жидкие пластики</h3>
+                <p>Для прочных деталей, оснастки, гибких форм, прототипов и малых производственных серий.</p>
+                <ul><li>мягкие и жёсткие составы</li><li>варианты под ресурс формы</li><li>упаковки под пробу и производство</li></ul>
+                <span class="mylco-buying-card__link">Смотреть полиуретаны →</span>
+              </a>
+              <a class="mylco-buying-card" href="epoksidnaya-smola.html">
+                <span class="mylco-buying-card__tag">декор</span>
+                <h3>Эпоксидные смолы и добавки</h3>
+                <p>Для прозрачных заливок, покрытий, макетов, сувениров и декоративных изделий.</p>
+                <ul><li>смолы и компаунды</li><li>пигменты, наполнители, добавки</li><li>подбор по толщине слоя</li></ul>
+                <span class="mylco-buying-card__link">Перейти к смолам →</span>
+              </a>
+              <a class="mylco-buying-card" href="vakuumnye-kamery.html">
+                <span class="mylco-buying-card__tag">качество</span>
+                <h3>Вакуумные камеры и насосы</h3>
+                <p>Чтобы убрать пузырьки, снизить брак и сделать процесс литья предсказуемым.</p>
+                <ul><li>камеры с насосом и без</li><li>комплектующие и оснастка</li><li>решения для мастерской</li></ul>
+                <span class="mylco-buying-card__link">Подобрать вакуум →</span>
+              </a>
+              <a class="mylco-buying-card" href="dobavki-k-silikonam/">
+                <span class="mylco-buying-card__tag">тонкая настройка</span>
+                <h3>Добавки, разделители, герметики</h3>
+                <p>Когда нужен контроль вязкости, цвета, адгезии, поверхности или аккуратное разделение формы.</p>
+                <ul><li>добавки к силиконам и пластикам</li><li>разделительные агенты</li><li>адгезивы и герметики</li></ul>
+                <span class="mylco-buying-card__link">Открыть добавки →</span>
+              </a>
+              <a class="mylco-buying-card" href="contact-us.html">
+                <span class="mylco-buying-card__tag">подбор</span>
+                <h3>Не уверены в материале?</h3>
+                <p>Пришлите фото, размеры, тираж и условия эксплуатации — Mylco предложит маршрут без лишних покупок.</p>
+                <ul><li>материал</li><li>расход</li><li>оборудование и технология</li></ul>
+                <span class="mylco-buying-card__link">Задать вопрос →</span>
+              </a>
+            </div>
+            <div class="mylco-buying-map__service">
+              <div><b>Производственные услуги — только когда они помогают покупке.</b><span>Если для материала нужна мастер-модель, прототип, 3D-сканирование или реверс-инжиниринг, подключаем STEP 3D как партнёрское производство, не вытесняя каталог Mylco.</span></div>
+              <a href="services-step3d.html">Посмотреть услуги</a>
+            </div>
+          </div>
+        </section>
+
 
 
         <section class="mylco-popular-products" aria-label="Популярные товары Mylco">
