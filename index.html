@@ -190,6 +190,15 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 @media (max-width:1100px){.mylco-quick-picker__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mylco-quick-picker__head{display:block}.mylco-quick-picker__head p{margin-top:10px}}
 @media (max-width:640px){.mylco-quick-picker{padding:24px 0 28px}.mylco-quick-picker__wrap{padding:0 18px}.mylco-quick-picker__grid{grid-template-columns:1fr}.mylco-quick-choice{min-height:auto}.mylco-quick-picker__footer{grid-template-columns:1fr}.mylco-quick-picker__footer a{width:100%}}
 
+.mylco-consumption-calc{background:#fff;padding:30px 0 34px;border-bottom:1px solid #eef3ef}
+.mylco-consumption-calc__wrap{max-width:1320px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:minmax(280px,.8fr) minmax(0,1.2fr);gap:18px;align-items:stretch}
+.mylco-consumption-calc__intro{border-radius:24px;background:#123225;color:#fff;padding:24px;box-shadow:0 16px 42px rgba(18,50,37,.12)}
+.mylco-consumption-calc__intro b{display:inline-flex;background:rgba(45,204,112,.18);border:1px solid rgba(45,204,112,.34);border-radius:999px;padding:6px 10px;margin-bottom:12px;text-transform:uppercase;letter-spacing:.05em;font-size:12px}.mylco-consumption-calc__intro h2{margin:0 0 10px;color:#fff;font-size:clamp(25px,3vw,36px);line-height:1.12}.mylco-consumption-calc__intro p{margin:0 0 16px;color:rgba(255,255,255,.84);line-height:1.45;font-size:16px}.mylco-consumption-calc__intro a{display:inline-flex;border-radius:13px;background:#2dcc70;color:#123225!important;padding:12px 15px;text-decoration:none;font-weight:900}
+.mylco-consumption-calc__panel{border:1px solid #dcefe4;border-radius:24px;background:linear-gradient(180deg,#fbfefc 0%,#fff 100%);padding:22px;box-shadow:0 14px 32px rgba(18,50,37,.07)}
+.mylco-consumption-calc__grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-bottom:14px}.mylco-consumption-calc__field label{display:block;color:#123225;font-weight:900;margin-bottom:6px;font-size:13px}.mylco-consumption-calc__field input,.mylco-consumption-calc__field select{width:100%;height:44px;border:1px solid #cfe3d7;border-radius:12px;padding:0 11px;background:#fff;color:#173529;font-weight:700}.mylco-consumption-calc__result{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center;border-radius:18px;background:#eefaf4;padding:16px 18px;color:#123225}.mylco-consumption-calc__result strong{display:block;font-size:28px;line-height:1;margin-bottom:5px}.mylco-consumption-calc__result span{display:block;color:#53615a;line-height:1.35}.mylco-consumption-calc__result a{display:inline-flex;align-items:center;justify-content:center;border-radius:13px;background:#123225;color:#fff!important;padding:12px 15px;text-decoration:none;font-weight:900;white-space:nowrap}.mylco-consumption-calc__hint{margin-top:12px;color:#58665f;line-height:1.42;font-size:14px}
+@media (max-width:1000px){.mylco-consumption-calc__wrap{grid-template-columns:1fr}.mylco-consumption-calc__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mylco-consumption-calc__result{grid-template-columns:1fr}.mylco-consumption-calc__result a{width:100%}}
+@media (max-width:560px){.mylco-consumption-calc{padding:24px 0 28px}.mylco-consumption-calc__wrap{padding:0 18px}.mylco-consumption-calc__grid{grid-template-columns:1fr}.mylco-consumption-calc__panel{padding:18px}.mylco-consumption-calc__result strong{font-size:24px}}
+
 .mylco-solution-finder{background:#f6fbf8;padding:34px 0 18px;border-bottom:1px solid #e2f3e9}
 .mylco-solution-finder__wrap{max-width:1320px;margin:0 auto;padding:0 24px}
 .mylco-solution-finder__head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:18px}
@@ -1669,6 +1678,31 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
             <div class="mylco-quick-picker__footer">
               <div><b>Если есть фото, эскиз или готовая деталь — приложите к заявке.</b><span>Сначала подберём материал и оборудование Mylco; если нужна мастер-модель, 3D-печать или сканирование, подключим производственную услугу как следующий шаг.</span></div>
               <a href="mailto:order@mylco.ru?subject=Mylco%3A%20%D0%BF%D0%BE%D0%B4%D0%B1%D0%BE%D1%80%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B0&body=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0%3A%0A%D0%9C%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%2F%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%3A%0A%D0%A4%D0%BE%D1%82%D0%BE%2F%D1%8D%D1%81%D0%BA%D0%B8%D0%B7%3A%0A%D0%A0%D0%B0%D0%B7%D0%BC%D0%B5%D1%80%D1%8B%3A%0A%D0%A2%D0%B8%D1%80%D0%B0%D0%B6%3A%0A%D0%A1%D1%80%D0%BE%D0%BA%3A%0A%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F%20%D1%8D%D0%BA%D1%81%D0%BF%D0%BB%D1%83%D0%B0%D1%82%D0%B0%D1%86%D0%B8%D0%B8%3A%0A">Отправить заявку</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="mylco-consumption-calc" aria-label="Калькулятор расхода силикона Mylco">
+          <div class="mylco-consumption-calc__wrap">
+            <div class="mylco-consumption-calc__intro">
+              <b>Расход без гадания</b>
+              <h2>Быстрый расчёт: сколько силикона нужно на форму</h2>
+              <p>Мини-калькулятор переводит размеры опалубки в ориентировочный вес материала с технологическим запасом. Это снижает страх ошибиться с объёмом и быстрее ведёт к покупке.</p>
+              <a href="kupit-silikon-v-moskve/">Перейти к силиконам</a>
+            </div>
+            <div class="mylco-consumption-calc__panel" data-mylco-calc>
+              <div class="mylco-consumption-calc__grid">
+                <div class="mylco-consumption-calc__field"><label for="mylco-calc-l">Длина, см</label><input id="mylco-calc-l" type="number" min="1" step="1" value="20" data-calc="length"></div>
+                <div class="mylco-consumption-calc__field"><label for="mylco-calc-w">Ширина, см</label><input id="mylco-calc-w" type="number" min="1" step="1" value="15" data-calc="width"></div>
+                <div class="mylco-consumption-calc__field"><label for="mylco-calc-h">Высота заливки, см</label><input id="mylco-calc-h" type="number" min="0.5" step="0.5" value="3" data-calc="height"></div>
+                <div class="mylco-consumption-calc__field"><label for="mylco-calc-model">Объём модели, см³</label><input id="mylco-calc-model" type="number" min="0" step="10" value="120" data-calc="model"></div>
+                <div class="mylco-consumption-calc__field"><label for="mylco-calc-density">Материал</label><select id="mylco-calc-density" data-calc="density"><option value="1.12">силикон ≈1,12 г/см³</option><option value="1.05">полиуретан ≈1,05 г/см³</option><option value="1.10">эпоксидная смола ≈1,10 г/см³</option></select></div>
+              </div>
+              <div class="mylco-consumption-calc__result">
+                <div><strong data-calc-result>≈ 1,05 кг</strong><span data-calc-note>Расчёт с запасом 12%. Для точного подбора важны тип формы, твёрдость Shore и тираж.</span></div>
+                <a data-calc-mail href="mailto:order@mylco.ru?subject=Mylco%3A%20%D1%80%D0%B0%D1%81%D1%87%D1%91%D1%82%20%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%D0%B0%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B0">Отправить расчёт</a>
+              </div>
+              <div class="mylco-consumption-calc__hint">Формула: объём опалубки минус примерный объём модели, затем плотность материала и запас. Если модель сложная — лучше приложить фото или STL к заявке.</div>
             </div>
           </div>
         </section>
@@ -5512,6 +5546,35 @@ mylco@inbox.ru</a>
       </div></div>
 
 
+<script>
+(function(){
+  var calc = document.querySelector('[data-mylco-calc]');
+  if(!calc) return;
+  var result = calc.querySelector('[data-calc-result]');
+  var mail = calc.querySelector('[data-calc-mail]');
+  function num(name){
+    var el = calc.querySelector('[data-calc="'+ name +'"]');
+    var value = el ? parseFloat(String(el.value).replace(',', '.')) : 0;
+    return isNaN(value) ? 0 : value;
+  }
+  function update(){
+    var length = Math.max(num('length'), 0);
+    var width = Math.max(num('width'), 0);
+    var height = Math.max(num('height'), 0);
+    var model = Math.max(num('model'), 0);
+    var density = Math.max(num('density'), 0.1);
+    var volume = Math.max(length * width * height - model, 0);
+    var kg = volume * density * 1.12 / 1000;
+    var text = '≈ ' + kg.toLocaleString('ru-RU', {minimumFractionDigits:2, maximumFractionDigits:2}) + ' кг';
+    result.textContent = text;
+    var body = 'Размер опалубки: ' + length + ' × ' + width + ' × ' + height + ' см\nПримерный объём модели: ' + model + ' см³\nРасчётный расход: ' + text + '\nЗадача/материал/тираж:\n';
+    mail.href = 'mailto:order@mylco.ru?subject=Mylco%3A%20%D1%80%D0%B0%D1%81%D1%87%D1%91%D1%82%20%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%D0%B0%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B0&body=' + encodeURIComponent(body);
+  }
+  calc.addEventListener('input', update);
+  calc.addEventListener('change', update);
+  update();
+})();
+</script>
 <script>if(document.cookie.indexOf('li_nr')>=0)document.write("<img style='display:none'alt=''name='")</script><!--'><script src='image/cache/lightning/729919547ds_wp.js'></script><script>      window.onload = function(){
 	    setTimeout(function(){
   	      document.getElementById('yamap').src = 'https://yandex.ru/map-widget/v1/?um=constructor%3Aa92f06d584b7fc9096eff21b84d8760aa15613671db8f0f973d30a7cbcf3b07d&amp;source=constructor';
