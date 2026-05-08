@@ -193,6 +193,18 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 @media (max-width:1000px){.mylco-solution-finder__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mylco-solution-finder__head{display:block}.mylco-solution-finder__head p{margin-top:10px}.mylco-solution-finder__brief{align-items:flex-start;flex-direction:column}}
 @media (max-width:560px){.mylco-solution-finder{padding-top:24px}.mylco-solution-finder__wrap{padding:0 18px}.mylco-solution-finder__grid{grid-template-columns:1fr}.mylco-solution-card{min-height:auto}.mylco-solution-finder__brief a{width:100%;text-align:center}}
 
+.mylco-material-guide{background:#fff;padding:30px 0 34px;border-bottom:1px solid #eef3ef}
+.mylco-material-guide__wrap{max-width:1320px;margin:0 auto;padding:0 24px}
+.mylco-material-guide__head{display:flex;justify-content:space-between;gap:20px;align-items:flex-end;margin-bottom:16px}
+.mylco-material-guide__head h2{font-size:clamp(26px,3vw,38px);line-height:1.12;margin:0;color:#123225}.mylco-material-guide__head p{max-width:620px;margin:0;color:#58665f;font-size:16px;line-height:1.45}
+.mylco-material-guide__grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.mylco-material-tile{border:1px solid #dcefe4;border-radius:20px;background:#fbfefc;padding:18px;min-height:210px;display:flex;flex-direction:column;color:#173529!important;text-decoration:none;box-shadow:0 10px 24px rgba(18,50,37,.05);transition:.18s ease}
+.mylco-material-tile:hover{transform:translateY(-2px);box-shadow:0 18px 34px rgba(18,50,37,.1);color:#173529!important}
+.mylco-material-tile b{font-size:19px;line-height:1.15;color:#123225;margin-bottom:8px}.mylco-material-tile span{color:#58665f;line-height:1.38}.mylco-material-tile em{font-style:normal;margin-top:auto;padding-top:14px;color:#139b50;font-weight:900}
+.mylco-material-guide__note{margin-top:14px;border-radius:18px;background:#eefaf4;color:#123225;padding:15px 18px;font-weight:700;line-height:1.4}
+@media (max-width:1100px){.mylco-material-guide__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mylco-material-guide__head{display:block}.mylco-material-guide__head p{margin-top:10px}}
+@media (max-width:560px){.mylco-material-guide{padding:24px 0 28px}.mylco-material-guide__wrap{padding:0 18px}.mylco-material-guide__grid{grid-template-columns:1fr}.mylco-material-tile{min-height:auto}}
+
 .mylco-partner-trust{background:#fff;padding:26px 0 34px;border-bottom:1px solid #eef3ef}
 .mylco-partner-trust__wrap{max-width:1320px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:minmax(280px,.85fr) minmax(0,1.15fr);gap:22px;align-items:stretch}
 .mylco-partner-trust__intro{border-radius:24px;background:#123225;color:#fff;padding:24px;box-shadow:0 16px 42px rgba(18,50,37,.12)}
@@ -1543,6 +1555,43 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
               <div><b>Мини-бриф для заявки:</b> <span>фото/эскиз, размеры, тираж, срок, условия эксплуатации.</span></div>
               <a href="contact-us.html">Отправить задачу</a>
             </div>
+          </div>
+        </section>
+
+        <section class="mylco-material-guide" aria-label="Матрица выбора материалов Mylco">
+          <div class="mylco-material-guide__wrap">
+            <div class="mylco-material-guide__head">
+              <h2>Матрица выбора: что брать под задачу</h2>
+              <p>Сохраняем главный фокус Mylco на материалах и оборудовании: клиент быстрее понимает, с какой категории начать, а менеджеру приходит более точная заявка.</p>
+            </div>
+            <div class="mylco-material-guide__grid">
+              <a class="mylco-material-tile" href="kupit-silikon-v-moskve/">
+                <b>Силиконы</b>
+                <span>Формы для гипса, смол, воска, мыла, декора и малых серий. Важны твёрдость, эластичность и тираж.</span>
+                <em>Выбрать силикон →</em>
+              </a>
+              <a class="mylco-material-tile" href="kupit-poliuretan-v-moskve/">
+                <b>Полиуретаны</b>
+                <span>Прочные формы и детали, износостойкие элементы, заливки под нагрузку. Подбираются по Shore и условиям работы.</span>
+                <em>Смотреть полиуретаны →</em>
+              </a>
+              <a class="mylco-material-tile" href="epoksidnaya-smola.html">
+                <b>Эпоксидные смолы</b>
+                <span>Прозрачные и декоративные заливки, макеты, покрытия, компаунды. Важны слой, прозрачность и время жизни.</span>
+                <em>Перейти к смолам →</em>
+              </a>
+              <a class="mylco-material-tile" href="zhidkiy-plastik/">
+                <b>Жидкие пластики</b>
+                <span>Быстрое литьё корпусов, прототипов, мастер-моделей и малосерийных изделий с заданной прочностью.</span>
+                <em>Выбрать пластик →</em>
+              </a>
+              <a class="mylco-material-tile" href="vakuumnye-kamery.html">
+                <b>Вакуум и оснастка</b>
+                <span>Камеры, насосы, дегазация и комплекты для стабильной заливки без пузырей и брака.</span>
+                <em>Открыть оборудование →</em>
+              </a>
+            </div>
+            <div class="mylco-material-guide__note">Если изделия ещё нет в CAD или нужна мастер-модель, производственные услуги STEP 3D подключаются после выбора материала — как усиление, а не замена каталога Mylco.</div>
           </div>
         </section>
 
