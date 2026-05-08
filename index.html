@@ -175,6 +175,14 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 @media (max-width:900px){.mylco-wow-hero__wrap{grid-template-columns:1fr;padding:34px 18px}.mylco-wow-hero__proof{grid-template-columns:1fr}.mylco-wow-hero__catalog{grid-template-columns:repeat(2,minmax(0,1fr))}.mylco-wow-hero__card{border-radius:22px}.mylco-preview-ribbon{font-size:12px;line-height:1.35}}
 @media (max-width:560px){.mylco-wow-hero__catalog{grid-template-columns:1fr}.mylco-wow-hero__actions a{width:100%}.mylco-wow-hero__card-actions{grid-template-columns:1fr}}
 
+.mylco-demo-nav{background:#fff;border-bottom:1px solid #dcefe4;position:relative;z-index:3}
+.mylco-demo-nav__wrap{max-width:1320px;margin:0 auto;padding:14px 24px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.mylco-demo-nav a{display:flex;flex-direction:column;gap:4px;border:1px solid #dcefe4;border-radius:16px;background:linear-gradient(180deg,#fbfefc 0%,#fff 100%);padding:13px 14px;text-decoration:none;color:#123225!important;box-shadow:0 10px 24px rgba(18,50,37,.05);transition:.18s ease}
+.mylco-demo-nav a:hover{transform:translateY(-1px);box-shadow:0 14px 30px rgba(18,50,37,.1);color:#123225!important}
+.mylco-demo-nav b{font-size:15px;line-height:1.15}.mylco-demo-nav span{color:#6a766f;font-size:13px;line-height:1.25}
+@media (max-width:900px){.mylco-demo-nav__wrap{grid-template-columns:repeat(2,minmax(0,1fr));padding:12px 18px}.mylco-demo-nav a:last-child{grid-column:1/-1}}
+@media (max-width:520px){.mylco-demo-nav__wrap{grid-template-columns:1fr}.mylco-demo-nav a:last-child{grid-column:auto}}
+
 .mylco-sticky-cta{display:none}
 @media (max-width:760px){body{padding-bottom:86px}.mylco-sticky-cta{position:fixed;left:10px;right:10px;bottom:10px;z-index:9998;display:grid;grid-template-columns:1.15fr .85fr .72fr;gap:8px;padding:9px;border-radius:20px;background:rgba(18,50,37,.94);box-shadow:0 16px 42px rgba(0,0,0,.28);backdrop-filter:blur(10px)}.mylco-sticky-cta a{display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:14px;text-align:center;text-decoration:none;font-weight:900;font-size:13px;line-height:1.15}.mylco-sticky-cta__main{background:#2dcc70;color:#123225!important}.mylco-sticky-cta__light{background:#fff;color:#123225!important}.mylco-sticky-cta__ghost{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.36);color:#fff!important}}
 @media (max-width:380px){.mylco-sticky-cta{grid-template-columns:1fr 1fr}.mylco-sticky-cta__ghost{grid-column:1/-1}}
@@ -1626,6 +1634,16 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
           </div>
         </section>
 
+        <nav class="mylco-demo-nav" aria-label="Быстрая навигация по preview Mylco">
+          <div class="mylco-demo-nav__wrap">
+            <a href="#mylco-popular"><b>Ходовые товары</b><span>силиконы, полиуретаны, смолы, вакуум</span></a>
+            <a href="#mylco-picker"><b>Подбор материала</b><span>по задаче, форме, тиражу и сроку</span></a>
+            <a href="#mylco-calc"><b>Расчёт расхода</b><span>быстрый калькулятор для заявки</span></a>
+            <a href="#mylco-kits"><b>Готовые маршруты</b><span>комплекты закупки под сценарий</span></a>
+            <a href="#mylco-contacts"><b>Контакты и доверие</b><span>самовывоз, почта, быстрый бриф</span></a>
+          </div>
+        </nav>
+
         <section class="mylco-lead-strip" aria-label="Быстрая заявка Mylco">
           <div class="mylco-lead-strip__wrap">
             <div>
@@ -1640,7 +1658,7 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
           </div>
         </section>
 
-        <section class="mylco-trust-strip" aria-label="Контакты и доверие Mylco">
+        <section id="mylco-contacts" class="mylco-trust-strip" aria-label="Контакты и доверие Mylco">
           <div class="mylco-trust-strip__wrap">
             <div class="mylco-trust-strip__item"><span class="mylco-trust-strip__icon">☎</span><div><b>Живая консультация</b><span><a href="tel:+74950058314">+7 (495) 005-83-14</a> — подскажем материал и маршрут.</span></div></div>
             <div class="mylco-trust-strip__item"><span class="mylco-trust-strip__icon">@</span><div><b>Заявка с фото</b><span><a href="mailto:order@mylco.ru">order@mylco.ru</a> — эскиз, размеры, тираж и срок.</span></div></div>
@@ -1664,7 +1682,7 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
           </div>
         </section>
 
-        <section class="mylco-quick-picker" aria-label="Подбор материала Mylco по задаче">
+        <section id="mylco-picker" class="mylco-quick-picker" aria-label="Подбор материала Mylco по задаче">
           <div class="mylco-quick-picker__wrap">
             <div class="mylco-quick-picker__head">
               <h2>Подбор материала за 60 секунд</h2>
@@ -1723,7 +1741,7 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
           </div>
         </section>
 
-        <section class="mylco-consumption-calc" aria-label="Калькулятор расхода силикона Mylco">
+        <section id="mylco-calc" class="mylco-consumption-calc" aria-label="Калькулятор расхода силикона Mylco">
           <div class="mylco-consumption-calc__wrap">
             <div class="mylco-consumption-calc__intro">
               <b>Расход без гадания</b>
@@ -1807,7 +1825,7 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 
 
 
-        <section class="mylco-popular-products" aria-label="Популярные товары Mylco">
+        <section id="mylco-popular" class="mylco-popular-products" aria-label="Популярные товары Mylco">
           <div class="mylco-popular-products__wrap">
             <div class="mylco-popular-products__head">
               <h2>Популярные товары — сразу в покупку</h2>
@@ -1863,7 +1881,7 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 
 
 
-        <section class="mylco-ready-kits" aria-label="Готовые комплекты Mylco под задачи">
+        <section id="mylco-kits" class="mylco-ready-kits" aria-label="Готовые комплекты Mylco под задачи">
           <div class="mylco-ready-kits__wrap">
             <div class="mylco-ready-kits__head">
               <h2>Готовые маршруты закупки под задачу</h2>
