@@ -1019,6 +1019,8 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 .mylco-material-matrix__note b{display:block;margin-bottom:4px;font-size:20px;letter-spacing:-.03em}
 @media(max-width:1100px){.mylco-material-matrix__grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){.mylco-material-matrix__grid{grid-template-columns:1fr}.mylco-material-card{min-height:auto;border-radius:24px}.mylco-material-card b{font-size:24px}}
+.mylco-purchase-pack{background:#fffef9}.mylco-pack-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.mylco-pack-card{background:#fff;border:1px solid var(--line);border-radius:26px;padding:22px;box-shadow:var(--shadow);position:relative;overflow:hidden}.mylco-pack-card:before{content:"";position:absolute;left:0;right:0;top:0;height:7px;background:linear-gradient(90deg,#23b86a,#8de8ad)}.mylco-pack-card small{display:inline-flex;margin-bottom:12px;border-radius:999px;background:var(--mint);color:#11864d;padding:7px 10px;font-size:11px;font-weight:900;text-transform:uppercase}.mylco-pack-card b{display:block;color:var(--ink);font-size:24px;line-height:1.05;letter-spacing:-.04em}.mylco-pack-card span{display:block;margin-top:9px;color:var(--muted);line-height:1.4}.mylco-pack-card ul{margin:16px 0 0;padding-left:18px;color:var(--muted);line-height:1.45}.mylco-pack-note{margin-top:14px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center;border-radius:24px;background:#0d2a20;color:#fff;padding:18px 20px}.mylco-pack-note b{display:block;font-size:20px;letter-spacing:-.03em}.mylco-pack-note span{display:block;margin-top:4px;color:#d9ffe8;line-height:1.4}.mylco-pack-note a{display:inline-flex;align-items:center;justify-content:center;min-height:46px;border-radius:14px;background:#23b86a;color:#0d2a20!important;padding:12px 16px;text-decoration:none!important;font-weight:900;white-space:nowrap}
+@media(max-width:980px){.mylco-pack-grid{grid-template-columns:1fr}.mylco-pack-note{grid-template-columns:1fr}.mylco-pack-note a{width:100%}}
 </style>
 <style id="mylco-sprint-02-product-cards-css">
 /* Sprint 02: карточки товаров яснее объясняют, кому подходит позиция и какой следующий шаг безопасен. */
@@ -2018,6 +2020,22 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
         <a class="mylco-material-card" href="vakuumnye-kamery.html"><small>для качества</small><b>Вакуум</b><span>Камера, насос и комплектующие для дегазации силиконов, смол, полиуретанов и стабильной заливки.</span><ul><li>объём смеси;</li><li>размер ёмкости;</li><li>режим работы мастерской.</li></ul><strong>Открыть вакуум →</strong></a>
       </div>
       <div class="mylco-material-matrix__note"><b>Если клиент не знает материал — это нормально.</b> Достаточно описать изделие, размеры, тираж и срок: менеджер Mylco предложит категорию, комплект расходников и следующий шаг без лишней переписки.</div>
+    </div>
+  </section>
+
+  <section class="mylco-section mylco-purchase-pack" aria-labelledby="mylco-pack-title">
+    <div class="mylco-wrap">
+      <div class="mylco-section-head">
+        <p class="mylco-kicker">Комплект без ошибок</p>
+        <h2 id="mylco-pack-title">Что докупить к материалу, чтобы заказ сработал с первого раза</h2>
+        <p>Коммерческий блок повышает средний чек честно: не навязывает корзину, а показывает обязательные расходники и оборудование под задачу.</p>
+      </div>
+      <div class="mylco-pack-grid">
+        <div class="mylco-pack-card"><small>форма</small><b>Силикон + разделитель + тара</b><span>Для форм важны не только килограммы силикона, но и подготовка мастер-модели, герметик, смешивание и аккуратная заливка.</span><ul><li>жёсткость Shore и тип основы;</li><li>разделитель под материал заливки;</li><li>ёмкость, весы и запас на литник.</li></ul></div>
+        <div class="mylco-pack-card"><small>заливка</small><b>Смола / пластик + пигмент + дегазация</b><span>Для прозрачности, прочности и повторяемости лучше сразу уточнить толщину слоя, цвет, финиш и риск пузырей.</span><ul><li>смола, пластик или полиуретан;</li><li>краситель, наполнитель, финиш;</li><li>вакуум при сложной геометрии.</li></ul></div>
+        <div class="mylco-pack-card"><small>мастерская</small><b>Материал + вакуум + регламент</b><span>Для серийной работы важен устойчивый процесс: фасовка, насос, камера, расходники и понятный режим смешивания.</span><ul><li>объём смеси и рабочая ёмкость;</li><li>насос, камера, силиконовые коврики;</li><li>регулярность закупки и счёт для юрлица.</li></ul></div>
+      </div>
+      <div class="mylco-pack-note"><div><b>Лучший следующий шаг — отправить фото изделия и ожидаемый результат.</b><span>Менеджер Mylco подберёт не один случайный товар, а рабочий набор: материал, расходники, фасовку и способ получения.</span></div><a href="#mylco-brief">Собрать заявку →</a></div>
     </div>
   </section>
 
