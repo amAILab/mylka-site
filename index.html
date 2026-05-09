@@ -2183,6 +2183,14 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
       </div>
     </div>
   </section>
+  <section class="mx-order-confidence" aria-label="Почему заказ Mylco удобно отправить сегодня">
+    <div class="mx-wrap mx-order-confidence__grid">
+      <div class="mx-order-confidence__lead"><small>быстро к заказу</small><b>Партнёру сразу понятно: что купить, как уточнить и куда обратиться</b><span>Блок снимает главный риск preview: сайт выглядит не как набор страниц, а как рабочий путь от популярного товара к счёту, доставке или подбору.</span></div>
+      <a class="mx-order-confidence__item mx-order-confidence__item--hot" href="mailto:order@mylco.ru?subject=Mylco%3A%20%D0%BD%D1%83%D0%B6%D0%B5%D0%BD%20%D1%81%D1%87%D1%91%D1%82%20%D0%B8%20%D0%BD%D0%B0%D0%BB%D0%B8%D1%87%D0%B8%D0%B5"><small>1</small><b>Наличие и счёт</b><span>Менеджер уточняет фасовку, остатки, сроки и готовит счёт для юрлица или частного клиента.</span><strong>Запросить счёт →</strong></a>
+      <a class="mx-order-confidence__item" href="dostavka.html"><small>2</small><b>Самовывоз и доставка</b><span>Покупатель видит понятный следующий шаг: забрать в Москве или оформить доставку по адресу.</span><strong>Условия доставки →</strong></a>
+      <a class="mx-order-confidence__item" href="#selector"><small>3</small><b>Подбор без ошибки</b><span>Если клиент не знает материал, сайт переводит задачу в силикон, полиуретан, смолу, пластик или вакуум.</span><strong>Начать подбор →</strong></a>
+    </div>
+  </section>
   <section class="mx-fit" aria-label="Быстрая матрица выбора материала Mylco">
     <div class="mx-wrap mx-fit__grid">
       <div class="mx-fit__lead"><small>выбор без ошибки</small><b>Что брать в первую очередь?</b><span>Мини-матрица переводит задачу клиента в основной товар Mylco и сразу ведёт в категорию или заявку.</span></div>
@@ -2372,6 +2380,22 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
     <a href="tel:+74950058314">+7 (495) 005-83-14</a>
   </div>
 </nav>
+
+<style id="mylco-order-confidence-sprint-12">
+/* Sprint 12: доверительный маршрут после популярных товаров — заказ, счёт, доставка, подбор. */
+.mx-order-confidence{background:#fff;border-bottom:1px solid #dcefe4;padding:22px 0 28px}
+.mx-order-confidence__grid{display:grid;grid-template-columns:1.18fr repeat(3,1fr);gap:12px;align-items:stretch}
+.mx-order-confidence__lead,.mx-order-confidence__item{border:1px solid #dcefe4;border-radius:24px;background:linear-gradient(180deg,#fff,#f7fcf9);padding:20px;box-shadow:0 16px 38px rgba(13,42,32,.07)}
+.mx-order-confidence__lead small,.mx-order-confidence__item small{display:inline-flex;align-items:center;justify-content:center;min-height:28px;border-radius:999px;background:#eefaf4;color:#11864d;padding:6px 10px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.055em}
+.mx-order-confidence__lead b,.mx-order-confidence__item b{display:block;margin-top:12px;color:#0d2a20;font-size:22px;line-height:1.08;letter-spacing:-.035em}
+.mx-order-confidence__lead span,.mx-order-confidence__item span{display:block;margin-top:9px;color:#53615a;line-height:1.42}
+.mx-order-confidence__item{display:flex;flex-direction:column;color:#0d2a20!important;text-decoration:none!important;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.mx-order-confidence__item strong{margin-top:auto;padding-top:16px;color:#11864d;font-size:14px}
+.mx-order-confidence__item--hot{border-color:#9ee0b9;background:linear-gradient(180deg,#fff,#effbf3)}
+.mx-order-confidence__item:hover{transform:translateY(-2px);border-color:#9ee0b9;box-shadow:0 24px 64px rgba(13,42,32,.13)}
+@media(max-width:980px){.mx-order-confidence__grid{grid-template-columns:1fr 1fr}.mx-order-confidence__lead{grid-column:1/-1}}
+@media(max-width:760px){.mx-order-confidence{padding:18px 0}.mx-order-confidence__grid{grid-template-columns:1fr}.mx-order-confidence__lead,.mx-order-confidence__item{padding:18px;border-radius:22px}.mx-order-confidence__item:hover{transform:none}}
+</style>
 <style id="mylco-desktop-conversion-dock-11">
 /* Sprint 11: desktop conversion dock keeps product catalog, подбор and phone visible for partner preview. */
 @media (min-width:761px){
