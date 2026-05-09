@@ -271,6 +271,10 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 .mylco-product-card:hover{transform:translateY(-2px);box-shadow:0 18px 36px rgba(18,50,37,.11);color:#173529!important}.mylco-product-card__type{align-self:flex-start;background:#eaf8f0;color:#178346;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;margin-bottom:12px}
 .mylco-product-card h3{font-size:20px;line-height:1.18;margin:0 0 9px;color:#123225}.mylco-product-card p{margin:0 0 14px;color:#53615a;line-height:1.42}.mylco-product-card__price{display:inline-flex;align-items:center;align-self:flex-start;border-radius:999px;background:#123225;color:#fff;font-weight:900;padding:7px 11px;margin:0 0 14px;font-size:14px;box-shadow:0 8px 18px rgba(18,50,37,.12)}.mylco-product-card__meta{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;color:#139b50;font-weight:900}.mylco-product-card__meta span{color:#7a8780;font-weight:700;font-size:13px}
 .mylco-popular-products__note{margin-top:14px;border-radius:18px;background:#eefaf4;color:#123225;padding:15px 18px;font-weight:700;line-height:1.4}
+
+.mylco-product-card__badges{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}.mylco-product-card__badges span{border-radius:999px;background:#eefaf4;color:#176f3d;font-size:12px;font-weight:900;padding:5px 8px;line-height:1}
+.mylco-popular-products__decision{margin-top:14px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.mylco-popular-products__decision div{border:1px solid #dcefe4;border-radius:18px;background:#fbfefc;padding:15px 16px;color:#173529}.mylco-popular-products__decision b{display:block;color:#123225;font-size:16px;line-height:1.2;margin-bottom:6px}.mylco-popular-products__decision span{display:block;color:#58665f;line-height:1.35;font-size:14px}
+@media (max-width:760px){.mylco-popular-products__decision{grid-template-columns:1fr}}
 @media (max-width:1100px){.mylco-popular-products__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mylco-popular-products__head{display:block}.mylco-popular-products__head p{margin-top:10px}}
 @media (max-width:560px){.mylco-popular-products{padding:24px 0 28px}.mylco-popular-products__wrap{padding:0 18px}.mylco-popular-products__grid{grid-template-columns:1fr}.mylco-product-card{min-height:auto}}
 
@@ -1941,6 +1945,7 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
                 <span class="mylco-product-card__type">хит силиконов</span>
                 <h3>AlcorSil 30 — силикон для форм</h3>
                 <span class="mylco-product-card__price">1 500 ₽ · 1,02 кг</span>
+                <div class="mylco-product-card__badges"><span>форма</span><span>Shore 30</span><span>быстрый старт</span></div>
                 <p>Понятный вход в категорию силиконов: формы под гипс, смолы, воск, мыло, декор и малые серии.</p>
                 <span class="mylco-product-card__meta">Открыть товар → <span>силикон</span></span>
               </a>
@@ -1948,6 +1953,7 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
                 <span class="mylco-product-card__type">полиуретан</span>
                 <h3>PolyS 00-40A — мягкий для форм</h3>
                 <span class="mylco-product-card__price">37 000 ₽ · 40 кг</span>
+                <div class="mylco-product-card__badges"><span>мягкая форма</span><span>серия</span><span>эластичность</span></div>
                 <p>Эластичный полиуретан для форм и задач, где нужна гибкость и аккуратное извлечение изделия.</p>
                 <span class="mylco-product-card__meta">Открыть товар → <span>форма</span></span>
               </a>
@@ -1955,6 +1961,7 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
                 <span class="mylco-product-card__type">полиуретан</span>
                 <h3>PolyS 00-80A — жёсткий для форм</h3>
                 <span class="mylco-product-card__price">12 000 ₽ · 8 кг</span>
+                <div class="mylco-product-card__badges"><span>жёсткая оснастка</span><span>стабильность</span><span>литьё</span></div>
                 <p>Решение для более жёсткой оснастки, мастер-моделей и форм с повышенной стабильностью.</p>
                 <span class="mylco-product-card__meta">Открыть товар → <span>оснастка</span></span>
               </a>
@@ -1962,6 +1969,7 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
                 <span class="mylco-product-card__type">оборудование</span>
                 <h3>Вакуумная камера H250×D210 с насосом</h3>
                 <span class="mylco-product-card__price">25 000 ₽ · комплект</span>
+                <div class="mylco-product-card__badges"><span>дегазация</span><span>меньше пузырей</span><span>комплект</span></div>
                 <p>Готовый комплект для дегазации силиконов, смол и пластиков — меньше пузырей и брака.</p>
                 <span class="mylco-product-card__meta">Открыть комплект → <span>вакуум</span></span>
               </a>
@@ -1969,6 +1977,7 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
                 <span class="mylco-product-card__type">смолы</span>
                 <h3>Эпоксидные смолы и пластилины</h3>
                 <span class="mylco-product-card__price">от 300 ₽ · категория</span>
+                <div class="mylco-product-card__badges"><span>прозрачность</span><span>декор</span><span>заливка</span></div>
                 <p>Для декора, макетов, ремонта, моделирования и прозрачных заливок с подбором по толщине слоя.</p>
                 <span class="mylco-product-card__meta">Открыть категорию → <span>эпоксидка</span></span>
               </a>
@@ -1976,11 +1985,17 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
                 <span class="mylco-product-card__type">жидкий пластик</span>
                 <h3>Caspol One — пластик для отливок</h3>
                 <span class="mylco-product-card__price">2 000 ₽ · 2 кг</span>
+                <div class="mylco-product-card__badges"><span>детали</span><span>корпуса</span><span>малая серия</span></div>
                 <p>Быстрый вход в категорию жидких пластиков для прочных деталей, корпусов и малых серий.</p>
                 <span class="mylco-product-card__meta">Открыть товар → <span>отливка</span></span>
               </a>
             </div>
             <div class="mylco-popular-products__note">STEP 3D остаётся производственным усилением: сначала клиент видит товары Mylco, затем при необходимости подключает модель, сканирование или прототип.</div>
+            <div class="mylco-popular-products__decision" aria-label="Почему это удобно покупателю">
+              <div><b>Сразу понятно, что купить</b><span>У каждой ходовой позиции есть сценарий применения: форма, оснастка, дегазация, заливка или малая серия.</span></div>
+              <div><b>Меньше ошибок в подборе</b><span>Бейджи подсказывают ключевое свойство материала до перехода в карточку или заявку менеджеру.</span></div>
+              <div><b>Каталог Mylco в центре</b><span>Производственные услуги остаются следующим шагом, когда клиенту нужна модель, скан или прототип.</span></div>
+            </div>
           </div>
         </section>
 
