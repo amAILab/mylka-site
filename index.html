@@ -194,6 +194,15 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 @media (max-width:1000px){.mylco-partner-snapshot__wrap{grid-template-columns:1fr 1fr}.mylco-partner-snapshot__title{grid-column:1/-1}}
 @media (max-width:560px){.mylco-partner-snapshot__wrap{grid-template-columns:1fr;padding:14px 18px}.mylco-partner-snapshot__title{grid-column:auto}}
 
+.mylco-core-products{background:#fff;border-bottom:1px solid #dcefe4}
+.mylco-core-products__wrap{max-width:1320px;margin:0 auto;padding:18px 24px 22px}
+.mylco-core-products__head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:12px}
+.mylco-core-products__head b{display:block;color:#139b50;text-transform:uppercase;letter-spacing:.06em;font-size:12px;margin-bottom:5px}.mylco-core-products__head h2{margin:0;color:#123225;font-size:clamp(22px,2.4vw,34px);line-height:1.12}.mylco-core-products__head p{max-width:560px;margin:0;color:#58665f;line-height:1.4}
+.mylco-core-products__grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}.mylco-core-product{display:flex;flex-direction:column;min-height:142px;border:1px solid #dcefe4;border-radius:18px;background:linear-gradient(180deg,#fbfefc 0%,#fff 100%);padding:14px;text-decoration:none!important;color:#173529!important;box-shadow:0 10px 22px rgba(18,50,37,.05);transition:.18s ease}.mylco-core-product:hover{transform:translateY(-1px);box-shadow:0 14px 30px rgba(18,50,37,.1);color:#173529!important}.mylco-core-product small{align-self:flex-start;border-radius:999px;background:#e8f8ef;color:#0b7f3c;padding:5px 8px;font-weight:900;text-transform:uppercase;font-size:11px;line-height:1;margin-bottom:9px}.mylco-core-product b{font-size:16px;line-height:1.15;color:#123225;margin-bottom:7px}.mylco-core-product span{font-size:13px;line-height:1.32;color:#58665f}.mylco-core-product em{margin-top:auto;padding-top:10px;font-style:normal;color:#139b50;font-weight:900;font-size:13px}
+@media (max-width:1120px){.mylco-core-products__grid{grid-template-columns:repeat(3,minmax(0,1fr))}.mylco-core-products__head{display:block}.mylco-core-products__head p{margin-top:8px}}
+@media (max-width:640px){.mylco-core-products__wrap{padding:16px 18px}.mylco-core-products__grid{grid-template-columns:1fr 1fr}.mylco-core-product{min-height:132px;padding:13px}.mylco-core-product b{font-size:15px}}
+@media (max-width:420px){.mylco-core-products__grid{grid-template-columns:1fr}}
+
 .mylco-audience-strip{background:linear-gradient(180deg,#fbfefc 0%,#f1faf5 100%);border-bottom:1px solid #dcefe4}
 .mylco-audience-strip__wrap{max-width:1320px;margin:0 auto;padding:22px 24px;display:grid;grid-template-columns:minmax(240px,.8fr) repeat(4,minmax(0,1fr));gap:12px;align-items:stretch}
 .mylco-audience-strip__title{border-radius:20px;background:#fff;border:1px solid #dcefe4;padding:18px;box-shadow:0 10px 24px rgba(18,50,37,.05)}
@@ -1699,6 +1708,25 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
           </div>
         </section>
 
+
+
+
+        <section class="mylco-core-products" aria-label="Коммерческое ядро каталога Mylco">
+          <div class="mylco-core-products__wrap">
+            <div class="mylco-core-products__head">
+              <div><b>Коммерческое ядро</b><h2>Сначала видны товары, которые покупают чаще всего</h2></div>
+              <p>Этот блок удерживает фокус preview на основном бизнесе Mylco: материалы, добавки и вакуумное оборудование стоят выше производственных услуг и ведут прямо в каталог.</p>
+            </div>
+            <div class="mylco-core-products__grid">
+              <a class="mylco-core-product" href="kupit-silikon-v-moskve/"><small>формы</small><b>Силиконы</b><span>Олово, платина, Shore под гипс, смолу, воск и декор.</span><em>В каталог →</em></a>
+              <a class="mylco-core-product" href="kupit-poliuretan-v-moskve/"><small>литьё</small><b>Полиуретаны</b><span>Мягкие и жёсткие составы для форм, оснастки и деталей.</span><em>Выбрать →</em></a>
+              <a class="mylco-core-product" href="epoksidnaya-smola.html"><small>заливка</small><b>Эпоксидные смолы</b><span>Прозрачные заливки, покрытия, макеты и декоративные изделия.</span><em>Смотреть →</em></a>
+              <a class="mylco-core-product" href="zhidkiy-plastik.html"><small>детали</small><b>Жидкие пластики</b><span>Корпуса, прототипы, малые серии и прочные отливки.</span><em>Открыть →</em></a>
+              <a class="mylco-core-product" href="vakuumnye-kamery.html"><small>качество</small><b>Вакуум</b><span>Камеры, насосы и комплекты для дегазации без пузырей.</span><em>Подобрать →</em></a>
+              <a class="mylco-core-product" href="razdelitelnye-agenty-i-germetiki/"><small>добавки</small><b>Разделители</b><span>Герметики, разделительные агенты и технологические добавки.</span><em>Перейти →</em></a>
+            </div>
+          </div>
+        </section>
 
         <section class="mylco-urgent-route" aria-label="Быстрый маршрут покупки Mylco сегодня">
           <div class="mylco-urgent-route__wrap">
