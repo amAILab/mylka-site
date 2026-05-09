@@ -196,6 +196,17 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 @media (max-width:760px){body{padding-bottom:86px}.mylco-sticky-cta{position:fixed;left:10px;right:10px;bottom:10px;z-index:9998;display:grid;grid-template-columns:1.15fr .85fr .72fr;gap:8px;padding:9px;border-radius:20px;background:rgba(18,50,37,.94);box-shadow:0 16px 42px rgba(0,0,0,.28);backdrop-filter:blur(10px)}.mylco-sticky-cta a{display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:14px;text-align:center;text-decoration:none;font-weight:900;font-size:13px;line-height:1.15}.mylco-sticky-cta__main{background:#2dcc70;color:#123225!important}.mylco-sticky-cta__light{background:#fff;color:#123225!important}.mylco-sticky-cta__ghost{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.36);color:#fff!important}}
 @media (max-width:380px){.mylco-sticky-cta{grid-template-columns:1fr 1fr}.mylco-sticky-cta__ghost{grid-column:1/-1}}
 
+.mylco-task-matrix{background:#fff;padding:30px 0 34px;border-bottom:1px solid #eef3ef}
+.mylco-task-matrix__wrap{max-width:1320px;margin:0 auto;padding:0 24px}
+.mylco-task-matrix__head{display:flex;align-items:flex-end;justify-content:space-between;gap:22px;margin-bottom:16px}
+.mylco-task-matrix__head h2{font-size:clamp(26px,3vw,38px);line-height:1.12;margin:0;color:#123225}.mylco-task-matrix__head p{max-width:650px;margin:0;color:#58665f;font-size:16px;line-height:1.45}
+.mylco-task-matrix__grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.mylco-task-route{display:flex;flex-direction:column;min-height:230px;border:1px solid #dcefe4;border-radius:22px;background:linear-gradient(180deg,#fbfefc 0%,#fff 100%);padding:18px;color:#173529!important;text-decoration:none;box-shadow:0 12px 28px rgba(18,50,37,.06);transition:.18s ease}
+.mylco-task-route:hover{transform:translateY(-2px);box-shadow:0 18px 36px rgba(18,50,37,.11);color:#173529!important}.mylco-task-route__tag{align-self:flex-start;border-radius:999px;background:#e8f8ef;color:#0b7f3c;padding:6px 10px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px}.mylco-task-route h3{font-size:20px;line-height:1.16;margin:0 0 9px;color:#123225}.mylco-task-route p{margin:0 0 12px;color:#53615a;line-height:1.4}.mylco-task-route ul{margin:0 0 14px;padding:0;list-style:none}.mylco-task-route li{padding:5px 0 5px 22px;position:relative;line-height:1.3}.mylco-task-route li:before{content:"•";position:absolute;left:7px;top:5px;color:#2dcc70;font-weight:900}.mylco-task-route__link{margin-top:auto;color:#139b50;font-weight:900}
+.mylco-task-matrix__foot{margin-top:14px;border-radius:20px;background:#123225;color:#fff;padding:16px 18px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center}.mylco-task-matrix__foot span{color:rgba(255,255,255,.82);line-height:1.4}.mylco-task-matrix__foot a{display:inline-flex;align-items:center;justify-content:center;border-radius:13px;background:#2dcc70;color:#123225!important;padding:12px 16px;text-decoration:none;font-weight:900;white-space:nowrap}
+@media (max-width:1150px){.mylco-task-matrix__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mylco-task-matrix__head{display:block}.mylco-task-matrix__head p{margin-top:10px}}
+@media (max-width:640px){.mylco-task-matrix{padding:24px 0 28px}.mylco-task-matrix__wrap{padding:0 18px}.mylco-task-matrix__grid{grid-template-columns:1fr}.mylco-task-route{min-height:auto}.mylco-task-matrix__foot{grid-template-columns:1fr}.mylco-task-matrix__foot a{width:100%}}
+
 .mylco-quick-picker{background:linear-gradient(180deg,#fbfefc 0%,#f1faf5 100%);padding:30px 0 34px;border-bottom:1px solid #dcefe4}
 .mylco-quick-picker__wrap{max-width:1320px;margin:0 auto;padding:0 24px}
 .mylco-quick-picker__head{display:flex;align-items:flex-end;justify-content:space-between;gap:22px;margin-bottom:16px}
@@ -1682,12 +1693,62 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
         <nav class="mylco-demo-nav" aria-label="Быстрая навигация по preview Mylco">
           <div class="mylco-demo-nav__wrap">
             <a href="#mylco-popular"><b>Ходовые товары</b><span>силиконы, полиуретаны, смолы, вакуум</span></a>
-            <a href="#mylco-picker"><b>Подбор материала</b><span>по задаче, форме, тиражу и сроку</span></a>
+            <a href="#mylco-task-matrix"><b>Материал по задаче</b><span>форма, отливка, вакуум, прототип</span></a>
             <a href="#mylco-calc"><b>Расчёт расхода</b><span>быстрый калькулятор для заявки</span></a>
             <a href="#mylco-kits"><b>Готовые маршруты</b><span>комплекты закупки под сценарий</span></a>
             <a href="#mylco-contacts"><b>Контакты и доверие</b><span>самовывоз, почта, быстрый бриф</span></a>
           </div>
         </nav>
+
+        <section id="mylco-task-matrix" class="mylco-task-matrix" aria-label="Какой материал Mylco выбрать под задачу">
+          <div class="mylco-task-matrix__wrap">
+            <div class="mylco-task-matrix__head">
+              <h2>Какой материал выбрать под задачу</h2>
+              <p>Быстрый коммерческий мост между первым экраном и каталогом: покупатель видит сценарий, понимает основной товар Mylco и переходит в нужный раздел без лишних вопросов.</p>
+            </div>
+            <div class="mylco-task-matrix__grid">
+              <a class="mylco-task-route" href="kupit-silikon-v-moskve/">
+                <span class="mylco-task-route__tag">форма</span>
+                <h3>Нужна гибкая форма</h3>
+                <p>Для гипса, воска, мыла, смолы, декора и малых серий.</p>
+                <ul><li>силикон нужной твёрдости</li><li>разделитель для мастер-модели</li><li>вакуум при серийной заливке</li></ul>
+                <span class="mylco-task-route__link">Силиконы для форм →</span>
+              </a>
+              <a class="mylco-task-route" href="kupit-poliuretan-v-moskve/">
+                <span class="mylco-task-route__tag">оснастка</span>
+                <h3>Нужна прочная форма или деталь</h3>
+                <p>Когда важны стойкость, эластичность, ресурс формы или жёсткость.</p>
+                <ul><li>мягкие и жёсткие полиуретаны</li><li>подбор Shore</li><li>серийные сценарии</li></ul>
+                <span class="mylco-task-route__link">Полиуретаны →</span>
+              </a>
+              <a class="mylco-task-route" href="epoksidnaya-smola.html">
+                <span class="mylco-task-route__tag">заливка</span>
+                <h3>Нужна прозрачная или декоративная заливка</h3>
+                <p>Для макетов, ремонта, декора, сувениров и творческих изделий.</p>
+                <ul><li>смола под толщину слоя</li><li>пигменты и добавки</li><li>меньше пузырей в результате</li></ul>
+                <span class="mylco-task-route__link">Эпоксидные смолы →</span>
+              </a>
+              <a class="mylco-task-route" href="zhidkiy-plastik.html">
+                <span class="mylco-task-route__tag">отливка</span>
+                <h3>Нужна пластиковая деталь</h3>
+                <p>Для корпусов, прототипов, малых серий и функциональных отливок.</p>
+                <ul><li>жидкие пластики</li><li>мастер-модель при необходимости</li><li>подбор по прочности</li></ul>
+                <span class="mylco-task-route__link">Жидкие пластики →</span>
+              </a>
+              <a class="mylco-task-route" href="vakuumnye-kamery.html">
+                <span class="mylco-task-route__tag">качество</span>
+                <h3>Нужно меньше пузырей и брака</h3>
+                <p>Для стабильной дегазации силиконов, смол и пластиков.</p>
+                <ul><li>камеры с насосом</li><li>оснастка и комплектующие</li><li>подбор под объём заливки</li></ul>
+                <span class="mylco-task-route__link">Вакуумное оборудование →</span>
+              </a>
+            </div>
+            <div class="mylco-task-matrix__foot">
+              <span><b>STEP 3D подключается только как производственная помощь:</b> если для покупки нужен прототип, скан, мастер-модель или реверс-инжиниринг. Обучение и курсы в Mylco не добавляем.</span>
+              <a href="contact-us.html">Подобрать маршрут</a>
+            </div>
+          </div>
+        </section>
 
         <section class="mylco-lead-strip" aria-label="Быстрая заявка Mylco">
           <div class="mylco-lead-strip__wrap">
