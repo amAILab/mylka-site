@@ -1976,6 +1976,21 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
     </div>
   </section>
 
+  <section class="mylco-decision-board" aria-labelledby="mylco-decision-title">
+    <div class="mylco-wrap mylco-decision-board__grid">
+      <div class="mylco-decision-board__head">
+        <p class="mylco-kicker">Решение за 30 секунд</p>
+        <h2 id="mylco-decision-title">Что покупать первым?</h2>
+        <p>Для партнёрского просмотра это показывает главное: Mylco продаёт не «просто каталог», а быстрый маршрут к покупке основных материалов и оборудования.</p>
+      </div>
+      <a class="mylco-decision-card mylco-decision-card--hot" href="kupit-silikon-v-moskve/"><small>самый частый старт</small><b>Силикон для формы</b><span>Формы под гипс, смолу, свечи, мыло, бетон и декор. Уточнить Shore, поднутрения и материал заливки.</span><strong>Открыть силиконы →</strong></a>
+      <a class="mylco-decision-card" href="kupit-poliuretan-v-moskve/"><small>ресурс и нагрузка</small><b>Полиуретан</b><span>Формы, вставки, рабочие детали, оснастка и малая серия. Важно описать тираж и условия эксплуатации.</span><strong>Смотреть полиуретаны →</strong></a>
+      <a class="mylco-decision-card" href="epoksidnaya-smola.html"><small>прозрачность и вид</small><b>Эпоксидная смола</b><span>Декоративные заливки, покрытия, макеты и сувениры. Уточнить толщину слоя, цвет, финиш и пузыри.</span><strong>Открыть смолы →</strong></a>
+      <a class="mylco-decision-card" href="vakuumnye-kamery.html"><small>качество заливки</small><b>Вакуумная камера</b><span>Когда нужно убрать пузыри в силиконе, смоле или полиуретане. Подбор по объёму смеси и ёмкости.</span><strong>Подобрать вакуум →</strong></a>
+      <div class="mylco-decision-board__cta"><b>Не знаете категорию?</b><span>Отправьте фото, размеры, тираж и срок — менеджер соберёт материал, расходники и следующий шаг.</span><a href="#mylco-brief">Собрать заявку →</a></div>
+    </div>
+  </section>
+
   <section class="mylco-commerce-strip" aria-label="Коммерческие преимущества Mylco">
     <div class="mylco-wrap mylco-commerce-strip__grid">
       <div class="mylco-commerce-strip__lead"><b>Покупка без лишних кругов</b><span>Сразу видно, как перейти от выбора материала к счёту, наличию и отгрузке — главный экран становится более коммерческим.</span></div>
@@ -2461,6 +2476,9 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
   .mylco-mobile-cta{display:none!important;grid-template-columns:1fr 1fr!important}.mylco-mobile-cta a:last-child{grid-column:1/-1!important}
   body.mylco-show-mobile-cta .mylco-mobile-cta{display:grid!important}
 }
+.mylco-decision-board{background:linear-gradient(180deg,#fff 0%,#f4fbf6 100%);border-bottom:1px solid #dcefe4}.mylco-decision-board__grid{display:grid;grid-template-columns:1.15fr repeat(4,1fr);gap:12px;align-items:stretch;padding-top:20px;padding-bottom:22px}.mylco-decision-board__head,.mylco-decision-card,.mylco-decision-board__cta{border:1px solid #dcefe4;border-radius:24px;background:#fff;box-shadow:0 14px 34px rgba(13,42,32,.07)}.mylco-decision-board__head{padding:22px}.mylco-decision-board__head h2{margin:6px 0 8px;color:#123225;font-size:clamp(26px,3vw,40px);line-height:1.05;letter-spacing:-.055em}.mylco-decision-board__head p{margin:0;color:#58665f;line-height:1.42}.mylco-decision-card{display:flex;flex-direction:column;padding:18px;text-decoration:none!important;color:#173529!important;transition:.18s ease}.mylco-decision-card:hover{transform:translateY(-2px);box-shadow:0 20px 46px rgba(13,42,32,.12);color:#173529!important}.mylco-decision-card small{align-self:flex-start;border-radius:999px;background:#e8f8ef;color:#0b7f3c;padding:6px 9px;font-weight:900;text-transform:uppercase;font-size:10px;letter-spacing:.045em;margin-bottom:10px}.mylco-decision-card b{font-size:18px;line-height:1.12;color:#123225;margin-bottom:8px;letter-spacing:-.03em}.mylco-decision-card span{font-size:13px;line-height:1.36;color:#58665f}.mylco-decision-card strong{margin-top:auto;padding-top:12px;color:#139b50;font-size:13px}.mylco-decision-card--hot{border-color:#98ddb4;background:linear-gradient(180deg,#fff,#effbf3)}.mylco-decision-card--hot b{color:#0d6f3c}.mylco-decision-board__cta{grid-column:1/-1;display:flex;gap:14px;align-items:center;justify-content:space-between;padding:16px 18px;background:#123225;color:#fff}.mylco-decision-board__cta b{font-size:18px;color:#fff}.mylco-decision-board__cta span{color:rgba(255,255,255,.78);line-height:1.35}.mylco-decision-board__cta a{display:inline-flex;align-items:center;justify-content:center;border-radius:14px;background:#2dcc70;color:#123225!important;text-decoration:none;font-weight:900;padding:12px 16px;white-space:nowrap}
+@media (max-width:1100px){.mylco-decision-board__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mylco-decision-board__head{grid-column:1/-1}}
+@media (max-width:640px){.mylco-decision-board__grid{grid-template-columns:1fr;padding:16px}.mylco-decision-board__head{grid-column:auto}.mylco-decision-board__cta{display:block}.mylco-decision-board__cta a{width:100%;margin-top:12px}}
 </style>
 <script id="mylco-mobile-menu-js">
 (function(){const logo=document.querySelector('.header--v4 .logo');if(logo&&!document.querySelector('.mylco-mobile-burger')){const b=document.createElement('button');b.type='button';b.className='mylco-mobile-burger';b.setAttribute('aria-label','Открыть меню');b.setAttribute('aria-expanded','false');logo.parentElement.insertBefore(b,logo)}const menu=document.querySelector('[data-mylco-mobile-menu]');const open=document.querySelector('.mylco-mobile-burger');function set(v){if(!menu)return;menu.classList.toggle('is-open',v);menu.setAttribute('aria-hidden',v?'false':'true');open&&open.setAttribute('aria-expanded',v?'true':'false');document.documentElement.classList.toggle('mylco-menu-lock',v)}function toggleMobileCta(){document.body.classList.toggle('mylco-show-mobile-cta',window.scrollY>900)}open&&open.addEventListener('click',()=>set(true));window.addEventListener('scroll',toggleMobileCta,{passive:true});toggleMobileCta();document.addEventListener('click',e=>{if(e.target.closest('[data-mylco-menu-close]')||e.target.closest('.mylco-mobile-menu__panel a'))set(false)});document.addEventListener('keydown',e=>{if(e.key==='Escape')set(false)})})();
