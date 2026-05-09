@@ -2451,6 +2451,29 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
   </div>
   <div class="mylco-wrap mylco-ms-footer__bottom"><span>© Mylco</span><span>Материалы для ваших фантазий</span></div>
 </footer>
+
+<nav class="mylco-desktop-dock" aria-label="Быстрые действия для заказа Mylco">
+  <div class="mylco-desktop-dock__inner">
+    <div class="mylco-desktop-dock__text"><b>Готовы к заказу?</b><span>Каталог, подбор комплекта, счёт и звонок — без ухода с главной.</span></div>
+    <a href="#mylco-catalog">Каталог товаров</a>
+    <a class="mylco-desktop-dock__primary" href="#mylco-brief">Подобрать комплект</a>
+    <a href="tel:+74950058314">+7 (495) 005-83-14</a>
+  </div>
+</nav>
+<style id="mylco-desktop-conversion-dock-11">
+/* Sprint 11: desktop conversion dock keeps product catalog, подбор and phone visible for partner preview. */
+@media (min-width:761px){
+  body{padding-bottom:86px!important}
+  .mylco-desktop-dock{position:fixed;left:24px;right:24px;bottom:20px;z-index:9998;display:block;pointer-events:none}
+  .mylco-desktop-dock__inner{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:minmax(280px,1fr) auto auto auto;gap:10px;align-items:center;padding:12px;border:1px solid rgba(219,231,222,.92);border-radius:24px;background:rgba(255,255,255,.94);box-shadow:0 22px 70px rgba(13,42,32,.18);backdrop-filter:blur(14px);pointer-events:auto}
+  .mylco-desktop-dock__text{padding:0 8px;color:#0d2a20;line-height:1.18}.mylco-desktop-dock__text b{display:block;font-size:17px;letter-spacing:-.02em}.mylco-desktop-dock__text span{display:block;margin-top:3px;color:#607168;font-size:13px}
+  .mylco-desktop-dock a{display:inline-flex;align-items:center;justify-content:center;min-height:46px;border-radius:15px;padding:0 16px;background:#eefaf4;color:#0d2a20!important;text-decoration:none!important;font-weight:900;white-space:nowrap;border:1px solid rgba(35,184,106,.18);transition:transform .18s ease,box-shadow .18s ease,background .18s ease}
+  .mylco-desktop-dock a:hover{transform:translateY(-1px);box-shadow:0 12px 26px rgba(13,42,32,.10)}
+  .mylco-desktop-dock__primary{background:#23b86a!important;color:#0d2a20!important;box-shadow:0 12px 28px rgba(35,184,106,.24)}
+}
+@media (max-width:980px) and (min-width:761px){.mylco-desktop-dock__inner{grid-template-columns:1fr 1fr 1fr}.mylco-desktop-dock__text{grid-column:1/-1;text-align:center}}
+@media (max-width:760px){.mylco-desktop-dock{display:none!important}}
+</style>
 <nav class="mylco-mobile-cta" aria-label="Быстрые действия Mylco">
   <span>Быстро: наличие, счёт или подбор</span>
   <a class="mylco-mobile-cta__primary" href="#mylco-brief">Подобрать</a>
