@@ -1152,6 +1152,17 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 @media(max-width:640px){.mx-assurance__grid{grid-template-columns:1fr;padding-top:16px;padding-bottom:16px}.mx-assurance__lead{grid-column:auto}.mx-assurance__lead,.mx-assurance__card{border-radius:22px;padding:18px}.mx-assurance__lead b,.mx-assurance__card b{font-size:22px}}
 </style>
 
+
+<style id="mylco-material-map-sprint">
+/* Sprint: карта выбора материала — помогает покупателю быстро перейти к ядру каталога Mylco. */
+.mx-material-map{background:#fff;border-bottom:1px solid var(--mx-line)}
+.mx-material-map__grid{display:grid;grid-template-columns:.82fr repeat(4,1fr);gap:12px;padding-top:28px;padding-bottom:30px;align-items:stretch}
+.mx-material-map__lead,.mx-material-map__card{border:1px solid var(--mx-line);border-radius:26px;background:linear-gradient(180deg,#fff,#f8fbf8);padding:22px;box-shadow:0 16px 44px rgba(16,37,28,.07)}
+.mx-material-map__lead{background:#0b1f17;color:#fff}.mx-material-map__lead small,.mx-material-map__card small{display:inline-flex;margin-bottom:12px;border-radius:999px;background:#23b86a;color:#092015;padding:7px 10px;font-size:11px;font-weight:900;text-transform:uppercase}.mx-material-map__lead b,.mx-material-map__card b{display:block;font-size:24px;line-height:1.05;letter-spacing:-.04em}.mx-material-map__lead span{display:block;margin-top:9px;color:rgba(255,255,255,.74);line-height:1.4}.mx-material-map__card{display:flex;flex-direction:column;color:var(--mx-ink)!important;text-decoration:none!important}.mx-material-map__card span{display:block;margin-top:9px;color:var(--mx-muted);line-height:1.38}.mx-material-map__card strong{margin-top:auto;padding-top:16px;color:#11864d}.mx-material-map__card--hot{border-color:rgba(35,184,106,.45);background:linear-gradient(180deg,#fff,#eefaf4)}
+@media(max-width:1080px){.mx-material-map__grid{grid-template-columns:1fr 1fr}.mx-material-map__lead{grid-column:1/-1}}
+@media(max-width:640px){.mx-material-map__grid{grid-template-columns:1fr;padding-top:18px;padding-bottom:22px}.mx-material-map__lead{grid-column:auto}.mx-material-map__lead,.mx-material-map__card{border-radius:22px;padding:18px}.mx-material-map__lead b,.mx-material-map__card b{font-size:22px}}
+</style>
+
 <link rel="stylesheet" href="preview-safety.css" data-preview-guard="true">
 <script src="preview-safety.js" defer data-preview-guard="true"></script>
 </head>
@@ -2147,6 +2158,17 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 
     </div>
   </section>
+
+  <section class="mx-material-map" aria-label="Карта выбора материала Mylco">
+    <div class="mx-wrap mx-material-map__grid">
+      <div class="mx-material-map__lead"><small>быстрый выбор</small><b>Какой материал нужен под вашу задачу?</b><span>Карта сразу ведёт в основные товары Mylco: силиконы, полиуретаны, смолы и вакуум. STEP 3D остаётся только производственной опцией, если нужна мастер-модель или деталь.</span></div>
+      <a class="mx-material-map__card mx-material-map__card--hot" href="kupit-silikon-v-moskve/"><small>форма</small><b>Снять форму с модели</b><span>Силикон, разделитель, герметик и подсказка по Shore, рельефу и тиражу.</span><strong>К силиконам →</strong></a>
+      <a class="mx-material-map__card" href="epoksidnaya-smola.html"><small>заливка</small><b>Прозрачная или декоративная отливка</b><span>Эпоксидная смола, пигменты, толщина слоя и контроль пузырей.</span><strong>К смолам →</strong></a>
+      <a class="mx-material-map__card" href="kupit-poliuretan-v-moskve/"><small>ресурс</small><b>Форма или деталь под нагрузку</b><span>Полиуретан по твёрдости, износу, условиям работы и количеству повторов.</span><strong>К полиуретанам →</strong></a>
+      <a class="mx-material-map__card" href="vakuumnye-kamery.html"><small>качество</small><b>Убрать пузырьки из смеси</b><span>Вакуумная камера, насос и ёмкость под объём материала и частоту работы.</span><strong>К вакууму →</strong></a>
+    </div>
+  </section>
+
 
   <section class="mx-section mx-section--soft" id="selector" aria-labelledby="selector-title">
     <div class="mx-wrap mx-two">
