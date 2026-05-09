@@ -1082,6 +1082,18 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 @media(max-width:1100px){.mylco-hot-skus__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mylco-hot-skus__lead{grid-column:1/-1}}
 @media(max-width:760px){.mylco-hot-skus__grid{grid-template-columns:1fr}.mylco-hot-sku{min-height:auto}}
 </style>
+<style id="mylco-sprint-proof-strip-css">
+/* Sprint trust: компактные доказательства над каталогом, без смещения фокуса с основных товаров Mylco. */
+.mylco-proof-strip{background:linear-gradient(180deg,#fff 0%,#f3fbf6 100%)}
+.mylco-proof-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.mylco-proof-grid div{position:relative;min-height:220px;border:1px solid #dbe7de;border-radius:26px;background:#fff;padding:22px;box-shadow:0 18px 52px rgba(13,42,32,.08);overflow:hidden}
+.mylco-proof-grid div:before{content:"";position:absolute;left:0;right:0;top:0;height:7px;background:linear-gradient(90deg,#23b86a,#8de8ad)}
+.mylco-proof-grid small{display:inline-flex;margin-top:5px;border-radius:999px;background:#eaf8f0;color:#11864d;padding:7px 10px;font-size:11px;font-weight:900;text-transform:uppercase}
+.mylco-proof-grid b{display:block;margin-top:16px;color:#13251d;font-size:23px;line-height:1.05;letter-spacing:-.04em}
+.mylco-proof-grid span{display:block;margin-top:9px;color:#607168;line-height:1.42}
+@media(max-width:1100px){.mylco-proof-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.mylco-proof-grid{grid-template-columns:1fr}.mylco-proof-grid div{min-height:auto;border-radius:24px}}
+</style>
 
 </head>
   <body class="page-homepage">
@@ -2030,6 +2042,22 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
   </section>
 
 
+
+  <section class="mylco-section mylco-proof-strip" aria-labelledby="mylco-proof-title">
+    <div class="mylco-wrap">
+      <div class="mylco-section-head">
+        <p class="mylco-kicker">Почему можно отправлять партнёру</p>
+        <h2 id="mylco-proof-title">Mylco выглядит как понятный поставщик, а не просто витрина</h2>
+        <p>Короткие доказательства над каталогом: клиент быстрее понимает, что здесь помогут купить материал, собрать комплект и закрыть производство без лишнего риска.</p>
+      </div>
+      <div class="mylco-proof-grid">
+        <div><small>01</small><b>Каталог остаётся главным</b><span>Силиконы, полиуретаны, смолы, пластики, вакуумные камеры и расходники вынесены в быстрые маршруты покупки.</span></div>
+        <div><small>02</small><b>Экспертный подбор</b><span>Если клиент сомневается в Shore, расходе, разделителе или вакууме — заявка собирает нужные вводные для менеджера.</span></div>
+        <div><small>03</small><b>Коммерческий сценарий</b><span>Для мастерских и юрлиц сразу есть путь к фасовке, наличию, счёту, документам и отгрузке.</span></div>
+        <div><small>04</small><b>STEP 3D — только усиление</b><span>Скан, CAD, мастер-модель и малая серия подключаются как производственная помощь, не вытесняя товары Mylco.</span></div>
+      </div>
+    </div>
+  </section>
 
   <section class="mylco-section mylco-hot-skus" aria-labelledby="mylco-hot-skus-title">
     <div class="mylco-wrap">
