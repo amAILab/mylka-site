@@ -818,6 +818,75 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 @media (max-width:560px){.mylco-wow-hero__catalog a:nth-child(n+4){display:flex}.mylco-hit-skus__grid,.mylco-need-strip__wrap{grid-template-columns:1fr}.mylco-wow-hero h1{font-size:36px}.mylco-hero-line{display:none}.mylco-wow-hero__btn--ghost{display:none}.mylco-wow-hero__card{display:none}}
 
 .mylco-wow-hero__wrap{padding-top:42px!important;padding-bottom:40px!important}.header--v4 .topbar{min-height:72px}.mylco-wow-hero__actions{margin-top:22px!important;margin-bottom:14px!important}.mylco-wow-hero__proof--compact span{font-size:14px!important}.mylco-wow-hero__card{transform:translateY(4px)}
+
+/* Mobile header fix — корзина не ломает верхнюю строку */
+@media (max-width:980px){
+  .header--v4 .topbar .row{display:flex!important;align-items:center!important;flex-wrap:nowrap!important;gap:8px!important;margin-left:0!important;margin-right:0!important}
+  .header--v4 .topbar .col{min-width:0!important;flex:0 1 auto!important;padding-left:4px!important;padding-right:4px!important}
+  .header--v4 .topbar .col-xl-2{flex:0 0 auto!important;width:auto!important;max-width:none!important}
+  .header--v4 .logo{width:auto!important;min-width:0!important}.header--v4 .logo img{width:124px!important;max-width:124px!important;height:auto!important}.header--v4 .logo span{display:none!important}
+  .header--v4 .col-hidden.col-md-visible{display:flex!important;flex:1 1 auto!important;min-width:44px!important;max-width:none!important}
+  .header--v4 .search{width:100%!important}.header--v4 .search__btn{width:42px!important;height:42px!important;border-radius:14px!important;background:#eef9f2!important}
+  .header--v4 .col-phone{flex:0 0 auto!important;width:auto!important;max-width:none!important}.header--v4 .phone__btn{font-size:0!important;width:42px!important;height:42px!important;border-radius:14px!important;background:#123225!important;color:#fff!important;padding:0!important;position:relative!important}.header--v4 .phone__btn:after{content:"☎";font-size:20px;line-height:42px}.header--v4 .phone__link{display:none!important}
+  .header--v4 .col-auto:has(.cart),.header--v4 .cart,.header--v4 .cart__btn{display:none!important}
+}
+@media (max-width:420px){.header--v4 .logo img{width:112px!important;max-width:112px!important}.header--v4 .topbar .row{gap:6px!important}.header--v4 .search__btn,.header--v4 .phone__btn{width:40px!important;height:40px!important}}
+
+/* Mobile overflow hardening */
+@media (max-width:980px){
+  html,body{width:100%!important;max-width:100%!important;overflow-x:hidden!important}
+  body *{box-sizing:border-box}
+  .app,.content,.header--v4,.header--v4 .topbar,.header--v4 .topbar .container-fluid,.container-fluid{max-width:100vw!important;min-width:0!important;overflow-x:clip!important}
+  .mylco-wow-hero,.mylco-core-products,.mylco-hit-skus,.mylco-same-day,.mylco-urgent-route,.mylco-audience-strip,.mylco-task-matrix,.mylco-lead-strip,.mylco-brief-builder,.mylco-trust-strip,.mylco-b2b-strip,.mylco-order-path,.mylco-quick-picker,.mylco-consumption-calc,.mylco-popular-products,.mylco-ready-kits{max-width:100vw!important;overflow-x:hidden!important}
+  .mylco-wow-hero__wrap,.mylco-need-strip__wrap,.mylco-core-products__wrap,.mylco-hit-skus__wrap,.mylco-same-day__wrap,.mylco-urgent-route__wrap,.mylco-audience-strip__wrap,.mylco-task-matrix__wrap,.mylco-lead-strip__wrap,.mylco-brief-builder__wrap,.mylco-trust-strip__wrap,.mylco-b2b-strip__wrap,.mylco-order-path__wrap,.mylco-quick-picker__wrap,.mylco-consumption-calc__wrap,.mylco-popular-products__wrap,.mylco-ready-kits__wrap{width:100%!important;max-width:100%!important;padding-left:16px!important;padding-right:16px!important;min-width:0!important}
+  .mylco-wow-hero__wrap,.mylco-core-products__grid,.mylco-hit-skus__grid,.mylco-task-matrix__grid,.mylco-quick-picker__grid,.mylco-popular-products__grid,.mylco-ready-kits__grid{grid-template-columns:1fr!important}
+  .mylco-wow-hero h1,.mylco-wow-hero__lead,.mylco-core-products__head,.mylco-hit-skus__head{max-width:100%!important;overflow-wrap:anywhere!important}
+  .mylco-wow-hero__actions,.mylco-wow-hero__catalog,.mylco-need-strip__wrap{width:100%!important;max-width:100%!important}
+  .mylco-wow-hero__actions a,.mylco-wow-hero__catalog a,.mylco-need-strip a{max-width:100%!important;white-space:normal!important}
+}
+
+/* Mobile width correction — padding не должен добавлять лишние 32px */
+@media (max-width:980px){
+  html *,html *:before,html *:after{box-sizing:border-box!important}
+  .mylco-wow-hero__wrap,.mylco-need-strip__wrap,.mylco-core-products__wrap,.mylco-hit-skus__wrap,.mylco-same-day__wrap,.mylco-urgent-route__wrap,.mylco-audience-strip__wrap,.mylco-task-matrix__wrap,.mylco-lead-strip__wrap,.mylco-brief-builder__wrap,.mylco-trust-strip__wrap,.mylco-b2b-strip__wrap,.mylco-order-path__wrap,.mylco-quick-picker__wrap,.mylco-consumption-calc__wrap,.mylco-popular-products__wrap,.mylco-ready-kits__wrap{width:auto!important;max-width:none!important;margin-left:0!important;margin-right:0!important}
+  .mylco-wow-hero__eyebrow,.mylco-wow-hero__lead,.mylco-wow-hero__proof,.mylco-wow-hero__proof span,.mylco-wow-hero__actions,.mylco-wow-hero__actions a,.mylco-wow-hero__catalog,.mylco-wow-hero__catalog a,.mylco-need-strip__title,.mylco-need-strip a,.mylco-core-product,.mylco-hit-sku{width:auto!important;max-width:100%!important;min-width:0!important}
+  .mylco-wow-hero__eyebrow{display:inline-flex!important;white-space:normal!important;max-width:calc(100vw - 32px)!important}
+  .mylco-wow-hero__actions{display:grid!important;grid-template-columns:1fr!important}
+  .mylco-wow-hero__actions a{display:flex!important}
+  .header--v4 .topbar .container-fluid{padding-left:12px!important;padding-right:12px!important}
+  .header--v4 .topbar .col-auto:has(.cart){display:none!important;width:0!important;max-width:0!important;padding:0!important;margin:0!important;overflow:hidden!important}
+}
+
+/* Mobile safe gutter — гарантированный правый отступ */
+@media (max-width:980px){
+  .mylco-wow-hero__wrap,.mylco-need-strip__wrap,.mylco-core-products__wrap,.mylco-hit-skus__wrap{padding-left:16px!important;padding-right:28px!important}
+  .mylco-wow-hero__eyebrow,.mylco-wow-hero h1,.mylco-wow-hero__lead,.mylco-wow-hero__proof,.mylco-wow-hero__proof span,.mylco-wow-hero__actions,.mylco-wow-hero__actions a,.mylco-wow-hero__catalog,.mylco-wow-hero__catalog a,.mylco-hero-line,.mylco-need-strip__title,.mylco-need-strip a,.mylco-core-product,.mylco-hit-sku{max-width:calc(100vw - 44px)!important}
+  .mylco-wow-hero h1,.mylco-wow-hero__lead,.mylco-core-product span,.mylco-hit-sku span{word-break:normal!important;overflow-wrap:break-word!important;hyphens:auto!important}
+}
+@media (max-width:420px){
+  .mylco-wow-hero__wrap,.mylco-need-strip__wrap,.mylco-core-products__wrap,.mylco-hit-skus__wrap{padding-right:32px!important}
+  .mylco-wow-hero__eyebrow,.mylco-wow-hero h1,.mylco-wow-hero__lead,.mylco-wow-hero__proof,.mylco-wow-hero__proof span,.mylco-wow-hero__actions,.mylco-wow-hero__actions a,.mylco-wow-hero__catalog,.mylco-wow-hero__catalog a,.mylco-hero-line,.mylco-need-strip__title,.mylco-need-strip a,.mylco-core-product,.mylco-hit-sku{max-width:calc(100vw - 52px)!important}
+}
+
+/* Mobile final clamp */
+@media (max-width:980px){
+  html,body{min-width:0!important;width:100%!important;max-width:100%!important;position:relative!important}
+  .mylco-wow-hero{width:100%!important;max-width:100%!important;contain:paint!important}
+  .mylco-wow-hero:before,.mylco-wow-hero:after{display:none!important}
+  .mylco-wow-hero__wrap{display:block!important;width:100%!important;max-width:100%!important;padding:34px 24px 34px 16px!important;margin:0!important;transform:none!important}
+  .mylco-wow-hero__wrap>div{width:100%!important;max-width:100%!important;min-width:0!important}
+  .mylco-wow-hero__eyebrow{max-width:100%!important;width:auto!important;font-size:10px!important;line-height:1.25!important;padding:8px 10px!important}
+  .mylco-wow-hero h1{display:block!important;width:100%!important;max-width:100%!important;font-size:34px!important;line-height:1.02!important;letter-spacing:-.045em!important;margin-right:0!important}
+  .mylco-wow-hero__lead{display:block!important;width:100%!important;max-width:100%!important;font-size:16px!important;line-height:1.45!important;margin-right:0!important}
+  .mylco-wow-hero__proof--compact,.mylco-wow-hero__proof--compact span,.mylco-wow-hero__actions,.mylco-wow-hero__catalog{width:100%!important;max-width:100%!important;margin-right:0!important}
+  .mylco-wow-hero__actions a,.mylco-wow-hero__catalog a{width:100%!important;max-width:100%!important;margin-right:0!important}
+}
+
+/* Mobile header overflow final: убираем выпадашки и корзину из потока */
+@media (max-width:980px){
+  .header--v4 .cart,.header--v4 .cart__dropdown,.header--v4 .phone__dropdown{display:none!important;visibility:hidden!important;pointer-events:none!important}
+  .header--v4 .topbar .col-auto:last-child{display:none!important;width:0!important;max-width:0!important;padding:0!important;margin:0!important;overflow:hidden!important}
+}
 </style>
 
 </head>
