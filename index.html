@@ -1189,6 +1189,17 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 </style>
 
 
+
+<style id="mylco-sprint-kit-builder-15">
+/* Sprint 15: комплектность заказа — покупатель видит не один товар, а готовую закупочную связку Mylco. */
+.mx-kit-builder{background:#fff;border-bottom:1px solid var(--mx-line)}
+.mx-kit-builder__grid{display:grid;grid-template-columns:.9fr repeat(4,1fr);gap:12px;padding-top:28px;padding-bottom:30px;align-items:stretch}
+.mx-kit-builder__lead,.mx-kit-builder__card{border:1px solid var(--mx-line);border-radius:26px;background:linear-gradient(180deg,#fff,#f8fbf8);padding:22px;box-shadow:0 16px 44px rgba(16,37,28,.07)}
+.mx-kit-builder__lead{background:#0b1f17;color:#fff}.mx-kit-builder__lead small,.mx-kit-builder__card small{display:inline-flex;margin-bottom:12px;border-radius:999px;background:#23b86a;color:#092015;padding:7px 10px;font-size:11px;font-weight:900;text-transform:uppercase}.mx-kit-builder__lead b,.mx-kit-builder__card b{display:block;font-size:24px;line-height:1.05;letter-spacing:-.04em}.mx-kit-builder__lead span{display:block;margin-top:9px;color:rgba(255,255,255,.74);line-height:1.4}.mx-kit-builder__card{display:flex;flex-direction:column;color:var(--mx-ink)!important;text-decoration:none!important}.mx-kit-builder__card span{display:block;margin-top:9px;color:var(--mx-muted);line-height:1.38}.mx-kit-builder__card ul{margin:13px 0 0;padding:0;list-style:none;display:grid;gap:7px;color:var(--mx-muted);font-size:14px}.mx-kit-builder__card li{position:relative;padding-left:18px}.mx-kit-builder__card li:before{content:"✓";position:absolute;left:0;top:0;color:#11864d;font-weight:900}.mx-kit-builder__card strong{margin-top:auto;padding-top:16px;color:#11864d}.mx-kit-builder__card--hot{border-color:rgba(35,184,106,.45);background:linear-gradient(180deg,#fff,#eefaf4)}
+@media(max-width:1080px){.mx-kit-builder__grid{grid-template-columns:1fr 1fr}.mx-kit-builder__lead{grid-column:1/-1}}
+@media(max-width:640px){.mx-kit-builder__grid{grid-template-columns:1fr;padding-top:18px;padding-bottom:22px}.mx-kit-builder__lead{grid-column:auto}.mx-kit-builder__lead,.mx-kit-builder__card{border-radius:22px;padding:18px}.mx-kit-builder__lead b,.mx-kit-builder__card b{font-size:22px}}
+</style>
+
 <style id="mylco-hero-quick-contact-sprint">
 /* Sprint: первый экран сразу даёт товарный маршрут и живой контакт, не уводя фокус с каталога. */
 .mx-hero-quick{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;max-width:820px}
@@ -2274,6 +2285,16 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
       </div>
     </div>
   </section>
+  <section class="mx-kit-builder" aria-label="Комплектный заказ Mylco">
+    <div class="mx-wrap mx-kit-builder__grid">
+      <div class="mx-kit-builder__lead"><small>комплект к заказу</small><b>Что добавить к основному материалу, чтобы заказ был полным</b><span>Блок усиливает продажу ядра Mylco: клиент видит базовый товар, расходники и оборудование в одной закупочной логике.</span></div>
+      <a class="mx-kit-builder__card mx-kit-builder__card--hot" href="kupit-silikon-v-moskve/"><small>форма</small><b>Силикон</b><span>Основной товар для форм и тиражных отливок.</span><ul><li>разделитель или герметик</li><li>пигмент при необходимости</li><li>вводные: Shore, рельеф, тираж</li></ul><strong>Собрать форму →</strong></a>
+      <a class="mx-kit-builder__card" href="epoksidnaya-smola.html"><small>заливка</small><b>Эпоксидная смола</b><span>Для прозрачных, декоративных и технических заливок.</span><ul><li>красители и добавки</li><li>вакуум при пузырях</li><li>вводные: слой, объём, финиш</li></ul><strong>Собрать заливку →</strong></a>
+      <a class="mx-kit-builder__card" href="kupit-poliuretan-v-moskve/"><small>ресурс</small><b>Полиуретан</b><span>Для прочных форм, оснастки, вставок и рабочих деталей.</span><ul><li>твёрдость и нагрузка</li><li>расходники под форму</li><li>вводные: тираж, износ, срок</li></ul><strong>Выбрать полиуретан →</strong></a>
+      <a class="mx-kit-builder__card" href="vakuumnye-kamery.html"><small>качество</small><b>Вакуум</b><span>Когда нужно убрать пузырьки и стабилизировать результат.</span><ul><li>камера + насос</li><li>ёмкость под объём смеси</li><li>вводные: частота и материал</li></ul><strong>Подобрать вакуум →</strong></a>
+    </div>
+  </section>
+
 
   <section class="mx-section" id="kits" aria-labelledby="kits-title">
     <div class="mx-wrap">
