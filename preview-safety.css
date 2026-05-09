@@ -1,0 +1,11 @@
+/* Mylco preview safety layer.
+   Production launch checklist:
+   - change meta robots to index,follow;
+   - update canonical and og:url to the production domain;
+   - replace robots.txt Disallow:/ with the production crawl policy;
+   - remove/disable preview banners and disabled ecommerce states only after backend/CRM/cart are connected.
+*/
+.skip-link{position:absolute;left:12px;top:8px;z-index:100000;transform:translateY(-140%);padding:10px 14px;border-radius:12px;background:#0b1f17;color:#fff!important;font-weight:800;text-decoration:none;box-shadow:0 12px 30px rgba(0,0,0,.22)}
+.skip-link:focus{transform:translateY(0)}
+.mylco-preview-banner{display:flex;align-items:center;justify-content:center;gap:10px;padding:8px 14px;background:#fff7d7;color:#4d3500;border-bottom:1px solid #f2df98;font:600 13px/1.35 Arial,Helvetica,sans-serif;text-align:center;position:relative;z-index:9998}
+.mylco-preview-banner strong{font-weight:900}.mylco-preview-disabled{opacity:.55;cursor:not-allowed!important}.mylco-preview-disabled:after{content:" preview";display:inline-flex;margin-left:6px;padding:2px 6px;border-radius:999px;background:#fff7d7;color:#6a4a00;font-size:10px;font-weight:900;text-transform:uppercase}.mylco-preview-form-note{margin:10px 0 0;padding:10px 12px;border-radius:12px;background:#fff7d7;color:#4d3500;border:1px solid #f2df98;font:600 13px/1.35 Arial,Helvetica,sans-serif}.mylco-live-link{outline-offset:3px}.mylco-live-link:focus-visible{outline:3px solid #ffbf47}@media(max-width:640px){.mylco-preview-banner{font-size:12px;padding:7px 10px}}
