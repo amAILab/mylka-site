@@ -194,6 +194,13 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 @media (max-width:1000px){.mylco-partner-snapshot__wrap{grid-template-columns:1fr 1fr}.mylco-partner-snapshot__title{grid-column:1/-1}}
 @media (max-width:560px){.mylco-partner-snapshot__wrap{grid-template-columns:1fr;padding:14px 18px}.mylco-partner-snapshot__title{grid-column:auto}}
 
+.mylco-audience-strip{background:linear-gradient(180deg,#fbfefc 0%,#f1faf5 100%);border-bottom:1px solid #dcefe4}
+.mylco-audience-strip__wrap{max-width:1320px;margin:0 auto;padding:22px 24px;display:grid;grid-template-columns:minmax(240px,.8fr) repeat(4,minmax(0,1fr));gap:12px;align-items:stretch}
+.mylco-audience-strip__title{border-radius:20px;background:#fff;border:1px solid #dcefe4;padding:18px;box-shadow:0 10px 24px rgba(18,50,37,.05)}
+.mylco-audience-strip__title b{display:block;color:#139b50;text-transform:uppercase;letter-spacing:.06em;font-size:12px;margin-bottom:7px}.mylco-audience-strip__title span{display:block;color:#123225;font-size:22px;font-weight:900;line-height:1.12}.mylco-audience-card{display:flex;flex-direction:column;border-radius:20px;background:#fff;border:1px solid #dcefe4;padding:17px;text-decoration:none!important;color:#173529!important;box-shadow:0 10px 24px rgba(18,50,37,.05);transition:.18s ease}.mylco-audience-card:hover{transform:translateY(-1px);box-shadow:0 14px 30px rgba(18,50,37,.1);color:#173529!important}.mylco-audience-card b{color:#123225;font-size:16px;line-height:1.16;margin-bottom:7px}.mylco-audience-card span{color:#58665f;line-height:1.34;font-size:14px}.mylco-audience-card small{margin-top:auto;padding-top:11px;color:#139b50;font-weight:900;font-size:13px}
+@media (max-width:1080px){.mylco-audience-strip__wrap{grid-template-columns:repeat(2,minmax(0,1fr))}.mylco-audience-strip__title{grid-column:1/-1}}
+@media (max-width:560px){.mylco-audience-strip__wrap{grid-template-columns:1fr;padding:18px}.mylco-audience-strip__title{grid-column:auto}}
+
 .mylco-demo-nav{background:#fff;border-bottom:1px solid #dcefe4;position:relative;z-index:3}
 .mylco-demo-nav__wrap{max-width:1320px;margin:0 auto;padding:14px 24px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
 .mylco-demo-nav a{display:flex;flex-direction:column;gap:4px;border:1px solid #dcefe4;border-radius:16px;background:linear-gradient(180deg,#fbfefc 0%,#fff 100%);padding:13px 14px;text-decoration:none;color:#123225!important;box-shadow:0 10px 24px rgba(18,50,37,.05);transition:.18s ease}
@@ -1710,6 +1717,16 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
             <div class="mylco-partner-snapshot__item"><b>3. Услуги — как апсейл</b><span>STEP 3D подключается только для модели, скана, прототипа или реверса. Без курсов и обучения.</span></div>
           </div>
         </section>
+        <section class="mylco-audience-strip" aria-label="Кому Mylco помогает быстрее купить материал">
+          <div class="mylco-audience-strip__wrap">
+            <div class="mylco-audience-strip__title"><b>Сценарии покупки</b><span>Клиент сразу узнаёт свою задачу</span></div>
+            <a class="mylco-audience-card" href="kupit-silikon-v-moskve/"><b>Мастерская форм и декора</b><span>Силиконы, разделители, герметики и подсказка по твёрдости под форму.</span><small>В силиконы →</small></a>
+            <a class="mylco-audience-card" href="kupit-poliuretan-v-moskve/"><b>Малое производство</b><span>Полиуретаны, жидкие пластики и добавки для прочных деталей и серий.</span><small>В полиуретаны →</small></a>
+            <a class="mylco-audience-card" href="epoksidnaya-smola.html"><b>Макеты и прозрачные заливки</b><span>Эпоксидные смолы, пигменты и подбор по толщине слоя без лишней переписки.</span><small>В смолы →</small></a>
+            <a class="mylco-audience-card" href="vakuumnye-kamery.html"><b>Чистая заливка без пузырей</b><span>Вакуумные камеры, насосы и оснастка рядом с материалами Mylco.</span><small>В вакуум →</small></a>
+          </div>
+        </section>
+
         <nav class="mylco-demo-nav" aria-label="Быстрая навигация по preview Mylco">
           <div class="mylco-demo-nav__wrap">
             <a href="#mylco-popular"><b>Ходовые товары</b><span>силиконы, полиуретаны, смолы, вакуум</span></a>
