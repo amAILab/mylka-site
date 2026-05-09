@@ -1,0 +1,157 @@
+#!/usr/bin/env python3
+"""Generate Mylco product preview pages from data/mylco_products_template.csv.
+
+Safe preview generator:
+- keeps generated pages noindex/nofollow;
+- skips draft/hidden/no_page rows;
+- writes static HTML to generated/product-pages/;
+- does not touch live mylco.ru.
+"""
+from __future__ import annotations
+
+import csv
+import html
+from pathlib import Path
+from urllib.parse import quote
+
+ROOT = Path(__file__).resolve().parents[1]
+CSV_PATH = ROOT / "data" / "mylco_products_template.csv"
+OUT_DIR = ROOT / "generated" / "product-pages"
+
+
+def esc(value: str | None) -> str:
+    return html.escape((value or "").strip(), quote=True)
+
+
+def split_items(value: str | None) -> list[str]:
+    if not value:
+        return []
+    raw = value.replace(",", ";").split(";")
+    return [item.strip() for item in raw if item.strip()]
+
+
+def list_html(items: list[str]) -> str:
+    if not items:
+        return "<p class=\"muted\">Уточняется под задачу.</p>"
+    return "<ul class=\"list\">" + "".join(f"<li>{esc(item)}</li>" for item in items) + "</ul>"
+
+
+def mailto(row: dict[str, str]) -> str:
+    subject = quote(f"Mylco: подбор — {row.get('product_name','товар')}")
+    body = quote(
+        "Задача:\n"
+        "Фото/эскиз:\n"
+        "Размеры:\n"
+        "Тираж/объём:\n"
+        "Срок:\n"
+        "Условия эксплуатации:\n"
+        f"Интересует: {row.get('product_name','')}\n"
+    )
+    return f"mailto:order@mylco.ru?subject={subject}&body={body}"
+
+
+def render(row: dict[str, str]) -> str:
+    product = row.get("product_name", "Товар Mylco").strip() or "Товар Mylco"
+    title = row.get("seo_title") or row.get("hero_title") or product
+    desc = row.get("seo_description") or row.get("short_description") or "Mylco: подбор материала, добавок и оборудования под задачу."
+    hero_title = row.get("hero_title") or product
+    source_url = row.get("source_url", "").strip()
+    source_href = ("../../" + source_url) if source_url else "../../index.html"
+    category = row.get("category", "Материалы")
+    subcategory = row.get("subcategory", "")
+    benefits = split_items(row.get("key_benefits"))
+    limitations = split_items(row.get("limitations"))
+    what = split_items(row.get("what_to_send"))
+    related = split_items(row.get("related_products"))
+    compat = split_items(row.get("materials_compatibility"))
+    faq1q = row.get("faq_1_q", "Как понять, подходит ли материал?")
+    faq1a = row.get("faq_1_a", "Лучше прислать фото, размеры и условия эксплуатации — Mylco подберёт материал и комплектующие.")
+    faq2q = row.get("faq_2_q", "Можно ли подобрать комплект?")
+    faq2a = row.get("faq_2_a", "Да, можно подобрать материал, разделитель, добавки и вакуумное решение под задачу.")
+
+    return f"""<!doctype html>
+<html lang=\"ru\">
+<head>
+  <meta charset=\"utf-8\">
+  <meta name=\"robots\" content=\"noindex, nofollow\">
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+  <title>{esc(title)}</title>
+  <meta name=\"description\" content=\"{esc(desc)}\">
+  <style>
+    :root{{--ink:#13251d;--deep:#0d2a20;--green:#23b86a;--mint:#eaf8f0;--soft:#f6f4ef;--line:#dbe7de;--muted:#607168;--shadow:0 20px 56px rgba(13,42,32,.10)}}
+    *{{box-sizing:border-box}}body{{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--soft);line-height:1.5}}a{{color:inherit}}.wrap{{max-width:1120px;margin:0 auto;padding:32px 18px}}.crumbs{{font-size:13px;color:var(--muted);margin-bottom:14px}}.hero{{display:grid;grid-template-columns:minmax(0,1.16fr) minmax(300px,.84fr);gap:18px;align-items:stretch}}.hero-main,.card{{background:#fff;border:1px solid var(--line);border-radius:28px;padding:26px;box-shadow:var(--shadow)}}.hero-main{{background:radial-gradient(circle at 85% 15%,rgba(141,232,173,.30),transparent 30%),linear-gradient(135deg,#0d2a20,#168850);color:#fff}}.eyebrow,.tag{{display:inline-flex;border-radius:999px;padding:7px 10px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.04em}}.eyebrow{{border:1px solid rgba(255,255,255,.25);color:#dfffee}}.tag{{background:var(--mint);color:#11864d}}h1{{font-size:clamp(34px,5vw,58px);line-height:1;margin:18px 0 14px;letter-spacing:-.055em}}h2{{font-size:28px;line-height:1.1;letter-spacing:-.04em;margin:12px 0}}h3{{font-size:20px;margin:10px 0 8px}}.lead{{font-size:19px;color:rgba(255,255,255,.9);max-width:760px}}.actions{{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}}.btn{{display:inline-flex;align-items:center;justify-content:center;border-radius:15px;padding:14px 18px;text-decoration:none;font-weight:900}}.btn-main{{background:#fff;color:var(--deep)}}.btn-ghost{{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.24)}}.grid{{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}}.list{{margin:0;padding-left:19px}}.list li{{margin:6px 0}}.muted{{color:var(--muted)}}.brief{{background:var(--deep);color:#fff;border-radius:26px;padding:24px;margin-top:16px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center}}.brief p{{color:rgba(255,255,255,.82)}}.brief .btn{{background:var(--green);color:var(--deep)}}.facts{{display:grid;gap:10px;margin-top:12px}}.fact{{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:9px 0}}.fact b{{color:var(--deep)}}details{{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px 16px;margin-top:10px}}summary{{font-weight:900;cursor:pointer}}@media(max-width:760px){{.wrap{{padding:18px 14px}}.hero,.grid,.brief{{grid-template-columns:1fr}}.hero-main,.card{{border-radius:22px;padding:20px}}h1{{font-size:36px}}.lead{{font-size:16px}}.btn{{width:100%}}}}
+  </style>
+</head>
+<body>
+  <main class=\"wrap\">
+    <div class=\"crumbs\">Mylco / {esc(category)}{(' / ' + esc(subcategory)) if subcategory else ''}</div>
+    <section class=\"hero\">
+      <div class=\"hero-main\">
+        <span class=\"eyebrow\">{esc(category)} · Mylco</span>
+        <h1>{esc(hero_title)}</h1>
+        <p class=\"lead\">{esc(row.get('short_description'))}</p>
+        <div class=\"actions\">
+          <a class=\"btn btn-main\" href=\"{mailto(row)}\">Подобрать под задачу</a>
+          <a class=\"btn btn-ghost\" href=\"{esc(source_href)}\">Открыть исходную страницу</a>
+        </div>
+      </div>
+      <aside class=\"card\">
+        <span class=\"tag\">Быстрый подбор</span>
+        <h2>Что прислать</h2>
+        {list_html(what)}
+        <div class=\"facts\">
+          <div class=\"fact\"><span>Фасовка</span><b>{esc(row.get('package_weight') or 'уточнить')}</b></div>
+          <div class=\"fact\"><span>Наличие</span><b>{esc(row.get('availability') or 'уточнить')}</b></div>
+          <div class=\"fact\"><span>Твёрдость</span><b>{esc(row.get('shore_or_hardness') or 'подбирается')}</b></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class=\"grid\">
+      <div class=\"card\"><span class=\"tag\">Применение</span><h2>Где использовать</h2><p>{esc(row.get('main_use'))}</p>{list_html(compat)}</div>
+      <div class=\"card\"><span class=\"tag\">Плюсы</span><h2>Почему берут</h2>{list_html(benefits)}</div>
+      <div class=\"card\"><span class=\"tag\">Ограничения</span><h2>Где проверить</h2>{list_html(limitations)}</div>
+    </section>
+
+    <section class=\"grid\">
+      <div class=\"card\"><span class=\"tag\">Комплект</span><h2>С чем часто берут</h2>{list_html(related)}</div>
+      <div class=\"card\"><span class=\"tag\">FAQ</span><details open><summary>{esc(faq1q)}</summary><p>{esc(faq1a)}</p></details><details><summary>{esc(faq2q)}</summary><p>{esc(faq2a)}</p></details></div>
+      <div class=\"card\"><span class=\"tag\">Важно</span><h2>Не гадать по названию</h2><p class=\"muted\">Материал выбирается под геометрию, нагрузку, температуру, тираж и требования к поверхности. Если сомневаетесь — начните с фото и размеров.</p></div>
+    </section>
+
+    <section class=\"brief\">
+      <div><h2>Сомневаетесь в материале?</h2><p>Mylco предложит материал, разделитель, добавки и вакуумное решение. Если нужна мастер-модель или прототип, можно подключить STEP 3D как производственную помощь.</p></div>
+      <a class=\"btn\" href=\"{mailto(row)}\">Отправить задачу</a>
+    </section>
+  </main>
+</body>
+</html>
+"""
+
+
+def should_generate(row: dict[str, str]) -> bool:
+    status = row.get("status", "").strip().lower()
+    page_type = row.get("page_type", "").strip().lower()
+    return status == "active" and page_type not in {"", "no_page"}
+
+
+def main() -> None:
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    generated = []
+    with CSV_PATH.open(newline="", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            if not should_generate(row):
+                continue
+            slug = (row.get("slug") or row.get("product_name") or "product").strip()
+            safe_slug = "".join(ch if ch.isalnum() or ch in "-_" else "-" for ch in slug.lower()).strip("-")
+            out = OUT_DIR / f"{safe_slug}.html"
+            out.write_text(render(row), encoding="utf-8")
+            generated.append(out)
+    print(f"Generated {len(generated)} pages:")
+    for path in generated:
+        print(f"- {path.relative_to(ROOT)}")
+
+
+if __name__ == "__main__":
+    main()
