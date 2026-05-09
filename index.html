@@ -1098,6 +1098,16 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 @media(max-width:760px){.mylco-proof-grid{grid-template-columns:1fr}.mylco-proof-grid div{min-height:auto;border-radius:24px}}
 </style>
 
+
+<style id="mylco-portal-sprint-start">
+.mylco-portal-map{background:#0d2a20;color:#fff;border-bottom:1px solid rgba(255,255,255,.12)}
+.mylco-portal-map__grid{display:grid;grid-template-columns:.92fr repeat(4,1fr);gap:12px;align-items:stretch;padding:20px 24px}
+.mylco-portal-map__lead,.mylco-portal-map__card{border:1px solid rgba(255,255,255,.14);border-radius:24px;background:rgba(255,255,255,.07);padding:20px;box-shadow:0 18px 48px rgba(0,0,0,.16)}
+.mylco-portal-map__lead b,.mylco-portal-map__card b{display:block;color:#fff;font-size:22px;line-height:1.05;letter-spacing:-.035em}.mylco-portal-map__lead span,.mylco-portal-map__card span{display:block;margin-top:8px;color:rgba(255,255,255,.72);line-height:1.35}.mylco-portal-map__card{text-decoration:none!important;color:#fff!important;position:relative;overflow:hidden}.mylco-portal-map__card small{display:inline-flex;align-items:center;width:max-content;border-radius:999px;background:#23b86a!important;color:#0d2a20!important;padding:6px 9px!important;font-weight:900!important;font-size:11px!important;text-transform:uppercase;margin-bottom:12px}.mylco-portal-map__card strong{display:block;margin-top:14px;color:#8de8ad}.mylco-portal-map__card:after{content:"";position:absolute;right:-24px;bottom:-24px;width:86px;height:86px;border-radius:50%;background:rgba(141,232,173,.16)}
+@media(max-width:980px){.mylco-portal-map__grid{grid-template-columns:1fr 1fr}.mylco-portal-map__lead{grid-column:1/-1}}
+@media(max-width:560px){.mylco-portal-map__grid{grid-template-columns:1fr;padding:16px}.mylco-portal-map__lead{grid-column:auto}.mylco-portal-map__lead b,.mylco-portal-map__card b{font-size:20px}}
+</style>
+
 </head>
   <body class="page-homepage">
 <div class="app app--v4">
@@ -2009,6 +2019,17 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
         <div><b>Подбор технолога</b><span>По Shore, тиражу, нагрузке, толщине слоя, пузырям, сроку и бюджету.</span></div>
         <div><b>Для мастеров и юрлиц</b><span>Каталог, расходники, оборудование, счёт, документы, самовывоз в Москве и доставка.</span></div>
       </aside>
+    </div>
+  </section>
+
+
+  <section class="mylco-portal-map" aria-label="Портальная структура Mylco">
+    <div class="mylco-wrap mylco-portal-map__grid">
+      <div class="mylco-portal-map__lead"><b>Портал Mylco строится вокруг покупки, а не вокруг витрины</b><span>Четыре входа закрывают разные типы клиентов: быстрый каталог, подбор по задаче, комплект для работы и закупка для юрлица.</span></div>
+      <a class="mylco-portal-map__card" href="#mylco-catalog"><small>01</small><b>Каталог</b><span>Силиконы, полиуретаны, смолы, пластики, вакуум и расходники.</span><strong>Открыть →</strong></a>
+      <a class="mylco-portal-map__card" href="#mylco-task-picker"><small>02</small><b>Подбор</b><span>Задача клиента переводится в материал, фасовку и сопутствующие товары.</span><strong>Выбрать →</strong></a>
+      <a class="mylco-portal-map__card" href="#mylco-ready-kits"><small>03</small><b>Комплект</b><span>Материал + разделитель + пигмент + вакуум + рекомендации.</span><strong>Собрать →</strong></a>
+      <a class="mylco-portal-map__card" href="#mylco-brief"><small>04</small><b>B2B-заявка</b><span>Счёт, документы, регулярная поставка, самовывоз или доставка.</span><strong>Отправить →</strong></a>
     </div>
   </section>
 
