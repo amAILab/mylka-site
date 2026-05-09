@@ -1066,6 +1066,23 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 @media(max-width:380px){.mylco-actions{grid-template-columns:1fr!important}.mylco-hero-fast-cats{grid-template-columns:1fr!important}}
 </style>
 
+
+<style id="mylco-sprint-05-hot-skus-css">
+/* Sprint 05: популярные позиции выше сгиба каталога — партнёр сразу видит коммерческое ядро Mylco. */
+.mylco-hot-skus{background:#fffef9}
+.mylco-hot-skus__grid{display:grid;grid-template-columns:1.15fr repeat(4,minmax(0,1fr));gap:12px}
+.mylco-hot-skus__lead,.mylco-hot-sku{border:1px solid #dbe7de;border-radius:24px;background:linear-gradient(180deg,#fff,#f8fbf8);padding:20px;box-shadow:0 16px 44px rgba(13,42,32,.075)}
+.mylco-hot-skus__lead{background:linear-gradient(135deg,#0d2a20,#168850);color:#fff;border-color:rgba(141,232,173,.34)}
+.mylco-hot-skus__lead b,.mylco-hot-sku b{display:block;font-size:21px;line-height:1.08;letter-spacing:-.035em}
+.mylco-hot-skus__lead span,.mylco-hot-sku span{display:block;margin-top:8px;line-height:1.38;color:#607168}
+.mylco-hot-skus__lead span{color:#d9ffe8}
+.mylco-hot-sku{display:flex;flex-direction:column;color:#13251d!important;text-decoration:none!important;min-height:205px}
+.mylco-hot-sku small{align-self:flex-start;margin-bottom:12px;border-radius:999px;background:#eaf8f0;color:#11864d;padding:7px 10px;font-size:11px;font-weight:900;text-transform:uppercase}
+.mylco-hot-sku strong{margin-top:auto;color:#11864d;font-size:15px}
+@media(max-width:1100px){.mylco-hot-skus__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mylco-hot-skus__lead{grid-column:1/-1}}
+@media(max-width:760px){.mylco-hot-skus__grid{grid-template-columns:1fr}.mylco-hot-sku{min-height:auto}}
+</style>
+
 </head>
   <body class="page-homepage">
 <div class="app app--v4">
@@ -2012,6 +2029,24 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
     </div>
   </section>
 
+
+
+  <section class="mylco-section mylco-hot-skus" aria-labelledby="mylco-hot-skus-title">
+    <div class="mylco-wrap">
+      <div class="mylco-section-head">
+        <p class="mylco-kicker">Популярные позиции</p>
+        <h2 id="mylco-hot-skus-title">Хиты каталога, с которых чаще всего начинается заказ</h2>
+        <p>Блок держит в фокусе основной бизнес Mylco: материалы, расходники и вакуумное оборудование. STEP 3D остаётся только вспомогательной производственной услугой ниже по странице.</p>
+      </div>
+      <div class="mylco-hot-skus__grid">
+        <div class="mylco-hot-skus__lead"><b>Сначала — товар, потом уточнение</b><span>Клиент сразу видит коммерческие входы: открыть категорию, выбрать серию или отправить задачу менеджеру для точного комплекта.</span></div>
+        <a class="mylco-hot-sku" href="kupit-silikon-v-moskve/"><small>формы</small><b>Силиконы для форм</b><span>Платиновые и оловянные составы под гипс, смолу, воск, мыло, бетон и декор.</span><strong>Открыть категорию →</strong></a>
+        <a class="mylco-hot-sku" href="kupit-poliuretan-v-moskve/"><small>серия / ресурс</small><b>Полиуретаны</b><span>Материалы для форм, оснастки, рабочих деталей и малосерийных изделий.</span><strong>Смотреть полиуретаны →</strong></a>
+        <a class="mylco-hot-sku" href="epoksidnaya-smola.html"><small>заливка</small><b>Эпоксидные смолы</b><span>Прозрачные и декоративные заливки, покрытия, макеты, сувениры и пигменты.</span><strong>Открыть смолы →</strong></a>
+        <a class="mylco-hot-sku" href="vakuumnye-kamery.html"><small>оборудование</small><b>Вакуумные камеры</b><span>Камеры, насосы и комплектующие для дегазации материалов и стабильной заливки.</span><strong>Подобрать вакуум →</strong></a>
+      </div>
+    </div>
+  </section>
 
   <section id="mylco-choice" class="mylco-section" aria-labelledby="mylco-choice-title">
     <div class="mylco-wrap">
