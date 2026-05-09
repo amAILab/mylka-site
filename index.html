@@ -989,6 +989,21 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 <style id="mylco-mobile-sticky-safearea-css">
 @media (max-width:760px){.mylco-final-cta,.mylco-clean-footer{padding-bottom:118px!important}.mylco-mobile-cta{bottom:calc(10px + env(safe-area-inset-bottom,0px))!important}}
 </style>
+<style id="mylco-sprint-04-industry-kits-css">
+/* Sprint 04: отраслевые стартовые наборы — быстро показывают клиенту готовый путь покупки без вытеснения каталога. */
+.mylco-industry-kits{background:#fff}
+.mylco-industry-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.mylco-industry-card{display:flex;flex-direction:column;min-height:245px;border:1px solid #dbe7de;border-radius:26px;background:linear-gradient(180deg,#fff,#f7fcf8);padding:20px;color:#13251d!important;text-decoration:none!important;box-shadow:0 16px 44px rgba(13,42,32,.075)}
+.mylco-industry-card small{align-self:flex-start;border-radius:999px;background:#eaf8f0;color:#11864d;padding:6px 9px;font-size:11px;font-weight:900;text-transform:uppercase}
+.mylco-industry-card b{margin:14px 0 8px;font-size:22px;line-height:1.04;letter-spacing:-.04em}
+.mylco-industry-card span{color:#607168;line-height:1.38}
+.mylco-industry-card ul{margin:14px 0 16px;padding-left:18px;color:#13251d;line-height:1.36}
+.mylco-industry-card strong{margin-top:auto;color:#11864d;font-size:15px}
+.mylco-industry-note{margin-top:14px;border:1px solid rgba(35,184,106,.30);border-radius:22px;background:#edfbf3;padding:16px 18px;color:#13251d;line-height:1.42}
+.mylco-industry-note b{font-size:18px;letter-spacing:-.025em}
+@media(max-width:1100px){.mylco-industry-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.mylco-industry-grid{grid-template-columns:1fr}.mylco-industry-card{min-height:auto}}
+</style>
 
 <style id="mylco-sprint-01-commercial-css">
 /* Sprint 01: компактная коммерческая полоса доверия под первым экраном. */
@@ -2035,6 +2050,26 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
         <a class="mylco-material-card" href="vakuumnye-kamery.html"><small>для качества</small><b>Вакуум</b><span>Камера, насос и комплектующие для дегазации силиконов, смол, полиуретанов и стабильной заливки.</span><ul><li>объём смеси;</li><li>размер ёмкости;</li><li>режим работы мастерской.</li></ul><strong>Открыть вакуум →</strong></a>
       </div>
       <div class="mylco-material-matrix__note"><b>Если клиент не знает материал — это нормально.</b> Достаточно описать изделие, размеры, тираж и срок: менеджер Mylco предложит категорию, комплект расходников и следующий шаг без лишней переписки.</div>
+    </div>
+  </section>
+
+
+
+  <section class="mylco-section mylco-industry-kits" aria-labelledby="mylco-industry-title">
+    <div class="mylco-wrap">
+      <div class="mylco-section-head">
+        <p class="mylco-kicker">По типу мастерской</p>
+        <h2 id="mylco-industry-title">Готовый маршрут покупки для вашей задачи</h2>
+        <p>Клиент быстрее узнаёт себя и попадает в основные категории Mylco: силиконы, полиуретаны, смолы, пластики, вакуум и расходники.</p>
+      </div>
+      <div class="mylco-industry-grid">
+        <a class="mylco-industry-card" href="kupit-silikon-v-moskve/"><small>свечи / мыло</small><b>Формы с чистой детализацией</b><span>Начните с силикона и сразу уточните разделитель, Shore и материал заливки.</span><ul><li>силикон для формы;</li><li>разделитель;</li><li>тара и весы.</li></ul><strong>Смотреть силиконы →</strong></a>
+        <a class="mylco-industry-card" href="kupit-silikon-v-moskve/"><small>гипс / бетон</small><b>Формы для серийной отливки</b><span>Важны эластичность, ресурс формы, поднутрения и стабильное снятие изделия.</span><ul><li>силикон или полиуретан;</li><li>герметик для модели;</li><li>запас на литник.</li></ul><strong>Подобрать форму →</strong></a>
+        <a class="mylco-industry-card" href="epoksidnaya-smola.html"><small>декор</small><b>Прозрачная заливка без пузырей</b><span>Смола под толщину слоя, пигменты и вакуум при сложной геометрии.</span><ul><li>эпоксидная смола;</li><li>пигменты / добавки;</li><li>вакуум по объёму.</li></ul><strong>Смотреть смолы →</strong></a>
+        <a class="mylco-industry-card" href="kupit-poliuretan-v-moskve/"><small>производство</small><b>Рабочие детали и малая серия</b><span>Полиуретаны и жидкие пластики под нагрузку, точность, тираж и условия эксплуатации.</span><ul><li>полиуретан / пластик;</li><li>форма и разделитель;</li><li>счёт для юрлица.</li></ul><strong>Смотреть материалы →</strong></a>
+        <a class="mylco-industry-card" href="vakuumnye-kamery.html"><small>мастерская</small><b>Стабильная дегазация</b><span>Камера, насос и комплектующие под объём смеси, ёмкость и частоту работы.</span><ul><li>камера + насос;</li><li>шланги и расходники;</li><li>режим дегазации.</li></ul><strong>Подобрать вакуум →</strong></a>
+      </div>
+      <div class="mylco-industry-note"><b>Не уверены, какой маршрут ваш?</b> Отправьте фото изделия, размеры, тираж и срок — менеджер Mylco соберёт рабочий комплект из основных товаров и расходников.</div>
     </div>
   </section>
 
