@@ -340,6 +340,18 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 .mylco-b2b-strip__card b{color:#123225;font-size:17px;line-height:1.2}.mylco-b2b-strip__card span{color:#58665f;line-height:1.36}.mylco-b2b-strip__card a{margin-top:auto;color:#139b50!important;font-weight:900;text-decoration:none}
 @media (max-width:960px){.mylco-b2b-strip__wrap{grid-template-columns:1fr}.mylco-b2b-strip__grid{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.mylco-b2b-strip__wrap{padding:20px 18px}.mylco-b2b-strip__grid{grid-template-columns:1fr}.mylco-b2b-strip__intro{padding:20px}.mylco-b2b-strip__card{min-height:auto}}
+
+.mylco-order-path{background:linear-gradient(180deg,#f8fcfa 0%,#fff 100%);border-bottom:1px solid #dcefe4;padding:30px 0 34px}
+.mylco-order-path__wrap{max-width:1320px;margin:0 auto;padding:0 24px}
+.mylco-order-path__head{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:18px;align-items:end;margin-bottom:16px}
+.mylco-order-path__head h2{font-size:clamp(26px,3vw,38px);line-height:1.12;margin:0;color:#123225}.mylco-order-path__head p{margin:0;color:#58665f;font-size:16px;line-height:1.45}
+.mylco-order-path__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.mylco-order-step{position:relative;border:1px solid #dcefe4;border-radius:22px;background:#fff;padding:20px 18px;color:#173529;box-shadow:0 12px 28px rgba(18,50,37,.06);overflow:hidden}
+.mylco-order-step:before{content:attr(data-step);display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:12px;background:#123225;color:#fff;font-weight:900;margin-bottom:12px}
+.mylco-order-step b{display:block;color:#123225;font-size:18px;line-height:1.18;margin-bottom:8px}.mylco-order-step span{display:block;color:#58665f;line-height:1.38}
+.mylco-order-path__cta{margin-top:14px;border-radius:22px;background:#123225;color:#fff;padding:18px 20px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center}.mylco-order-path__cta b{display:block;font-size:18px;margin-bottom:4px}.mylco-order-path__cta span{color:rgba(255,255,255,.82);line-height:1.4}.mylco-order-path__cta a{display:inline-flex;align-items:center;justify-content:center;border-radius:13px;background:#2dcc70;color:#123225!important;padding:13px 18px;text-decoration:none;font-weight:900;white-space:nowrap}
+@media (max-width:1000px){.mylco-order-path__head{grid-template-columns:1fr}.mylco-order-path__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mylco-order-path__cta{grid-template-columns:1fr}.mylco-order-path__cta a{width:100%}}
+@media (max-width:560px){.mylco-order-path{padding:24px 0 28px}.mylco-order-path__wrap{padding:0 18px}.mylco-order-path__grid{grid-template-columns:1fr}}
 .mylco-mobile-cta{display:none}
 @media (max-width:960px){.mylco-trust-strip__wrap{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:760px){.mylco-lead-strip__wrap{grid-template-columns:1fr;padding:15px 18px}.mylco-lead-strip__actions{justify-content:stretch}.mylco-lead-strip__btn{flex:1}.mylco-trust-strip__wrap{grid-template-columns:1fr;padding:12px 18px}.mylco-mobile-cta{position:fixed;left:10px;right:10px;bottom:10px;z-index:9998;display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;background:rgba(18,50,37,.96);border:1px solid rgba(255,255,255,.18);box-shadow:0 14px 34px rgba(0,0,0,.28);border-radius:18px;padding:8px}.mylco-mobile-cta a{display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:13px;text-decoration:none;font-weight:900;text-align:center}.mylco-mobile-cta__catalog{background:#fff;color:#123225!important}.mylco-mobile-cta__brief{background:#2dcc70;color:#123225!important}.mylco-mobile-cta__call{background:#eefaf4;color:#123225!important}body{padding-bottom:76px}}
@@ -1731,6 +1743,27 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
               <div class="mylco-b2b-strip__card"><b>Счёт и комплект под задачу</b><span>Силикон, полиуретан, смола, разделитель и вакуум — менеджер соберёт связку без лишних позиций.</span><a href="mailto:order@mylco.ru?subject=Mylco%3A%20%D1%81%D1%87%D1%91%D1%82%20%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82%20%D0%BF%D0%BE%D0%B4%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D1%83">Запросить счёт →</a></div>
               <div class="mylco-b2b-strip__card"><b>Быстрая замена материала</b><span>Если нужной позиции нет или срок горит — подберём близкий материал по твёрдости, прозрачности и условиям работы.</span><a href="contact-us.html">Подобрать аналог →</a></div>
               <div class="mylco-b2b-strip__card"><b>Самовывоз и консультация</b><span>Москва, Востряковский проезд: удобно забрать ходовые материалы и уточнить технологию применения.</span><a href="tel:+74950058314">Позвонить →</a></div>
+            </div>
+          </div>
+        </section>
+
+
+
+        <section class="mylco-order-path" aria-label="Как быстро оформить заказ Mylco">
+          <div class="mylco-order-path__wrap">
+            <div class="mylco-order-path__head">
+              <h2>Понятный путь от выбора материала до заказа</h2>
+              <p>Сначала выбираем основные товары Mylco, затем уточняем задачу и собираем рабочий комплект. Производственные услуги подключаются только когда нужны модель, прототип или сканирование.</p>
+            </div>
+            <div class="mylco-order-path__grid">
+              <div class="mylco-order-step" data-step="1"><b>Выберите основную категорию</b><span>Силикон, полиуретан, эпоксидная смола, жидкий пластик, добавки или вакуумное оборудование.</span></div>
+              <div class="mylco-order-step" data-step="2"><b>Пришлите вводные</b><span>Фото/эскиз, размеры, тираж, срок и условия эксплуатации — этого достаточно для первичного подбора.</span></div>
+              <div class="mylco-order-step" data-step="3"><b>Получите связку материалов</b><span>Mylco предложит не одну позицию, а комплект: материал, разделитель, добавки, вакуум и запас по расходу.</span></div>
+              <div class="mylco-order-step" data-step="4"><b>Подключите услугу при необходимости</b><span>Если нужна мастер-модель, прототип, 3D-печать или скан — это идёт как производственное усиление, не вместо каталога.</span></div>
+            </div>
+            <div class="mylco-order-path__cta">
+              <div><b>Для срочной задачи лучше начать с письма с фото и размерами.</b><span>Так менеджер быстрее поймёт, какой материал нужен, и сразу предложит следующий шаг: покупка, комплект или производственная услуга.</span></div>
+              <a href="mailto:order@mylco.ru?subject=Mylco%3A%20%D1%81%D1%80%D0%BE%D1%87%D0%BD%D1%8B%D0%B9%20%D0%BF%D0%BE%D0%B4%D0%B1%D0%BE%D1%80%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B0&body=%D0%A4%D0%BE%D1%82%D0%BE%2F%D1%8D%D1%81%D0%BA%D0%B8%D0%B7%3A%0A%D0%A0%D0%B0%D0%B7%D0%BC%D0%B5%D1%80%D1%8B%3A%0A%D0%A2%D0%B8%D1%80%D0%B0%D0%B6%3A%0A%D0%A1%D1%80%D0%BE%D0%BA%3A%0A%D0%9D%D1%83%D0%B6%D0%B5%D0%BD%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%2F%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82%2F%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B0%3A%0A">Отправить срочную задачу</a>
             </div>
           </div>
         </section>
