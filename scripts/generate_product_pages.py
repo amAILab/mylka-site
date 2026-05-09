@@ -129,6 +129,47 @@ def render(row: dict[str, str]) -> str:
 """
 
 
+def render_index(rows: list[dict[str, str]]) -> str:
+    cards = []
+    for row in rows:
+        slug = (row.get("slug") or row.get("product_name") or "product").strip()
+        safe_slug = "".join(ch if ch.isalnum() or ch in "-_" else "-" for ch in slug.lower()).strip("-")
+        cards.append(f"""
+        <a class=\"item\" href=\"{esc(safe_slug)}.html\">
+          <small>{esc(row.get('page_type'))} · priority {esc(row.get('priority'))}</small>
+          <b>{esc(row.get('product_name'))}</b>
+          <span>{esc(row.get('category'))}{(' / ' + esc(row.get('subcategory'))) if row.get('subcategory') else ''}</span>
+          <em>{esc(row.get('short_description'))}</em>
+        </a>""")
+    cards_html = "\n".join(cards) or "<p>Нет активных карточек.</p>"
+    return f"""<!doctype html>
+<html lang=\"ru\">
+<head>
+  <meta charset=\"utf-8\">
+  <meta name=\"robots\" content=\"noindex, nofollow\">
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+  <title>Mylco — автосгенерированные карточки товаров</title>
+  <style>
+    :root{{--ink:#13251d;--deep:#0d2a20;--green:#23b86a;--mint:#eaf8f0;--soft:#f6f4ef;--line:#dbe7de;--muted:#607168;--shadow:0 18px 48px rgba(13,42,32,.09)}}
+    *{{box-sizing:border-box}}body{{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--soft);line-height:1.5}}.wrap{{max-width:1120px;margin:0 auto;padding:34px 18px}}.hero{{background:linear-gradient(135deg,#0d2a20,#168850);color:#fff;border-radius:30px;padding:30px;box-shadow:var(--shadow)}}h1{{font-size:clamp(34px,5vw,58px);line-height:1;margin:0 0 12px;letter-spacing:-.055em}}.hero p{{max-width:760px;color:rgba(255,255,255,.84);font-size:18px}}.grid{{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}}.item{{display:flex;flex-direction:column;gap:8px;min-height:220px;background:#fff;border:1px solid var(--line);border-radius:24px;padding:20px;text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.18s ease}}.item:hover{{transform:translateY(-2px);border-color:#9bddb6}}.item small{{align-self:flex-start;background:var(--mint);color:#11864d;border-radius:999px;padding:6px 9px;font-weight:900;text-transform:uppercase;font-size:11px}}.item b{{font-size:22px;line-height:1.1;letter-spacing:-.035em}}.item span{{color:var(--muted);font-weight:800}}.item em{{font-style:normal;color:var(--muted);margin-top:auto}}.note{{margin-top:18px;color:var(--muted)}}@media(max-width:760px){{.wrap{{padding:18px 14px}}.hero{{border-radius:22px;padding:22px}}.grid{{grid-template-columns:1fr}}}}
+  </style>
+</head>
+<body>
+  <main class=\"wrap\">
+    <section class=\"hero\">
+      <h1>Автосгенерированные карточки Mylco</h1>
+      <p>Preview-индекс для проверки страниц, собранных из CSV. Все страницы закрыты от индексации и не заменяют живой каталог mylco.ru.</p>
+    </section>
+    <section class=\"grid\">
+      {cards_html}
+    </section>
+    <p class=\"note\">Источник: <code>data/mylco_products_template.csv</code>. Генератор: <code>scripts/generate_product_pages.py</code>.</p>
+  </main>
+</body>
+</html>
+"""
+
+
 def should_generate(row: dict[str, str]) -> bool:
     status = row.get("status", "").strip().lower()
     page_type = row.get("page_type", "").strip().lower()
@@ -138,6 +179,7 @@ def should_generate(row: dict[str, str]) -> bool:
 def main() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     generated = []
+    generated_rows = []
     with CSV_PATH.open(newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
@@ -148,7 +190,11 @@ def main() -> None:
             out = OUT_DIR / f"{safe_slug}.html"
             out.write_text(render(row), encoding="utf-8")
             generated.append(out)
-    print(f"Generated {len(generated)} pages:")
+            generated_rows.append(row)
+    index_path = OUT_DIR / "index.html"
+    index_path.write_text(render_index(generated_rows), encoding="utf-8")
+    generated.insert(0, index_path)
+    print(f"Generated {len(generated) - 1} pages + index:")
     for path in generated:
         print(f"- {path.relative_to(ROOT)}")
 
