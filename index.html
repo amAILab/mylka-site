@@ -1003,6 +1003,23 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 @media(max-width:1100px){.mylco-commerce-strip__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mylco-commerce-strip__lead{grid-column:1/-1}}
 @media(max-width:760px){.mylco-commerce-strip__grid{grid-template-columns:1fr;padding-top:14px;padding-bottom:14px}.mylco-commerce-strip__lead{grid-column:auto}.mylco-commerce-strip__lead,.mylco-commerce-strip__item{border-radius:20px;padding:16px}}
 </style>
+<style id="mylco-sprint-03-material-matrix-css">
+/* Sprint 03: наглядная матрица выбора материала — снижает сомнение перед заявкой и ведёт в ядро каталога Mylco. */
+.mylco-material-matrix{background:linear-gradient(180deg,#fff 0%,#f4fbf6 100%)}
+.mylco-material-matrix__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.mylco-material-card{position:relative;display:flex;flex-direction:column;min-height:292px;background:#fff;border:1px solid #dbe7de;border-radius:28px;padding:22px;color:#13251d!important;text-decoration:none!important;box-shadow:0 20px 60px rgba(13,42,32,.10);overflow:hidden}
+.mylco-material-card:before{content:"";position:absolute;left:0;right:0;top:0;height:7px;background:linear-gradient(90deg,#23b86a,#8de8ad)}
+.mylco-material-card small{align-self:flex-start;margin-top:5px;border-radius:999px;background:#eaf8f0;color:#11864d;padding:7px 10px;font-size:11px;font-weight:900;text-transform:uppercase}
+.mylco-material-card b{margin:16px 0 8px;font-size:26px;line-height:1;letter-spacing:-.045em}
+.mylco-material-card span{color:#607168;line-height:1.42}
+.mylco-material-card ul{margin:16px 0 18px;padding-left:18px;color:#13251d;line-height:1.4}
+.mylco-material-card li+li{margin-top:5px}
+.mylco-material-card strong{margin-top:auto;color:#11864d;font-size:15px}
+.mylco-material-matrix__note{margin-top:14px;border:1px solid #9ee0b9;border-radius:24px;background:#edfbf3;padding:18px 20px;color:#13251d;line-height:1.45;box-shadow:0 18px 48px rgba(13,42,32,.08)}
+.mylco-material-matrix__note b{display:block;margin-bottom:4px;font-size:20px;letter-spacing:-.03em}
+@media(max-width:1100px){.mylco-material-matrix__grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.mylco-material-matrix__grid{grid-template-columns:1fr}.mylco-material-card{min-height:auto;border-radius:24px}.mylco-material-card b{font-size:24px}}
+</style>
 <style id="mylco-sprint-02-product-cards-css">
 /* Sprint 02: карточки товаров яснее объясняют, кому подходит позиция и какой следующий шаг безопасен. */
 .mylco-product-card{gap:0}.mylco-product-card__fit{display:block;margin:0 0 12px;border-radius:16px;background:#f4fbf6;border:1px solid #dbe7de;padding:11px 12px;color:#607168;font-size:13px;line-height:1.32}.mylco-product-card__fit b{display:block;margin-bottom:3px;color:#13251d;font-size:13px;letter-spacing:0}.mylco-product-card__next{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;margin-top:auto}.mylco-product-card__next span{color:#607168;font-size:12px;font-weight:800}.mylco-product-card__next a{margin:0}.mylco-product-card--assist{border-color:#9ee0b9;background:linear-gradient(180deg,#fff,#effbf3)}.mylco-product-card--assist .mylco-product-card__next a{background:#23b86a;color:#0d2a20!important}@media(max-width:760px){.mylco-product-card__next{grid-template-columns:1fr}.mylco-product-card__next span{order:2;text-align:center}.mylco-product-card__fit{font-size:13px}}
@@ -1984,6 +2001,23 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
         <div><b>Покупка для мастерской или юрлица</b><span>Собрать список позиций, фасовки, регулярность закупки и реквизиты — менеджер подготовит счёт.</span></div>
         <div><b>Нет мастер-модели или нужна доработка</b><span>Основной заказ остаётся в Mylco, а STEP 3D подключается только как производственная помощь: скан, CAD или мастер-модель.</span></div>
       </div>
+    </div>
+  </section>
+
+  <section class="mylco-section mylco-material-matrix" aria-labelledby="mylco-material-matrix-title">
+    <div class="mylco-wrap">
+      <div class="mylco-section-head">
+        <p class="mylco-kicker">Как выбрать материал</p>
+        <h2 id="mylco-material-matrix-title">Быстрая матрица: задача → материал → что уточнить</h2>
+        <p>Помогает не утонуть в каталоге: основные товары Mylco остаются в центре, а заявка становится точнее уже с первого сообщения.</p>
+      </div>
+      <div class="mylco-material-matrix__grid">
+        <a class="mylco-material-card" href="kupit-silikon-v-moskve/"><small>для формы</small><b>Силикон</b><span>Когда нужно снять форму с мастер-модели и потом лить гипс, смолу, воск, мыло или декор.</span><ul><li>жёсткость Shore;</li><li>поднутрения и детализация;</li><li>материал будущей заливки.</li></ul><strong>Открыть силиконы →</strong></a>
+        <a class="mylco-material-card" href="kupit-poliuretan-v-moskve/"><small>для ресурса</small><b>Полиуретан</b><span>Для эластичных форм, рабочих вставок, оснастки и деталей, где важны прочность и тираж.</span><ul><li>нагрузка и износ;</li><li>жёсткость / эластичность;</li><li>условия эксплуатации.</li></ul><strong>Открыть полиуретаны →</strong></a>
+        <a class="mylco-material-card" href="epoksidnaya-smola.html"><small>для вида</small><b>Эпоксидная смола</b><span>Для прозрачных, декоративных и защитных заливок, покрытий, макетов и сувениров.</span><ul><li>толщина слоя;</li><li>прозрачность и пузырьки;</li><li>финиш и УФ-нагрузка.</li></ul><strong>Открыть смолы →</strong></a>
+        <a class="mylco-material-card" href="vakuumnye-kamery.html"><small>для качества</small><b>Вакуум</b><span>Камера, насос и комплектующие для дегазации силиконов, смол, полиуретанов и стабильной заливки.</span><ul><li>объём смеси;</li><li>размер ёмкости;</li><li>режим работы мастерской.</li></ul><strong>Открыть вакуум →</strong></a>
+      </div>
+      <div class="mylco-material-matrix__note"><b>Если клиент не знает материал — это нормально.</b> Достаточно описать изделие, размеры, тираж и срок: менеджер Mylco предложит категорию, комплект расходников и следующий шаг без лишней переписки.</div>
     </div>
   </section>
 
