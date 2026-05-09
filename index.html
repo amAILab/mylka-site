@@ -2288,18 +2288,23 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
   <div class="mylco-wrap mylco-ms-footer__bottom"><span>© Mylco</span><span>Материалы для ваших фантазий</span></div>
 </footer>
 <nav class="mylco-mobile-cta" aria-label="Быстрые действия Mylco">
+  <span>Быстро: наличие, счёт или подбор</span>
+  <a class="mylco-mobile-cta__primary" href="#mylco-brief">Подобрать</a>
   <a href="#mylco-catalog">Каталог</a>
-  <a href="#mylco-brief">Подобрать</a>
+  <a href="tel:+74950058314">Позвонить</a>
 </nav>
 <style id="mylco-mobile-cta-fix">
 @media (max-width:760px){
-  .mylco-mobile-cta{position:fixed!important;left:10px!important;right:10px!important;bottom:calc(10px + env(safe-area-inset-bottom,0px))!important;z-index:9999!important;display:grid!important;grid-template-columns:1fr 1fr!important;gap:8px!important;width:auto!important;max-width:calc(100vw - 20px)!important;min-height:0!important;padding:8px!important;border-radius:20px!important;background:rgba(13,42,32,.96)!important;box-shadow:0 18px 44px rgba(13,42,32,.30)!important;box-sizing:border-box!important;text-decoration:none!important}
+  .mylco-mobile-cta{position:fixed!important;left:10px!important;right:10px!important;bottom:calc(10px + env(safe-area-inset-bottom,0px))!important;z-index:9999!important;display:grid!important;grid-template-columns:1.15fr .95fr .9fr!important;gap:7px!important;width:auto!important;max-width:calc(100vw - 20px)!important;min-height:0!important;padding:8px!important;border-radius:20px!important;background:rgba(13,42,32,.96)!important;box-shadow:0 18px 44px rgba(13,42,32,.30)!important;box-sizing:border-box!important;text-decoration:none!important}
   .mylco-mobile-cta:before{content:none!important}
-  .mylco-mobile-cta a{display:flex!important;align-items:center!important;justify-content:center!important;min-width:0!important;min-height:46px!important;border-radius:14px!important;padding:0 10px!important;font-size:14px!important;font-weight:900!important;text-align:center!important;text-decoration:none!important;line-height:1.1!important}
-  .mylco-mobile-cta a:first-child{background:#fff!important;color:#0d2a20!important}
-  .mylco-mobile-cta a:last-child{background:#23b86a!important;color:#0d2a20!important}
+  .mylco-mobile-cta span{grid-column:1/-1!important;display:block!important;margin:0 2px 1px!important;color:rgba(255,255,255,.74)!important;font-size:11px!important;font-weight:800!important;line-height:1.1!important;text-align:center!important;letter-spacing:.01em!important}
+  .mylco-mobile-cta a{display:flex!important;align-items:center!important;justify-content:center!important;min-width:0!important;min-height:44px!important;border-radius:14px!important;padding:0 8px!important;font-size:13px!important;font-weight:900!important;text-align:center!important;text-decoration:none!important;line-height:1.1!important;white-space:normal!important}
+  .mylco-mobile-cta__primary{background:#23b86a!important;color:#0d2a20!important;box-shadow:0 10px 22px rgba(35,184,106,.28)!important}
+  .mylco-mobile-cta a:nth-of-type(2){background:#fff!important;color:#0d2a20!important}
+  .mylco-mobile-cta a:nth-of-type(3){background:rgba(255,255,255,.14)!important;border:1px solid rgba(255,255,255,.28)!important;color:#fff!important}
   body{padding-bottom:132px!important}
 }
+@media (max-width:370px){.mylco-mobile-cta{grid-template-columns:1fr 1fr!important}.mylco-mobile-cta a:last-child{grid-column:1/-1!important}}
 @media (min-width:761px){.mylco-mobile-cta{display:none!important}}
 </style>
 <style id="mylco-design-system-qa-06">
