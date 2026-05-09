@@ -7,7 +7,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="MobileOptimized" content="380">
     <base href="https://amailab.github.io/mylka-site/">
-    <title>Mylco — материалы и оборудование для форм, литья и прототипов</title>
+    <title>Mylco — магазин материалов для форм, литья и малых производств</title>
 
 
     <meta name="theme-color" content="#2dcc70">
@@ -933,6 +933,23 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 <style id="mylco-sprint-brief-css">
 .mylco-brief-hint{margin-top:18px;background:#fff;border:1px solid #dbe7de;border-radius:24px;padding:20px;box-shadow:0 20px 60px rgba(13,42,32,.10)}.mylco-brief-hint b{display:block;font-size:20px;letter-spacing:-.03em;color:#13251d}.mylco-brief-hint ul{margin:12px 0 0;padding-left:20px;color:#607168;line-height:1.45}.mylco-brief-hint li+li{margin-top:6px}@media (max-width:760px){.mylco-brief-hint{margin-top:14px}}
 </style>
+
+<style id="mylco-partner-route-css">
+.mylco-partner-route{background:#fff;border-bottom:1px solid #dbe7de}.mylco-partner-route__grid{display:grid;grid-template-columns:.95fr repeat(3,1fr);gap:12px;align-items:stretch}.mylco-partner-route__intro,.mylco-partner-step{border:1px solid #dbe7de;border-radius:24px;background:linear-gradient(180deg,#fff,#f8fbf8);padding:20px;box-shadow:0 20px 60px rgba(13,42,32,.08)}.mylco-partner-route__intro b,.mylco-partner-step b{display:block;color:#13251d;font-size:21px;letter-spacing:-.035em;line-height:1.08}.mylco-partner-route__intro span,.mylco-partner-step span{display:block;margin-top:8px;color:#607168;line-height:1.35}.mylco-partner-step{position:relative;text-decoration:none!important;color:#13251d!important}.mylco-partner-step small{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:10px;background:#23b86a;color:#0d2a20;font-weight:900;margin-bottom:12px}.mylco-partner-step strong{display:block;margin-top:12px;color:#11864d;font-size:14px}.mylco-hero-final__badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.mylco-hero-final__badges span{border:1px solid rgba(255,255,255,.20);background:rgba(255,255,255,.10);border-radius:999px;padding:8px 11px;color:#e7ffef;font-size:12px;font-weight:900}.mylco-hero-final__facts div:first-child{border-color:#9ee0b9;background:linear-gradient(180deg,#fff,#edfbf3)}@media (max-width:980px){.mylco-partner-route__grid{grid-template-columns:1fr 1fr}.mylco-partner-route__intro{grid-column:1/-1}}@media (max-width:760px){.mylco-partner-route__grid{grid-template-columns:1fr}.mylco-partner-route__intro{grid-column:auto}.mylco-hero-final__badges{display:grid;grid-template-columns:1fr 1fr}.mylco-hero-final__badges span{text-align:center}}@media (max-width:420px){.mylco-hero-final__badges{grid-template-columns:1fr}}
+</style>
+
+<style id="mylco-route-final-fixes">
+/* В превью оставляем чистую e-commerce шапку без пустой навигационной полосы старого шаблона. */
+.header--v4 .nav{display:none!important}.content{padding-top:0!important}
+@media (max-width:760px){.mylco-hero-final{padding-bottom:34px}.mylco-partner-route{padding-top:34px}}
+</style>
+
+<style id="mylco-mobile-hero-fixes">
+@media (max-width:760px){
+  .header--v4 .topbar{padding:6px 0!important;min-height:0!important}.header--v4 .topbar .row{min-height:44px!important}.header--v4 .logo{display:flex!important;align-items:center!important}.header--v4 .logo img{display:block!important;width:120px!important;max-width:120px!important}.header--v4 .phone__btn{width:38px!important;height:38px!important;border-radius:13px!important}.header--v4 .phone__btn:after{line-height:38px!important;font-size:18px!important}
+  .mylco-hero-final{padding-top:30px!important;padding-bottom:30px!important}.mylco-hero-final__facts{gap:10px!important}.mylco-hero-final__facts div{padding:16px!important;border-radius:20px!important}.mylco-hero-final__facts b{font-size:18px!important}.mylco-partner-route{padding-top:30px!important;padding-bottom:88px!important}.mylco-mobile-cta{min-height:48px!important;bottom:10px!important}
+}
+</style>
 </head>
   <body class="page-homepage">
 <div class="app app--v4">
@@ -1819,20 +1836,30 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
     <div class="mylco-wrap mylco-hero-final__grid">
       <div class="mylco-hero-final__content">
         <p class="mylco-kicker">Материалы · оборудование · подбор комплекта</p>
-        <h1 id="mylco-home-title">Mylco — материалы и оборудование для форм, литья и прототипов</h1>
-        <p class="mylco-hero-final__lead">Подберём силикон, полиуретан, смолу, жидкий пластик, разделитель и вакуум под вашу задачу. Если нужна мастер-модель, 3D-печать или сканирование — подключим STEP 3D.</p>
-        <p class="mylco-hero-final__trust">Материалы для форм, литья, макетов, декора и малых производств. Консультация технолога и помощь с подбором комплекта.</p>
+        <h1 id="mylco-home-title">Mylco — магазин материалов для форм, литья и малых производств</h1>
+        <p class="mylco-hero-final__lead">Подберём силикон, полиуретан, смолу, жидкий пластик, разделитель, пигменты и вакуумное оборудование под конкретную задачу — от формы и декора до прототипа и малой серии.</p>
+        <p class="mylco-hero-final__trust">Не просто каталог: поможем собрать комплект «материал + расходники + оборудование», уточнить наличие и подготовить заказ для мастера или юрлица.</p>
+        <div class="mylco-hero-final__badges"><span>самовывоз в Москве</span><span>подбор технолога</span><span>материалы + оборудование</span><span>счёт для юрлиц</span></div>
         <div class="mylco-actions" aria-label="Основные действия">
-          <a class="mylco-btn mylco-btn--primary" href="#mylco-catalog">Смотреть каталог</a>
-          <a class="mylco-btn mylco-btn--secondary" href="#mylco-task-picker">Подобрать материал</a>
-          <a class="mylco-btn mylco-btn--ghost" href="#mylco-brief">Отправить задачу с фото</a>
+          <a class="mylco-btn mylco-btn--primary" href="#mylco-catalog">Открыть каталог</a>
+          <a class="mylco-btn mylco-btn--secondary" href="#mylco-partner-route">Подобрать комплект</a>
+          <a class="mylco-btn mylco-btn--ghost" href="#mylco-brief">Отправить фото или список</a>
         </div>
       </div>
       <aside class="mylco-hero-final__facts" aria-label="Коротко о Mylco">
-        <div><b>Самовывоз в Москве</b><span>Востряковский проезд, 11 к.2</span></div>
-        <div><b>Подбор технолога</b><span>По фото, размерам, материалу, тиражу и сроку</span></div>
-        <div><b>Для мастеров и юрлиц</b><span>Материалы, оборудование, счёт и документы</span></div>
+        <div><b>Каталог → подбор → заявка</b><span>Сначала выбираете категорию, затем уточняем задачу и собираем заказ.</span></div>
+        <div><b>Подбор технолога</b><span>По фото, размерам, материалу, тиражу, сроку и приоритету.</span></div>
+        <div><b>Для мастеров и юрлиц</b><span>Материалы, оборудование, счёт, документы и самовывоз в Москве.</span></div>
       </aside>
+    </div>
+  </section>
+
+  <section id="mylco-partner-route" class="mylco-section mylco-partner-route" aria-labelledby="mylco-partner-route-title">
+    <div class="mylco-wrap mylco-partner-route__grid">
+      <div class="mylco-partner-route__intro"><b id="mylco-partner-route-title">Быстрый маршрут для заказа</b><span>Сделали путь понятным для партнёра: не искать вслепую, а быстро перейти от категории к подбору и заявке.</span></div>
+      <a class="mylco-partner-step" href="#mylco-catalog"><small>1</small><b>Каталог</b><span>Выберите группу: силикон, полиуретан, смола, пластик, вакуум или расходники.</span><strong>Перейти к категориям</strong></a>
+      <a class="mylco-partner-step" href="#mylco-task-picker"><small>2</small><b>Подбор</b><span>Если материал неизвестен — начните с задачи: форма, отливка, заливка, дегазация.</span><strong>Подобрать по задаче</strong></a>
+      <a class="mylco-partner-step" href="#mylco-brief"><small>3</small><b>Заявка</b><span>Отправьте фото, размеры, тираж, срок и приоритет — менеджер подготовит комплект.</span><strong>Заполнить бриф</strong></a>
     </div>
   </section>
 
@@ -1850,7 +1877,7 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
       <div class="mylco-section-head">
         <p class="mylco-kicker">Каталог</p>
         <h2 id="mylco-catalog-title">Категории материалов</h2>
-        <p>Выберите товарную группу или перейдите к подбору по задаче.</p>
+        <p>Категории оставлены как коммерческий вход: партнёр быстро понимает ассортимент и может сразу перейти к подбору комплекта.</p>
       </div>
       <div class="mylco-category-grid">
         <a class="mylco-category-card" href="kupit-silikon-v-moskve/"><small>формы</small><b>Силиконы</b><span>Для гипса, смолы, воска, мыла, декора и мастер-моделей.</span></a>
