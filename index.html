@@ -1218,6 +1218,15 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 .mx-hero-proofline b{display:block;color:#fff;font-size:15px;letter-spacing:-.02em}
 @media(max-width:760px){.mx-hero-proofline{grid-template-columns:1fr}.mx-hero-proofline span{padding:12px 13px}}
 </style>
+<style id="mylco-sprint-visible-sku-css">
+/* Sprint: добавили быстрый товарный слой — партнёр сразу видит не только категории, но и конкретные ходовые позиции Mylco. */
+.mx-visible-skus{background:#fff;border-bottom:1px solid var(--mx-line)}
+.mx-visible-skus__grid{display:grid;grid-template-columns:.9fr repeat(4,1fr);gap:14px;padding-top:28px;padding-bottom:30px;align-items:stretch}
+.mx-visible-skus__lead,.mx-visible-skus__card{border:1px solid var(--mx-line);border-radius:28px;background:linear-gradient(180deg,#fff,#f8fbf8);padding:22px;box-shadow:0 18px 52px rgba(16,37,28,.08)}
+.mx-visible-skus__lead{background:#0b1f17;color:#fff}.mx-visible-skus__lead small,.mx-visible-skus__card small{display:inline-flex;margin-bottom:12px;border-radius:999px;background:#23b86a;color:#092015;padding:7px 10px;font-size:11px;font-weight:900;text-transform:uppercase}.mx-visible-skus__lead b,.mx-visible-skus__card b{display:block;font-size:24px;line-height:1.05;letter-spacing:-.04em}.mx-visible-skus__lead span{display:block;margin-top:9px;color:rgba(255,255,255,.74);line-height:1.4}.mx-visible-skus__card{display:flex;flex-direction:column;color:var(--mx-ink)!important;text-decoration:none!important}.mx-visible-skus__card span{display:block;margin-top:9px;color:var(--mx-muted);line-height:1.38}.mx-visible-skus__card strong{margin-top:auto;padding-top:16px;color:#11864d}.mx-visible-skus__card--hot{border-color:rgba(35,184,106,.45);background:linear-gradient(180deg,#fff,#eefaf4)}
+@media(max-width:1080px){.mx-visible-skus__grid{grid-template-columns:1fr 1fr}.mx-visible-skus__lead{grid-column:1/-1}}
+@media(max-width:640px){.mx-visible-skus__grid{grid-template-columns:1fr;padding-top:18px;padding-bottom:22px}.mx-visible-skus__lead{grid-column:auto}.mx-visible-skus__lead,.mx-visible-skus__card{border-radius:22px;padding:18px}.mx-visible-skus__lead b,.mx-visible-skus__card b{font-size:22px}}
+</style>
 </head>
   <body class="page-homepage">
 <div class="app app--v4">
@@ -2203,6 +2212,15 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
         <a class="mx-priority-card" href="zhidkiy-plastik.html"><small>быстрые детали</small><b>Жидкие пластики</b><span>Для корпусов, макетов, прототипов и небольших серий отливок.</span><strong>Открыть пластики →</strong></a>
         <a class="mx-priority-card" href="vakuumnye-kamery.html"><small>качество отливки</small><b>Вакуумные камеры</b><span>Камеры, насосы и комплекты для дегазации смол и силиконов.</span><strong>Подобрать вакуум →</strong></a>
       </div>
+    </div>
+  </section>
+  <section class="mx-visible-skus" aria-label="Ходовые позиции Mylco на виду">
+    <div class="mx-wrap mx-visible-skus__grid">
+      <div class="mx-visible-skus__lead"><small>товары на виду</small><b>После категорий сразу видны конкретные позиции и рабочие направления</b><span>Это добавляет коммерческой плотности preview: партнёр видит не абстрактный каталог, а реальные входы в покупку популярных материалов и оборудования Mylco.</span></div>
+      <a class="mx-visible-skus__card mx-visible-skus__card--hot" href="kupit-poliuretan-v-moskve/poliuretan-prepolimer-poly-00-40a-10-kg.html"><small>полиуретан</small><b>Poly 00-40A, 10 кг</b><span>Мягкий полиуретан для форм, эластичных элементов и тиражных отливок.</span><strong>Открыть позицию →</strong></a>
+      <a class="mx-visible-skus__card" href="kupit-poliuretan-v-moskve/polys-00-60a-poliuretan-dlya-form-srednej-tvyordosti.html"><small>форма</small><b>PolyS 00-60A</b><span>Средняя твёрдость для форм, где важны ресурс, детализация и стабильность.</span><strong>Смотреть товар →</strong></a>
+      <a class="mx-visible-skus__card" href="vakuumnaya-kamera-s-nasosom/vakuumnaya-kamera-h250d210-c-nasosom-zsn-1s.html"><small>вакуум</small><b>Камера H250D210 с насосом</b><span>Готовый комплект для дегазации силиконов, смол и жидких пластиков.</span><strong>К комплекту →</strong></a>
+      <a class="mx-visible-skus__card" href="kupit-silikon-v-moskve/na-osnove-platiny.html"><small>силикон</small><b>Платиновые силиконы</b><span>Для точных форм, чистой поверхности и задач, где важна стабильность материала.</span><strong>Выбрать серию →</strong></a>
     </div>
   </section>
   <section class="mx-order-confidence" aria-label="Почему заказ Mylco удобно отправить сегодня">
