@@ -1141,6 +1141,17 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 @media(max-width:640px){.mx-ready-order__grid{grid-template-columns:1fr;padding-top:18px;padding-bottom:22px}.mx-ready-order__lead{grid-column:auto}.mx-ready-order__lead,.mx-ready-order__card{border-radius:22px;padding:18px}.mx-ready-order__lead b,.mx-ready-order__card b{font-size:24px}}
 </style>
 
+
+<style id="mylco-sprint-assurance-12">
+/* Sprint 12: коммерческая уверенность после первого экрана — контакты, доставка и счёт видны до глубокого каталога. */
+.mx-assurance{background:#fff;border-bottom:1px solid var(--mx-line)}
+.mx-assurance__grid{display:grid;grid-template-columns:1.15fr repeat(3,1fr);gap:12px;padding-top:20px;padding-bottom:20px}
+.mx-assurance__lead,.mx-assurance__card{border:1px solid var(--mx-line);border-radius:26px;background:linear-gradient(180deg,#fff,#f8fbf8);padding:22px;box-shadow:0 16px 44px rgba(16,37,28,.07)}
+.mx-assurance__lead{background:#0b1f17;color:#fff}.mx-assurance__lead small{display:inline-flex;margin-bottom:12px;border-radius:999px;background:#23b86a;color:#092015;padding:7px 10px;font-size:11px;font-weight:900;text-transform:uppercase}.mx-assurance__lead b,.mx-assurance__card b{display:block;font-size:24px;line-height:1.05;letter-spacing:-.04em}.mx-assurance__lead span{display:block;margin-top:9px;color:rgba(255,255,255,.74);line-height:1.4}.mx-assurance__card{display:flex;flex-direction:column;color:var(--mx-ink)!important;text-decoration:none!important}.mx-assurance__card span{display:block;margin-top:9px;color:var(--mx-muted);line-height:1.4}.mx-assurance__card strong{margin-top:auto;padding-top:16px;color:#11864d}.mx-assurance__card--accent{border-color:rgba(35,184,106,.42);background:linear-gradient(180deg,#fff,#eefaf4)}
+@media(max-width:1020px){.mx-assurance__grid{grid-template-columns:1fr 1fr}.mx-assurance__lead{grid-column:1/-1}}
+@media(max-width:640px){.mx-assurance__grid{grid-template-columns:1fr;padding-top:16px;padding-bottom:16px}.mx-assurance__lead{grid-column:auto}.mx-assurance__lead,.mx-assurance__card{border-radius:22px;padding:18px}.mx-assurance__lead b,.mx-assurance__card b{font-size:22px}}
+</style>
+
 <link rel="stylesheet" href="preview-safety.css" data-preview-guard="true">
 <script src="preview-safety.js" defer data-preview-guard="true"></script>
 </head>
@@ -2056,6 +2067,16 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
       <div><b>Москва</b><span>самовывоз, доставка, быстрый контакт</span></div>
       <div><b>Для юрлиц</b><span>счёт, документы, регулярные закупки</span></div>
       <div><b>Подбор</b><span>Shore, тираж, нагрузка, пузыри, срок</span></div>
+    </div>
+  </section>
+
+
+  <section class="mx-assurance" aria-label="Коммерческая уверенность Mylco">
+    <div class="mx-wrap mx-assurance__grid">
+      <div class="mx-assurance__lead"><small>для уверенной покупки</small><b>Сразу понятно, как купить, получить счёт и связаться с Mylco</b><span>Покупатель видит товарный маршрут, условия заказа, нужные вводные для менеджера и быстрые контакты без лишнего поиска.</span></div>
+      <a class="mx-assurance__card" href="contact-us.html"><b>Контакты и самовывоз</b><span>Телефоны, адрес в Москве и быстрый переход к странице контактов.</span><strong>Открыть контакты →</strong></a>
+      <a class="mx-assurance__card" href="dostavka.html"><b>Доставка и оплата</b><span>Понятный следующий шаг для розничного клиента, студии или юрлица.</span><strong>Условия доставки →</strong></a>
+      <a class="mx-assurance__card mx-assurance__card--accent" href="mailto:order@mylco.ru?subject=Mylco%3A%20%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D1%81%D1%87%D1%91%D1%82%D0%B0&body=%D0%9D%D1%83%D0%B6%D0%B5%D0%BD%20%D1%81%D1%87%D1%91%D1%82%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D0%B8%3A%0A%D0%AE%D1%80%D0%BB%D0%B8%D1%86%D0%BE%2F%D0%98%D0%9D%D0%9D%3A%0A%D0%93%D0%BE%D1%80%D0%BE%D0%B4%2F%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%3A%0A%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%3A"><b>Счёт для юрлица</b><span>Готовый mailto-шаблон снижает трение для закупки и повторных заказов.</span><strong>Запросить счёт →</strong></a>
     </div>
   </section>
 
