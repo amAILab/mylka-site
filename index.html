@@ -792,6 +792,21 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 .mylco-demo-nav{background:#fff;border-block:1px solid var(--mylco-line)}.mylco-demo-nav__wrap{max-width:1240px}.mylco-demo-nav__wrap a{border-radius:18px;background:#f8fbf8;border:1px solid var(--mylco-line)}
 @media (max-width:980px){.mylco-wow-hero__wrap{grid-template-columns:1fr;padding:48px 18px}.mylco-wow-hero__catalog{grid-template-columns:repeat(2,minmax(0,1fr))}.mylco-core-products__grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.mylco-wow-hero__wrap{padding:36px 16px}.mylco-wow-hero h1{font-size:38px}.mylco-wow-hero__lead{font-size:17px}.mylco-wow-hero__proof{grid-template-columns:1fr}.mylco-wow-hero__catalog,.mylco-core-products__grid{grid-template-columns:1fr}.mylco-wow-hero__card{padding:20px;border-radius:26px}.mylco-core-products__wrap,.mylco-hit-skus__wrap,.mylco-audience-strip__wrap,.mylco-urgent-route__wrap{padding-inline:16px}.mylco-core-products__head h2,.mylco-hit-skus__head h2{font-size:30px}}
+
+.mylco-hero-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:860px;margin-top:14px}.mylco-hero-metrics span{display:block;border-radius:18px;padding:13px 14px;background:rgba(0,0,0,.13);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(12px)}.mylco-hero-metrics b{display:block;color:#fff;font-size:18px;line-height:1.05;letter-spacing:-.03em}.mylco-hero-metrics small{display:block;margin-top:5px;color:rgba(255,255,255,.72);font-size:12px;line-height:1.25}.mylco-need-strip{background:#fff;border-bottom:1px solid var(--mylco-line)}.mylco-need-strip__wrap{max-width:1240px;margin:0 auto;padding:18px 24px;display:grid;grid-template-columns:1.15fr repeat(4,1fr);gap:12px;align-items:stretch}.mylco-need-strip__title,.mylco-need-strip a{border-radius:22px;padding:18px;border:1px solid var(--mylco-line);background:linear-gradient(180deg,#fff,#f8fbf8);box-shadow:0 12px 30px rgba(13,42,32,.06)}.mylco-need-strip__title b,.mylco-need-strip a b{display:block;color:var(--mylco-ink);font-size:18px;letter-spacing:-.03em;line-height:1.1}.mylco-need-strip__title span,.mylco-need-strip a span{display:block;margin-top:6px;color:var(--mylco-muted);font-size:13px;line-height:1.28}.mylco-need-strip a{text-decoration:none!important;transition:.18s ease}.mylco-need-strip a:hover{transform:translateY(-2px);border-color:#bfe8ce;box-shadow:var(--mylco-shadow);color:var(--mylco-ink)!important}
+@media (max-width:980px){.mylco-hero-metrics{grid-template-columns:1fr}.mylco-need-strip__wrap{grid-template-columns:1fr 1fr}.mylco-need-strip__title{grid-column:1/-1}}
+@media (max-width:560px){.mylco-need-strip__wrap{grid-template-columns:1fr;padding:14px 16px}.mylco-need-strip__title{grid-column:auto}.mylco-hero-metrics{grid-template-columns:1fr}}
+
+
+/* Mylco header polish — убираем preview-шум и уплотняем верх */
+.mylco-preview-ribbon{display:none!important}.header--v4 .topline{display:none!important}.header--v4{background:#fff}.header--v4 .topbar{border-bottom:1px solid var(--mylco-line);box-shadow:0 10px 30px rgba(13,42,32,.06)}.header--v4 .topbar .container-fluid,.header--v4 .nav .container-fluid{max-width:1240px;margin:0 auto}.header--v4 .logo img{max-width:210px;height:auto}.header--v4 .logo span{color:#607168;letter-spacing:.02em}.header--v4 .phone__btn{font-weight:900;color:var(--mylco-ink)!important}.header--v4 .phone__link{color:#11864d!important;font-weight:800}.header--v4 .ctrl-v4__btn span,.header--v4 .cart__btn{font-weight:800}.header--v4 .nav{background:#123225!important;box-shadow:none}.header--v4 .nav__menu{min-height:44px}.header--v4 .nav__link{color:#fff!important;font-size:13px;font-weight:800;letter-spacing:.01em}.header--v4 .nav__link:hover{color:#9cf2bd!important}.header--v4 .search__input{border-radius:16px;border-color:var(--mylco-line)}
+@media (max-width:980px){.header--v4 .topbar{box-shadow:none}.header--v4 .logo img{max-width:180px}.header--v4 .nav{display:none}}
+
+
+/* Mylco hero focus — один главный маршрут заявки */
+.header--v4 .nav{display:none!important}.content{padding-top:0!important}.mylco-wow-hero__wrap{padding-top:58px}.mylco-wow-hero__actions{margin-bottom:18px}.mylco-wow-hero__btn--primary{background:linear-gradient(135deg,#fff,#dfffee);box-shadow:0 18px 44px rgba(0,0,0,.20)}.mylco-wow-hero__proof--compact{display:block!important;max-width:780px}.mylco-wow-hero__proof--compact span{min-height:auto;display:block;padding:13px 16px;font-size:15px}.mylco-wow-hero__catalog{margin-top:16px}.mylco-hero-metrics{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:12px}.mylco-wow-hero__card ul{margin-bottom:12px}.mylco-wow-hero__brief{display:none}.mylco-wow-hero__note{font-size:13px;padding:12px}.mylco-wow-hero__card-actions{grid-template-columns:1fr}.mylco-wow-hero__card-actions a:last-child{display:none}
+@media (max-width:980px){.mylco-wow-hero__wrap{padding-top:38px}.mylco-hero-metrics{grid-template-columns:1fr}}
+
 </style>
 
 </head>
@@ -1725,10 +1740,8 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 																<a class="mylco-wow-hero__btn mylco-wow-hero__btn--ghost" href="#mylco-picker">Подобрать материал</a>
 																<a class="mylco-wow-hero__btn mylco-wow-hero__btn--ghost" href="services-step3d.html">Производственные услуги</a>
               </div>
-              <div class="mylco-wow-hero__proof">
-                <span>Популярные материалы для форм, литья, макетов и декора</span>
-                <span>Вакуумные камеры, насосы и оснастка для стабильного результата</span>
-                <span>Инженерная помощь по материалам, технологии и производству</span>
+              <div class="mylco-wow-hero__proof mylco-wow-hero__proof--compact">
+                <span>Основной фокус: материалы и оборудование. Производственные услуги STEP 3D подключаются только когда нужна модель, скан или прототип.</span>
               </div>
               <nav class="mylco-wow-hero__catalog" aria-label="Популярные разделы каталога">
 																<a href="kupit-silikon-v-moskve/">Силиконы для форм</a>
@@ -1737,13 +1750,18 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 																<a href="zhidkiy-plastik.html">Жидкий пластик</a>
 																<a href="vakuumnye-kamery.html">Вакуумные камеры</a>
               </nav>
+              <div class="mylco-hero-metrics" aria-label="Почему удобно покупать в Mylco">
+                <span><b>5 групп</b><small>материалы, добавки, вакуум, оснастка, услуги</small></span>
+                <span><b>Москва</b><small>самовывоз, консультация и быстрая комплектация</small></span>
+                <span><b>STEP 3D</b><small>модель, скан, мастер-модель и прототип при необходимости</small></span>
+              </div>
             </div>
             <aside class="mylco-wow-hero__card">
-              <h2>Быстрый маршрут для заявки</h2>
+              <h2>Подбор без ошибки</h2>
               <ul>
-                <li>Выберите материал: силикон, полиуретан, смола, пластик или добавки</li>
-                <li>Опишите изделие: размер, тираж, срок, условия эксплуатации</li>
-                <li>Если нужна модель — рассчитаем печать, сканирование или мастер-модель</li>
+                <li>Коротко опишите задачу, размер и тираж</li>
+                <li>Получите материал, добавки и вакуум под ваш сценарий</li>
+                <li>При необходимости добавим модель, скан или мастер-модель</li>
               </ul>
               <div class="mylco-wow-hero__brief">
                 <b>Что прислать для точного подбора</b>
@@ -1758,8 +1776,15 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
           </div>
         </section>
 
-
-
+        <section class="mylco-need-strip" aria-label="Быстрый выбор задачи Mylco">
+          <div class="mylco-need-strip__wrap">
+            <div class="mylco-need-strip__title"><b>Начните с задачи</b><span>Так быстрее подобрать материал и не ошибиться с комплектом</span></div>
+            <a href="kupit-silikon-v-moskve/"><b>Сделать форму</b><span>силикон, разделитель, вакуум</span></a>
+            <a href="kupit-poliuretan-v-moskve/"><b>Отлить деталь</b><span>полиуретан, пластик, добавки</span></a>
+            <a href="epoksidnaya-smola.html"><b>Прозрачная заливка</b><span>смола, пигменты, дегазация</span></a>
+            <a href="vakuumnye-kamery.html"><b>Убрать пузыри</b><span>камера, насос, расходники</span></a>
+          </div>
+        </section>
 
         <section class="mylco-core-products" aria-label="Коммерческое ядро каталога Mylco">
           <div class="mylco-core-products__wrap">
