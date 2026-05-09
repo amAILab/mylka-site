@@ -1177,6 +1177,17 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 @media(max-width:640px){.mx-material-map__grid{grid-template-columns:1fr;padding-top:18px;padding-bottom:22px}.mx-material-map__lead{grid-column:auto}.mx-material-map__lead,.mx-material-map__card{border-radius:22px;padding:18px}.mx-material-map__lead b,.mx-material-map__card b{font-size:22px}}
 </style>
 
+
+<style id="mylco-sprint-fit-14">
+/* Sprint 14: быстрая матрица выбора — помогает не теряться между популярными материалами Mylco. */
+.mx-fit{background:#fff;border-bottom:1px solid var(--mx-line)}
+.mx-fit__grid{display:grid;grid-template-columns:.8fr repeat(4,1fr);gap:12px;padding-top:24px;padding-bottom:26px;align-items:stretch}
+.mx-fit__lead,.mx-fit__card{border:1px solid var(--mx-line);border-radius:26px;background:linear-gradient(180deg,#fff,#f8fbf8);padding:22px;box-shadow:0 16px 44px rgba(16,37,28,.07)}
+.mx-fit__lead{background:#0b1f17;color:#fff}.mx-fit__lead small,.mx-fit__card small{display:inline-flex;margin-bottom:12px;border-radius:999px;background:#23b86a;color:#092015;padding:7px 10px;font-size:11px;font-weight:900;text-transform:uppercase}.mx-fit__lead b,.mx-fit__card b{display:block;font-size:24px;line-height:1.05;letter-spacing:-.04em}.mx-fit__lead span{display:block;margin-top:9px;color:rgba(255,255,255,.74);line-height:1.4}.mx-fit__card{display:flex;flex-direction:column;color:var(--mx-ink)!important;text-decoration:none!important}.mx-fit__card span{display:block;margin-top:9px;color:var(--mx-muted);line-height:1.38}.mx-fit__card strong{margin-top:auto;padding-top:16px;color:#11864d}.mx-fit__card--hot{border-color:rgba(35,184,106,.45);background:linear-gradient(180deg,#fff,#eefaf4)}
+@media(max-width:1080px){.mx-fit__grid{grid-template-columns:1fr 1fr}.mx-fit__lead{grid-column:1/-1}}
+@media(max-width:640px){.mx-fit__grid{grid-template-columns:1fr;padding-top:18px;padding-bottom:22px}.mx-fit__lead{grid-column:auto}.mx-fit__lead,.mx-fit__card{border-radius:22px;padding:18px}.mx-fit__lead b,.mx-fit__card b{font-size:22px}}
+</style>
+
 <link rel="stylesheet" href="preview-safety.css" data-preview-guard="true">
 <script src="preview-safety.js" defer data-preview-guard="true"></script>
 </head>
@@ -2146,6 +2157,16 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
       </div>
     </div>
   </section>
+  <section class="mx-fit" aria-label="Быстрая матрица выбора материала Mylco">
+    <div class="mx-wrap mx-fit__grid">
+      <div class="mx-fit__lead"><small>выбор без ошибки</small><b>Что брать в первую очередь?</b><span>Мини-матрица переводит задачу клиента в основной товар Mylco и сразу ведёт в категорию или заявку.</span></div>
+      <a class="mx-fit__card mx-fit__card--hot" href="kupit-silikon-v-moskve/"><small>форма</small><b>Нужна эластичная форма</b><span>Стартуйте с силикона: уточните Shore, рельеф, поднутрения и материал заливки.</span><strong>К силиконам →</strong></a>
+      <a class="mx-fit__card" href="epoksidnaya-smola.html"><small>заливка</small><b>Нужна прозрачность или декор</b><span>Эпоксидная смола, пигменты и контроль пузырей под толщину слоя.</span><strong>К смолам →</strong></a>
+      <a class="mx-fit__card" href="kupit-poliuretan-v-moskve/"><small>ресурс</small><b>Нужна прочность и тираж</b><span>Полиуретан под нагрузку, износ, твёрдость и повторяемые отливки.</span><strong>К полиуретанам →</strong></a>
+      <a class="mx-fit__card" href="vakuumnye-kamery.html"><small>качество</small><b>Пузырьки портят результат</b><span>Вакуумная камера и насос под объём смеси, ёмкость и частоту работы.</span><strong>К вакууму →</strong></a>
+    </div>
+  </section>
+
 
   <section class="mx-ready-order" aria-label="Готовые сценарии заказа Mylco">
     <div class="mx-wrap mx-ready-order__grid">
