@@ -1024,7 +1024,7 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 </style>
 <style id="mylco-sprint-02-product-cards-css">
 /* Sprint 02: карточки товаров яснее объясняют, кому подходит позиция и какой следующий шаг безопасен. */
-.mylco-product-card{gap:0}.mylco-product-card__fit{display:block;margin:0 0 12px;border-radius:16px;background:#f4fbf6;border:1px solid #dbe7de;padding:11px 12px;color:#607168;font-size:13px;line-height:1.32}.mylco-product-card__fit b{display:block;margin-bottom:3px;color:#13251d;font-size:13px;letter-spacing:0}.mylco-product-card__next{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;margin-top:auto}.mylco-product-card__next span{color:#607168;font-size:12px;font-weight:800}.mylco-product-card__next a{margin:0}.mylco-product-card--assist{border-color:#9ee0b9;background:linear-gradient(180deg,#fff,#effbf3)}.mylco-product-card--assist .mylco-product-card__next a{background:#23b86a;color:#0d2a20!important}@media(max-width:760px){.mylco-product-card__next{grid-template-columns:1fr}.mylco-product-card__next span{order:2;text-align:center}.mylco-product-card__fit{font-size:13px}}
+.mylco-product-card{gap:0}.mylco-product-card__fit{display:block;margin:0 0 12px;border-radius:16px;background:#f4fbf6;border:1px solid #dbe7de;padding:11px 12px;color:#607168;font-size:13px;line-height:1.32}.mylco-product-card__fit b{display:block;margin-bottom:3px;color:#13251d;font-size:13px;letter-spacing:0}.mylco-product-card__next{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;margin-top:auto}.mylco-product-card__next span{color:#607168;font-size:12px;font-weight:800}.mylco-product-card__next a{margin:0}.mylco-product-card--assist{border-color:#9ee0b9;background:linear-gradient(180deg,#fff,#effbf3)}.mylco-product-card--assist .mylco-product-card__next a{background:#23b86a;color:#0d2a20!important}.mylco-route-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:-4px 0 18px}.mylco-route-strip a{display:flex;flex-direction:column;min-height:145px;border:1px solid #cfe8d9;border-radius:22px;background:linear-gradient(180deg,#fff,#f4fbf6);padding:18px;color:#13251d!important;text-decoration:none!important;box-shadow:0 14px 34px rgba(13,42,32,.08);transition:.18s ease}.mylco-route-strip a:hover{transform:translateY(-2px);box-shadow:0 20px 46px rgba(13,42,32,.12)}.mylco-route-strip small{align-self:flex-start;border-radius:999px;background:#eaf8f0;color:#11864d;padding:6px 9px;font-size:11px;font-weight:900;text-transform:uppercase}.mylco-route-strip b{margin:12px 0 7px;font-size:22px;line-height:1.05;letter-spacing:-.035em}.mylco-route-strip span{color:#607168;line-height:1.35;font-size:14px}.mylco-route-strip a:last-child{border-color:#9ee0b9;background:linear-gradient(180deg,#fff,#effbf3)}@media(max-width:760px){.mylco-product-card__next{grid-template-columns:1fr}.mylco-product-card__next span{order:2;text-align:center}.mylco-product-card__fit{font-size:13px}.mylco-route-strip{grid-template-columns:1fr;margin-top:0}.mylco-route-strip a{min-height:auto}}
 </style>
 </head>
   <body class="page-homepage">
@@ -2109,6 +2109,11 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
         <h2 id="mylco-task-title">Что нужно сделать?</h2>
         <p>Выберите задачу — мы подскажем подходящую категорию материалов или подготовим заявку для менеджера.</p>
       </div>
+      <div class="mylco-route-strip" aria-label="Быстрый выбор маршрута покупки">
+        <a href="#mylco-catalog"><small>Знаю материал</small><b>Перейти в каталог</b><span>Когда уже понятно: силикон, полиуретан, смола, пластик или вакуум.</span></a>
+        <a href="#mylco-task-picker"><small>Знаю результат</small><b>Выбрать по задаче</b><span>Форма, прочная деталь, прозрачная заливка, дегазация или мастерская.</span></a>
+        <a href="#mylco-brief"><small>Не хочу ошибиться</small><b>Отправить задачу</b><span>Фото, размеры и тираж — менеджер соберёт материал, расходники и процесс.</span></a>
+      </div>
       <div class="mylco-task-grid">
         <a class="mylco-task-card" href="kupit-silikon-v-moskve/"><b>Сделать силиконовую форму</b><span>Для гипса, смолы, воска, мыла, бетона, декора, фигурок и мастер-моделей.</span><em>Подобрать силикон</em></a>
         <a class="mylco-task-card" href="kupit-poliuretan-v-moskve/"><b>Отлить прочную деталь</b><span>Для корпусов, вставок, прототипов, оснастки и малых серий.</span><em>Полиуретан или пластик</em></a>
@@ -2265,29 +2270,22 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
     </div>
   </section>
 </main>
-<footer class="mylco-clean-footer" aria-label="Контакты Mylco">
-  <div class="mylco-wrap mylco-clean-footer__grid">
-    <div>
+<footer class="mylco-clean-footer mylco-ms-footer" aria-label="Подвал Mylco">
+  <div class="mylco-wrap mylco-ms-footer__top">
+    <div class="mylco-ms-footer__brand">
       <b>Mylco</b>
-      <p>Материалы и оборудование для форм, литья, макетов, декора, малых производств и прототипирования.</p>
+      <p>Материалы, оборудование и инженерная поддержка для форм, литья, макетов, декора, малых производств и прототипирования.</p>
     </div>
-    <div>
-      <b>Контакты</b>
-      <ul>
-        <li><a href="tel:+74950058314">+7 (495) 005-83-14</a></li>
-        <li><a href="mailto:order@mylco.ru">order@mylco.ru</a></li>
-        <li>Самовывоз: Востряковский проезд, 11 к.2</li>
-      </ul>
-    </div>
-    <div>
-      <b>Разделы</b>
-      <ul>
-        <li><a href="dostavka.html">Доставка</a></li>
-        <li><a href="contact-us.html">Контакты</a></li>
-        <li><a href="politika.html">Политика обработки данных</a></li>
-      </ul>
-    </div>
+    <a class="mylco-ms-footer__cta" href="#mylco-brief">Отправить задачу</a>
   </div>
+  <div class="mylco-wrap mylco-ms-footer__grid">
+    <div><b>Каталог</b><ul><li><a href="kupit-silikon-v-moskve.html">Силиконы</a></li><li><a href="kupit-poliuretan-v-moskve.html">Полиуретаны</a></li><li><a href="zhidkiy-plastik.html">Жидкий пластик</a></li><li><a href="epoksidnaya-smola.html">Эпоксидные смолы</a></li><li><a href="vakuumnye-kamery.html">Вакуумные камеры</a></li></ul></div>
+    <div><b>Задачи</b><ul><li><a href="#mylco-task-picker">Подбор материала</a></li><li><a href="reversivnyj-inzhenering.html">Реверсивный инжиниринг</a></li><li><a href="3d-pechat-1.html">3D-печать</a></li><li><a href="#mylco-calc">Расчёт расхода</a></li><li><a href="#mylco-faq-title">FAQ</a></li></ul></div>
+    <div><b>Покупателям</b><ul><li><a href="dostavka.html">Доставка и оплата</a></li><li><a href="cart.html">Корзина</a></li><li><a href="simplecheckout.html">Оформить заказ</a></li><li><a href="contact-us.html">Контакты</a></li><li><a href="sitemap.html">Карта сайта</a></li></ul></div>
+    <div><b>Контакты</b><ul><li><a href="tel:+74950058314">+7 (495) 005-83-14</a></li><li><a href="tel:+79055446767">+7 (905) 544-67-67</a></li><li><a href="mailto:order@mylco.ru">order@mylco.ru</a></li><li>Востряковский проезд, 11 к.2</li></ul></div>
+    <div><b>Документы</b><ul><li><a href="politika.html">Политика обработки данных</a></li><li><a href="returns.html">Возврат</a></li><li><a href="o-nas.html">О компании</a></li><li><a href="brands.html">Бренды</a></li></ul></div>
+  </div>
+  <div class="mylco-wrap mylco-ms-footer__bottom"><span>© Mylco</span><span>Материалы для ваших фантазий</span></div>
 </footer>
 <nav class="mylco-mobile-cta" aria-label="Быстрые действия Mylco">
   <a href="#mylco-catalog">Каталог</a>
@@ -2336,6 +2334,24 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 .mylco-mobile-cta a:focus-visible{outline:3px solid #ffe08a;outline-offset:3px}
 @media (max-width:760px){.mylco-home-final .mylco-category-card:hover,.mylco-home-final .mylco-task-card:hover,.mylco-home-final .mylco-choice-card:hover,.mylco-home-final .mylco-product-card:hover,.mylco-home-final .mylco-kit-card:hover,.mylco-home-final .mylco-contact-card:hover,.mylco-home-final .mylco-partner-step:hover{transform:none}}
 </style>
+
+<div class="mylco-mobile-menu" data-mylco-mobile-menu aria-hidden="true">
+  <div class="mylco-mobile-menu__shade" data-mylco-menu-close></div>
+  <aside class="mylco-mobile-menu__panel" aria-label="Мобильное меню Mylco">
+    <div class="mylco-mobile-menu__head"><b>Меню Mylco</b><button type="button" data-mylco-menu-close aria-label="Закрыть меню">×</button></div>
+    <a href="#mylco-catalog">Каталог</a><a href="#mylco-task-picker">Подбор по задаче</a><a href="kupit-silikon-v-moskve.html">Силиконы</a><a href="kupit-poliuretan-v-moskve.html">Полиуретаны</a><a href="vakuumnye-kamery.html">Вакуумные камеры</a><a href="reversivnyj-inzhenering.html">Реверсивный инжиниринг</a><a href="3d-pechat-1.html">3D-печать</a><a href="dostavka.html">Доставка</a><a href="contact-us.html">Контакты</a>
+    <div class="mylco-mobile-menu__contacts"><a href="tel:+74950058314">Позвонить</a><a href="mailto:order@mylco.ru">Написать</a></div>
+  </aside>
+</div>
+<style id="mylco-sticky-cart-burger-footer">
+.header--v4.header{position:sticky!important;top:0!important;z-index:10000!important;background:#fff!important;box-shadow:0 12px 34px rgba(13,42,32,.10)!important}.header--v4 .cart__btn{display:inline-flex!important;align-items:center!important;gap:8px!important;border-radius:16px!important;background:#23b86a!important;color:#0d2a20!important;padding:0 15px!important;min-height:44px!important}.mylco-mobile-burger{display:none;border:0;background:#0d2a20;color:#fff;border-radius:14px;min-width:44px;height:44px;font-size:0;position:relative}.mylco-mobile-burger:before{content:'☰';font-size:24px;line-height:1}.mylco-mobile-menu{position:fixed;inset:0;z-index:10001;pointer-events:none;visibility:hidden}.mylco-mobile-menu.is-open{pointer-events:auto;visibility:visible}.mylco-mobile-menu__shade{position:absolute;inset:0;background:rgba(13,42,32,.42);opacity:0;transition:.2s ease}.mylco-mobile-menu.is-open .mylco-mobile-menu__shade{opacity:1}.mylco-mobile-menu__panel{position:absolute;top:0;right:0;width:min(88vw,390px);height:100%;background:#fff;color:#13251d;box-shadow:-24px 0 70px rgba(13,42,32,.22);padding:18px;transform:translateX(105%);transition:.24s ease;display:flex;flex-direction:column;gap:8px;overflow:auto}.mylco-mobile-menu.is-open .mylco-mobile-menu__panel{transform:translateX(0)}.mylco-mobile-menu__head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}.mylco-mobile-menu__head b{font-size:24px}.mylco-mobile-menu__head button{border:0;background:#eef7f1;border-radius:12px;width:42px;height:42px;font-size:28px}.mylco-mobile-menu__panel>a{display:flex;align-items:center;min-height:48px;border-radius:15px;background:#f3f8f5;color:#13251d!important;padding:0 14px;text-decoration:none!important;font-weight:900}.mylco-mobile-menu__contacts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:auto}.mylco-mobile-menu__contacts a{display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:15px;background:#23b86a;color:#0d2a20!important;text-decoration:none!important;font-weight:900}.mylco-ms-footer{background:#f2f2f2!important;color:#616161!important;padding:0!important;border-top:1px solid #ddd!important}.mylco-ms-footer__top{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-top:34px!important;padding-bottom:18px!important}.mylco-ms-footer__brand b{color:#1f1f1f!important;font-size:26px}.mylco-ms-footer__brand p{max-width:720px;color:#616161!important}.mylco-ms-footer__cta{background:#0d2a20;color:#fff!important;border-radius:14px;padding:13px 18px;text-decoration:none!important;font-weight:900}.mylco-ms-footer__grid{display:grid!important;grid-template-columns:repeat(5,1fr)!important;gap:24px!important;padding-top:18px!important;padding-bottom:26px!important}.mylco-ms-footer b{color:#1f1f1f!important;font-size:15px!important}.mylco-ms-footer ul{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:9px}.mylco-ms-footer a,.mylco-ms-footer li,.mylco-ms-footer p{color:#616161!important;font-size:13px;line-height:1.35}.mylco-ms-footer__bottom{display:flex;gap:18px;justify-content:space-between;border-top:1px solid #ddd;padding-top:16px!important;padding-bottom:18px!important;color:#616161;font-size:12px}
+@media (max-width:760px){.header--v4 .topbar .col:first-child{display:flex!important;align-items:center!important;gap:8px!important}.mylco-mobile-burger{display:inline-flex!important;align-items:center;justify-content:center;flex:0 0 auto}.header--v4 .topbar .col-auto:has(.cart){display:block!important;width:auto!important;max-width:none!important;padding:0!important;margin:0!important;overflow:visible!important}.header--v4 .cart{display:block!important;visibility:visible!important;pointer-events:auto!important}.header--v4 .cart__btn{min-width:44px!important;width:44px!important;padding:0!important;justify-content:center!important}.header--v4 .cart__btn span,.header--v4 .cart__btn{font-size:0!important}.header--v4 .cart__btn svg{width:22px!important;height:22px!important}.header--v4 .cart__dropdown{display:none!important}.mylco-ms-footer__top{display:block}.mylco-ms-footer__cta{display:inline-flex;margin-top:12px}.mylco-ms-footer__grid{grid-template-columns:1fr 1fr!important;gap:18px!important}.mylco-ms-footer__bottom{display:grid}.mylco-mobile-cta{grid-template-columns:1fr 1fr!important}}
+@media (max-width:420px){.mylco-ms-footer__grid{grid-template-columns:1fr!important}}
+</style>
+<script id="mylco-mobile-menu-js">
+(function(){const logo=document.querySelector('.header--v4 .logo');if(logo&&!document.querySelector('.mylco-mobile-burger')){const b=document.createElement('button');b.type='button';b.className='mylco-mobile-burger';b.setAttribute('aria-label','Открыть меню');logo.parentElement.insertBefore(b,logo)}const menu=document.querySelector('[data-mylco-mobile-menu]');const open=document.querySelector('.mylco-mobile-burger');function set(v){if(!menu)return;menu.classList.toggle('is-open',v);menu.setAttribute('aria-hidden',v?'false':'true');document.documentElement.classList.toggle('mylco-menu-lock',v)}open&&open.addEventListener('click',()=>set(true));document.addEventListener('click',e=>{if(e.target.closest('[data-mylco-menu-close]')||e.target.closest('.mylco-mobile-menu__panel a'))set(false)});document.addEventListener('keydown',e=>{if(e.key==='Escape')set(false)})})();
+</script>
+
 <script id="mylco-final-js">
 (function(){
   const densities={silicone:1.12,polyurethane:1.08,epoxy:1.10,plastic:1.05};
