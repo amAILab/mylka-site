@@ -989,6 +989,20 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 <style id="mylco-mobile-sticky-safearea-css">
 @media (max-width:760px){.mylco-final-cta,.mylco-clean-footer{padding-bottom:118px!important}.mylco-mobile-cta{bottom:calc(10px + env(safe-area-inset-bottom,0px))!important}}
 </style>
+
+<style id="mylco-sprint-01-commercial-css">
+/* Sprint 01: компактная коммерческая полоса доверия под первым экраном. */
+.mylco-commerce-strip{background:#0d2a20;color:#fff;border-bottom:1px solid rgba(255,255,255,.10)}
+.mylco-commerce-strip__grid{display:grid;grid-template-columns:1.15fr repeat(4,1fr);gap:12px;align-items:stretch;padding-top:18px;padding-bottom:18px}
+.mylco-commerce-strip__lead,.mylco-commerce-strip__item{border:1px solid rgba(255,255,255,.14);border-radius:22px;background:rgba(255,255,255,.07);padding:18px;box-shadow:0 18px 52px rgba(0,0,0,.16)}
+.mylco-commerce-strip__lead{background:linear-gradient(135deg,rgba(35,184,106,.26),rgba(255,255,255,.08));border-color:rgba(141,232,173,.34)}
+.mylco-commerce-strip b{display:block;color:#fff;font-size:20px;line-height:1.08;letter-spacing:-.035em}
+.mylco-commerce-strip span{display:block;margin-top:7px;color:rgba(255,255,255,.74);font-size:14px;line-height:1.34}
+.mylco-commerce-strip__lead span{color:#d9ffe8}
+.mylco-commerce-strip__item strong{display:inline-flex;margin-bottom:11px;border-radius:999px;background:#23b86a;color:#0d2a20;padding:6px 9px;font-size:11px;font-weight:900;text-transform:uppercase}
+@media(max-width:1100px){.mylco-commerce-strip__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mylco-commerce-strip__lead{grid-column:1/-1}}
+@media(max-width:760px){.mylco-commerce-strip__grid{grid-template-columns:1fr;padding-top:14px;padding-bottom:14px}.mylco-commerce-strip__lead{grid-column:auto}.mylco-commerce-strip__lead,.mylco-commerce-strip__item{border-radius:20px;padding:16px}}
+</style>
 </head>
   <body class="page-homepage">
 <div class="app app--v4">
@@ -1908,6 +1922,17 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
       <a class="mylco-partner-step" href="#mylco-brief"><small>3</small><b>Отправить задачу</b><span>Фото, размеры, тираж и срок превращаются в готовое письмо для менеджера Mylco.</span><strong>Заполнить бриф →</strong></a>
     </div>
   </section>
+
+  <section class="mylco-commerce-strip" aria-label="Коммерческие преимущества Mylco">
+    <div class="mylco-wrap mylco-commerce-strip__grid">
+      <div class="mylco-commerce-strip__lead"><b>Покупка без лишних кругов</b><span>Сразу видно, как перейти от выбора материала к счёту, наличию и отгрузке — главный экран становится более коммерческим.</span></div>
+      <div class="mylco-commerce-strip__item"><strong>наличие</strong><b>Категории и фасовки</b><span>Быстрый переход к силиконам, полиуретанам, смолам, пластикам и вакууму.</span></div>
+      <div class="mylco-commerce-strip__item"><strong>подбор</strong><b>Комплект под задачу</b><span>Материал, разделитель, герметик, пигмент и оборудование в одном сценарии.</span></div>
+      <div class="mylco-commerce-strip__item"><strong>юрлица</strong><b>Счёт и документы</b><span>Удобный маршрут для закупок мастерских, производств и организаций.</span></div>
+      <div class="mylco-commerce-strip__item"><strong>логистика</strong><b>Москва и доставка</b><span>Самовывоз, отправка заказа и консультация перед покупкой.</span></div>
+    </div>
+  </section>
+
 
   <section id="mylco-choice" class="mylco-section" aria-labelledby="mylco-choice-title">
     <div class="mylco-wrap">
