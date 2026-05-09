@@ -1026,6 +1026,21 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 /* Sprint 02: карточки товаров яснее объясняют, кому подходит позиция и какой следующий шаг безопасен. */
 .mylco-product-card{gap:0}.mylco-product-card__fit{display:block;margin:0 0 12px;border-radius:16px;background:#f4fbf6;border:1px solid #dbe7de;padding:11px 12px;color:#607168;font-size:13px;line-height:1.32}.mylco-product-card__fit b{display:block;margin-bottom:3px;color:#13251d;font-size:13px;letter-spacing:0}.mylco-product-card__next{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;margin-top:auto}.mylco-product-card__next span{color:#607168;font-size:12px;font-weight:800}.mylco-product-card__next a{margin:0}.mylco-product-card--assist{border-color:#9ee0b9;background:linear-gradient(180deg,#fff,#effbf3)}.mylco-product-card--assist .mylco-product-card__next a{background:#23b86a;color:#0d2a20!important}.mylco-route-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:-4px 0 18px}.mylco-route-strip a{display:flex;flex-direction:column;min-height:145px;border:1px solid #cfe8d9;border-radius:22px;background:linear-gradient(180deg,#fff,#f4fbf6);padding:18px;color:#13251d!important;text-decoration:none!important;box-shadow:0 14px 34px rgba(13,42,32,.08);transition:.18s ease}.mylco-route-strip a:hover{transform:translateY(-2px);box-shadow:0 20px 46px rgba(13,42,32,.12)}.mylco-route-strip small{align-self:flex-start;border-radius:999px;background:#eaf8f0;color:#11864d;padding:6px 9px;font-size:11px;font-weight:900;text-transform:uppercase}.mylco-route-strip b{margin:12px 0 7px;font-size:22px;line-height:1.05;letter-spacing:-.035em}.mylco-route-strip span{color:#607168;line-height:1.35;font-size:14px}.mylco-route-strip a:last-child{border-color:#9ee0b9;background:linear-gradient(180deg,#fff,#effbf3)}@media(max-width:760px){.mylco-product-card__next{grid-template-columns:1fr}.mylco-product-card__next span{order:2;text-align:center}.mylco-product-card__fit{font-size:13px}.mylco-route-strip{grid-template-columns:1fr;margin-top:0}.mylco-route-strip a{min-height:auto}}
 </style>
+<style id="mylco-sprint-04-hot-requests-css">
+/* Sprint 04: быстрые коммерческие маршруты по самым частым запросам — усиливают ядро каталога Mylco. */
+.mylco-hot-requests{background:linear-gradient(180deg,#fff,#f7fbf7)}
+.mylco-hot-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.mylco-hot-card{display:flex;flex-direction:column;min-height:250px;background:#fff;border:1px solid var(--line);border-radius:26px;padding:22px;color:var(--ink)!important;text-decoration:none!important;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.mylco-hot-card:before{content:"";position:absolute;left:0;right:0;top:0;height:7px;background:linear-gradient(90deg,#23b86a,#8de8ad)}
+.mylco-hot-card small{align-self:flex-start;margin-top:5px;border-radius:999px;background:var(--mint);color:#11864d;padding:7px 10px;font-size:11px;font-weight:900;text-transform:uppercase}
+.mylco-hot-card b{margin:16px 0 8px;font-size:24px;line-height:1.04;letter-spacing:-.04em}
+.mylco-hot-card span{color:var(--muted);line-height:1.4}
+.mylco-hot-card strong{margin-top:auto;color:#11864d;font-size:15px}
+.mylco-hot-card--accent{border-color:#9ee0b9;background:linear-gradient(180deg,#fff,#effbf3)}
+@media(max-width:1100px){.mylco-hot-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.mylco-hot-grid{grid-template-columns:1fr}.mylco-hot-card{min-height:auto;border-radius:24px}}
+</style>
+
 </head>
   <body class="page-homepage">
 <div class="app app--v4">
@@ -2080,6 +2095,23 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
         <div><b>Комплект под задачу</b><span>Если одного материала мало, подберём разделитель, герметик, пигмент, вакуум и расходники.</span></div>
         <div><b>Фото вместо длинного ТЗ</b><span>Можно прислать фото, эскиз, размеры или список — Mylco переведёт задачу в материалы.</span></div>
         <div><b>STEP 3D как усиление</b><span>Если нужна мастер-модель, скан или CAD-доработка, подключается производственная помощь без смешивания с обучением.</span></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="mylco-section mylco-hot-requests" aria-labelledby="mylco-hot-requests-title">
+    <div class="mylco-wrap">
+      <div class="mylco-section-head">
+        <p class="mylco-kicker">Популярные запросы</p>
+        <h2 id="mylco-hot-requests-title">4 быстрых маршрута, с которых обычно начинается покупка</h2>
+        <p>Клиент сразу видит не абстрактный каталог, а понятные сценарии: форма, литьё, прозрачная заливка или дегазация. Все маршруты ведут в основные товары Mylco.</p>
+      </div>
+      <div class="mylco-hot-grid">
+        <a class="mylco-hot-card mylco-hot-card--accent" href="kupit-silikon-v-moskve/"><small>форма</small><b>Нужен силикон для формы</b><span>Для гипса, смолы, воска, мыла и декора. Уточняем Shore, поднутрения, детализацию и материал заливки.</span><strong>Открыть силиконы →</strong></a>
+        <a class="mylco-hot-card" href="kupit-poliuretan-v-moskve/"><small>ресурс</small><b>Нужен полиуретан или пластик</b><span>Для рабочих форм, вставок, корпусов, прототипов и малой серии. Важно описать нагрузку и тираж.</span><strong>Смотреть полиуретаны →</strong></a>
+        <a class="mylco-hot-card" href="epoksidnaya-smola.html"><small>вид</small><b>Нужна прозрачная или декоративная заливка</b><span>Подбираем смолу по толщине слоя, прозрачности, пузырям, УФ-нагрузке и финишу.</span><strong>Открыть смолы →</strong></a>
+        <a class="mylco-hot-card" href="vakuumnye-kamery.html"><small>качество</small><b>Нужно убрать пузыри</b><span>Камера, насос и комплектующие под объём смеси, размер ёмкости и режим работы мастерской.</span><strong>Подобрать вакуум →</strong></a>
       </div>
     </div>
   </section>
