@@ -2252,6 +2252,38 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 }
 @media (min-width:761px){.mylco-mobile-cta{display:none!important}}
 </style>
+<style id="mylco-design-system-qa-06">
+/* Sprint 06: unify interaction rhythm across route, category, product, brief and footer surfaces. */
+.mylco-home-final .mylco-category-card,
+.mylco-home-final .mylco-task-card,
+.mylco-home-final .mylco-choice-card,
+.mylco-home-final .mylco-product-card,
+.mylco-home-final .mylco-kit-card,
+.mylco-home-final .mylco-contact-card,
+.mylco-home-final .mylco-partner-step,
+.mylco-home-final .mylco-btn,
+.mylco-clean-footer a,
+.mylco-mobile-cta a{transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease,background .18s ease,color .18s ease}
+.mylco-home-final .mylco-category-card:hover,
+.mylco-home-final .mylco-task-card:hover,
+.mylco-home-final .mylco-choice-card:hover,
+.mylco-home-final .mylco-product-card:hover,
+.mylco-home-final .mylco-kit-card:hover,
+.mylco-home-final .mylco-contact-card:hover,
+.mylco-home-final .mylco-partner-step:hover{transform:translateY(-2px);border-color:#9ee0b9;box-shadow:0 24px 64px rgba(13,42,32,.14)}
+.mylco-home-final .mylco-btn:hover,
+.mylco-mobile-cta a:hover{transform:translateY(-1px)}
+.mylco-clean-footer a:hover{color:#8de8ad!important;text-decoration:underline!important;text-underline-offset:3px}
+.mylco-home-final .mylco-category-card:focus-visible,
+.mylco-home-final .mylco-task-card:focus-visible,
+.mylco-home-final .mylco-choice-card:focus-visible,
+.mylco-home-final .mylco-kit-card a:focus-visible,
+.mylco-home-final .mylco-contact-card:focus-visible,
+.mylco-home-final .mylco-partner-step:focus-visible,
+.mylco-clean-footer a:focus-visible,
+.mylco-mobile-cta a:focus-visible{outline:3px solid #ffe08a;outline-offset:3px}
+@media (max-width:760px){.mylco-home-final .mylco-category-card:hover,.mylco-home-final .mylco-task-card:hover,.mylco-home-final .mylco-choice-card:hover,.mylco-home-final .mylco-product-card:hover,.mylco-home-final .mylco-kit-card:hover,.mylco-home-final .mylco-contact-card:hover,.mylco-home-final .mylco-partner-step:hover{transform:none}}
+</style>
 <script id="mylco-final-js">
 (function(){
   const densities={silicone:1.12,polyurethane:1.08,epoxy:1.10,plastic:1.05};
