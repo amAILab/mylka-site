@@ -1207,6 +1207,17 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 
 
 
+
+<style id="mylco-sprint-fit-matrix-17">
+/* Sprint 17: быстрый выбор по задаче — партнёр и покупатель за один взгляд видят, какой товар Mylco нужен. */
+.mx-fit-matrix{background:#f8fbf8;border-bottom:1px solid var(--mx-line)}
+.mx-fit-matrix__grid{display:grid;grid-template-columns:.92fr repeat(4,1fr);gap:12px;padding-top:24px;padding-bottom:26px;align-items:stretch}
+.mx-fit-matrix__lead,.mx-fit-matrix__card{border:1px solid var(--mx-line);border-radius:26px;background:#fff;padding:22px;box-shadow:0 16px 44px rgba(16,37,28,.07)}
+.mx-fit-matrix__lead{background:#0b1f17;color:#fff}.mx-fit-matrix__lead small,.mx-fit-matrix__card small{display:inline-flex;margin-bottom:12px;border-radius:999px;background:#23b86a;color:#092015;padding:7px 10px;font-size:11px;font-weight:900;text-transform:uppercase}.mx-fit-matrix__lead b,.mx-fit-matrix__card b{display:block;font-size:24px;line-height:1.04;letter-spacing:-.04em}.mx-fit-matrix__lead span{display:block;margin-top:9px;color:rgba(255,255,255,.74);line-height:1.4}.mx-fit-matrix__card{display:flex;flex-direction:column;text-decoration:none!important;color:var(--mx-ink)!important}.mx-fit-matrix__card span{display:block;margin-top:9px;color:var(--mx-muted);line-height:1.38}.mx-fit-matrix__card ul{margin:13px 0 0;padding:0;list-style:none;display:grid;gap:7px;color:var(--mx-muted);font-size:14px}.mx-fit-matrix__card li{position:relative;padding-left:18px}.mx-fit-matrix__card li:before{content:"→";position:absolute;left:0;color:#11864d;font-weight:900}.mx-fit-matrix__card strong{margin-top:auto;padding-top:16px;color:#11864d}.mx-fit-matrix__card--hot{border-color:rgba(35,184,106,.45);background:linear-gradient(180deg,#fff,#eefaf4)}
+@media(max-width:1080px){.mx-fit-matrix__grid{grid-template-columns:1fr 1fr}.mx-fit-matrix__lead{grid-column:1/-1}}
+@media(max-width:640px){.mx-fit-matrix__grid{grid-template-columns:1fr;padding-top:18px;padding-bottom:22px}.mx-fit-matrix__lead{grid-column:auto}.mx-fit-matrix__lead,.mx-fit-matrix__card{border-radius:22px;padding:18px}.mx-fit-matrix__lead b,.mx-fit-matrix__card b{font-size:22px}}
+</style>
+
 <style id="mylco-sprint-kit-builder-15">
 /* Sprint 15: комплектность заказа — покупатель видит не один товар, а готовую закупочную связку Mylco. */
 .mx-kit-builder{background:#fff;border-bottom:1px solid var(--mx-line)}
@@ -2272,7 +2283,15 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
     </div>
   </section>
 
-
+  <section class="mx-fit-matrix" aria-label="Быстрый выбор материала Mylco по задаче">
+    <div class="mx-wrap mx-fit-matrix__grid">
+      <div class="mx-fit-matrix__lead"><small>быстрый выбор</small><b>Не знаете категорию — начните с задачи</b><span>Матрица оставляет в центре популярные товары Mylco и сразу показывает, когда нужен силикон, полиуретан, смола или вакуумный комплект.</span></div>
+      <a class="mx-fit-matrix__card mx-fit-matrix__card--hot" href="kupit-silikon-v-moskve/"><small>формы</small><b>Сделать форму</b><span>Для гипса, бетона, воска, мыла, смолы и декора.</span><ul><li>силикон платина / олово</li><li>разделитель и герметик</li><li>подбор Shore под рельеф</li></ul><strong>К силиконам →</strong></a>
+      <a class="mx-fit-matrix__card" href="epoksidnaya-smola.html"><small>заливка</small><b>Залить изделие</b><span>Для прозрачной, декоративной или технической заливки.</span><ul><li>эпоксидная смола</li><li>пигменты и добавки</li><li>вакуум при пузырях</li></ul><strong>К смолам →</strong></a>
+      <a class="mx-fit-matrix__card" href="kupit-poliuretan-v-moskve/"><small>детали</small><b>Получить прочность</b><span>Для форм, оснастки, вставок и рабочих малых серий.</span><ul><li>полиуретан / жидкий пластик</li><li>твёрдость и нагрузка</li><li>тираж и срок службы</li></ul><strong>К полиуретанам →</strong></a>
+      <a class="mx-fit-matrix__card" href="vakuumnye-kamery.html"><small>качество</small><b>Убрать пузырьки</b><span>Для стабильной дегазации силиконов, смол и пластиков.</span><ul><li>камера + насос</li><li>объём смеси</li><li>частота работы</li></ul><strong>К вакууму →</strong></a>
+    </div>
+  </section>
 
   <section class="mx-quote-check" aria-label="Быстрый бриф по популярным товарам Mylco">
     <div class="mx-wrap mx-quote-check__grid">
