@@ -1255,6 +1255,16 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 @media(max-width:1100px){.mx-b2b-proof__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mx-b2b-proof__lead{grid-column:1/-1}}
 @media(max-width:760px){.mx-b2b-proof__grid{grid-template-columns:1fr}.mx-b2b-proof__lead{grid-column:auto}.mx-b2b-proof__lead,.mx-b2b-proof__card{border-radius:22px;padding:18px}.mx-b2b-proof__lead b{font-size:24px}}
 </style>
+<style id="mylco-partner-signal-css">
+/* Sprint: партнёрский сигнал за 10 секунд — усилили доверие, не вытесняя товарное ядро Mylco. */
+.mx-partner-signal{background:linear-gradient(180deg,#fff 0%,#f3faf6 100%);border-bottom:1px solid var(--mx-line)}
+.mx-partner-signal__grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:26px;align-items:start;padding-top:34px;padding-bottom:34px}
+.mx-partner-signal__lead{position:sticky;top:84px}.mx-partner-signal__lead h2{margin:0;color:var(--mx-ink);font-size:clamp(30px,3.6vw,48px);line-height:1;letter-spacing:-.055em}.mx-partner-signal__lead p:last-child{color:var(--mx-muted);font-size:17px;line-height:1.48}
+.mx-partner-signal__cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.mx-partner-signal__card{display:flex;flex-direction:column;min-height:220px;padding:20px;border:1px solid var(--mx-line);border-radius:24px;background:#fff;color:var(--mx-ink)!important;text-decoration:none!important;box-shadow:0 18px 48px rgba(16,37,28,.08)}
+.mx-partner-signal__card small{align-self:flex-start;margin-bottom:14px;padding:7px 10px;border-radius:999px;background:#e8f8ef;color:#11864d;font-size:11px;font-weight:900;text-transform:uppercase}.mx-partner-signal__card b{font-size:23px;line-height:1.02;letter-spacing:-.045em}.mx-partner-signal__card span{margin-top:10px;color:var(--mx-muted);line-height:1.38}.mx-partner-signal__card--hot{background:linear-gradient(180deg,#0b1f17,#123c2a);border-color:#123c2a;color:#fff!important}.mx-partner-signal__card--hot small{background:rgba(35,184,106,.22);color:#8de8ad}.mx-partner-signal__card--hot span{color:rgba(255,255,255,.72)}
+@media(max-width:980px){.mx-partner-signal__grid{grid-template-columns:1fr}.mx-partner-signal__lead{position:static}.mx-partner-signal__cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.mx-partner-signal__grid{padding-top:24px;padding-bottom:24px}.mx-partner-signal__cards{grid-template-columns:1fr}.mx-partner-signal__card{min-height:0;border-radius:22px}.mx-partner-signal__lead h2{font-size:30px}}
+</style>
 </head>
   <body class="page-homepage">
 <nav class="mylco-mobile-sticky" aria-label="Быстрые действия Mylco на мобильном">
@@ -2184,6 +2194,22 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
       <div><b>Москва</b><span>самовывоз, доставка, быстрый контакт</span></div>
       <div><b>Для юрлиц</b><span>счёт, документы, регулярные закупки</span></div>
       <div><b>Подбор</b><span>Shore, тираж, нагрузка, пузыри, срок</span></div>
+    </div>
+  </section>
+
+  <section class="mx-partner-signal" aria-labelledby="partner-signal-title">
+    <div class="mx-wrap mx-partner-signal__grid">
+      <div class="mx-partner-signal__lead">
+        <p class="mx-kicker">10 секунд для партнёра</p>
+        <h2 id="partner-signal-title">Сразу видно: Mylco продаёт не «всё подряд», а понятные материалы и комплекты</h2>
+        <p>Короткий блок перед подробностями фиксирует коммерческое ядро preview: ходовые категории, быстрый счёт и производственная помощь только как усиление заказа.</p>
+      </div>
+      <div class="mx-partner-signal__cards" aria-label="Что партнёр считывает сразу">
+        <a href="kupit-silikon-v-moskve/" class="mx-partner-signal__card"><small>основной спрос</small><b>Силиконы для форм</b><span>Платина, олово, пищевые и прозрачные серии — главный вход в каталог.</span></a>
+        <a href="kupit-poliuretan-v-moskve/" class="mx-partner-signal__card"><small>производство</small><b>Полиуретаны и пластики</b><span>Для форм, мастер-моделей, деталей, заливки и малых серий.</span></a>
+        <a href="vakuumnye-kamery.html" class="mx-partner-signal__card"><small>комплект</small><b>Вакуум и расходники</b><span>Камеры, насосы, разделители, пигменты и добавки рядом с материалом.</span></a>
+        <a href="mailto:order@mylco.ru?subject=Mylco%3A%20%D1%81%D1%87%D1%91%D1%82%20%D0%BF%D0%BE%20%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D0%BE%D0%BC%D1%83%20%D1%8F%D0%B4%D1%80%D1%83&body=%D0%9D%D1%83%D0%B6%D0%B5%D0%BD%20%D1%81%D1%87%D1%91%D1%82%2F%D0%9A%D0%9F%20%D0%BD%D0%B0%3A%0A%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%3A%0A%D0%9E%D0%B1%D1%8A%D1%91%D0%BC%2F%D1%84%D0%B0%D1%81%D0%BE%D0%B2%D0%BA%D0%B0%3A%0A%D0%A1%D1%80%D0%BE%D0%BA%3A%0A%D0%93%D0%BE%D1%80%D0%BE%D0%B4%2F%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%3A%0A%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%3A" class="mx-partner-signal__card mx-partner-signal__card--hot"><small>конверсия</small><b>Запрос счёта</b><span>Готовый бриф переводит интерес в закупку без лишнего поиска контактов.</span></a>
+      </div>
     </div>
   </section>
 
