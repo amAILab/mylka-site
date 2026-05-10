@@ -2217,6 +2217,16 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
     </div>
   </section>
 
+  <section class="mx-usecase-pack" aria-label="Готовые сценарии покупки Mylco">
+    <div class="mx-wrap mx-usecase-pack__grid">
+      <div class="mx-usecase-pack__lead"><small>по реальной задаче</small><b>Клиент узнаёт свой сценарий и сразу идёт в товар</b><span>Добавили быстрые B2B-маршруты для самых частых покупателей Mylco: мастерские, литейщики, декораторы и малые производства. STEP 3D остаётся только производственной опцией, если нужна мастер-модель или деталь.</span></div>
+      <a class="mx-usecase-card mx-usecase-card--hot" href="kupit-silikon-v-moskve/"><small>формы</small><b>Мастерская делает форму</b><span>Силикон по рельефу, Shore и тиражу + разделитель, пигмент и тара.</span><strong>Начать с силиконов →</strong></a>
+      <a class="mx-usecase-card" href="epoksidnaya-smola.html"><small>заливка</small><b>Нужна чистая смоляная отливка</b><span>Эпоксидная смола, красители, контроль пузырей и расчёт объёма.</span><strong>Подобрать смолу →</strong></a>
+      <a class="mx-usecase-card" href="vakuumnye-kamery.html"><small>качество</small><b>Нужен стабильный вакуум</b><span>Камера, насос и комплектующие под объём смеси и регулярность работ.</span><strong>Смотреть вакуум →</strong></a>
+      <a class="mx-usecase-card" href="services-step3d.html"><small>производство</small><b>Нет мастер-модели</b><span>CAD, 3D-печать или малая серия как сервис Mylco — без курсов и обучения.</span><strong>Услуги STEP 3D →</strong></a>
+    </div>
+  </section>
+
   <section class="mylco-section mylco-contact-rail" aria-label="Быстрый контакт Mylco">
     <div class="mylco-wrap mylco-contact-rail__grid">
       <div class="mylco-contact-rail__lead"><small>быстрый следующий шаг</small><b>Не заставляем клиента искать контакты после первого экрана</b><span>Три понятных входа в заказ: позвонить, написать письмо с брифом или открыть условия доставки. Это снижает трение и ведёт к заявке сразу после первого экрана.</span></div>
@@ -2710,6 +2720,18 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 @media (max-width:760px){.mylco-hero-logo{width:min(230px,68vw);margin:0 auto 16px}.mylco-hero-final__content{text-align:center}.mylco-hero-final__lead,.mylco-hero-final__trust{text-align:left}.mylco-hero-fast-cats a{justify-content:center!important}}
 @media (max-width:640px){.mylco-decision-board__grid{grid-template-columns:1fr;padding:16px}.mylco-decision-board__head{grid-column:auto}.mylco-decision-board__cta{display:block}.mylco-decision-board__cta a{width:100%;margin-top:12px}}
 </style>
+<style id="mylco-sprint-15-usecase-pack-css">
+/* Sprint 15: сценарии покупки — партнёр видит, кому и как сайт продаёт товарное ядро Mylco. */
+.mx-usecase-pack{background:linear-gradient(180deg,#fff 0%,#f4fbf6 100%);border-bottom:1px solid #dcefe4}
+.mx-usecase-pack__grid{display:grid;grid-template-columns:1.08fr repeat(4,minmax(0,1fr));gap:12px;align-items:stretch;padding-top:20px;padding-bottom:22px}
+.mx-usecase-pack__lead,.mx-usecase-card{border:1px solid #dcefe4;border-radius:24px;background:#fff;padding:20px;box-shadow:0 14px 34px rgba(13,42,32,.065)}
+.mx-usecase-pack__lead{background:linear-gradient(135deg,#0d2a20,#168850);color:#fff}.mx-usecase-pack small{display:inline-flex;margin-bottom:12px;border-radius:999px;background:#e8f8ef;color:#11864d;padding:6px 9px;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.05em}.mx-usecase-pack__lead small{background:#23b86a;color:#092015}
+.mx-usecase-pack__lead b,.mx-usecase-card b{display:block;font-size:22px;line-height:1.06;letter-spacing:-.04em}.mx-usecase-pack__lead b{color:#fff;font-size:28px}.mx-usecase-pack__lead span,.mx-usecase-card span{display:block;margin-top:9px;line-height:1.38;color:#58665f}.mx-usecase-pack__lead span{color:#d9ffe8}
+.mx-usecase-card{display:flex;flex-direction:column;color:#13251d!important;text-decoration:none!important;transition:.18s ease}.mx-usecase-card:hover{transform:translateY(-2px);border-color:#9ee0b9;box-shadow:0 22px 52px rgba(13,42,32,.11);color:#13251d!important}.mx-usecase-card--hot{border-color:rgba(35,184,106,.4);background:linear-gradient(180deg,#fff,#effbf3)}.mx-usecase-card strong{margin-top:auto;padding-top:14px;color:#11864d;font-size:13px}
+@media(max-width:1120px){.mx-usecase-pack__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mx-usecase-pack__lead{grid-column:1/-1}}
+@media(max-width:760px){.mx-usecase-pack__grid{grid-template-columns:1fr;padding-top:16px;padding-bottom:16px}.mx-usecase-pack__lead{grid-column:auto}.mx-usecase-pack__lead,.mx-usecase-card{border-radius:22px;padding:18px}.mx-usecase-pack__lead b{font-size:24px}.mx-usecase-card:hover{transform:none}}
+</style>
+
 <script id="mylco-mobile-menu-js">
 (function(){const logo=document.querySelector('.header--v4 .logo');if(logo&&!document.querySelector('.mylco-mobile-burger')){const b=document.createElement('button');b.type='button';b.className='mylco-mobile-burger';b.setAttribute('aria-label','Открыть меню');b.setAttribute('aria-expanded','false');logo.parentElement.insertBefore(b,logo)}const menu=document.querySelector('[data-mylco-mobile-menu]');const open=document.querySelector('.mylco-mobile-burger');function set(v){if(!menu)return;menu.classList.toggle('is-open',v);menu.setAttribute('aria-hidden',v?'false':'true');open&&open.setAttribute('aria-expanded',v?'true':'false');document.documentElement.classList.toggle('mylco-menu-lock',v)}function toggleMobileCta(){document.body.classList.toggle('mylco-show-mobile-cta',window.scrollY>900)}open&&open.addEventListener('click',()=>set(true));window.addEventListener('scroll',toggleMobileCta,{passive:true});toggleMobileCta();document.addEventListener('click',e=>{if(e.target.closest('[data-mylco-menu-close]')||e.target.closest('.mylco-mobile-menu__panel a'))set(false)});document.addEventListener('keydown',e=>{if(e.key==='Escape')set(false)})})();
 </script>
