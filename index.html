@@ -1286,6 +1286,21 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
 @media(max-width:640px){.mx-partner-signal__grid{padding-top:24px;padding-bottom:24px}.mx-partner-signal__cards{grid-template-columns:1fr}.mx-partner-signal__card{min-height:0;border-radius:22px}.mx-partner-signal__lead h2{font-size:30px}}
 .mx-procurement{background:#fff;border-bottom:1px solid #dbe7de}.mx-procurement__grid{display:grid;grid-template-columns:1.15fr repeat(3,1fr);gap:12px;align-items:stretch}.mx-procurement__lead,.mx-procurement__card{border:1px solid #dbe7de;border-radius:24px;background:linear-gradient(180deg,#fff,#f8fbf8);padding:20px;box-shadow:0 16px 44px rgba(13,42,32,.07)}.mx-procurement__lead b,.mx-procurement__card b{display:block;color:#13251d;font-size:21px;letter-spacing:-.035em;line-height:1.08}.mx-procurement__lead span,.mx-procurement__card span{display:block;margin-top:8px;color:#607168;line-height:1.35}.mx-procurement__card{text-decoration:none!important;color:#13251d!important}.mx-procurement__card strong{display:block;margin-top:14px;color:#11864d}.mx-procurement__card--hot{border-color:#9ee0b9;background:linear-gradient(180deg,#fff,#edfbf3)}@media(max-width:980px){.mx-procurement__grid{grid-template-columns:1fr 1fr}.mx-procurement__lead{grid-column:1/-1}}@media(max-width:760px){.mx-procurement__grid{grid-template-columns:1fr}.mx-procurement__lead{grid-column:auto}}
 </style>
+
+<style id="mylco-top-sku-rail-css">
+.mx-top-skus{background:#fff;border-bottom:1px solid #dbe7de}
+.mx-top-skus__grid{display:grid;grid-template-columns:.95fr repeat(4,1fr);gap:12px;align-items:stretch;padding-top:18px;padding-bottom:18px}
+.mx-top-skus__lead,.mx-top-sku{border:1px solid #dbe7de;border-radius:22px;background:linear-gradient(180deg,#fff,#f8fbf8);padding:18px;box-shadow:0 14px 34px rgba(13,42,32,.06)}
+.mx-top-skus__lead small,.mx-top-sku small{display:block;color:#11864d;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+.mx-top-skus__lead b,.mx-top-sku b{display:block;color:#13251d;font-size:20px;line-height:1.08;letter-spacing:-.035em}
+.mx-top-skus__lead span,.mx-top-sku span{display:block;margin-top:8px;color:#607168;line-height:1.36;font-size:14px}
+.mx-top-sku{text-decoration:none!important;color:#13251d!important;transition:.18s ease}
+.mx-top-sku strong{display:block;margin-top:12px;color:#11864d;font-weight:900}
+.mx-top-sku--hot{border-color:#9ee0b9;background:linear-gradient(180deg,#fff,#eaf8f0);box-shadow:0 18px 42px rgba(35,184,106,.13)}
+.mx-top-sku:hover{transform:translateY(-1px);box-shadow:0 18px 44px rgba(13,42,32,.10)}
+@media(max-width:1050px){.mx-top-skus__grid{grid-template-columns:1fr 1fr}.mx-top-skus__lead{grid-column:1/-1}}
+@media(max-width:620px){.mx-top-skus__grid{grid-template-columns:1fr;padding-top:14px;padding-bottom:14px}.mx-top-skus__lead,.mx-top-sku{border-radius:19px;padding:16px}}
+</style>
 </head>
   <body class="page-homepage">
 <nav class="mylco-mobile-sticky" aria-label="Быстрые действия Mylco на мобильном">
@@ -2231,7 +2246,15 @@ div.policy-container td {border: 1px dotted black; padding: 5px 10px;}
     </div>
   </section>
 
-
+  <section class="mx-top-skus" aria-label="Популярные товары Mylco сразу после первого экрана">
+    <div class="mx-wrap mx-top-skus__grid">
+      <div class="mx-top-skus__lead"><small>популярное сразу</small><b>Не абстрактный каталог — конкретные входы в заказ</b><span>После первого экрана покупатель сразу видит ходовые материалы и оборудование Mylco, а не уходит искать нужную категорию в меню.</span></div>
+      <a class="mx-top-sku mx-top-sku--hot" href="kupit-silikon-v-moskve/"><small>№1 для форм</small><b>Силиконы для форм</b><span>Платина, олово, пищевые и прозрачные серии под разные задачи.</span><strong>Выбрать силикон →</strong></a>
+      <a class="mx-top-sku" href="kupit-poliuretan-v-moskve/"><small>прочность</small><b>Полиуретаны</b><span>Для форм, оснастки, эластичных деталей и тиражных отливок.</span><strong>Открыть полиуретаны →</strong></a>
+      <a class="mx-top-sku" href="epoksidnaya-smola.html"><small>заливка</small><b>Эпоксидные смолы</b><span>Прозрачные, декоративные и технические составы с расходниками.</span><strong>Смотреть смолы →</strong></a>
+      <a class="mx-top-sku" href="vakuumnye-kamery.html"><small>качество</small><b>Вакуумные камеры</b><span>Камеры, насосы и комплекты для дегазации смол, силиконов и пластиков.</span><strong>Подобрать вакуум →</strong></a>
+    </div>
+  </section>
 
   <section class="mx-procurement" aria-label="B2B-заказ Mylco для мастерских и производств">
     <div class="mx-wrap mx-procurement__grid">
