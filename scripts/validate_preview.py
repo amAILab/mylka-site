@@ -188,4 +188,4 @@ if warnings:
     print('\n'.join(f'WARNING: {w}' for w in warnings[:80]))
     if len(warnings) > 80:
         print(f'WARNING: ... and {len(warnings) - 80} more CSV warning(s)')
-print(f'OK: {len(HTML_FILES)} html files keep noindex/live-base guard; services-step3d local links checked; generated card CTAs checked; forbidden legacy wording checked; csv structure warnings: {len(warnings)}')
+print(f'OK: {len(HTML_FILES)} html files keep noindex/live-base guard; services-step3d local links checked; generated card CTAs checked; service brief CTAs checked; forbidden legacy wording checked; csv structure warnings: {len(warnings)}')
