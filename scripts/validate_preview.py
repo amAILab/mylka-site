@@ -1,16 +1,19 @@
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlparse
+import csv
 import re
 import sys
 ROOT = Path(__file__).resolve().parents[1]
 HTML_FILES = sorted(p for p in ROOT.rglob('*.html') if '.git' not in p.parts)
+CSV_FILES = sorted(p for p in ROOT.rglob('*.csv') if '.git' not in p.parts)
 SOURCE_FILES = sorted(
     p for pattern in ('*.csv', '*.py')
     for p in ROOT.rglob(pattern)
     if '.git' not in p.parts and p.name != 'validate_preview.py'
 )
 errors = []
+warnings = []
 
 FORBIDDEN_PATTERNS = [
     (re.compile(r'STEP\s*3D|Step3D', re.I), 'direct STEP 3D brand mention'),
@@ -96,8 +99,24 @@ for p in SOURCE_FILES:
     text=p.read_text(errors='ignore')
     check_forbidden_text(rel, text)
 
+for p in CSV_FILES:
+    rel=p.relative_to(ROOT)
+    with p.open(newline='', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for line_no, row in enumerate(reader, start=2):
+            source_url = (row.get('source_url') or '').strip()
+            extra_fields = row.get(None) or []
+            if extra_fields:
+                warnings.append(f'{rel}:{line_no}: csv extra fields after header ({len(extra_fields)})')
+            if source_url and not re.search(r'(?:^|/|@)[\w%+.-]+(?:\.html|/)$', source_url):
+                warnings.append(f'{rel}:{line_no}: source_url is not a local html/category path: {source_url[:80]}')
+
 if errors:
     print('\n'.join(errors[:200]))
     print(f'FAILED: {len(errors)} issue(s)')
     sys.exit(1)
-print(f'OK: {len(HTML_FILES)} html files keep noindex/live-base guard; services-step3d local links checked; forbidden legacy wording checked')
+if warnings:
+    print('\n'.join(f'WARNING: {w}' for w in warnings[:80]))
+    if len(warnings) > 80:
+        print(f'WARNING: ... and {len(warnings) - 80} more CSV warning(s)')
+print(f'OK: {len(HTML_FILES)} html files keep noindex/live-base guard; services-step3d local links checked; forbidden legacy wording checked; csv structure warnings: {len(warnings)}')
