@@ -36,6 +36,32 @@ def list_html(items: list[str]) -> str:
     return "<ul class=\"list\">" + "".join(f"<li>{esc(item)}</li>" for item in items) + "</ul>"
 
 
+SOURCE_URL_BY_SLUG = {
+    # CSV пока содержит несколько неэкранированных запятых в текстовых полях.
+    # Эти безопасные fallback-адреса не дают кнопке «Открыть исходную страницу»
+    # уехать в FAQ/ограничения при повторной генерации preview.
+    "poly-00-40a-10kg": "kupit-poliuretan-v-moskve/poliuretan-prepolimer-poly-00-40a-10-kg.html",
+    "silikon-dlya-form-gips-smola": "kupit-silikon-v-moskve/",
+    "vakuumnaya-kamera-h250d210-nasos": "vakuumnaya-kamera-s-nasosom/vakuumnaya-kamera-h250d210-c-nasosom-zsn-1s.html",
+    "epoxy-clear-casting": "epoksidnaya-smola.html",
+    "liquid-plastic-small-series": "zhidkiy-plastik.html",
+    "release-agent-sealer-kit": "razdelitelnye-agenty-i-germetiki.html",
+    "pigments-additives-kit": "dobavki-k-epoksidnoy-smole.html",
+    "silicone-decor-small-molds": "kupit-silikon-v-moskve/",
+    "vacuum-degassing-kit": "vakuumnye-kamery.html",
+    "b2b-workshop-material-kit": "contact-us.html",
+}
+
+
+def source_url_for(row: dict[str, str]) -> str:
+    """Return a safe local source URL for the secondary product CTA."""
+    slug = (row.get("slug") or "").strip()
+    source_url = (row.get("source_url") or "").strip()
+    if source_url.endswith(".html") or source_url.endswith("/"):
+        return source_url
+    return SOURCE_URL_BY_SLUG.get(slug, "index.html")
+
+
 def mailto(row: dict[str, str]) -> str:
     subject = quote(f"Mylco: подбор — {row.get('product_name','товар')}")
     body = quote(
@@ -45,6 +71,7 @@ def mailto(row: dict[str, str]) -> str:
         "Тираж/объём:\n"
         "Срок:\n"
         "Условия эксплуатации:\n"
+        "Нужна мастер-модель/CAD/прототип: да/нет\n"
         f"Интересует: {row.get('product_name','')}\n"
     )
     return f"mailto:order@mylco.ru?subject={subject}&body={body}"
@@ -55,8 +82,8 @@ def render(row: dict[str, str]) -> str:
     title = row.get("seo_title") or row.get("hero_title") or product
     desc = row.get("seo_description") or row.get("short_description") or "Mylco: подбор материала, добавок и оборудования под задачу."
     hero_title = row.get("hero_title") or product
-    source_url = row.get("source_url", "").strip()
-    source_href = ("../../" + source_url) if source_url else "../../index.html"
+    source_url = source_url_for(row)
+    source_href = "../../" + source_url
     category = row.get("category", "Материалы")
     subcategory = row.get("subcategory", "")
     benefits = split_items(row.get("key_benefits"))
