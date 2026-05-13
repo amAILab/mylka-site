@@ -84,6 +84,21 @@ def require_service_brief(rel, label, href):
         if field not in decoded_href:
             errors.append(f'{rel}: {label} CTA misses full service brief field: {field}')
 
+SERVICE_CTA_COPY_MARKERS = ('бриф', 'расч')
+GENERIC_SERVICE_CTA_LABELS = (
+    'обсудить задачу',
+    'связаться',
+    'контакты',
+    'написать',
+)
+
+def require_service_cta_copy(rel, label, visible_text):
+    normalized = ' '.join(visible_text.lower().split())
+    if not any(marker in normalized for marker in SERVICE_CTA_COPY_MARKERS):
+        errors.append(f'{rel}: {label} CTA visible text is not tied to brief/calculation: {visible_text}')
+    if normalized in GENERIC_SERVICE_CTA_LABELS:
+        errors.append(f'{rel}: {label} CTA degraded to generic contact/discussion copy: {visible_text}')
+
 def is_external(href):
     if href.startswith(('mailto:', 'tel:', '#', 'javascript:')): return True
     u=urlparse(href)
@@ -130,8 +145,8 @@ for p in HTML_FILES:
     if rel.as_posix() != 'services-step3d.html':
         continue
     service_ctas = {
-        'hero': None,
-        'final': None,
+        'hero': {'href': None, 'text': None},
+        'final': {'href': None, 'text': None},
     }
     for item in parser.link_texts:
         href = item['href']
@@ -139,14 +154,15 @@ for p in HTML_FILES:
         if not href.startswith('mailto:order@mylco.ru'):
             continue
         if label == 'Обсудить задачу по брифу':
-            service_ctas['hero'] = href
+            service_ctas['hero'] = {'href': href, 'text': label}
         if label == 'Отправить финальный бриф':
-            service_ctas['final'] = href
-    for label, href in service_ctas.items():
-        if not href:
+            service_ctas['final'] = {'href': href, 'text': label}
+    for label, cta in service_ctas.items():
+        if not cta['href']:
             errors.append(f'{rel}: missing {label} full service brief CTA')
         else:
-            require_service_brief(rel, label, href)
+            require_service_brief(rel, label, cta['href'])
+            require_service_cta_copy(rel, label, cta['text'])
     for href in parser.links:
         if href.startswith('https://amailab.github.io/mylka-site/'):
             continue
@@ -188,4 +204,4 @@ if warnings:
     print('\n'.join(f'WARNING: {w}' for w in warnings[:80]))
     if len(warnings) > 80:
         print(f'WARNING: ... and {len(warnings) - 80} more CSV warning(s)')
-print(f'OK: {len(HTML_FILES)} html files keep noindex/live-base guard; services-step3d local links checked; generated card CTAs checked; service brief CTAs checked; forbidden legacy wording checked; csv structure warnings: {len(warnings)}')
+print(f'OK: {len(HTML_FILES)} html files keep noindex/live-base guard; services-step3d local links checked; generated card CTAs checked; service brief CTAs checked; service CTA copy checked; forbidden legacy wording checked; csv structure warnings: {len(warnings)}')
