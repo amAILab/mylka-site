@@ -48,12 +48,41 @@ def check_forbidden_text(rel, text):
             errors.append(f'{rel}: {label}: {snippet}')
 class LinkParser(HTMLParser):
     def __init__(self):
-        super().__init__(); self.links=[]; self.metas=[]; self.bases=[]
+        super().__init__(); self.links=[]; self.link_texts=[]; self.metas=[]; self.bases=[]; self._link_stack=[]
     def handle_starttag(self, tag, attrs):
         d=dict(attrs)
-        if tag == 'a' and d.get('href'): self.links.append(d['href'])
+        if tag == 'a' and d.get('href'):
+            self.links.append(d['href'])
+            self.link_texts.append({'href': d['href'], 'text': ''})
+            self._link_stack.append(self.link_texts[-1])
         if tag == 'meta': self.metas.append(d)
         if tag == 'base' and d.get('href'): self.bases.append(d['href'])
+    def handle_data(self, data):
+        if self._link_stack:
+            self._link_stack[-1]['text'] += data
+    def handle_endtag(self, tag):
+        if tag == 'a' and self._link_stack:
+            self._link_stack.pop()
+
+SERVICE_BRIEF_FIELDS = (
+    'Нужный результат',
+    'CAD / мастер-модель / прототип / малая серия / подбор материала',
+    'Задача и цель',
+    'Фото/файл/ссылка',
+    'Габариты и тираж',
+    'Условия применения',
+    'Материал выбран или нужен подбор',
+    'Город доставки',
+    'Нужен счёт для юрлица',
+    'Желаемый срок',
+    'цена / срок / точность / внешний вид',
+)
+
+def require_service_brief(rel, label, href):
+    decoded_href = unquote(href)
+    for field in SERVICE_BRIEF_FIELDS:
+        if field not in decoded_href:
+            errors.append(f'{rel}: {label} CTA misses full service brief field: {field}')
 
 def is_external(href):
     if href.startswith(('mailto:', 'tel:', '#', 'javascript:')): return True
@@ -100,6 +129,24 @@ for p in HTML_FILES:
     # которые штатно переписываются preview-links.js и не должны валить проверку.
     if rel.as_posix() != 'services-step3d.html':
         continue
+    service_ctas = {
+        'hero': None,
+        'final': None,
+    }
+    for item in parser.link_texts:
+        href = item['href']
+        label = ' '.join(item['text'].split())
+        if not href.startswith('mailto:order@mylco.ru'):
+            continue
+        if label == 'Обсудить задачу по брифу':
+            service_ctas['hero'] = href
+        if label == 'Отправить финальный бриф':
+            service_ctas['final'] = href
+    for label, href in service_ctas.items():
+        if not href:
+            errors.append(f'{rel}: missing {label} full service brief CTA')
+        else:
+            require_service_brief(rel, label, href)
     for href in parser.links:
         if href.startswith('https://amailab.github.io/mylka-site/'):
             continue
