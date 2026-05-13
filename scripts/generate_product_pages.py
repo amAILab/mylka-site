@@ -72,6 +72,7 @@ def mailto(row: dict[str, str]) -> str:
         "Срок:\n"
         "Город доставки:\n"
         "Нужен счёт для юрлица: да/нет\n"
+        "Предпочтительный формат результата: материал / комплект / расчёт / производство\n"
         "Условия эксплуатации:\n"
         "Нужна мастер-модель/CAD/прототип: да/нет\n"
         f"Интересует: {row.get('product_name','')}\n"
@@ -133,7 +134,7 @@ def render(row: dict[str, str]) -> str:
           <div class=\"fact\"><span>Наличие</span><b>{esc(row.get('availability') or 'уточнить')}</b></div>
           <div class=\"fact\"><span>Твёрдость</span><b>{esc(row.get('shore_or_hardness') or 'подбирается')}</b></div>
         </div>
-        <div class=\"brief-mini\"><b>Для быстрого счёта</b><span>Добавьте город доставки, объём закупки и отметку «счёт для юрлица» — менеджеру не придётся возвращаться за базовыми данными.</span></div>
+        <div class=\"brief-mini\"><b>Для быстрого счёта</b><span>Добавьте город доставки, объём закупки, отметку «счёт для юрлица» и формат результата: материал, комплект, расчёт или производство.</span></div>
       </aside>
     </section>
 
@@ -187,7 +188,7 @@ def render_index(rows: list[dict[str, str]]) -> str:
   <title>Mylco — автосгенерированные карточки товаров</title>
   <style>
     :root{{--ink:#13251d;--deep:#0d2a20;--green:#23b86a;--mint:#eaf8f0;--soft:#f6f4ef;--line:#dbe7de;--muted:#607168;--shadow:0 18px 48px rgba(13,42,32,.09)}}
-    *{{box-sizing:border-box}}body{{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--soft);line-height:1.5}}.wrap{{max-width:1120px;margin:0 auto;padding:34px 18px}}.hero{{background:linear-gradient(135deg,#0d2a20,#168850);color:#fff;border-radius:30px;padding:30px;box-shadow:var(--shadow)}}h1{{font-size:clamp(34px,5vw,58px);line-height:1;margin:0 0 12px;letter-spacing:-.055em}}.hero p{{max-width:760px;color:rgba(255,255,255,.84);font-size:18px}}.grid{{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}}.item{{display:flex;flex-direction:column;gap:8px;min-height:220px;background:#fff;border:1px solid var(--line);border-radius:24px;padding:20px;text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.18s ease}}.item:hover{{transform:translateY(-2px);border-color:#9bddb6}}.item small{{align-self:flex-start;background:var(--mint);color:#11864d;border-radius:999px;padding:6px 9px;font-weight:900;text-transform:uppercase;font-size:11px}}.item b{{font-size:22px;line-height:1.1;letter-spacing:-.035em}}.item span{{color:var(--muted);font-weight:800}}.item em{{font-style:normal;color:var(--muted);margin-top:auto}}.note{{margin-top:18px;color:var(--muted)}}@media(max-width:760px){{.wrap{{padding:18px 14px}}.hero{{border-radius:22px;padding:22px}}.grid{{grid-template-columns:1fr}}}}
+    *{{box-sizing:border-box}}body{{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--soft);line-height:1.5}}.wrap{{max-width:1120px;margin:0 auto;padding:34px 18px}}.hero{{background:linear-gradient(135deg,#0d2a20,#168850);color:#fff;border-radius:30px;padding:30px;box-shadow:var(--shadow)}}h1{{font-size:clamp(34px,5vw,58px);line-height:1;margin:0 0 12px;letter-spacing:-.055em}}.hero p{{max-width:760px;color:rgba(255,255,255,.84);font-size:18px}}.qa-strip,.grid{{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}}.qa-card{{background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:var(--shadow)}}.qa-card b{{display:block;color:var(--deep);margin-bottom:5px}}.qa-card span{{color:var(--muted)}}.item{{display:flex;flex-direction:column;gap:8px;min-height:220px;background:#fff;border:1px solid var(--line);border-radius:24px;padding:20px;text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.18s ease}}.item:hover{{transform:translateY(-2px);border-color:#9bddb6}}.item small{{align-self:flex-start;background:var(--mint);color:#11864d;border-radius:999px;padding:6px 9px;font-weight:900;text-transform:uppercase;font-size:11px}}.item b{{font-size:22px;line-height:1.1;letter-spacing:-.035em}}.item span{{color:var(--muted);font-weight:800}}.item em{{font-style:normal;color:var(--muted);margin-top:auto}}.note{{margin-top:18px;color:var(--muted)}}@media(max-width:760px){{.wrap{{padding:18px 14px}}.hero{{border-radius:22px;padding:22px}}.qa-strip,.grid{{grid-template-columns:1fr}}}}
   </style>
 </head>
 <body>
@@ -195,6 +196,11 @@ def render_index(rows: list[dict[str, str]]) -> str:
     <section class=\"hero\">
       <h1>Автосгенерированные карточки Mylco</h1>
       <p>Preview-индекс для проверки страниц, собранных из CSV. Все страницы закрыты от индексации и не заменяют живой каталог mylco.ru.</p>
+    </section>
+    <section class=\"qa-strip\" aria-label=\"Что проверить в generated-карточках\">
+      <div class=\"qa-card\"><b>1. Исходная страница</b><span>Вторичная кнопка должна вести на локальную карточку или категорию Mylco, а не на текст из CSV.</span></div>
+      <div class=\"qa-card\"><b>2. Заявка на подбор</b><span>Основной CTA должен открывать письмо с городом доставки, объёмом, счётом для юрлица, форматом результата и вопросом про CAD/прототип.</span></div>
+      <div class=\"qa-card\"><b>3. Безопасный preview</b><span>Generated-страницы остаются noindex и нужны для проверки структуры до переноса в живой каталог.</span></div>
     </section>
     <section class=\"grid\">
       {cards_html}

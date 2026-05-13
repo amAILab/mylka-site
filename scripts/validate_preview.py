@@ -1,6 +1,6 @@
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import unquote, urlparse
 import csv
 import re
 import sys
@@ -62,6 +62,7 @@ def is_external(href):
 
 for p in HTML_FILES:
     rel=p.relative_to(ROOT)
+    rel_posix = rel.as_posix()
     text=p.read_text(errors='ignore')
     check_forbidden_text(rel, text)
     low=text.lower()
@@ -73,6 +74,27 @@ for p in HTML_FILES:
     for base in parser.bases:
         if base.startswith('https://mylco.ru'):
             errors.append(f'{rel}: base points to live mylco.ru')
+    if rel_posix.startswith('generated/product-pages/') and rel.name != 'index.html':
+        mailto_links = [href for href in parser.links if href.startswith('mailto:order@mylco.ru')]
+        local_source_links = [href for href in parser.links if href.startswith('../../')]
+        if not mailto_links:
+            errors.append(f'{rel}: generated card has no order@mylco.ru mailto CTA')
+        for href in mailto_links:
+            decoded_href = unquote(href)
+            for required in ('Город доставки', 'Нужен счёт для юрлица', 'Предпочтительный формат результата', 'Нужна мастер-модель/CAD/прототип'):
+                if required not in decoded_href:
+                    errors.append(f'{rel}: mailto CTA misses required brief field: {required}')
+        if not local_source_links:
+            errors.append(f'{rel}: generated card has no local source CTA')
+        for href in local_source_links:
+            clean = href.split('#',1)[0].split('?',1)[0]
+            if not (clean.endswith('.html') or clean.endswith('/')):
+                errors.append(f'{rel}: source CTA is not a local html/category path: {href}')
+            target = (p.parent / clean).resolve()
+            try:
+                target.relative_to(ROOT.resolve())
+            except ValueError:
+                errors.append(f'{rel}: source CTA escapes preview: {href}')
     # Полную проверку локальных ссылок делаем только для новой ручной страницы.
     # В экспортированном OpenCart много служебных index.php?route=... ссылок,
     # которые штатно переписываются preview-links.js и не должны валить проверку.
@@ -119,4 +141,4 @@ if warnings:
     print('\n'.join(f'WARNING: {w}' for w in warnings[:80]))
     if len(warnings) > 80:
         print(f'WARNING: ... and {len(warnings) - 80} more CSV warning(s)')
-print(f'OK: {len(HTML_FILES)} html files keep noindex/live-base guard; services-step3d local links checked; forbidden legacy wording checked; csv structure warnings: {len(warnings)}')
+print(f'OK: {len(HTML_FILES)} html files keep noindex/live-base guard; services-step3d local links checked; generated card CTAs checked; forbidden legacy wording checked; csv structure warnings: {len(warnings)}')
