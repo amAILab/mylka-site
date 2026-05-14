@@ -4,3 +4,9 @@
 - Добавил hero, быстрые маршруты выбора, карточки подкатегорий, чек-лист подбора и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/выдуманных характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-14 22:48 MSK — полиуретаны
+- Обновил следующую приоритетную страницу `kupit-poliuretan-v-moskve.html` под единый шаблон `index.html`/`final-site.css`.
+- Добавил hero, быстрый выбор по сценарию, карточки серий, чек-лист перед заказом и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/выдуманных характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
