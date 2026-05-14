@@ -64,3 +64,9 @@
 - Добавил hero, сценарии печати, карточки процесса, чек-лист вводных и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без обещаний цены/сроков/материала без файла и требований.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 00:28 MSK — о компании
+- После завершения основных приоритетов обновил безопасную сервисную страницу `o-nas.html` под единый шаблон `index.html`/`final-site.css`.
+- Добавил hero, блок подхода, карточки направлений, принципы preview-версии и мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/выдуманных характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
