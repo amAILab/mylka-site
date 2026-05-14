@@ -52,3 +52,9 @@
 - Добавил hero, маршруты услуг, карточки этапов проекта, чек-лист вводных и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без обещаний сроков/стоимости без исходных данных.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 00:08 MSK — сварочные работы
+- Обновил следующую приоритетную страницу `svarochnye-raboty.html` под единый шаблон `index.html`/`final-site.css`.
+- Добавил hero, сценарии сварочных задач, карточки подготовки ТЗ, чек-лист вводных и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без обещаний сроков/стоимости/технологии без ТЗ.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
