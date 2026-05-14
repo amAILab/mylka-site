@@ -70,3 +70,9 @@
 - Добавил hero, блок подхода, карточки направлений, принципы preview-версии и мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/выдуманных характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 00:38 MSK — бренды
+- Обновил безопасную сервисную страницу `brands.html` под единый шаблон `index.html`/`final-site.css`.
+- Переформатировал страницу из устаревшей витрины в навигацию по направлениям: hero, быстрый выбор, карточки категорий, чек-лист по брендам/сериям и preview-мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых характеристик брендов.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
