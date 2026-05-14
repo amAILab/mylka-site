@@ -34,3 +34,9 @@
 - Добавил hero, быстрый выбор по основе силикона, карточки разделов, чек-лист совместимости и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/выдуманных характеристик и дозировок.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-14 23:38 MSK — контакты
+- Обновил следующую приоритетную страницу `contact-us.html` под единый шаблон `index.html`/`final-site.css`.
+- Добавил hero, сценарии обращения, карточки каналов связи, чек-лист вводных и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, статическая форма без отправки данных.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
