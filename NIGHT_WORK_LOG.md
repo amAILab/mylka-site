@@ -76,3 +76,9 @@
 - Переформатировал страницу из устаревшей витрины в навигацию по направлениям: hero, быстрый выбор, карточки категорий, чек-лист по брендам/сериям и preview-мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых характеристик брендов.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 00:48 MSK — карта сайта
+- Обновил безопасную сервисную страницу `sitemap.html` под единый шаблон `index.html`/`final-site.css`.
+- Переформатировал карту сайта в современную навигацию: hero, карта каталога, блок услуг/сервисов, подсказки по задачам и preview-мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без backend/оплаты и без неподтверждённых коммерческих обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
