@@ -94,3 +94,9 @@
 - Добавил hero, быстрый выбор по изделию/форме, карточки связанных разделов, чек-лист перед заказом и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых характеристик смесей.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 01:18 MSK — альгинат
+- Обновил безопасную категорийную страницу `alginat.html` под единый шаблон `index.html`/`final-site.css`.
+- Добавил hero, быстрый выбор по объекту слепка, карточки связанных материалов, чек-лист перед замесом и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых характеристик альгинатов.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
