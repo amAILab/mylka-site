@@ -142,3 +142,9 @@
 - Добавил hero, быстрый выбор смеси/добавок/разделителя, карточки связанных разделов, чек-лист перед заливкой и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённого ресурса форм.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 02:38 MSK — малогабаритные ЧПУ
+- Обновил безопасную категорийную страницу `malogabaritnye-frezernye-stanki-s-chpu.html` под единый шаблон `index.html`/`final-site.css`.
+- Добавил hero, быстрый выбор по деталям/материалам, карточки станков и связанных услуг, чек-лист перед выбором и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых технических обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
