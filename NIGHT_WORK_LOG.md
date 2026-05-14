@@ -130,3 +130,9 @@
 - Добавил hero, быстрый выбор по функции компаунда, карточки связанных разделов, чек-лист перед выбором и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых характеристик материалов.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 02:18 MSK — разделители и герметики
+- Обновил безопасную категорийную страницу `razdelitelnye-agenty-i-germetiki.html` под единый шаблон `index.html`/`final-site.css`.
+- Добавил hero, быстрый выбор по паре модель/материал формы, карточки связанных разделов, чек-лист подготовки и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/универсальных обещаний совместимости.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
