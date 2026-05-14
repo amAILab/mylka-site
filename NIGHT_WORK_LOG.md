@@ -10,3 +10,9 @@
 - Добавил hero, быстрый выбор по сценарию, карточки серий, чек-лист перед заказом и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/выдуманных характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-14 22:58 MSK — эпоксидные смолы
+- Обновил следующую приоритетную страницу `epoksidnaya-smola.html` под единый шаблон `index.html`/`final-site.css`.
+- Добавил hero, быстрый выбор по режиму заливки, карточки сценариев, чек-лист качества и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/выдуманных характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
