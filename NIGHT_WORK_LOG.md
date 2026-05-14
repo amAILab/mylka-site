@@ -148,3 +148,9 @@
 - Добавил hero, быстрый выбор по деталям/материалам, карточки станков и связанных услуг, чек-лист перед выбором и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых технических обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 02:48 MSK — добавки к эпоксидной смоле
+- Обновил безопасную категорийную страницу `dobavki-k-epoksidnoy-smole.html` под единый шаблон `index.html`/`final-site.css`.
+- Добавил hero, быстрый выбор по эффекту/совместимости, карточки связанных разделов, чек-лист перед добавлением и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых дозировок и характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
