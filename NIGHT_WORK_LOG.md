@@ -82,3 +82,9 @@
 - Переформатировал карту сайта в современную навигацию: hero, карта каталога, блок услуг/сервисов, подсказки по задачам и preview-мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без backend/оплаты и без неподтверждённых коммерческих обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 00:58 MSK — адгезивы
+- Обновил безопасную категорийную страницу `adgezivy.html` под единый шаблон `index.html`/`final-site.css`.
+- Добавил hero, быстрый выбор по паре материалов, карточки направлений/товарных страниц, чек-лист применения и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых характеристик клеевых материалов.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
