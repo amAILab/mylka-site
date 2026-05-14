@@ -46,3 +46,9 @@
 - Добавил hero, варианты получения, карточки подготовки заказа, чек-лист запроса и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без обещаний сроков/наличия/стоимости доставки.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-14 23:58 MSK — реверсивный инжиниринг
+- Обновил следующую приоритетную страницу `reversivnyj-inzhenering.html` под единый шаблон `index.html`/`final-site.css`.
+- Добавил hero, маршруты услуг, карточки этапов проекта, чек-лист вводных и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без обещаний сроков/стоимости без исходных данных.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
