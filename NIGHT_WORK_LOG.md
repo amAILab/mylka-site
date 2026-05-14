@@ -136,3 +136,9 @@
 - Добавил hero, быстрый выбор по паре модель/материал формы, карточки связанных разделов, чек-лист подготовки и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/универсальных обещаний совместимости.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 02:28 MSK — пластиковые формы для гипса и бетона
+- Обновил безопасную категорийную страницу `plastikovye-formy-dlya-zalivki-gipsa-i-betona.html` под единый шаблон `index.html`/`final-site.css`.
+- Добавил hero, быстрый выбор смеси/добавок/разделителя, карточки связанных разделов, чек-лист перед заливкой и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённого ресурса форм.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
