@@ -40,3 +40,9 @@
 - Добавил hero, сценарии обращения, карточки каналов связи, чек-лист вводных и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, статическая форма без отправки данных.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-14 23:48 MSK — доставка
+- Обновил следующую приоритетную страницу `dostavka.html` под единый шаблон `index.html`/`final-site.css`.
+- Добавил hero, варианты получения, карточки подготовки заказа, чек-лист запроса и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без обещаний сроков/наличия/стоимости доставки.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
