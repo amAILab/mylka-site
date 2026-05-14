@@ -112,3 +112,9 @@
 - Добавил hero, быстрый выбор по изделию, карточки связанных материалов, чек-лист перед заказом и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых характеристик материала.
 - Проверки: первая проверка поймала запрещённую legacy-формулировку, исправлено; затем `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 01:48 MSK — скульптурный пластилин
+- Обновил безопасную категорийную страницу `ckulpturnyy-plastilin.html` под единый шаблон `index.html`/`final-site.css`.
+- Добавил hero, быстрый выбор по дальнейшему процессу, карточки связанных решений, чек-лист перед выбором и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых характеристик материалов.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
