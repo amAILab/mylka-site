@@ -22,3 +22,9 @@
 - Добавил hero, быстрый выбор по результату, карточки разделов, чек-лист перед заказом и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/выдуманных характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-14 23:18 MSK — вакуумные камеры
+- Обновил следующую приоритетную страницу `vakuumnye-kamery.html` под единый шаблон `index.html`/`final-site.css`.
+- Добавил hero, быстрый выбор камеры/насоса, карточки разделов оборудования, чек-лист подбора и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/выдуманных характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
