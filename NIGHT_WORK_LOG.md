@@ -58,3 +58,9 @@
 - Добавил hero, сценарии сварочных задач, карточки подготовки ТЗ, чек-лист вводных и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без обещаний сроков/стоимости/технологии без ТЗ.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 00:18 MSK — 3D-печать
+- Обновил следующую приоритетную страницу `3d-pechat-1.html` под единый шаблон `index.html`/`final-site.css`.
+- Добавил hero, сценарии печати, карточки процесса, чек-лист вводных и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без обещаний цены/сроков/материала без файла и требований.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
