@@ -298,3 +298,9 @@
 - Добавил hero, быстрый выбор по регулярному процессу/объёму/системе, карточки связанных разделов, чек-лист профессиональной камеры и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых размеров, гарантий и характеристик моделей.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 11:51 MSK — ротоформовочные машины
+- Обновил безопасную подкатегорийную страницу `vakuumnye-kamery/roto.html` под единый шаблон `index.html`/`final-site.css` с корректными относительными ссылками.
+- Добавил hero, быстрый выбор по изделию/форме/материалу, карточки связанных разделов, чек-лист ротоформовочного процесса и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых габаритов, производительности и характеристик моделей.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
