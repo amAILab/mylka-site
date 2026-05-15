@@ -376,3 +376,9 @@
 - Заменил legacy-корзину на preview-заглушку: объяснил, что резервы, склад, цены, backend и оплата не подключены; добавил маршрут ручного запроса, чек-лист и мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без создания заказов, резервов, оплаты или подтверждения наличия.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 14:02 MSK — preview-закладки
+- Обновил безопасную служебную страницу `wishlist.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил legacy-закладки на preview-заглушку: объяснил, что личный кабинет, сохранение, backend, корзина и резервы не подключены; добавил ручной маршрут списка, чек-лист и мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без авторизации, сохранения избранного, резервов, оплаты или подтверждения наличия.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
