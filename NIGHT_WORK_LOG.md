@@ -400,3 +400,9 @@
 - Заменил legacy-авторизацию/подписку на preview-заглушку: объяснил, что подписка, личный кабинет, CRM, backend и автоматические письма не подключены; добавил темы обновлений, чек-лист и мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без создания подписки, отправки e-mail, CRM-интеграций или сбора базы.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 14:42 MSK — preview-личный кабинет
+- Обновил безопасную служебную страницу `my-account.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил legacy-авторизацию на preview-заглушку: объяснил, что вход, профиль, адреса, история, backend и обработка аккаунтов не подключены; добавил ручной маршрут обращения, чек-лист и мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без авторизации, сохранения персональных данных, CRM, заказов или оплаты.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
