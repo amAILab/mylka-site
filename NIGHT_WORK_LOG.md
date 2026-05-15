@@ -238,3 +238,9 @@
 - Добавил hero, быстрый выбор по цели визуального контроля, карточки связанных разделов, чек-лист модели/заливки/дегазации и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых оптических характеристик и обещаний ресурса формы.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 10:16 MSK — жидкие пластики общего назначения
+- Обновил безопасную подкатегорийную страницу `zhidkiy-plastik/obshchego-naznacheniya-1.html` под единый шаблон `index.html`/`final-site.css` с корректными относительными ссылками.
+- Добавил hero, быстрый выбор по детали и форме, карточки связанных разделов, чек-лист геометрии/формы/процесса и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых прочностных и временных характеристик серий.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
