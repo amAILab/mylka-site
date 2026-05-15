@@ -733,3 +733,9 @@
 - Заменил старую товарную карточку на безопасную preview-страницу фасовки: добавил hero с локальной иллюстрацией, маршруты, блоки совместимости/дозировки/получения, чек-лист и мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, дозировок-обещаний, корзины, оплаты, backend и неподтверждённых характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 00:52 MSK — preview-карточка преобразователя гипса СВВ-500 20 кг
+- Обновил legacy-карточку `dobavki-dlya-gipsa-i-betona/preobrazovatel-gipsa-svv-500-20-kg.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил старую товарную карточку на безопасную preview-страницу крупной фасовки: добавил hero с локальной иллюстрацией, маршруты, блоки совместимости/дозировки/получения, чек-лист и мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, дозировок-обещаний, корзины, оплаты, backend и неподтверждённых характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
