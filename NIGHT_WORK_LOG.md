@@ -262,3 +262,9 @@
 - Добавил hero, быстрый выбор по специальному требованию, карточки связанных разделов, чек-лист геометрии/формы/совместимости и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых характеристик и обещаний результата без теста.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 10:51 MSK — аренда вакуумного оборудования
+- Обновил безопасную подкатегорийную страницу `vakuumnye-kamery/arenda-vakuumnogo-oborudovanija.html` под единый шаблон `index.html`/`final-site.css` с корректными относительными ссылками.
+- Добавил hero, быстрый выбор по материалу/объёму/комплектации, карточки связанных разделов, чек-лист аренды и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/сроков аренды и неподтверждённых технических обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
