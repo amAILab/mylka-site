@@ -352,3 +352,9 @@
 - Добавил hero, быстрый выбор по назначению детали, карточки связанных услуг и материалов, чек-лист файла/критичных зон/дальнейшего процесса и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/сроков/неподтверждённой точности, доступных материалов и гарантий результата без оценки файла.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 13:22 MSK — ручная дуговая сварка под заказ
+- Обновил безопасную сервисную страницу `svarochnye-raboty/ruchnaja-dugovaja-svarka-pod-zakaz.html` под единый шаблон `index.html`/`final-site.css` с корректными относительными ссылками.
+- Добавил hero, быстрый выбор по материалу/чертежу/нагрузке, карточки связанных услуг, чек-лист оценки сварочных работ и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/сроков/доступности оборудования и гарантий прочности без оценки задачи.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
