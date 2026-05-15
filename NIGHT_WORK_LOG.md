@@ -703,3 +703,9 @@
 - Заменил старую категорийную выдачу на безопасную preview-страницу: добавил hero с локальной иллюстрацией, маршруты выбора добавок, блоки основы/эффекта/получения, чек-лист и мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, дозировок-обещаний, корзины, оплаты, backend и неподтверждённых характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 00:02 MSK — preview-страница Фрипласт Профи
+- Обновил legacy-страницу `dobavki-dlya-gipsa-i-betona/friplast-profi-ekonomichnyy-plastifikator-dlya-proizvodstva-sverhkrepkih-gipsov.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил старую товарно-категорийную страницу на безопасную preview-страницу пластификатора: добавил hero с локальной иллюстрацией, маршруты по фасовкам, блоки совместимости/дозировки/получения, чек-лист и мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, дозировок-обещаний, корзины, оплаты, backend и неподтверждённых характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
