@@ -495,3 +495,8 @@
 - Добавлено 474 изображения в карточки (`category-card`) с тематическим подбором локальных SVG по ссылке/тексту/разделу страницы.
 - Итог аудита: среди modern-preview страниц не осталось `category-card` без картинки.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK. Локальные контрольные скриншоты: `outputs/mylka_images/cards_silicone_with_images.png`, `outputs/mylka_images/cards_vacuum_sub_with_images.png`.
+
+## 2026-05-15 16:21 MSK — generated index карточки
+- Усилил `generated/product-pages/index.html`: добавил изображения внутрь 10 карточек автосгенерированных товарных страниц, чтобы индекс выглядел как нормальная витрина, а не сухой список.
+- Картинки подбираются по типу карточки: вакуум, силиконы, полиуретаны, эпоксидка, жидкие пластики, добавки/разделители, B2B-комплект.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK. Локальный контрольный скриншот: `outputs/mylka_images/generated_index_cards_with_images.png`.
