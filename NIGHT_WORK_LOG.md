@@ -322,3 +322,9 @@
 - Добавил hero, быстрый выбор по режиму давления/форме/материалу, карточки связанных разделов, чек-лист безопасного процесса и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых пределов давления, размеров и характеристик моделей.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 12:32 MSK — 3D-сканирование
+- Обновил безопасную сервисную страницу `reversivnyj-inzhenering/3d-skanirovanie.html` под единый шаблон `index.html`/`final-site.css` с корректными относительными ссылками.
+- Добавил hero, быстрый выбор по цели цифровой модели, карточки связанных услуг, чек-лист объекта/поверхности/формата и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/сроков/неподтверждённой точности оборудования и гарантий результата без оценки объекта.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
