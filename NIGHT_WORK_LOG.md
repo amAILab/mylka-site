@@ -542,3 +542,9 @@
 - Заменил старую серию/категорию на безопасную preview-страницу: добавил hero с локальной иллюстрацией, маршруты по фасовкам, блоки совместимости/технологии/доставки, чек-лист и мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, корзины, оплаты, backend и неподтверждённых характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 19:37 MSK — preview-серия адгезива METALSET A4
+- Обновил legacy-страницу `adgezivy/metalset-a4.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил старую серию/категорию на безопасную preview-страницу: добавил hero с локальной иллюстрацией, маршруты по запросам, блоки совместимости/технологии/доставки, чек-лист и мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, корзины, оплаты, backend и неподтверждённых характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
