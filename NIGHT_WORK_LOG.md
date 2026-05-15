@@ -388,3 +388,9 @@
 - Заменил legacy-сравнение на preview-страницу: объяснил, что интерактивное сравнение, сохранение товаров, цены, наличие и backend не подключены; добавил ручные критерии, направления и мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без сохранения товаров, цен, наличия, корзины или оплаты.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 14:22 MSK — preview-возвраты и обращения
+- Обновил безопасную служебную страницу `returns.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил legacy-авторизацию/возвраты на preview-заглушку: объяснил, что личный кабинет, форма возврата, backend и автоматические заявки не подключены; добавил ручной маршрут обращения, чек-лист и мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без отправки заявок, авторизации, оплаты или автоматических решений по возврату.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
