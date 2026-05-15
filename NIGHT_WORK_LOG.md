@@ -662,3 +662,14 @@
 - Заменил старую товарную карточку на безопасную preview-страницу крупной фасовки: добавил hero с локальной иллюстрацией, маршруты, блоки фасовки/процесса/получения, чек-лист и мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, корзины, оплаты, backend и неподтверждённых характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 23:00 MSK — SEO/индексация: XML sitemap
+- Добавил `sitemap.xml` для ключевых модернизированных страниц и preview-карточек товаров на GitHub Pages canonical URL.
+- В `robots.txt` добавил директиву `Sitemap: https://amailab.github.io/mylka-site/sitemap.xml`, сохранив preview-safety `Disallow: /` до финального решения об открытии индексации.
+- Не менял массово meta robots/title/description на страницах, чтобы не открыть preview случайно.
+
+## 2026-05-15 23:02 MSK — preview-карточка ALJA-SAFE ACROBAT 1,36 кг
+- Обновил legacy-карточку `alginat/alja-safe-acrobat/alja-safe-acrobat-136-kg.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил старую товарную карточку на безопасную preview-страницу фасовки: добавил hero с локальной иллюстрацией, маршруты, блоки фасовки/процесса/получения, чек-лист и мини-бриф для задач со сложной геометрией.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, корзины, оплаты, backend и неподтверждённых характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
