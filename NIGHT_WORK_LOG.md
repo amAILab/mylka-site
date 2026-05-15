@@ -244,3 +244,9 @@
 - Добавил hero, быстрый выбор по детали и форме, карточки связанных разделов, чек-лист геометрии/формы/процесса и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых прочностных и временных характеристик серий.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 10:26 MSK — прозрачные жидкие пластики
+- Обновил безопасную подкатегорийную страницу `zhidkiy-plastik/prozrachnye.html` под единый шаблон `index.html`/`final-site.css` с корректными относительными ссылками.
+- Добавил hero, быстрый выбор по требованиям к прозрачности и пузырькам, карточки связанных разделов, чек-лист чистоты формы/дегазации и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых оптических и временных характеристик серий.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
