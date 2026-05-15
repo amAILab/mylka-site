@@ -190,3 +190,9 @@
 - Добавил hero, быстрый выбор по декоративному эффекту, карточки связанных разделов, чек-лист применения эффектов и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых дозировок и обещаний эффекта без пробы.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 03:58 MSK — PolyColor
+- Обновил безопасную подкатегорийную страницу `dobavki-k-plastikam/polycolor.html` под единый шаблон `index.html`/`final-site.css` с корректными относительными ссылками.
+- Добавил hero, быстрый выбор по совместимости и оттенку, карточки связанных разделов, чек-лист окрашивания и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых дозировок и обещаний оттенка без пробы.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
