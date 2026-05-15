@@ -172,3 +172,9 @@
 - Добавил hero, быстрый выбор по базовому пластику/эффекту, карточки связанных разделов, чек-лист окрашивания и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых дозировок и оттенков.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 03:28 MSK — наполнители для пластиков
+- Обновил безопасную подкатегорийную страницу `dobavki-k-plastikam/napolniteli.html` под единый шаблон `index.html`/`final-site.css` с корректными относительными ссылками.
+- Добавил hero, быстрый выбор по вязкости/процессу, карточки связанных разделов, чек-лист применения наполнителей и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых дозировок и характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
