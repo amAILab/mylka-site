@@ -316,3 +316,9 @@
 - Добавил hero, быстрый выбор по режиму/материалу/арматуре, карточки связанных разделов, чек-лист мановакуумного процесса и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых пределов давления, размеров и характеристик моделей.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 12:22 MSK — камеры избыточного давления
+- Обновил безопасную подкатегорийную страницу `vakuumnye-kamery/manovakuumnye-sistemy-kamery-izbytochnogo-davleniya.html` под единый шаблон `index.html`/`final-site.css` с корректными относительными ссылками.
+- Добавил hero, быстрый выбор по режиму давления/форме/материалу, карточки связанных разделов, чек-лист безопасного процесса и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых пределов давления, размеров и характеристик моделей.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
