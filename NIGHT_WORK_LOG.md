@@ -382,3 +382,9 @@
 - Заменил legacy-закладки на preview-заглушку: объяснил, что личный кабинет, сохранение, backend, корзина и резервы не подключены; добавил ручной маршрут списка, чек-лист и мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без авторизации, сохранения избранного, резервов, оплаты или подтверждения наличия.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 14:12 MSK — preview-сравнение товаров
+- Обновил безопасную служебную страницу `compare-products.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил legacy-сравнение на preview-страницу: объяснил, что интерактивное сравнение, сохранение товаров, цены, наличие и backend не подключены; добавил ручные критерии, направления и мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без сохранения товаров, цен, наличия, корзины или оплаты.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
