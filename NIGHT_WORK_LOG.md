@@ -644,3 +644,9 @@
 - Заменил старую серию/категорию на безопасную preview-страницу: добавил hero с локальной иллюстрацией, маршруты по фасовкам, блоки размера/процесса/получения, чек-лист и мини-бриф по ALJA-SAFE.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, корзины, оплаты, backend и неподтверждённых характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 22:32 MSK — preview-серия ALJA-SAFE ACROBAT
+- Обновил legacy-страницу `alginat/alja-safe-acrobat.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил старую серию/категорию на безопасную preview-страницу: добавил hero с локальной иллюстрацией, маршруты по запросам, блоки размера/процесса/получения, чек-лист и мини-бриф по ALJA-SAFE ACROBAT.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, корзины, оплаты, backend и неподтверждённых характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
