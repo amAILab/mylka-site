@@ -250,3 +250,9 @@
 - Добавил hero, быстрый выбор по требованиям к прозрачности и пузырькам, карточки связанных разделов, чек-лист чистоты формы/дегазации и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых оптических и временных характеристик серий.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 10:35 MSK — жидкие пластики улучшенных характеристик
+- Обновил безопасную подкатегорийную страницу `zhidkiy-plastik/uluchshennyh-harakteristik.html` под единый шаблон `index.html`/`final-site.css` с корректными относительными ссылками.
+- Добавил hero, быстрый выбор по требованию к детали, карточки связанных разделов, чек-лист нагрузки/геометрии/процесса и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых характеристик и обещаний результата без тестовой пробы.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
