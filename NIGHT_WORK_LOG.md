@@ -160,3 +160,9 @@
 - Добавил hero, быстрый выбор по цели добавки, карточки разделов, чек-лист совместимости и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых дозировок и характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 03:08 MSK — добавки к полиуретанам
+- Обновил безопасную категорийную страницу `dobavki-k-poliuretanam.html` под единый шаблон `index.html`/`final-site.css`.
+- Добавил hero, быстрый выбор по системе/назначению, карточки связанных разделов, чек-лист совместимости и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых дозировок и характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
