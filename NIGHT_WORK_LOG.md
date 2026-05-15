@@ -566,3 +566,9 @@
 - Заменил старую серию/категорию на безопасную preview-страницу: добавил hero с локальной иллюстрацией, маршруты по запросам, блоки совместимости/технологии/доставки, чек-лист и мини-бриф для задач быстрого склеивания.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, корзины, оплаты, backend и неподтверждённых характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 20:22 MSK — preview-серия адгезива URE-BOND II
+- Обновил legacy-страницу `adgezivy/ure-bond-ii.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил старую серию/категорию на безопасную preview-страницу: добавил hero с локальной иллюстрацией, маршруты по запросам, блоки совместимости/технологии/доставки, чек-лист и мини-бриф для эластичных соединений.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, корзины, оплаты, backend и неподтверждённых характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
