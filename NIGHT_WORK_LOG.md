@@ -232,3 +232,9 @@
 - Добавил hero, быстрый выбор по цели полупрозрачности, карточки связанных разделов, чек-лист совместимости/чистоты процесса и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых оптических характеристик и обещаний совместимости без пробы.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 10:06 MSK — полупрозрачные оловянные силиконы
+- Обновил безопасную подкатегорийную страницу `kupit-silikon-v-moskve/poluprozrachnye-na-osnove-olova.html` под единый шаблон `index.html`/`final-site.css` с корректными относительными ссылками.
+- Добавил hero, быстрый выбор по цели визуального контроля, карточки связанных разделов, чек-лист модели/заливки/дегазации и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых оптических характеристик и обещаний ресурса формы.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
