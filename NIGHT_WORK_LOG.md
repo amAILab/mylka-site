@@ -424,3 +424,9 @@
 - Заменил legacy-адресную книгу на preview-заглушку: объяснил, что адреса, личный кабинет, профиль, backend, доставка API и оплата не подключены; добавил ручной маршрут доставки, чек-лист и мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без сохранения адресов, персональных данных, авторизации, заказов или оплаты.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 15:22 MSK — preview-операции личного кабинета
+- Обновил безопасные служебные страницы `order-history.html`, `reward-points.html`, `transactions.html` и `index.php@route=account%2Frecurring.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил legacy-авторизацию/операции на preview-заглушки: история заказов, бонусные баллы, транзакции и регулярные платежи не подключены; добавлены ручные маршруты запроса, чек-листы и мини-брифы.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без аккаунтов, оплат, автосписаний, CRM, сохранения персональных или платёжных данных.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
