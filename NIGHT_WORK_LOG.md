@@ -506,3 +506,9 @@
 - Заменил старую пагинацию товарной выдачи на безопасную preview-навигацию с локальной hero-иллюстрацией, маршрутами по вакуумному оборудованию, блоком preview-safety, чек-листом и мини-брифом.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без товарной выдачи, цен, наличия, корзины, оплаты, backend и неподтверждённых характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 18:37 MSK — preview-пагинация вакуумных камер page=6
+- Обновил legacy-страницу `vakuumnye-kamery@page=6.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил старую пагинацию товарной выдачи на безопасную preview-навигацию с локальной hero-иллюстрацией, маршрутами по вакуумному оборудованию, блоком preview-safety, чек-листом и мини-брифом.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без товарной выдачи, цен, наличия, корзины, оплаты, backend и неподтверждённых характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
