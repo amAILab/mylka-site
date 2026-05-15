@@ -202,3 +202,9 @@
 - Добавил hero, быстрый выбор с акцентом на риск ингибирования, карточки связанных разделов, чек-лист проверки модели/добавки/процесса и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых дозировок и обещаний совместимости без пробы.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 09:07 MSK — добавки для оловянных силиконов
+- Обновил безопасную подкатегорийную страницу `dobavki-k-silikonam/na-osnove-olova.html` под единый шаблон `index.html`/`final-site.css` с корректными относительными ссылками.
+- Добавил hero, быстрый выбор по задаче добавки, карточки связанных разделов, чек-лист проверки серии/модели/условий и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых дозировок и универсальных обещаний результата.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
