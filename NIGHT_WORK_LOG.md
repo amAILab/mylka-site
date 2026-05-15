@@ -394,3 +394,9 @@
 - Заменил legacy-авторизацию/возвраты на preview-заглушку: объяснил, что личный кабинет, форма возврата, backend и автоматические заявки не подключены; добавил ручной маршрут обращения, чек-лист и мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без отправки заявок, авторизации, оплаты или автоматических решений по возврату.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 14:32 MSK — preview-рассылка
+- Обновил безопасную служебную страницу `newsletter.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил legacy-авторизацию/подписку на preview-заглушку: объяснил, что подписка, личный кабинет, CRM, backend и автоматические письма не подключены; добавил темы обновлений, чек-лист и мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без создания подписки, отправки e-mail, CRM-интеграций или сбора базы.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
