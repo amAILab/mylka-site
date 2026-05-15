@@ -370,3 +370,9 @@
 - Заменил legacy checkout на preview-страницу: объяснил, что корзина, оплата, backend, резервы и CRM не подключены; добавил маршрут ручного запроса, чек-лист и мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без подключения заказов, оплаты, наличия или цен.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 13:52 MSK — preview-корзина
+- Обновил безопасную служебную страницу `cart.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил legacy-корзину на preview-заглушку: объяснил, что резервы, склад, цены, backend и оплата не подключены; добавил маршрут ручного запроса, чек-лист и мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без создания заказов, резервов, оплаты или подтверждения наличия.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
