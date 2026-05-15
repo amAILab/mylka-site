@@ -620,3 +620,9 @@
 - Заменил старую товарную карточку на безопасную preview-страницу фасовки: добавил hero с локальной иллюстрацией, маршруты, блоки фасовки/совместимости/получения, чек-лист и мини-бриф для задач быстрого склеивания.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, корзины, оплаты, backend и неподтверждённых характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 21:52 MSK — preview-карточка URE-BOND II 0,87 кг
+- Обновил legacy-карточку `adgezivy/ure-bond-ii/ure-bond-ii-087-kg.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил старую товарную карточку на безопасную preview-страницу фасовки: добавил hero с локальной иллюстрацией, маршруты, блоки фасовки/совместимости/получения, чек-лист и мини-бриф для эластичных соединений.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, корзины, оплаты, backend и неподтверждённых характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
