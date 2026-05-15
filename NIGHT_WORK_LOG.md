@@ -286,3 +286,9 @@
 - Добавил hero, быстрый выбор по объёму/насосу/комплектующим, карточки связанных разделов, чек-лист подбора комплекта и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых характеристик моделей и обещаний скорости дегазации.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 11:31 MSK — вакуумные камеры без насоса
+- Обновил безопасную подкатегорийную страницу `vakuumnye-kamery/vakuumnaya-kamera-bez-nasosa.html` под единый шаблон `index.html`/`final-site.css` с корректными относительными ссылками.
+- Добавил hero, быстрый выбор по таре/насосу/соединениям, карточки связанных разделов, чек-лист совместимости камеры и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых размеров и технических обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
