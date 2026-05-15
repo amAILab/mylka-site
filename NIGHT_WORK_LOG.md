@@ -430,3 +430,9 @@
 - Заменил legacy-авторизацию/операции на preview-заглушки: история заказов, бонусные баллы, транзакции и регулярные платежи не подключены; добавлены ручные маршруты запроса, чек-листы и мини-брифы.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без аккаунтов, оплат, автосписаний, CRM, сохранения персональных или платёжных данных.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 15:22 MSK — preview-история заказов
+- Обновил безопасную служебную страницу `order-history.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил legacy-историю заказов на preview-заглушку: объяснил, что база заказов, авторизация, статусы, склад, backend и оплата не подключены; добавил ручной маршрут поиска документов, чек-лист и мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без загрузки заказов, статусов, документов, оплат или персональных данных.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
