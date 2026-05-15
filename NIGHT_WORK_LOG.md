@@ -442,3 +442,9 @@
 - Заменил старую товарную выдачу на безопасную preview-категорию: добавил hero, маршруты подбора, карточки критериев, чек-лист и мини-бриф по адгезивам.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, корзины, оплаты, backend и неподтверждённых характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 15:42 MSK — preview-карточка вакуумной камеры под заказ
+- Обновил legacy-страницу `index.php@route=product%2Fproduct&product_id=1133.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил старую товарную карточку на безопасную preview-страницу подбора вакуумной камеры: добавил hero, маршруты, параметры согласования, чек-лист и мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, корзины, оплаты, backend и неподтверждённых характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
