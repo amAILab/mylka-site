@@ -626,3 +626,9 @@
 - Заменил старую товарную карточку на безопасную preview-страницу фасовки: добавил hero с локальной иллюстрацией, маршруты, блоки фасовки/совместимости/получения, чек-лист и мини-бриф для эластичных соединений.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, корзины, оплаты, backend и неподтверждённых характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 22:02 MSK — preview-категория акрилового гипса
+- Обновил legacy-страницу `akrilovyy-gips/index.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил старую категорийную выдачу на безопасную preview-страницу: добавил hero с локальной иллюстрацией, маршруты выбора, блоки назначения/свойств/получения, чек-лист и мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, корзины, оплаты, backend и неподтверждённых характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
