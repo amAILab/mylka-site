@@ -412,3 +412,9 @@
 - Заменил legacy-сброс пароля на preview-заглушку: объяснил, что пароли, e-mail-сброс, аккаунты, backend и CRM не подключены; добавил безопасный маршрут обращения, чек-лист и мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url`, без сбора паролей, отправки писем, авторизации или сохранения персональных данных.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 15:02 MSK — preview-регистрация
+- Обновил безопасную служебную страницу `simpleregister.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил legacy-регистрацию на preview-заглушку: объяснил, что аккаунты, пароли, профиль, адреса, backend и CRM не подключены; добавил ручной маршрут запроса, чек-лист и мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без создания аккаунтов, сбора паролей, сохранения персональных данных, CRM или оплаты.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
