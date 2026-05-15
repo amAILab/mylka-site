@@ -489,3 +489,9 @@
 - Добавил `assets/legacy-image-fallback.js`: если старая картинка не загружается, скрипт подставляет локальную тематическую SVG-заглушку из `assets/visuals/` по URL/alt/разделу страницы.
 - Подключил fallback-скрипт на 157 HTML-страниц с битым legacy image-cache, не меняя живые внешние ссылки и не подключая backend.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK. Локальные контрольные скриншоты: `outputs/mylka_images/legacy_vacuum_fallback.png`, `outputs/mylka_images/legacy_category_fallback.png`.
+
+## 2026-05-15 16:18 MSK — картинки внутри карточек
+- Усилил визуальную часть не только в hero: автоматически добавил `card-picture` в карточки разделов/служебных блоков на modern-preview страницах.
+- Добавлено 474 изображения в карточки (`category-card`) с тематическим подбором локальных SVG по ссылке/тексту/разделу страницы.
+- Итог аудита: среди modern-preview страниц не осталось `category-card` без картинки.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK. Локальные контрольные скриншоты: `outputs/mylka_images/cards_silicone_with_images.png`, `outputs/mylka_images/cards_vacuum_sub_with_images.png`.
