@@ -358,3 +358,9 @@
 - Добавил hero, быстрый выбор по материалу/чертежу/нагрузке, карточки связанных услуг, чек-лист оценки сварочных работ и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/сроков/доступности оборудования и гарантий прочности без оценки задачи.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 13:32 MSK — политика обработки персональных данных
+- Обновил безопасную служебную страницу `politika.html` под единый шаблон `index.html`/`final-site.css`.
+- Добавил hero, краткое объяснение preview-режима, карточки принципов обработки, чек-лист безопасного обращения и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без подключения сбора данных, CRM, оплаты или юридически неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
