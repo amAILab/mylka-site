@@ -310,3 +310,9 @@
 - Добавил hero, быстрый выбор по смеси/форме/массе, карточки связанных разделов, чек-лист режима вибрации и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых грузоподъёмности, мощности и характеристик моделей.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 12:12 MSK — мановакуумные системы
+- Обновил безопасную подкатегорийную страницу `vakuumnye-kamery/manovakuumnye-sistemy.html` под единый шаблон `index.html`/`final-site.css` с корректными относительными ссылками.
+- Добавил hero, быстрый выбор по режиму/материалу/арматуре, карточки связанных разделов, чек-лист мановакуумного процесса и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых пределов давления, размеров и характеристик моделей.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
