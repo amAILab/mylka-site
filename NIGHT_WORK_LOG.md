@@ -793,3 +793,9 @@
 - Заменил старую товарную карточку на безопасную preview-страницу фасовки: добавил hero с локальной иллюстрацией, маршруты, блоки фасовки/технологии/получения, чек-лист и мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, сроков, корзины, оплаты, backend и неподтверждённых характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 02:32 MSK — preview-карточка Фрипласт акриловый гипс 10 кг
+- Обновил legacy-карточку `akrilovyy-gips/friplast-akrilovyj-gips-10-kg.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил старую товарную карточку на безопасную preview-страницу фасовки: добавил hero с локальной иллюстрацией, маршруты, блоки фасовки/технологии/получения, чек-лист и мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, сроков, корзины, оплаты, backend и неподтверждённых характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
