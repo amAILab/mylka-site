@@ -650,3 +650,9 @@
 - Заменил старую серию/категорию на безопасную preview-страницу: добавил hero с локальной иллюстрацией, маршруты по запросам, блоки размера/процесса/получения, чек-лист и мини-бриф по ALJA-SAFE ACROBAT.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, корзины, оплаты, backend и неподтверждённых характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 22:42 MSK — preview-карточка ALJA-SAFE 1,36 кг
+- Обновил legacy-карточку `alginat/alja-safe/alja-safe-136-kg.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил старую товарную карточку на безопасную preview-страницу фасовки: добавил hero с локальной иллюстрацией, маршруты, блоки фасовки/процесса/получения, чек-лист и мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, корзины, оплаты, backend и неподтверждённых характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
