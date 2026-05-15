@@ -477,3 +477,9 @@
 - Покрыты подкатегории силиконов, добавок к силиконам, вакуумного оборудования, жидких пластиков, добавок к пластикам, реверсивного инжиниринга, 3D-печати, сварки, legacy product/category preview и generated product pages.
 - Итог аудита: среди modern-preview страниц с hero не осталось страниц без изображения (`missing 0`).
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK. Локальные контрольные скриншоты: `outputs/mylka_images/vacuum_subpage_with_image.png`, `outputs/mylka_images/generated_product_with_image.png`.
+
+## 2026-05-15 16:12 MSK — preview-пагинация вакуумных камер page=4
+- Обновил legacy-страницу `vakuumnye-kamery@page=4.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил старую пагинацию товарной выдачи на безопасную preview-навигацию с локальной hero-иллюстрацией, маршрутами по вакуумному оборудованию, блоком preview-safety, чек-листом и мини-брифом.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без товарной выдачи, цен, наличия, корзины, оплаты, backend и неподтверждённых характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
