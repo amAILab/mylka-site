@@ -274,3 +274,9 @@
 - Добавил hero, быстрый выбор по камере/материалу/комплекту, карточки связанных разделов, чек-лист выбора насоса и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых характеристик моделей и технических обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 11:11 MSK — комплектующие к вакуумным системам
+- Обновил безопасную подкатегорийную страницу `vakuumnye-kamery/komplektuyushchie-k-vakuumnym-sistemam.html` под единый шаблон `index.html`/`final-site.css` с корректными относительными ссылками.
+- Добавил hero, быстрый выбор по камере/насосу/соединениям, карточки связанных разделов, чек-лист портов/шлангов/обслуживания и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых размеров резьб и универсальных обещаний совместимости.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
