@@ -454,3 +454,9 @@
 - Создал локальный набор SVG-иллюстраций `assets/visuals/` для главной и ключевых разделов: материалы, силиконы, полиуретаны, эпоксидные смолы, жидкие пластики, вакуум, добавки, доставка, контакты, реверсивный инжиниринг, сварка, 3D-печать.
 - Подключил hero-картинки на 12 ключевых страницах и карточные изображения на главной в блоке каталога.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK. Локальные контрольные скриншоты: `outputs/mylka_images/home_with_images.png`, `outputs/mylka_images/silicone_with_image.png`.
+
+## 2026-05-15 15:52 MSK — preview-пагинация вакуумных камер page=2
+- Обновил legacy-страницу `vakuumnye-kamery@page=2.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил старую пагинацию товарной выдачи на безопасную preview-навигацию: добавил hero, маршруты по вакуумному оборудованию, блок preview-safety, чек-лист и мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без товарной выдачи, цен, наличия, корзины, оплаты, backend и неподтверждённых характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
