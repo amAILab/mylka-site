@@ -500,3 +500,9 @@
 - Усилил `generated/product-pages/index.html`: добавил изображения внутрь 10 карточек автосгенерированных товарных страниц, чтобы индекс выглядел как нормальная витрина, а не сухой список.
 - Картинки подбираются по типу карточки: вакуум, силиконы, полиуретаны, эпоксидка, жидкие пластики, добавки/разделители, B2B-комплект.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK. Локальный контрольный скриншот: `outputs/mylka_images/generated_index_cards_with_images.png`.
+
+## 2026-05-15 16:22 MSK — preview-пагинация вакуумных камер page=5
+- Обновил legacy-страницу `vakuumnye-kamery@page=5.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил старую пагинацию товарной выдачи на безопасную preview-навигацию с локальной hero-иллюстрацией, маршрутами по вакуумному оборудованию, блоком preview-safety, чек-листом и мини-брифом.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без товарной выдачи, цен, наличия, корзины, оплаты, backend и неподтверждённых характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
