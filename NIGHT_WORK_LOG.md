@@ -436,3 +436,9 @@
 - Заменил legacy-историю заказов на preview-заглушку: объяснил, что база заказов, авторизация, статусы, склад, backend и оплата не подключены; добавил ручной маршрут поиска документов, чек-лист и мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без загрузки заказов, статусов, документов, оплат или персональных данных.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 15:32 MSK — preview-категория адгезивов
+- Обновил legacy-страницу `index.php@route=product%2Fcategory&path=82.html` (адгезивы) под единый шаблон `index.html`/`final-site.css`.
+- Заменил старую товарную выдачу на безопасную preview-категорию: добавил hero, маршруты подбора, карточки критериев, чек-лист и мини-бриф по адгезивам.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, корзины, оплаты, backend и неподтверждённых характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
