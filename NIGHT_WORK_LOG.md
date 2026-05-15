@@ -364,3 +364,9 @@
 - Добавил hero, краткое объяснение preview-режима, карточки принципов обработки, чек-лист безопасного обращения и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без подключения сбора данных, CRM, оплаты или юридически неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 13:42 MSK — preview-оформление запроса
+- Обновил безопасную служебную страницу `simplecheckout.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил legacy checkout на preview-страницу: объяснил, что корзина, оплата, backend, резервы и CRM не подключены; добавил маршрут ручного запроса, чек-лист и мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без подключения заказов, оплаты, наличия или цен.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
