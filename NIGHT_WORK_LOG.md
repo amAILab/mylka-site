@@ -418,3 +418,9 @@
 - Заменил legacy-регистрацию на preview-заглушку: объяснил, что аккаунты, пароли, профиль, адреса, backend и CRM не подключены; добавил ручной маршрут запроса, чек-лист и мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без создания аккаунтов, сбора паролей, сохранения персональных данных, CRM или оплаты.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 15:12 MSK — preview-адресная книга
+- Обновил безопасную служебную страницу `address-book.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил legacy-адресную книгу на preview-заглушку: объяснил, что адреса, личный кабинет, профиль, backend, доставка API и оплата не подключены; добавил ручной маршрут доставки, чек-лист и мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без сохранения адресов, персональных данных, авторизации, заказов или оплаты.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
