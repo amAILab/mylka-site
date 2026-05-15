@@ -214,3 +214,9 @@
 - Добавил hero, быстрый выбор по основе силикона и роли расходника, карточки связанных разделов, чек-лист проверки системы/модели/разделителя и preview-мини-бриф без backend/оплаты.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых дозировок и обещаний универсальной совместимости.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 09:36 MSK — платиновые силиконы для форм
+- Обновил безопасную подкатегорийную страницу `kupit-silikon-v-moskve/na-osnove-platiny.html` под единый шаблон `index.html`/`final-site.css` с корректными относительными ссылками.
+- Добавил hero, быстрый выбор с проверкой контактных материалов, карточки связанных разделов, чек-лист модели/геометрии/процесса и preview-мини-бриф без backend/оплаты.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен/наличия/неподтверждённых характеристик серий и обещаний совместимости без теста.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
