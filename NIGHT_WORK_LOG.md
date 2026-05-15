@@ -406,3 +406,9 @@
 - Заменил legacy-авторизацию на preview-заглушку: объяснил, что вход, профиль, адреса, история, backend и обработка аккаунтов не подключены; добавил ручной маршрут обращения, чек-лист и мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без авторизации, сохранения персональных данных, CRM, заказов или оплаты.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-15 14:52 MSK — preview-восстановление пароля
+- Обновил безопасную служебную страницу `forgot-password.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил legacy-сброс пароля на preview-заглушку: объяснил, что пароли, e-mail-сброс, аккаунты, backend и CRM не подключены; добавил безопасный маршрут обращения, чек-лист и мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url`, без сбора паролей, отправки писем, авторизации или сохранения персональных данных.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
