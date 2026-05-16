@@ -1500,3 +1500,9 @@
 - Добавил современную preview-структуру: hero, маршруты уточнения, чек-лист, мини-бриф без backend-отправки, ссылки на исходную карточку и связанные разделы.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 22:24 MSK — generated preview B2B-комплекта мастерской
+- Обновил `generated/product-pages/b2b-workshop-material-kit.html` под общий шаблон `index.html`/`final-site.css` вместо inline-CSS карточки.
+- Добавил современную preview-структуру: hero, B2B-маршруты закупки, чек-лист для счёта, mailto-бриф с обязательными полями и preview-форму без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
