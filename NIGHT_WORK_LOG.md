@@ -1260,3 +1260,9 @@
 - Заменил legacy/product-layout на безопасную preview-карточку: hero, маршруты уточнения, карточки ограничений, чек-лист запроса и мини-бриф без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 15:53 MSK — preview-карточка Mold Max 30
+- Обновил `kupit-silikon-v-moskve/poluprozrachnye-na-osnove-olova/mold-max-30-25-kg.html` под единый шаблон product-preview и общий стиль `index.html`/`final-site.css`.
+- Заменил legacy/product-layout на безопасную preview-карточку: hero, маршруты уточнения, карточки ограничений, чек-лист запроса и мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
