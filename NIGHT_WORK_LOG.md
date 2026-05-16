@@ -857,3 +857,8 @@
 - Сохранил безопасную структуру: hero, маршруты выбора, карточки связанных разделов, чек-лист и мини-бриф без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, дозировок, корзины, оплаты, backend и неподтверждённых характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+## 2026-05-16 04:22 MSK — folder-preview добавок к силиконам
+- Обновил `dobavki-k-silikonam/index.html` под единый шаблон страницы категории `dobavki-k-silikonam.html` и общий стиль `index.html`/`final-site.css`.
+- Сохранил безопасную структуру: hero, маршруты по платиновым/оловянным системам, карточки связанных разделов, чек-лист совместимости и мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, дозировок, корзины, оплаты, backend и неподтверждённых характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
