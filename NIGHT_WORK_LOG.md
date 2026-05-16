@@ -1584,3 +1584,9 @@
 - Убрал единственный inline `style` у второго блока ссылок карты сайта и вынес отступ в класс `path-grid-secondary` в `final-site.css`.
 - Preview-safety не менял: `noindex,nofollow`, GitHub Pages canonical/og:url, без backend, оплаты, цен, наличия и неподтверждённых характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 01:00 MSK — shared focus accessibility polish
+- После завершения очереди HTML-страниц выбрал малую безопасную site-wide правку в эталонном `final-site.css`.
+- Добавил единый `:focus-visible` стиль для ссылок, кнопок, полей и `summary`, чтобы modern-preview был удобнее с клавиатуры без изменения структуры страниц.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.

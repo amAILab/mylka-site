@@ -7,3 +7,5 @@
 @media(max-width:680px){body{padding-bottom:calc(86px + env(safe-area-inset-bottom))}.header-inner{gap:10px;min-height:68px}.brand{min-width:0}.brand small{display:none}.nav.open{top:68px}.mobile-bar{bottom:calc(12px + env(safe-area-inset-bottom))}.mobile-bar a{padding:0 8px;text-align:center}}
 
 .path-grid-secondary{margin-top:18px}
+
+:where(a,button,input,textarea,summary):focus-visible{outline:3px solid rgba(0,165,184,.55);outline-offset:3px}
