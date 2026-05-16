@@ -1620,3 +1620,9 @@
 - Добавил в `final-site.js` закрытие мобильного меню по клику вне навигации и кнопки меню, чтобы preview-навигация вела себя единообразно на всех страницах.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 02:01 MSK — visual asset alias safety pass
+- Проверил локальные `href/src` в HTML и нашёл повторяющиеся отсутствующие SVG-алиасы для уже существующих локальных иллюстраций (`adhesives`, `acrylic-gypsum`, `alginate`, `materials`).
+- Добавил безопасные alias-файлы в `assets/visuals/`, скопировав существующие локальные SVG (`adgezivy`, `akril-gips`, `alginat`, `mylco-materials`), чтобы карточки не показывали битые изображения.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
