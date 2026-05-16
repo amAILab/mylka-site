@@ -1368,3 +1368,9 @@
 - Заменил legacy/product-layout на безопасную preview-страницу насоса: hero, маршруты выбора, связанные разделы, чек-лист процесса и мини-бриф без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, сроков, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 18:43 MSK — preview-карточка вакуумного насоса 2VP-4C
+- Обновил `vakuumnye-kamery/vakuumnye-nasosy/nasosy-vakuumnye-zensen/vakuumnyj-nasos-2-vp-4-c.html` под единый шаблон вакуумного оборудования и общий стиль `index.html`/`final-site.css`.
+- Заменил legacy/product-layout на безопасную preview-страницу насоса: hero, маршруты выбора, связанные разделы, чек-лист процесса и мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, сроков, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
