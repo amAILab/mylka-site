@@ -13,3 +13,5 @@
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 
 @media print{.site-header,.mobile-bar,.hero-actions,.brief-form,.menu-btn{display:none!important}body{background:#fff;color:#111}.section,.hero{padding:24px 0;background:#fff;color:#111}.lead,.section-head p,.path-card span,.category-card p,.task-grid p{color:#333}.container{width:100%}a{color:#111;text-decoration:underline}.path-card,.category-card,.task-grid article{box-shadow:none;break-inside:avoid}}
+
+.hero-picture[src$=".svg"],.category-card .card-picture[src$=".svg"]{object-fit:contain;padding:18px}
