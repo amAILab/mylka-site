@@ -1488,3 +1488,9 @@
 - Чистых кандидатов для безопасной небольшой партии не найдено (`clean_unmodern = 0`); оставшиеся legacy-страницы входят в pre-existing dirty-набор и не изменялись, чтобы не перетереть чужие/предыдущие правки.
 - Preview-safety не менял; backend/оплата/цены/наличие/характеристики не добавлялись.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 22:05 MSK — folder-preview 3D-печати
+- Обновил `3d-pechat-1/index.html` из redirect-заглушки в полноценную preview-страницу раздела на общем шаблоне `index.html`/`final-site.css`.
+- Сохранил структуру услуги 3D-печати: hero, сценарии, процесс, чек-лист и мини-бриф без backend-отправки; поправил относительные ссылки для папочного пути.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url на `/3d-pechat-1/`, без цен, сроков, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
