@@ -1590,3 +1590,9 @@
 - Добавил единый `:focus-visible` стиль для ссылок, кнопок, полей и `summary`, чтобы modern-preview был удобнее с клавиатуры без изменения структуры страниц.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 01:10 MSK — shared reduced-motion safety polish
+- Проверил modern-preview на простые якорные/структурные несоответствия: проблем не найдено (`COUNT 0`).
+- Добавил в `final-site.css` общий `prefers-reduced-motion: reduce`, чтобы отключать плавный scroll/hover-transform и сокращать анимации для пользователей с соответствующей настройкой.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.

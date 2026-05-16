@@ -9,3 +9,5 @@
 .path-grid-secondary{margin-top:18px}
 
 :where(a,button,input,textarea,summary):focus-visible{outline:3px solid rgba(0,165,184,.55);outline-offset:3px}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
