@@ -942,3 +942,9 @@
 - Заменил старую товарно-серийную страницу на безопасную preview-страницу серии: добавил hero с локальной иллюстрацией, маршруты, блоки серии/задачи/получения, чек-лист и мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, сроков, корзины, оплаты, backend и неподтверждённых характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 06:52 MSK — preview-страница PolyS
+- Обновил legacy-страницу `kupit-poliuretan-v-moskve/seriya-polys.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил старую товарно-серийную страницу на безопасную preview-страницу серии: добавил hero с локальной иллюстрацией, маршруты, блоки серии/задачи/получения, чек-лист и мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, сроков, корзины, оплаты, backend и неподтверждённых характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
