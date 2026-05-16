@@ -1050,3 +1050,9 @@
 - Заменил legacy/product-layout на безопасную preview-страницу раздела: hero, сценарии подбора, связанные разделы вакуумной системы, чек-лист температуры/цикла и мини-бриф без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 09:52 MSK — folder-preview жидкого пластика
+- Обновил `zhidkiy-plastik/index.html` под единый шаблон страницы категории `zhidkiy-plastik.html` и общий стиль `index.html`/`final-site.css`.
+- Сохранил безопасную структуру: hero, маршруты выбора пластика, карточки разделов, чек-лист заливки и мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
