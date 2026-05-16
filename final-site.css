@@ -21,3 +21,5 @@
 @media (prefers-contrast:more){:root{--line:#9aa8ba;--muted:#3f4f63}.btn{box-shadow:none}.path-card,.category-card,.task-grid article,.kit-grid article,details,.brief-form{border-width:2px}}
 
 .hero h1,.section-head h2,.expert h2,.step-card h2,.brief h2{text-wrap:balance}.lead,.section-head p{text-wrap:pretty}
+
+a,.path-card b,.category-card h3,.task-grid h3,.footer-grid a{overflow-wrap:anywhere}

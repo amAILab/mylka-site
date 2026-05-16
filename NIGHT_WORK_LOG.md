@@ -1650,3 +1650,9 @@
 - Добавил в `final-site.css` аккуратный `text-wrap: balance/pretty` для hero/section headings и lead-текста, чтобы длинные русские заголовки ровнее переносились в modern-preview.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 02:51 MSK — shared overflow wrapping polish
+- Проверил preview-формы: у input/textarea есть `name`, у `data-preview-form` есть status-note; проблем не найдено (`COUNT 0`).
+- Добавил в `final-site.css` безопасный `overflow-wrap:anywhere` для ссылок, заголовков карточек и footer-ссылок, чтобы длинные URL/названия не ломали мобильную сетку.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
