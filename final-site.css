@@ -2,3 +2,6 @@
 
 /* Preview imagery: generated local SVG covers for hero/catalog blocks */
 .hero-picture{display:block;width:100%;aspect-ratio:1.46/1;object-fit:cover;border-radius:28px;box-shadow:0 24px 70px rgba(15,23,42,.16);border:1px solid rgba(148,163,184,.22);background:#eef4fb;margin-bottom:18px}.category-card .card-picture{display:block;width:100%;aspect-ratio:1.55/1;object-fit:cover;border-radius:20px;margin-bottom:16px;border:1px solid rgba(148,163,184,.2);background:#f8fafc}.image-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:24px}.image-strip img{width:100%;aspect-ratio:1.55/1;object-fit:cover;border-radius:24px;border:1px solid rgba(148,163,184,.22);box-shadow:0 18px 48px rgba(15,23,42,.08)}@media(max-width:800px){.image-strip{grid-template-columns:1fr}.hero-picture{border-radius:22px}.category-card .card-picture{border-radius:16px}}
+
+/* Mobile sprint #5: keep sticky CTAs from covering content and compact the header on narrow screens. */
+@media(max-width:680px){body{padding-bottom:calc(86px + env(safe-area-inset-bottom))}.header-inner{gap:10px;min-height:68px}.brand{min-width:0}.brand small{display:none}.nav.open{top:68px}.mobile-bar{bottom:calc(12px + env(safe-area-inset-bottom))}.mobile-bar a{padding:0 8px;text-align:center}}
