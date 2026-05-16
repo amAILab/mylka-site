@@ -1044,3 +1044,9 @@
 - Заменил legacy/product-layout на безопасную preview-страницу раздела: hero, сценарии подбора, связанные разделы вакуумной системы, чек-лист габаритов/загрузки и мини-бриф без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 09:42 MSK — preview-страница вакуумных камер с подогревом
+- Обновил `vakuumnye-kamery/vakuumnye-kamery-s-podogrevom-vakuumnye-pechi.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил legacy/product-layout на безопасную preview-страницу раздела: hero, сценарии подбора, связанные разделы вакуумной системы, чек-лист температуры/цикла и мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
