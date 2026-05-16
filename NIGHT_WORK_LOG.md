@@ -1146,3 +1146,9 @@
 - Заменил legacy/product-layout на безопасную preview-карточку: hero, маршруты уточнения, карточки ограничений, чек-лист запроса и мини-бриф без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 12:43 MSK — preview-карточка Alcorsil 30
+- Обновил `kupit-silikon-v-moskve/na-osnove-olova-1/alcorsil/alcorsil-30-1-02-kg.html` под единый шаблон product-preview и общий стиль `index.html`/`final-site.css`.
+- Заменил legacy/product-layout на безопасную preview-карточку: hero, маршруты уточнения, карточки ограничений, чек-лист запроса и мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
