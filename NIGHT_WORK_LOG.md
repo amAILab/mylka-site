@@ -862,3 +862,8 @@
 - Сохранил безопасную структуру: hero, маршруты по платиновым/оловянным системам, карточки связанных разделов, чек-лист совместимости и мини-бриф без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, дозировок, корзины, оплаты, backend и неподтверждённых характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+## 2026-05-16 04:32 MSK — folder-preview эпоксидных смол
+- Обновил `epoksidnaya-smola/index.html` под единый шаблон страницы категории `epoksidnaya-smola.html` и общий стиль `index.html`/`final-site.css`.
+- Сохранил безопасную структуру: hero, маршруты выбора по режиму заливки, карточки задач, чек-лист технологии и мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
