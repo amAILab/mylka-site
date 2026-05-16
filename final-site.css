@@ -19,3 +19,5 @@
 @media(max-width:680px){.trust-row dt{font-size:18px}.path-card,.category-card,.task-grid article,.kit-grid article,details{padding:20px}.category-card{min-height:0}.brief-form input,.brief-form textarea{font-size:16px}}
 
 @media (prefers-contrast:more){:root{--line:#9aa8ba;--muted:#3f4f63}.btn{box-shadow:none}.path-card,.category-card,.task-grid article,.kit-grid article,details,.brief-form{border-width:2px}}
+
+.hero h1,.section-head h2,.expert h2,.step-card h2,.brief h2{text-wrap:balance}.lead,.section-head p{text-wrap:pretty}

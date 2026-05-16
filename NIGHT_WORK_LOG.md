@@ -1644,3 +1644,9 @@
 - Добавил в `final-site.css` небольшой `prefers-contrast: more` режим: контрастнее границы/secondary-текст и без декоративной тени на CTA, чтобы preview лучше читался в системном high-contrast.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 02:41 MSK — shared heading wrapping polish
+- Проверил базовую структуру HTML (`skip-link` → `#content`, `main id=content`, `lang=ru`): проблем не найдено (`COUNT 0`).
+- Добавил в `final-site.css` аккуратный `text-wrap: balance/pretty` для hero/section headings и lead-текста, чтобы длинные русские заголовки ровнее переносились в modern-preview.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
