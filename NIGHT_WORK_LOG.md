@@ -1608,3 +1608,9 @@
 - Добавил в `final-site.css` единое отображение локальных SVG-иллюстраций в hero/category-карточках через `object-fit: contain` и небольшой padding, чтобы схемы не обрезались в карточках.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 01:41 MSK — mobile menu keyboard polish
+- Проверил внутренние якоря и пустые `href` в HTML: проблем не найдено (`COUNT 0`).
+- Добавил в `final-site.js` закрытие мобильного меню по Escape с возвратом фокуса на кнопку меню — небольшое улучшение доступности без изменения контента или внешних интеграций.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
