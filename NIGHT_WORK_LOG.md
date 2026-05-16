@@ -996,3 +996,9 @@
 - Заменил старую страницу раздела на безопасную preview-страницу: добавил hero с локальной иллюстрацией, маршруты, карточки связанных материалов, чек-лист заливки и мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 08:22 MSK — preview-страница жёсткого пенополиуретана
+- Обновил legacy-страницу `penopoliuretan/zhestkiy-penopoliuretan.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил старую страницу раздела на безопасную preview-страницу: добавил hero с локальной иллюстрацией, маршруты, карточки связанных материалов, чек-лист заливки и мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
