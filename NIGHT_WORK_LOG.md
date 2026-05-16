@@ -1638,3 +1638,9 @@
 - Добавил в `final-site.css` небольшой mobile-polish: компактнее trust-row/card padding, без фиксированной высоты карточек на мобильных и `16px` для form inputs, чтобы iOS не увеличивал масштаб при вводе.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 02:31 MSK — shared high-contrast preview polish
+- Проверил HTML на дублирующиеся `id` и наличие `noindex,nofollow` в head: проблем не найдено (`COUNT 0`).
+- Добавил в `final-site.css` небольшой `prefers-contrast: more` режим: контрастнее границы/secondary-текст и без декоративной тени на CTA, чтобы preview лучше читался в системном high-contrast.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
