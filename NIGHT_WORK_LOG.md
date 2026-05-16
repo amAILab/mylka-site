@@ -1008,3 +1008,9 @@
 - Сохранил безопасную структуру: hero, маршруты выбора по модели/форме, карточки связанных материалов, чек-лист совместимости и мини-бриф без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 08:42 MSK — folder-preview реверсивного инжиниринга
+- Обновил `reversivnyj-inzhenering/index.html` под единый шаблон страницы услуги `reversivnyj-inzhenering.html` и общий стиль `index.html`/`final-site.css`.
+- Сохранил безопасную структуру: hero, маршруты услуг, карточки этапов проекта, чек-лист и мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, сроков, оплаты, backend и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
