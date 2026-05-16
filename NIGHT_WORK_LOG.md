@@ -960,3 +960,9 @@
 - Сохранил безопасную структуру: hero, маршруты выбора по основе, карточки типов силикона, чек-лист совместимости и мини-бриф без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 07:22 MSK — preview-карточка AMAN 2030 500W
+- Обновил legacy-карточку `malogabaritnye-frezernye-stanki-s-chpu/frezernyy-stanok-s-chpu-aman-2030500w.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил старую товарную карточку на безопасную preview-страницу ЧПУ: добавил hero с локальной иллюстрацией, маршруты, чек-лист комплекта и мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, сроков, оплаты, backend и неподтверждённых характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
