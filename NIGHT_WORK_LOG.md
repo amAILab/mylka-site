@@ -1440,3 +1440,9 @@
 - Заменил legacy/product-layout на безопасную preview-карточку материала: hero, маршруты выбора, связанные разделы, чек-лист детали и мини-бриф без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, сроков, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 20:44 MSK — preview-карточка Caspol One 20 кг
+- Обновил `zhidkiy-plastik/obshchego-naznacheniya-1/caspol-one-20-kg.html` под единый шаблон жидких пластиков и общий стиль `index.html`/`final-site.css`.
+- Заменил legacy/product-layout на безопасную preview-карточку материала: hero, маршруты выбора, связанные разделы, чек-лист детали и мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, сроков, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
