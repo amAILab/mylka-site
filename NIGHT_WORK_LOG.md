@@ -1632,3 +1632,9 @@
 - Правка только навигационная/визуальная: структуру карточек, тексты цен/наличия/характеристик и интеграции не менял.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend и оплата не добавлялись.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 02:21 MSK — mobile preview readability polish
+- Проверил локальные `href/src`: битых ссылок и картинок не осталось (`COUNT 0`), также проверил canonical/og:url GitHub Pages — проблем не найдено.
+- Добавил в `final-site.css` небольшой mobile-polish: компактнее trust-row/card padding, без фиксированной высоты карточек на мобильных и `16px` для form inputs, чтобы iOS не увеличивал масштаб при вводе.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
