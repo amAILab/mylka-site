@@ -1530,3 +1530,9 @@
 - Добавил hero, маршруты выбора, чек-лист совместимости, mailto-бриф с обязательными полями и preview-форму без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, дозировок, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 23:14 MSK — generated preview Poly 00-40A 10 кг
+- Обновил `generated/product-pages/poly-00-40a-10kg.html` под общий шаблон `index.html`/`final-site.css` вместо inline-CSS карточки.
+- Добавил современную preview-структуру: hero, маршруты уточнения, чек-лист, mini-бриф без backend-отправки, ссылки на исходную карточку и связанные разделы.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
