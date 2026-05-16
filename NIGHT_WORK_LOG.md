@@ -867,3 +867,8 @@
 - Сохранил безопасную структуру: hero, маршруты выбора по режиму заливки, карточки задач, чек-лист технологии и мини-бриф без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+## 2026-05-16 04:42 MSK — folder-preview компаундов
+- Обновил `kompaundy/index.html` под единый шаблон страницы категории `kompaundy.html` и общий стиль `index.html`/`final-site.css`.
+- Сохранил безопасную структуру: hero, маршруты выбора по функции заливки, карточки связанных материалов, чек-лист процесса и мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
