@@ -1410,3 +1410,9 @@
 - Заменил legacy/product-layout на безопасную preview-страницу насоса: hero, маршруты выбора, связанные разделы, чек-лист процесса и мини-бриф без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, сроков, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 19:54 MSK — preview-страница насосов Zensen
+- Обновил `vakuumnye-kamery/vakuumnye-nasosy/nasosy-vakuumnye-zensen.html` под единый шаблон категории вакуумного оборудования и общий стиль `index.html`/`final-site.css`.
+- Заменил legacy-раздел на безопасную preview-страницу линейки насосов: hero, маршруты выбора, связанные разделы, чек-лист системы и мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, сроков, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
