@@ -1002,3 +1002,9 @@
 - Заменил старую страницу раздела на безопасную preview-страницу: добавил hero с локальной иллюстрацией, маршруты, карточки связанных материалов, чек-лист заливки и мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 08:32 MSK — folder-preview разделителей и герметиков
+- Обновил `razdelitelnye-agenty-i-germetiki/index.html` под единый шаблон страницы категории `razdelitelnye-agenty-i-germetiki.html` и общий стиль `index.html`/`final-site.css`.
+- Сохранил безопасную структуру: hero, маршруты выбора по модели/форме, карточки связанных материалов, чек-лист совместимости и мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
