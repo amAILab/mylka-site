@@ -1302,3 +1302,9 @@
 - Заменил legacy-раздел на безопасную preview-страницу серии: hero, сценарии выбора, карточки связанных разделов, чек-лист поверхности/формы и мини-бриф без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 17:03 MSK — preview-страница серии Sorta Clear
+- Обновил `kupit-silikon-v-moskve/poluprozrachnye-na-platine/sorta-clear.html` под единый шаблон категории силиконов и общий стиль `index.html`/`final-site.css`.
+- Заменил legacy-раздел на безопасную preview-страницу серии: hero, сценарии выбора, карточки связанных разделов, чек-лист поверхности/формы и мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
