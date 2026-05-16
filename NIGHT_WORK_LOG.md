@@ -872,3 +872,8 @@
 - Сохранил безопасную структуру: hero, маршруты выбора по функции заливки, карточки связанных материалов, чек-лист процесса и мини-бриф без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+## 2026-05-16 04:52 MSK — folder-preview полиуретанов
+- Обновил `kupit-poliuretan-v-moskve/index.html` под единый шаблон страницы категории `kupit-poliuretan-v-moskve.html` и общий стиль `index.html`/`final-site.css`.
+- Сохранил безопасную структуру: hero, маршруты выбора по сценарию применения, карточки серий, чек-лист технологии и мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
