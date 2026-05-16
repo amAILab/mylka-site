@@ -1560,3 +1560,9 @@
 - Добавил hero, маршруты выбора, чек-лист вакуумной системы, mailto-бриф с обязательными полями и preview-форму без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 00:04 MSK — generated preview вакуумной камеры H250 D210 с насосом
+- Обновил `generated/product-pages/vakuumnaya-kamera-h250d210-nasos.html` под общий шаблон `index.html`/`final-site.css` вместо inline-CSS карточки.
+- Добавил hero, маршруты выбора, чек-лист вакуумной системы, mailto-бриф с обязательными полями и preview-форму без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
