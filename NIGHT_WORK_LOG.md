@@ -1494,3 +1494,9 @@
 - Сохранил структуру услуги 3D-печати: hero, сценарии, процесс, чек-лист и мини-бриф без backend-отправки; поправил относительные ссылки для папочного пути.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url на `/3d-pechat-1/`, без цен, сроков, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 22:14 MSK — preview-шаблон карточки Poly 00-40A
+- Обновил `generated/product-card-template/poly-00-40a-10kg.html` под общий шаблон `index.html`/`final-site.css` вместо inline-CSS карточки.
+- Добавил современную preview-структуру: hero, маршруты уточнения, чек-лист, мини-бриф без backend-отправки, ссылки на исходную карточку и связанные разделы.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
