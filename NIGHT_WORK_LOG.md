@@ -1014,3 +1014,9 @@
 - Сохранил безопасную структуру: hero, маршруты услуг, карточки этапов проекта, чек-лист и мини-бриф без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, сроков, оплаты, backend и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 08:52 MSK — folder-preview сварочных работ
+- Обновил `svarochnye-raboty/index.html` под единый шаблон страницы услуги `svarochnye-raboty.html` и общий стиль `index.html`/`final-site.css`.
+- Сохранил безопасную структуру: hero, маршруты задач, карточки согласования работ, чек-лист ТЗ и мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, сроков, оплаты, backend и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
