@@ -1314,3 +1314,9 @@
 - Убрал старый inline-CSS layout и перевёл страницу на общий `final-site.css`/`final-site.js`, сохранив статическую preview-логику без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, сроков, наличия, корзины, оплаты и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 17:13 MSK — preview-карточка аренды вакуумной камеры 6D
+- Обновил `vakuumnye-kamery/arenda-vakuumnogo-oborudovanija/arenda-vakuumnaja-kamera-d-220-h-219-s-nasosom-6-d.html` под единый шаблон вакуумного оборудования и общий стиль `index.html`/`final-site.css`.
+- Заменил legacy/product-layout на безопасную preview-страницу аренды: hero, маршруты выбора, связанные разделы, чек-лист процесса и мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, сроков, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
