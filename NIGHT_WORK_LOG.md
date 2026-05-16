@@ -1326,3 +1326,9 @@
 - Заменил legacy/product-layout на безопасную preview-страницу оборудования: hero, маршруты выбора, связанные разделы, чек-лист процесса и мини-бриф без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, сроков, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 17:33 MSK — preview-карточка мановакуумной камеры МР-30
+- Обновил `vakuumnye-kamery/manovakuumnye-sistemy-kamery-izbytochnogo-davleniya/manovakuumnaya-kamera-mr-30.html` под единый шаблон вакуумного оборудования и общий стиль `index.html`/`final-site.css`.
+- Заменил legacy/product-layout на безопасную preview-страницу оборудования: hero, маршруты выбора, связанные разделы, чек-лист процесса и мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, сроков, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
