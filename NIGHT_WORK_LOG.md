@@ -1512,3 +1512,9 @@
 - Добавил hero, маршруты выбора, чек-лист прозрачной заливки, mailto-бриф с обязательными полями и preview-форму без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 22:44 MSK — generated product-pages index
+- Обновил `generated/product-pages/index.html` под общий шаблон `index.html`/`final-site.css` вместо legacy/inline структуры.
+- Добавил noindex preview-индекс generated-карточек: hero, карточки переходов, mini-бриф без backend-отправки и безопасные ссылки на generated pages.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url на `/generated/product-pages/`, без цен, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
