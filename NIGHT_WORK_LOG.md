@@ -1266,3 +1266,9 @@
 - Заменил legacy/product-layout на безопасную preview-карточку: hero, маршруты уточнения, карточки ограничений, чек-лист запроса и мини-бриф без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 16:03 MSK — preview-карточка Body-Sil
+- Обновил `kupit-silikon-v-moskve/poluprozrachnye-na-platine/body-sil-silikon-dlya-tela.html` под единый шаблон product-preview и общий стиль `index.html`/`final-site.css`.
+- Заменил legacy/product-layout на безопасную preview-карточку: hero, маршруты уточнения, карточки ограничений, чек-лист запроса и мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
