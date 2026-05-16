@@ -972,3 +972,9 @@
 - Заменил старую товарную карточку на безопасную preview-страницу ЧПУ: добавил hero с локальной иллюстрацией, маршруты, чек-лист комплекта и мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, сроков, оплаты, backend и неподтверждённых характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 07:42 MSK — folder-preview малогабаритных ЧПУ
+- Обновил `malogabaritnye-frezernye-stanki-s-chpu/index.html` под единый шаблон страницы категории `malogabaritnye-frezernye-stanki-s-chpu.html` и общий стиль `index.html`/`final-site.css`.
+- Сохранил безопасную структуру: hero, маршруты выбора по деталям, карточки станков/услуг, чек-лист процесса и мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
