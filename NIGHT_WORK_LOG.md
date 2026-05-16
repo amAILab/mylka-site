@@ -847,3 +847,8 @@
 - Заменил старую товарную карточку на безопасную preview-страницу фасовки: добавил hero с локальной иллюстрацией, маршруты, блоки фасовки/технологии/получения, чек-лист и мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, сроков, корзины, оплаты, backend и неподтверждённых характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+## 2026-05-16 04:02 MSK — preview-карточка Plasticreate серый 60 кг
+- Обновил legacy-карточку `akrilovyy-gips/plasticreate-plastikrit-akrilovaya-smola-cvet-seryy-60-kg.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил старую товарную карточку на безопасную preview-страницу фасовки: добавил hero с локальной иллюстрацией, маршруты, блоки фасовки/технологии/получения, чек-лист и мини-бриф.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, сроков, корзины, оплаты, backend и неподтверждённых характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
