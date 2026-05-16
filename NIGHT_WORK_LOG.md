@@ -1626,3 +1626,9 @@
 - Добавил безопасные alias-файлы в `assets/visuals/`, скопировав существующие локальные SVG (`adgezivy`, `akril-gips`, `alginat`, `mylco-materials`), чтобы карточки не показывали битые изображения.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 02:11 MSK — broken local reference cleanup
+- Продолжил безопасный pass по локальным `href/src`: исправил относительные пути к SVG на `adgezivy/index.html` и пересчитал битые ссылки на корневые страницы `razdelitelnye-agenty-i-germetiki.html`, `dobavki-k-silikonam.html`, `vakuumnye-kamery.html` в вложенных preview-страницах.
+- Правка только навигационная/визуальная: структуру карточек, тексты цен/наличия/характеристик и интеграции не менял.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend и оплата не добавлялись.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
