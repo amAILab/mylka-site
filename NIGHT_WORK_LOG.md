@@ -1482,3 +1482,9 @@
 - Чистых кандидатов для безопасной модернизации не осталось (`clean_unmodern = 0`); оставшиеся unmodern-страницы находятся в уже изменённом pre-existing dirty-наборе и не тронуты, чтобы не перетереть чужие/предыдущие правки.
 - Preview-safety не менял; backend/оплата/цены/наличие/характеристики не добавлялись.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 22:04 MSK — очередь чистых legacy-страниц пуста
+- Проверил HTML-страницы без `final-site.css` с исключением файлов из текущего `git diff --name-only HEAD`.
+- Чистых кандидатов для безопасной небольшой партии не найдено (`clean_unmodern = 0`); оставшиеся legacy-страницы входят в pre-existing dirty-набор и не изменялись, чтобы не перетереть чужие/предыдущие правки.
+- Preview-safety не менял; backend/оплата/цены/наличие/характеристики не добавлялись.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
