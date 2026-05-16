@@ -1566,3 +1566,9 @@
 - Добавил hero, маршруты выбора, чек-лист вакуумной системы, mailto-бриф с обязательными полями и preview-форму без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 00:14 MSK — clean legacy queue check
+- Проверил HTML-страницы без `final-site.css`, исключая текущие изменённые файлы из `git diff --name-only HEAD`.
+- Чистых кандидатов для безопасной небольшой партии не осталось (`COUNT 0`), поэтому не менял страницы и не трогал pre-existing dirty-набор.
+- Preview-safety не менял; backend/оплата/цены/наличие/характеристики не добавлялись.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
