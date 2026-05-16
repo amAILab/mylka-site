@@ -1524,3 +1524,9 @@
 - Добавил hero, маршруты выбора, чек-лист малой серии, mailto-бриф с обязательными полями и preview-форму без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 23:04 MSK — generated preview комплекта пигментов и добавок
+- Обновил `generated/product-pages/pigments-additives-kit.html` под общий шаблон `index.html`/`final-site.css` вместо inline-CSS карточки.
+- Добавил hero, маршруты выбора, чек-лист совместимости, mailto-бриф с обязательными полями и preview-форму без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, дозировок, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
