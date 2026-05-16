@@ -1032,3 +1032,9 @@
 - Заменил legacy/product-layout на безопасную preview-страницу оборудования: hero, сценарии подбора, связанные разделы вакуумной системы, чек-лист и мини-бриф без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 09:22 MSK — folder-preview вакуумных камер
+- Обновил `vakuumnye-kamery/index.html` под единый шаблон страницы категории `vakuumnye-kamery.html` и общий стиль `index.html`/`final-site.css`.
+- Сохранил безопасную структуру: hero, быстрый выбор камеры/насоса, карточки разделов оборудования, чек-лист подбора и мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
