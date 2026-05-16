@@ -1572,3 +1572,9 @@
 - Чистых кандидатов для безопасной небольшой партии не осталось (`COUNT 0`), поэтому не менял страницы и не трогал pre-existing dirty-набор.
 - Preview-safety не менял; backend/оплата/цены/наличие/характеристики не добавлялись.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 00:24 MSK — all preview HTML checked
+- Повторно проверил очередь HTML без `final-site.css`: `all_unmodern 0`, `clean 0`, `dirty 0`.
+- Новую страницу не менял: безопасных кандидатов для модернизации не осталось, unrelated-файлы не трогал.
+- Preview-safety не менял; backend/оплата/цены/наличие/характеристики не добавлялись.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
