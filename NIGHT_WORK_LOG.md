@@ -1398,3 +1398,9 @@
 - Заменил legacy/product-layout на безопасную preview-страницу насоса: hero, маршруты выбора, связанные разделы, чек-лист процесса и мини-бриф без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, сроков, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 19:33 MSK — preview-карточка вакуумного насоса ZSJ-3D
+- Обновил `vakuumnye-kamery/vakuumnye-nasosy/nasosy-vakuumnye-zensen/vakuumnyj-nasos-zsj-3-d-15-mkr.html` под единый шаблон вакуумного оборудования и общий стиль `index.html`/`final-site.css`.
+- Заменил legacy/product-layout на безопасную preview-страницу насоса: hero, маршруты выбора, связанные разделы, чек-лист процесса и мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, сроков, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
