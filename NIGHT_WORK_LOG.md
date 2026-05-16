@@ -1020,3 +1020,9 @@
 - Сохранил безопасную структуру: hero, маршруты задач, карточки согласования работ, чек-лист ТЗ и мини-бриф без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, сроков, оплаты, backend и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 09:02 MSK — preview-страница вакуумной камеры H250D210 с насосом
+- Обновил `vakuumnaya-kamera-s-nasosom/vakuumnaya-kamera-h250d210-c-nasosom-zsn-1s.html` под единый шаблон `index.html`/`final-site.css`.
+- Заменил legacy/product-layout на безопасную preview-страницу комплекта: hero, сценарии подбора, связанные разделы вакуумного оборудования, чек-лист и мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
