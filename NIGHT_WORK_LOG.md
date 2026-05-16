@@ -1578,3 +1578,9 @@
 - Новую страницу не менял: безопасных кандидатов для модернизации не осталось, unrelated-файлы не трогал.
 - Preview-safety не менял; backend/оплата/цены/наличие/характеристики не добавлялись.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 00:50 MSK — sitemap inline style cleanup
+- После завершения очереди HTML без `final-site.css` выбрал малую безопасную правку единообразия: `sitemap.html`.
+- Убрал единственный inline `style` у второго блока ссылок карты сайта и вынес отступ в класс `path-grid-secondary` в `final-site.css`.
+- Preview-safety не менял: `noindex,nofollow`, GitHub Pages canonical/og:url, без backend, оплаты, цен, наличия и неподтверждённых характеристик.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
