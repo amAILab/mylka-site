@@ -1542,3 +1542,9 @@
 - Добавил hero, маршруты выбора, чек-лист совместимости, mailto-бриф с обязательными полями и preview-форму без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, дозировок, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 23:34 MSK — generated preview силикона для декоративных форм
+- Обновил `generated/product-pages/silicone-decor-small-molds.html` под общий шаблон `index.html`/`final-site.css` вместо inline-CSS карточки.
+- Добавил hero, маршруты выбора, чек-лист формы, mailto-бриф с обязательными полями и preview-форму без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, Shore/характеристик, корзины, оплаты и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
