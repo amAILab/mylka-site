@@ -1308,3 +1308,9 @@
 - Заменил legacy-раздел на безопасную preview-страницу серии: hero, сценарии выбора, карточки связанных разделов, чек-лист поверхности/формы и мини-бриф без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 17:03 MSK — preview-страница производственных услуг Step3D
+- Обновил `services-step3d.html` под единый шаблон `index.html`/`final-site.css`: общий header/footer, hero, маршруты услуг, карточки направлений, чек-лист и preview-бриф.
+- Убрал старый inline-CSS layout и перевёл страницу на общий `final-site.css`/`final-site.js`, сохранив статическую preview-логику без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, сроков, наличия, корзины, оплаты и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
