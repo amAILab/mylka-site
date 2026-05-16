@@ -954,3 +954,9 @@
 - Заменил старую товарно-серийную страницу на безопасную preview-страницу серии: добавил hero с локальной иллюстрацией, маршруты, блоки серии/задачи/получения, чек-лист и мини-бриф.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, сроков, корзины, оплаты, backend и неподтверждённых характеристик.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 07:12 MSK — folder-preview силиконов
+- Обновил `kupit-silikon-v-moskve/index.html` под единый шаблон страницы категории `kupit-silikon-v-moskve.html` и общий стиль `index.html`/`final-site.css`.
+- Сохранил безопасную структуру: hero, маршруты выбора по основе, карточки типов силикона, чек-лист совместимости и мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
