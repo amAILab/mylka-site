@@ -12,6 +12,14 @@ document.addEventListener('keydown', (event) => {
   menuButton?.focus();
 });
 
+document.addEventListener('click', (event) => {
+  if (!nav?.classList.contains('open')) return;
+  if (nav.contains(event.target) || menuButton?.contains(event.target)) return;
+  nav.classList.remove('open');
+  menuButton?.setAttribute('aria-expanded', 'false');
+});
+
+
 
 document.querySelectorAll('[data-preview-form]').forEach((form) => {
   form.addEventListener('submit', (event) => {

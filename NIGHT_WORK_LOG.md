@@ -1614,3 +1614,9 @@
 - Добавил в `final-site.js` закрытие мобильного меню по Escape с возвратом фокуса на кнопку меню — небольшое улучшение доступности без изменения контента или внешних интеграций.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 01:51 MSK — mobile menu outside-click polish
+- Проверил безопасные HTML-инварианты для `target=_blank`/`rel` и `button type`: проблем не найдено (`COUNT 0`).
+- Добавил в `final-site.js` закрытие мобильного меню по клику вне навигации и кнопки меню, чтобы preview-навигация вела себя единообразно на всех страницах.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
