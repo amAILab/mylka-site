@@ -1596,3 +1596,9 @@
 - Добавил в `final-site.css` общий `prefers-reduced-motion: reduce`, чтобы отключать плавный scroll/hover-transform и сокращать анимации для пользователей с соответствующей настройкой.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 01:21 MSK — shared print-safe preview polish
+- Проверил базовые preview-инварианты по HTML (`lang`, viewport, `noindex,nofollow`, скрипты): проблем не найдено (`COUNT 0`).
+- Добавил в `final-site.css` компактный print-режим: скрывает header/mobile/формы/CTA, убирает тёмный hero-фон и тени, чтобы страницы можно было безопасно распечатать как бриф без e-commerce-логики.
+- Preview-safety не менял: `robots.txt` остаётся `Disallow: /`, canonical/og:url остаются GitHub Pages; backend, оплата, цены, наличие и характеристики не добавлялись.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
