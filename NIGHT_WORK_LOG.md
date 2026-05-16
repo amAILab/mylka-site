@@ -1476,3 +1476,9 @@
 - Заменил legacy/product-layout на безопасную preview-карточку прозрачного материала: hero, маршруты выбора, связанные разделы, чек-лист детали/прозрачности и мини-бриф без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, сроков, наличия, точных характеристик, корзины, оплаты и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 21:54 MSK — аудит очереди legacy-страниц
+- Повторно проверил очередь HTML без подключения `final-site.css`, исключая файлы из текущего `git diff --name-only HEAD`.
+- Чистых кандидатов для безопасной модернизации не осталось (`clean_unmodern = 0`); оставшиеся unmodern-страницы находятся в уже изменённом pre-existing dirty-наборе и не тронуты, чтобы не перетереть чужие/предыдущие правки.
+- Preview-safety не менял; backend/оплата/цены/наличие/характеристики не добавлялись.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
