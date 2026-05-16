@@ -1056,3 +1056,9 @@
 - Сохранил безопасную структуру: hero, маршруты выбора пластика, карточки разделов, чек-лист заливки и мини-бриф без backend-отправки.
 - Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, точных характеристик, корзины, оплаты, backend и неподтверждённых обещаний.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-16 10:02 MSK — preview-страница согласия на обработку данных
+- Обновил `index.php@route=information%2Finformation%2Fagree&information_id=12.html` под единый шаблон юридической страницы `politika.html` и общий стиль `index.html`/`final-site.css`.
+- Заменил legacy-фрагмент согласия на безопасную noindex preview-страницу: hero, краткое объяснение данных, разделы политики, чек-лист безопасного обращения и демонстрационный мини-бриф без backend-отправки.
+- Сохранил preview-safety: `noindex,nofollow`, GitHub Pages canonical/og:url, без цен, наличия, корзины, оплаты, backend и неподтверждённых обещаний.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
