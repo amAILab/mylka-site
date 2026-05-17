@@ -1764,3 +1764,9 @@
 - Добавил нейтральные описания для иллюстраций силикона, формы/разделителя и получения заказа, без изменения коммерческого/технического контента.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, свойства и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 06:01 MSK — final empty image alt cleanup
+- Завершил текущую accessibility-партию по пустым `alt`: вложенные карточки альгината `alja-safe` и `alja-safe-acrobat` получили нейтральные описания для карточных SVG.
+- Проверил весь preview: пустых `alt` у `<img>` больше нет (`EMPTY_ALT_TOTAL 0`), без изменения коммерческого/технического контента.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, расход и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
