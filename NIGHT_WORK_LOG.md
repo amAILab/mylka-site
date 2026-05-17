@@ -2058,3 +2058,9 @@
 - Добавил `decoding="async"` на карточные изображения, чтобы вложенные страницы альгината были единообразны с root modern-preview страницами.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, фасовки, расход и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 14:27 MSK — nested silicone product card decoding polish
+- Продолжил small performance pass: selected nested silicone product pages with `card-picture` images missing `decoding`.
+- Добавил `decoding="async"` на карточные изображения для вложенных страниц Mold Star и Alcorsil, чтобы они были единообразны с root modern-preview страницами.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, фасовки и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
