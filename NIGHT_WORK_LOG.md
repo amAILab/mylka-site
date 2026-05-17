@@ -2064,3 +2064,9 @@
 - Добавил `decoding="async"` на карточные изображения для вложенных страниц Mold Star и Alcorsil, чтобы они были единообразны с root modern-preview страницами.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, фасовки и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 14:37 MSK — nested vacuum chamber with pump card decoding polish
+- Продолжил small performance pass: nested pages in `vakuumnye-kamery/vakuumnaya-kamera-s-nasosom/` with `card-picture` images missing `decoding`.
+- Добавил `decoding="async"` на карточные изображения, чтобы вложенные страницы вакуумных камер с насосом были единообразны с root modern-preview страницами.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, точные характеристики и комплектацию не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
