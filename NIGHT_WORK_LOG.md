@@ -1872,3 +1872,9 @@
 - Добавил `decoding="async"` на карточные изображения в `razdelitelnye-agenty-i-germetiki.html`, `kompaundy.html`, `penopoliuretan.html`, `plastikovye-formy-dlya-zalivki-gipsa-i-betona.html`, `malogabaritnye-frezernye-stanki-s-chpu.html`.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 09:01 MSK — vacuum pagination card decoding polish
+- Продолжил small performance pass: pagination preview pages `vakuumnye-kamery@page=2..10.html` с `card-picture` без `decoding`.
+- Добавил `decoding="async"` на карточные изображения, чтобы страницы пагинации вели себя единообразно с основными modern-preview страницами.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
