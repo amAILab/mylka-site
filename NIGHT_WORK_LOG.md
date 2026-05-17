@@ -1722,3 +1722,9 @@
 - Заменил пустые `alt` на нейтральные описания для иллюстраций эпоксидных добавок, подбора эффекта и получения заказа, без изменения коммерческого/технического контента.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, дозировки и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 04:51 MSK — plastic additives preview image alt polish
+- Завершил малую accessibility-партию по оставшимся пустым `alt` в `dobavki-k-plastikam/`.
+- На обзорной странице добавил нейтральные описания для карточных SVG про добавки к пластикам, подбор эффекта и получение заказа, без изменения коммерческого/технического контента.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, дозировки и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
