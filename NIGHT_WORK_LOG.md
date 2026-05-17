@@ -1662,3 +1662,9 @@
 - Добавил в `final-site.css` fallback для браузеров без `text-wrap: balance`, чтобы длинные заголовки сохраняли аккуратную ширину и не ломали modern-preview.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 03:11 MSK — polyurethane Twitter image metadata pass
+- Проверил OG/Twitter image metadata и выбрал малую однотипную партию: safe-preview страницы в `kupit-poliuretan-v-moskve/` с `twitter:card`, но без `twitter:image`.
+- Добавил `twitter:image` на существующий локальный visual `assets/visuals/polyurethane.svg`, чтобы карточки шаринга были единообразны с `og:image`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
