@@ -2376,3 +2376,9 @@
 - Добавил `fetchpriority="high"` к hero images на `my-account.html`, `reward-points.html`, `address-book.html`, `compare-products.html`, `wishlist.html`, `order-history.html`, `forgot-password.html`, `newsletter.html`, `transactions.html`, чтобы браузер раньше приоритизировал главный hero preview.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, авторизацию, корзину, оплату, цены, наличие и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 23:41 MSK — checkout utility hero fetch priority
+- Продолжил small performance pass: checkout/registration utility root pages with above-the-fold `hero-picture` SVG без `fetchpriority`.
+- Добавил `fetchpriority="high"` к hero images на `simpleregister.html`, `simplecheckout.html`, `cart.html`, `returns.html`, чтобы браузер раньше приоритизировал главный hero preview.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, регистрацию, корзину, оплату, цены, наличие и характеристики не подключал/не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
