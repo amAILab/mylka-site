@@ -2220,3 +2220,9 @@
 - Добавил `decoding="async"` и `width="1200" height="820"` к hero SVG на страницах раздела вакуумного оборудования, чтобы браузеру было проще декодировать и резервировать место под hero-изображения.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, точные характеристики и комплектацию не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 19:20 MSK — additive section hero image hints
+- Продолжил small performance pass: top-level pages in `dobavki-k-epoksidnoy-smole/` and `dobavki-k-silikonam/` with `hero-picture` SVG без `decoding` и явных размеров.
+- Добавил `decoding="async"` и `width="1200" height="820"` к hero SVG на страницах разделов добавок, чтобы браузеру было проще декодировать и резервировать место под hero-изображения.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, дозировки и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
