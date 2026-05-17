@@ -1770,3 +1770,9 @@
 - Проверил весь preview: пустых `alt` у `<img>` больше нет (`EMPTY_ALT_TOTAL 0`), без изменения коммерческого/технического контента.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, расход и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 06:11 MSK — top-level polyurethane lazy-loading polish
+- Начал small performance/accessibility pass после `alt` cleanup: top-level safe-preview страницы `kupit-poliuretan-v-moskve/` с карточными SVG без `loading`.
+- Добавил `loading="lazy"` на не-hero `card-picture` изображения, чтобы карточки подгружались единообразно и без влияния на первый экран.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, свойства и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
