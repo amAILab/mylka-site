@@ -2070,3 +2070,9 @@
 - Добавил `decoding="async"` на карточные изображения, чтобы вложенные страницы вакуумных камер с насосом были единообразны с root modern-preview страницами.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, точные характеристики и комплектацию не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 14:51 MSK — nested vacuum equipment card decoding polish
+- Продолжил small performance pass: selected nested pages under `vakuumnye-kamery/` with `card-picture` images missing `decoding`.
+- Добавил `decoding="async"` на карточные изображения для страниц вибростола, камеры без насоса, насосов, мановакуумной камеры и аренды, чтобы они были единообразны с root modern-preview страницами.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, точные характеристики и комплектацию не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
