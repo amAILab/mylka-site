@@ -2130,3 +2130,9 @@
 - Добавил `width="1200" height="820"` к карточным SVG на `my-account.html`, `reward-points.html`, `address-book.html`, `compare-products.html`, `wishlist.html`, `order-history.html`, `forgot-password.html`, `newsletter.html`, `transactions.html`, чтобы браузеру было проще резервировать место под изображения.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, регистрационные/личные системы, оплата, цены, наличие и характеристики не подключал и не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 16:30 MSK — checkout utility card dimension hints
+- Продолжил small performance pass: checkout/registration utility preview pages with `card-picture` SVG-карточками без явных размеров.
+- Добавил `width="1200" height="820"` к карточным SVG на `simpleregister.html`, `simplecheckout.html`, `cart.html`, `returns.html`, чтобы браузеру было проще резервировать место под изображения.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, регистрация, корзина, checkout, оплата, цены и наличие не подключал и не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
