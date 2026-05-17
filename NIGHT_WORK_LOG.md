@@ -2424,3 +2424,9 @@
 - Добавил `fetchpriority="high"` к hero images на 14 страницах раздела вакуумного оборудования, чтобы браузер раньше приоритизировал главный hero preview.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, комплектацию и точные характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 01:01 MSK — adhesive and sculpt clay hero fetch priority
+- Продолжил nested/root section `hero-picture` fetch priority pass: top-level pages under `adgezivy/` and `ckulpturnyy-plastilin/` без `fetchpriority`.
+- Добавил `fetchpriority="high"` к hero images на 9 страницах адгезивов и скульптурного пластилина, чтобы браузер раньше приоритизировал главный hero preview.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, фасовки и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
