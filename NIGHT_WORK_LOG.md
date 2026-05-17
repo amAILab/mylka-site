@@ -2256,3 +2256,9 @@
 - Добавил `decoding="async"` и `width="1200" height="820"` к hero SVG на страницах 3D-печати и сварочных работ, чтобы браузеру было проще декодировать и резервировать место под hero-изображения.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, оплата, цены, сроки и точные характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 20:20 MSK — resin and foam material hero image hints
+- Продолжил small performance pass: pages in `penopoliuretan/` plus root pages `epoksidnaya-smola.html`, `kompaundy.html` and `razdelitelnye-agenty-i-germetiki.html` export folders/files with `hero-picture` SVG без `decoding` и явных размеров.
+- Добавил `decoding="async"` и `width="1200" height="820"` к hero SVG на страницах смол, компаундов, разделителей и пенополиуретана, чтобы браузеру было проще декодировать и резервировать место под hero-изображения.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, дозировки и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
