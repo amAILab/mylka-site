@@ -1674,3 +1674,9 @@
 - Добавил `twitter:image` на существующий локальный visual `assets/visuals/polyurethane.svg`, чтобы карточки шаринга были единообразны с `og:image`.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 03:31 MSK — silicone Twitter image metadata pass
+- Продолжил малую metadata-партию: safe-preview страницы силиконов с `twitter:card`, но без `twitter:image`.
+- Добавил `twitter:image` на существующий локальный visual `assets/visuals/silicone.svg`, чтобы карточки шаринга были единообразны с `og:image`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
