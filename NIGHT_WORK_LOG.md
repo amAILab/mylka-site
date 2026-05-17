@@ -2148,3 +2148,9 @@
 - Добавил `width="1200" height="820"` к карточным SVG на `brands.html`, `malogabaritnye-frezernye-stanki-s-chpu.html`, `services-step3d.html`, `politika.html`, `o-nas.html`, чтобы браузеру было проще резервировать место под изображения.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, сроки, наличие и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 17:00 MSK — legacy export card dimension completion
+- Завершил текущий dimension hints pass для `card-picture` SVG: remaining legacy/export `index.php@...html` pages had card SVG without explicit dimensions.
+- Добавил `width="1200" height="820"` к карточным SVG на 7 legacy/export страницах; контрольный скан теперь показывает `CARD_SVG_MISSING_DIMENSIONS_TOTAL 0`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check`, финальный scan missing dimensions — OK.
