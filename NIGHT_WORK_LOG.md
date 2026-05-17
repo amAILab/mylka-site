@@ -2346,3 +2346,9 @@
 - Добавил `decoding="async"` и `width="1200" height="820"` к hero SVG на страницах альгинатов, чтобы браузеру было проще декодировать и резервировать место под hero-изображения.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, фасовки и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 22:50 MSK — final hero image hints cleanup
+- Завершил текущий `hero-picture` SVG performance pass: последние 3 страницы без `decoding` (`vakuumnaya-kamera-s-nasosom/...zsn-1s.html`, nested `mold-star-15-900-gr.html`, nested `alcorsil-30-1-02-kg.html`).
+- Добавил `decoding="async"` и `width="1200" height="820"` к оставшимся hero SVG; контрольный scan теперь показывает `HERO_MISSING_DECODING FILES 0 COUNT 0`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, фасовки и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
