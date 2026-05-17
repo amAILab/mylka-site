@@ -1704,3 +1704,9 @@
 - Заменил пустые `alt` на нейтральные описания для иллюстраций добавок, подбора дозировки и получения заказа, без изменения коммерческого/технического контента.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, дозировки и характеристики не добавлялись.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 04:21 MSK — foamiran preview image alt polish
+- Продолжил малую accessibility-партию: `foamiran/` страницы с пустыми `alt` у карточных SVG.
+- Заменил пустые `alt` на нейтральные описания для иллюстраций фоамирана, формата/толщины листа и получения заказа, без изменения коммерческого/технического контента.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, палитру и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
