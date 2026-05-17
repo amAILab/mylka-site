@@ -1884,3 +1884,9 @@
 - Добавил `decoding="async"` на карточные изображения в `my-account.html`, `address-book.html`, `wishlist.html`, `order-history.html`, `forgot-password.html`, `simpleregister.html`, `newsletter.html`, `reward-points.html`, `transactions.html`.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, регистрация/оплата/корзина, цены и наличие не подключались.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 09:21 MSK — checkout and utility card decoding polish
+- Продолжил small performance pass: utility/checkout preview pages with `card-picture` images missing `decoding`.
+- Добавил `decoding="async"` на карточные изображения в `compare-products.html`, `simplecheckout.html`, `returns.html`, `cart.html`, `politika.html`, `services-step3d.html`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, корзина, цены и наличие не подключались.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
