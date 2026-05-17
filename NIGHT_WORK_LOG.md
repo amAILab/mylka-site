@@ -2298,3 +2298,9 @@
 - Добавил `decoding="async"` и `width="1200" height="820"` к hero SVG на этих страницах силиконов на платине, чтобы браузеру было проще декодировать и резервировать место под hero-изображения.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, фасовки и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 21:30 MSK — nested tin silicone category hero image hints
+- Продолжил small performance pass: nested category pages under `kupit-silikon-v-moskve/na-osnove-olova-1/` with `hero-picture` SVG без `decoding` и явных размеров.
+- Добавил `decoding="async"` и `width="1200" height="820"` к hero SVG на этих страницах силиконов на олове, чтобы браузеру было проще декодировать и резервировать место под hero-изображения.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, фасовки и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
