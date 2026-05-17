@@ -1830,3 +1830,9 @@
 - Добавил `loading="lazy"` на не-hero `card-picture` изображения в сериях Polyarte, PMC, VytaFlex, Clear Flex, Brush-On и PolyS.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, свойства и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 07:51 MSK — silicone cards lazy-loading polish
+- Продолжил small performance/accessibility pass: оставшиеся safe-preview карточки силиконов с `card-picture` SVG без `loading`.
+- Добавил `loading="lazy"` на не-hero изображения в полупрозрачных сериях, Mold Star и Alcorsil, чтобы карточки подгружались единообразно и без влияния на первый экран.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, свойства и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
