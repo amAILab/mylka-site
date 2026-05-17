@@ -1734,3 +1734,9 @@
 - Добавил нейтральные описания для иллюстраций полиуретана, формы/разделителя и получения заказа, без изменения коммерческого/технического контента.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, свойства и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 05:11 MSK — nested polyurethane preview image alt polish
+- Продолжил accessibility-партию: вложенные safe-preview страницы `polyarte-rubber`, `seriya-pmc` и `seriya-vytaflex` в `kupit-poliuretan-v-moskve/` с пустыми `alt` у карточных SVG.
+- Добавил нейтральные описания для иллюстраций полиуретана, формы/разделителя и получения заказа, без изменения коммерческого/технического контента.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, свойства и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
