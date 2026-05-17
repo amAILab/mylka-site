@@ -1656,3 +1656,9 @@
 - Добавил в `final-site.css` безопасный `overflow-wrap:anywhere` для ссылок, заголовков карточек и footer-ссылок, чтобы длинные URL/названия не ломали мобильную сетку.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 03:01 MSK — heading wrap fallback polish
+- Проверил SEO/структурные базовые признаки: ровно один `h1`, есть `title` и meta description на HTML-страницах; проблем не найдено (`COUNT 0`).
+- Добавил в `final-site.css` fallback для браузеров без `text-wrap: balance`, чтобы длинные заголовки сохраняли аккуратную ширину и не ломали modern-preview.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.

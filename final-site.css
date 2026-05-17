@@ -23,3 +23,5 @@
 .hero h1,.section-head h2,.expert h2,.step-card h2,.brief h2{text-wrap:balance}.lead,.section-head p{text-wrap:pretty}
 
 a,.path-card b,.category-card h3,.task-grid h3,.footer-grid a{overflow-wrap:anywhere}
+
+@supports not (text-wrap:balance){.hero h1,.section-head h2,.expert h2,.step-card h2,.brief h2{max-width:16ch}.section-head h2,.brief h2{max-width:22ch;margin-left:auto;margin-right:auto}.split .section-head h2,.split h2{margin-left:0;margin-right:0}}
