@@ -2364,3 +2364,9 @@
 - Добавил `fetchpriority="high"` к hero images на `contact-us.html`, `dostavka.html`, `sitemap.html`, `reversivnyj-inzhenering.html`, `svarochnye-raboty.html`, `3d-pechat-1.html`, чтобы браузер раньше приоритизировал главный hero preview.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, сроки, наличие и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 23:20 MSK — material root hero fetch priority
+- Продолжил small performance pass: material/category root pages with above-the-fold `hero-picture` SVG без `fetchpriority`.
+- Добавил `fetchpriority="high"` к hero images на 13 material root pages (`akrilovyy-gips.html`, `dobavki-k-plastikam.html`, `alginat.html`, `foamiran.html`, `dobavki-k-epoksidnoy-smole.html`, `adgezivy.html`, `dobavki-dlya-gipsa-i-betona.html`, `plastikovye-formy-dlya-zalivki-gipsa-i-betona.html`, `ckulpturnyy-plastilin.html`, `kompaundy.html`, `penopoliuretan.html`, `razdelitelnye-agenty-i-germetiki.html`, `dobavki-k-poliuretanam.html`).
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, дозировки и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
