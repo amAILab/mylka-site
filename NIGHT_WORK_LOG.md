@@ -2196,3 +2196,9 @@
 - Добавил `decoding="async"` и `width="1200" height="820"` к hero SVG на `brands.html`, `malogabaritnye-frezernye-stanki-s-chpu.html`, `services-step3d.html`, `politika.html`, `o-nas.html`, чтобы браузеру было проще декодировать и резервировать место под hero-изображения.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, сроки, наличие и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 18:40 MSK — legacy export hero image hints
+- Продолжил small performance pass: legacy/export `index.php@...html` pages with `hero-picture` SVG без `decoding` и явных размеров.
+- Добавил `decoding="async"` и `width="1200" height="820"` к hero SVG на 7 legacy/export страницах, чтобы браузеру было проще декодировать и резервировать место под hero-изображения.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
