@@ -2340,3 +2340,9 @@
 - Добавил `decoding="async"` и `width="1200" height="820"` к hero SVG на страницах жидких пластиков, чтобы браузеру было проще декодировать и резервировать место под hero-изображения.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, фасовки и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 22:40 MSK — nested alginate product hero image hints
+- Продолжил small performance pass: nested product pages under `alginat/` with `hero-picture` SVG без `decoding` и явных размеров.
+- Добавил `decoding="async"` и `width="1200" height="820"` к hero SVG на страницах альгинатов, чтобы браузеру было проще декодировать и резервировать место под hero-изображения.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, фасовки и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
