@@ -2028,3 +2028,9 @@
 - Добавил `decoding="async"` на карточные изображения, чтобы страницы платиновых силиконов были единообразны с root modern-preview страницами.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, фасовки и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 13:37 MSK — tin-cure silicone root card decoding polish
+- Продолжил small performance pass: root pages in `kupit-silikon-v-moskve/na-osnove-olova-1/` with `card-picture` images missing `decoding`.
+- Добавил `decoding="async"` на карточные изображения, чтобы страницы силиконов на олове были единообразны с root modern-preview страницами.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, фасовки и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
