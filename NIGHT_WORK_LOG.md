@@ -2016,3 +2016,9 @@
 - Добавил `decoding="async"` на карточные изображения для Clear Flex, Brush-On и Polys карточек, чтобы они были единообразны с root modern-preview страницами.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, фасовки и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 13:17 MSK — tin-cure translucent silicone card decoding polish
+- Продолжил small performance pass: pages in `kupit-silikon-v-moskve/poluprozrachnye-na-osnove-olova/` with `card-picture` images missing `decoding`.
+- Добавил `decoding="async"` на карточные изображения, чтобы карточки полупрозрачных силиконов на олове были единообразны с root modern-preview страницами.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, фасовки и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
