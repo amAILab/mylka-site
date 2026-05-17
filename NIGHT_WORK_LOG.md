@@ -2106,3 +2106,9 @@
 - Добавил `decoding="async"` на карточные изображения в этих 7 страницах; контрольный скан теперь показывает `CARD_IMG_MISSING_DECODING_TOTAL 0`.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check`, финальный scan missing decoding — OK.
+
+## 2026-05-17 15:50 MSK — priority root card dimension hints
+- После завершения `decoding` pass начал следующий small performance pass: priority root/категорийные страницы из плана с `card-picture` SVG-карточками без явных размеров.
+- Добавил `width="1200" height="820"` к карточным SVG на `index.html`, `kupit-silikon-v-moskve.html`, `kupit-poliuretan-v-moskve.html`, `epoksidnaya-smola.html`, `zhidkiy-plastik.html`, `vakuumnye-kamery.html`, `dobavki-k-silikonam.html`, чтобы браузеру было проще резервировать место под изображения.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
