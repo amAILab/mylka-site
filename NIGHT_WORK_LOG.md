@@ -1836,3 +1836,9 @@
 - Добавил `loading="lazy"` на не-hero изображения в полупрозрачных сериях, Mold Star и Alcorsil, чтобы карточки подгружались единообразно и без влияния на первый экран.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, свойства и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 08:01 MSK — final card lazy-loading cleanup
+- Завершил текущий performance/accessibility pass по `card-picture`: оставшиеся вложенные карточки адгезивов и альгината получили `loading="lazy"`.
+- Проверил весь preview: карточных изображений без `loading` больше нет (`CARD_IMG_MISSING_LOADING_COUNT 0`), без изменения коммерческого/технического контента.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, расход и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
