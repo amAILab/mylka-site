@@ -1986,3 +1986,9 @@
 - Добавил `decoding="async"` на карточные изображения, чтобы раздел сварочных работ был единообразен с root modern-preview страницами.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, сроки, наличие и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 12:27 MSK — core material index card decoding polish
+- Продолжил small performance pass: material index pages `dobavki-k-poliuretanam/index.html`, `epoksidnaya-smola/index.html`, `kompaundy/index.html` with `card-picture` images missing `decoding`.
+- Добавил `decoding="async"` на карточные изображения, чтобы эти обзорные разделы были единообразны с root modern-preview страницами.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, дозировки и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
