@@ -1812,3 +1812,9 @@
 - Добавил `loading="lazy"` на не-hero `card-picture` изображения, чтобы карточки подгружались единообразно и без влияния на первый экран.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, дозировки и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 07:21 MSK — foamiran cards lazy-loading polish
+- Продолжил small performance/accessibility pass: `foamiran/` pages with card SVG images missing `loading`.
+- Добавил `loading="lazy"` на не-hero `card-picture` изображения, чтобы карточки подгружались единообразно и без влияния на первый экран.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, палитру и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
