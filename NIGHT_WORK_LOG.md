@@ -2112,3 +2112,9 @@
 - Добавил `width="1200" height="820"` к карточным SVG на `index.html`, `kupit-silikon-v-moskve.html`, `kupit-poliuretan-v-moskve.html`, `epoksidnaya-smola.html`, `zhidkiy-plastik.html`, `vakuumnye-kamery.html`, `dobavki-k-silikonam.html`, чтобы браузеру было проще резервировать место под изображения.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 16:00 MSK — service and contact card dimension hints
+- Продолжил small performance pass: контактные/доставочные и сервисные root pages с `card-picture` SVG-карточками без явных размеров.
+- Добавил `width="1200" height="820"` к карточным SVG на `contact-us.html`, `dostavka.html`, `sitemap.html`, `reversivnyj-inzhenering.html`, `svarochnye-raboty.html`, `3d-pechat-1.html`, чтобы браузеру было проще резервировать место под изображения.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, сроки, наличие и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
