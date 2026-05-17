@@ -1842,3 +1842,9 @@
 - Проверил весь preview: карточных изображений без `loading` больше нет (`CARD_IMG_MISSING_LOADING_COUNT 0`), без изменения коммерческого/технического контента.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, расход и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 08:11 MSK — priority card decoding polish
+- Начал следующий small performance pass после `loading` cleanup: приоритетные root-страницы с `card-picture` без `decoding`.
+- Добавил `decoding="async"` на карточные изображения в `index.html`, `kupit-silikon-v-moskve.html`, `kupit-poliuretan-v-moskve.html`, `epoksidnaya-smola.html`, `zhidkiy-plastik.html`, `vakuumnye-kamery.html`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
