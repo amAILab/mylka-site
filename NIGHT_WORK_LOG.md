@@ -2136,3 +2136,9 @@
 - Добавил `width="1200" height="820"` к карточным SVG на `simpleregister.html`, `simplecheckout.html`, `cart.html`, `returns.html`, чтобы браузеру было проще резервировать место под изображения.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, регистрация, корзина, checkout, оплата, цены и наличие не подключал и не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 16:40 MSK — vacuum pagination card dimension hints
+- Продолжил small performance pass: vacuum pagination preview pages `vakuumnye-kamery@page=2..10.html` with `card-picture` SVG-карточками без явных размеров.
+- Добавил `width="1200" height="820"` к карточным SVG на этих страницах, чтобы браузеру было проще резервировать место под изображения.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, точные характеристики и комплектацию не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
