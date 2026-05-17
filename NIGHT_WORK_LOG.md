@@ -2412,3 +2412,9 @@
 - Добавил `fetchpriority="high"` к hero images на 5 страницах раздела силиконов, чтобы браузер раньше приоритизировал главный hero preview.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, фасовки и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 00:41 MSK — additive section hero fetch priority
+- Продолжил nested/root section `hero-picture` fetch priority pass: top-level pages under `dobavki-k-epoksidnoy-smole/` and `dobavki-k-silikonam/` без `fetchpriority`.
+- Добавил `fetchpriority="high"` к hero images на 6 страницах разделов добавок, чтобы браузер раньше приоритизировал главный hero preview.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, дозировки и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
