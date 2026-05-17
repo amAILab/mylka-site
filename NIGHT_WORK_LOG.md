@@ -1800,3 +1800,9 @@
 - Добавил `loading="lazy"` на не-hero `card-picture` изображения, чтобы карточки подгружались единообразно и без влияния на первый экран.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 07:01 MSK — alginate cards lazy-loading polish
+- Продолжил small performance/accessibility pass: `alginat/` overview/series pages with card SVG images missing `loading`.
+- Добавил `loading="lazy"` на не-hero `card-picture` изображения, чтобы карточки подгружались единообразно и без влияния на первый экран.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, расход и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
