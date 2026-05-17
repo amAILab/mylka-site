@@ -1758,3 +1758,9 @@
 - Добавил нейтральные описания для иллюстраций силикона, формы/разделителя и получения заказа, без изменения коммерческого/технического контента.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, свойства и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 05:51 MSK — nested silicone preview image alt polish
+- Продолжил accessibility-партию: вложенные safe-preview карточки силиконов `mold-star-15-900-gr.html` и `alcorsil-30-1-02-kg.html` с пустыми `alt` у карточных SVG.
+- Добавил нейтральные описания для иллюстраций силикона, формы/разделителя и получения заказа, без изменения коммерческого/технического контента.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, свойства и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
