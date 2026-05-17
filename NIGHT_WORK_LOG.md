@@ -2454,3 +2454,9 @@
 - Добавил `fetchpriority="high"` к hero images на 4 страницах услуг 3D-печати и сварочных работ, чтобы браузер раньше приоритизировал главный hero preview.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, сроки и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 01:51 MSK — resin and foam hero fetch priority
+- Продолжил nested/root section `hero-picture` fetch priority pass: `penopoliuretan/` pages plus `epoksidnaya-smola/index.html`, `kompaundy/index.html`, `razdelitelnye-agenty-i-germetiki/index.html` без `fetchpriority`.
+- Добавил `fetchpriority="high"` к hero images на 6 страницах смол, компаундов, разделителей и пенополиуретана, чтобы браузер раньше приоритизировал главный hero preview.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, дозировки и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
