@@ -2466,3 +2466,9 @@
 - Добавил `fetchpriority="high"` к hero images на 4 страницах малогабаритных ЧПУ-станков, чтобы браузер раньше приоритизировал главный hero preview.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, комплектацию и точные характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 02:11 MSK — reverse engineering section hero fetch priority
+- Продолжил nested/root section `hero-picture` fetch priority pass: pages under `reversivnyj-inzhenering/` без `fetchpriority`.
+- Добавил `fetchpriority="high"` к hero images на 5 страницах реверсивного инжиниринга, 3D-сканирования/печати и VR/AR/MR, чтобы браузер раньше приоритизировал главный hero preview.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, сроки и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
