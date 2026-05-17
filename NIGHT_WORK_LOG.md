@@ -1698,3 +1698,9 @@
 - Заменил пустые `alt` на нейтральные описания для иллюстраций альгината, процесса замешивания и получения заказа, без изменения коммерческого/технического контента.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 04:11 MSK — gypsum and concrete additives preview image alt polish
+- Продолжил малую accessibility-партию: `dobavki-dlya-gipsa-i-betona/` страницы с пустыми `alt` у карточных SVG.
+- Заменил пустые `alt` на нейтральные описания для иллюстраций добавок, подбора дозировки и получения заказа, без изменения коммерческого/технического контента.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, дозировки и характеристики не добавлялись.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
