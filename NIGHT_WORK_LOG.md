@@ -2358,3 +2358,9 @@
 - Добавил `fetchpriority="high"` к hero images на `index.html`, `kupit-silikon-v-moskve.html`, `kupit-poliuretan-v-moskve.html`, `epoksidnaya-smola.html`, `zhidkiy-plastik.html`, `vakuumnye-kamery.html`, `dobavki-k-silikonam.html`, чтобы браузер раньше приоритизировал главный hero preview.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, фасовки и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 23:10 MSK — service and contact hero fetch priority
+- Продолжил small performance pass: service/contact root pages with above-the-fold `hero-picture` SVG без `fetchpriority`.
+- Добавил `fetchpriority="high"` к hero images на `contact-us.html`, `dostavka.html`, `sitemap.html`, `reversivnyj-inzhenering.html`, `svarochnye-raboty.html`, `3d-pechat-1.html`, чтобы браузер раньше приоритизировал главный hero preview.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, сроки, наличие и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
