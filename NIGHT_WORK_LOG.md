@@ -1686,3 +1686,9 @@
 - Выбрал малую accessibility-партию в `adgezivy/`: заменил пустые `alt` у декоративных карточных SVG на нейтральное описание `Иллюстрация: адгезивы и подготовка поверхности`.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 03:51 MSK — acrylic gypsum preview image alt polish
+- Продолжил малую accessibility-партию: `akrilovyy-gips/` страницы с пустыми `alt` у карточных SVG.
+- Заменил пустые `alt` на нейтральное описание `Иллюстрация: акриловый гипс и материалы для литья`, без изменения коммерческого/технического контента.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлялись.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
