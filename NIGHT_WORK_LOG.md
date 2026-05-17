@@ -1848,3 +1848,9 @@
 - Добавил `decoding="async"` на карточные изображения в `index.html`, `kupit-silikon-v-moskve.html`, `kupit-poliuretan-v-moskve.html`, `epoksidnaya-smola.html`, `zhidkiy-plastik.html`, `vakuumnye-kamery.html`.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 08:21 MSK — service and support card decoding polish
+- Продолжил small performance pass: root-страницы услуг/поддержки и `dobavki-k-silikonam.html` с `card-picture` без `decoding`.
+- Добавил `decoding="async"` на карточные изображения в `dobavki-k-silikonam.html`, `contact-us.html`, `dostavka.html`, `reversivnyj-inzhenering.html`, `svarochnye-raboty.html`, `3d-pechat-1.html`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
