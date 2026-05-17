@@ -2082,3 +2082,9 @@
 - Добавил `decoding="async"` на карточные изображения, чтобы вложенные страницы вакуумных насосов Zensen были единообразны с root modern-preview страницами.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, точные характеристики и комплектацию не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 15:10 MSK — release agents card decoding polish
+- Продолжил small performance pass: `razdelitelnye-agenty-i-germetiki/index.html` with `card-picture` images missing `decoding`.
+- Добавил `decoding="async"` на карточные изображения, чтобы раздел разделительных агентов и герметиков был единообразен с root modern-preview страницами.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, дозировки и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
