@@ -2094,3 +2094,9 @@
 - Добавил `decoding="async"` на карточные изображения, чтобы раздел малогабаритных фрезерных станков был единообразен с root modern-preview страницами.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, сроки, наличие и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 15:30 MSK — selected utility card decoding polish
+- Продолжил small performance pass: `vakuumnaya-kamera-s-nasosom/vakuumnaya-kamera-h250d210-c-nasosom-zsn-1s.html` and `generated/product-pages/index.html` with `card-picture` images missing `decoding`.
+- Добавил `decoding="async"` на карточные изображения, чтобы эти оставшиеся preview/product utility pages были единообразны с root modern-preview страницами.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, точные характеристики и комплектацию не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
