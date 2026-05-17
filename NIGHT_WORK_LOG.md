@@ -2472,3 +2472,9 @@
 - Добавил `fetchpriority="high"` к hero images на 5 страницах реверсивного инжиниринга, 3D-сканирования/печати и VR/AR/MR, чтобы браузер раньше приоритизировал главный hero preview.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, сроки и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 02:21 MSK — gypsum and concrete additives hero fetch priority
+- Продолжил nested/root section `hero-picture` fetch priority pass: pages under `dobavki-dlya-gipsa-i-betona/` без `fetchpriority`.
+- Добавил `fetchpriority="high"` к hero images на 8 страницах добавок для гипса и бетона, чтобы браузер раньше приоритизировал главный hero preview.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, дозировки и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
