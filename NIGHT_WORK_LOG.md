@@ -1728,3 +1728,9 @@
 - На обзорной странице добавил нейтральные описания для карточных SVG про добавки к пластикам, подбор эффекта и получение заказа, без изменения коммерческого/технического контента.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, дозировки и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 05:01 MSK — top-level polyurethane preview image alt polish
+- Продолжил accessibility-партию: top-level safe-preview страницы в `kupit-poliuretan-v-moskve/` с пустыми `alt` у карточных SVG.
+- Добавил нейтральные описания для иллюстраций полиуретана, формы/разделителя и получения заказа, без изменения коммерческого/технического контента.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, свойства и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
