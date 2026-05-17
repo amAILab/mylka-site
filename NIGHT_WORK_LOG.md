@@ -2394,3 +2394,9 @@
 - Добавил `fetchpriority="high"` к hero images на `brands.html`, `malogabaritnye-frezernye-stanki-s-chpu.html`, `services-step3d.html`, `politika.html`, `o-nas.html`, чтобы браузер раньше приоритизировал главный hero preview.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, комплектацию и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 00:11 MSK — legacy root hero fetch priority cleanup
+- Завершил root-level `hero-picture` fetch priority pass: последние legacy/export root files `index.php@...html` без `fetchpriority`.
+- Добавил `fetchpriority="high"` к hero images на 7 legacy/export root pages; контрольный scan теперь показывает `ROOT_HERO_MISSING_FETCHPRIORITY 0 0`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
