@@ -1740,3 +1740,9 @@
 - Добавил нейтральные описания для иллюстраций полиуретана, формы/разделителя и получения заказа, без изменения коммерческого/технического контента.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, свойства и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 05:21 MSK — remaining polyurethane preview image alt polish
+- Завершил accessibility-партию по оставшимся вложенным safe-preview страницам полиуретанов (`seriya-clear-flex`, `seriya-brush-on`, `seriya-polys`) с пустыми `alt` у карточных SVG.
+- Добавил нейтральные описания для иллюстраций полиуретана, формы/разделителя и получения заказа; пустых `alt` в `kupit-poliuretan-v-moskve/` больше нет (`COUNT 0`).
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, свойства и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
