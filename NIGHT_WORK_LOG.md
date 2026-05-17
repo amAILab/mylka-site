@@ -2172,3 +2172,9 @@
 - Добавил `decoding="async"` и `width="1200" height="820"` к hero SVG на разделах акрилового гипса, добавок, альгината, фоамирана, адгезивов, пластиковых форм, пластилина, компаундов, пенополиуретана и разделителей, чтобы браузеру было проще декодировать и резервировать место под hero-изображения.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, дозировки и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 18:00 MSK — account utility hero image hints
+- Продолжил small performance pass: account/utility preview pages with `hero-picture` SVG без `decoding` и явных размеров.
+- Добавил `decoding="async"` и `width="1200" height="820"` к hero SVG на `my-account.html`, `reward-points.html`, `address-book.html`, `compare-products.html`, `wishlist.html`, `order-history.html`, `forgot-password.html`, `newsletter.html`, `transactions.html`, чтобы браузеру было проще декодировать и резервировать место под hero-изображения.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, регистрационные/личные системы, оплата, цены, наличие и характеристики не подключал и не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
