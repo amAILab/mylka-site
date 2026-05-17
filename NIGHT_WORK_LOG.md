@@ -2382,3 +2382,9 @@
 - Добавил `fetchpriority="high"` к hero images на `simpleregister.html`, `simplecheckout.html`, `cart.html`, `returns.html`, чтобы браузер раньше приоритизировал главный hero preview.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, регистрацию, корзину, оплату, цены, наличие и характеристики не подключал/не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 23:51 MSK — vacuum pagination hero fetch priority
+- Продолжил small performance pass: vacuum pagination root exports `vakuumnye-kamery@page=2..10.html` with above-the-fold `hero-picture` SVG без `fetchpriority`.
+- Добавил `fetchpriority="high"` к hero images на этих страницах пагинации, чтобы браузер раньше приоритизировал главный hero preview.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, комплектацию и точные характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
