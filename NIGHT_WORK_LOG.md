@@ -2046,3 +2046,9 @@
 - Добавил `decoding="async"` на карточные изображения, чтобы вложенные страницы адгезивов были единообразны с root modern-preview страницами.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, фасовки и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 14:07 MSK — nested liquid plastic card decoding polish
+- Продолжил small performance pass: selected nested pages in `zhidkiy-plastik/obshchego-naznacheniya-1/` and `zhidkiy-plastik/prozrachnye/` with `card-picture` images missing `decoding`.
+- Добавил `decoding="async"` на карточные изображения, чтобы вложенные страницы жидких пластиков были единообразны с root modern-preview страницами.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, фасовки и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
