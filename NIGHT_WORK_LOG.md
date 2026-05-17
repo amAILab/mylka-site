@@ -1980,3 +1980,9 @@
 - Добавил `decoding="async"` на карточные изображения, чтобы раздел добавок для гипса и бетона был единообразен с root modern-preview страницами.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, наличие, дозировки, расход и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 12:17 MSK — welding section card decoding polish
+- Продолжил small performance pass: pages in `svarochnye-raboty/` with `card-picture` images missing `decoding`.
+- Добавил `decoding="async"` на карточные изображения, чтобы раздел сварочных работ был единообразен с root modern-preview страницами.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, оплата, цены, сроки, наличие и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
