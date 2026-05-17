@@ -2322,3 +2322,9 @@
 - Добавил `decoding="async"` и `width="1200" height="820"` к hero SVG на страницах вакуумных камер, насосов, аренды и комплектующих, чтобы браузеру было проще декодировать и резервировать место под hero-изображения.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, комплектацию и точные характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-17 22:10 MSK — nested vacuum pump product hero image hints
+- Продолжил small performance pass: nested pump product pages under `vakuumnye-kamery/vakuumnye-nasosy/nasosy-vakuumnye-zensen/` with `hero-picture` SVG без `decoding` и явных размеров.
+- Добавил `decoding="async"` и `width="1200" height="820"` к hero SVG на страницах вакуумных насосов Zensen, чтобы браузеру было проще декодировать и резервировать место под hero-изображения.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, комплектацию и точные характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
