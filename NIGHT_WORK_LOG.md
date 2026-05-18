@@ -2724,3 +2724,9 @@
 - Это фиксирует светлую схему встроенных контролов браузера под текущий `final-site.css`, не меняя визуальную структуру страниц и CTA.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие и характеристики не подключал/не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 09:21 MSK — utility root color-scheme meta
+- Продолжил pass по browser/UI консистентности: добавил `<meta name="color-scheme" content="light">` на 10 utility/root страницах (`address-book`, cart, compare, forgot-password, my-account, newsletter, order-history, returns, reward-points, wishlist).
+- Это фиксирует светлую схему встроенных контролов браузера под текущий `final-site.css`, не меняя визуальную структуру страниц и CTA.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, аккаунты, формы, корзину, оплату, цены, наличие и характеристики не подключал/не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
