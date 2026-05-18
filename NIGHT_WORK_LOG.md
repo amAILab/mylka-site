@@ -2616,3 +2616,9 @@
 - Добавил `<meta name="theme-color" content="#0b1423">` на 10 nested страницах, сохранив единое значение из тёмной hero/header палитры `final-site.css`.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 06:21 MSK — gypsum and epoxy additives nested theme color
+- Продолжил nested pass по визуальной консистентности браузерного chrome: завершил вложенные страницы `dobavki-dlya-gipsa-i-betona/`, добавил theme-color на `dobavki-k-epoksidnoy-smole/` и начал `dobavki-k-plastikam/`.
+- Добавил `<meta name="theme-color" content="#0b1423">` на 10 nested страницах, сохранив единое значение из тёмной hero/header палитры `final-site.css`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, дозировки и характеристики не подключал/не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
