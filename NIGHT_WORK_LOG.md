@@ -2706,3 +2706,9 @@
 - Подтвердил скриптом, что все HTML-файлы репозитория теперь имеют единый `theme-color` из тёмной hero/header палитры `final-site.css`.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 08:51 MSK — priority pages color-scheme meta
+- Начал небольшой pass по browser/UI консистентности после sitewide `theme-color`: добавил `<meta name="color-scheme" content="light">` на 10 приоритетных root-страницах, включая главную, ключевые категории, контакты, доставку и реверсивный инжиниринг.
+- Это фиксирует светлую схему встроенных контролов браузера под текущий `final-site.css`, не меняя визуальную структуру страниц и CTA.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие и характеристики не подключал/не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
