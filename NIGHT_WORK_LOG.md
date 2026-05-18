@@ -2640,3 +2640,9 @@
 - Добавил `<meta name="theme-color" content="#0b1423">` на 10 nested/generated страницах, сохранив единое значение из тёмной hero/header палитры `final-site.css`.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 07:01 MSK — polyurethane nested theme color
+- Продолжил nested pass по визуальной консистентности браузерного chrome: добавил theme-color на 10 вложенных страниц `kupit-poliuretan-v-moskve/` для Polyarte Rubber, POLYS, Brush-On и Clear Flex.
+- Добавил `<meta name="theme-color" content="#0b1423">`, сохранив единое значение из тёмной hero/header палитры `final-site.css`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
