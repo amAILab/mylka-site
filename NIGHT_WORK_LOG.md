@@ -2580,3 +2580,9 @@
 - Значение оставил единым с тёмной hero/header палитрой `final-site.css`, чтобы мобильный UI браузера был единым даже на закрытых служебных preview-страницах.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, регистрацию, корзину, оплату, цены, наличие, аккаунты и характеристики не подключал/не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 05:21 MSK — root theme color pass completion
+- Завершил pass по визуальной консистентности браузерного chrome для root HTML: добавил `<meta name="theme-color" content="#0b1423">` на оставшуюся legacy product page и pagination pages `vakuumnye-kamery@page=2..10.html`.
+- Подтвердил скриптом, что все root `*.html` теперь имеют единый `theme-color` из тёмной hero/header палитры `final-site.css`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, регистрацию, корзину, оплату, цены, наличие, аккаунты и характеристики не подключал/не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
