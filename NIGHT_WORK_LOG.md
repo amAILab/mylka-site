@@ -2868,3 +2868,9 @@
 - Визуал и CTA не менял, только выровнял семантику mobile-bar с основными страницами и `final-site.css`.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK; осталось `missing_mobile_bar_label=5` для следующей партии.
+
+## 2026-05-18 13:34 MSK — mobile-bar accessibility labels completion
+- Завершил pass по семантике мобильной нижней навигации: добавил `aria-label="Быстрые действия"` на оставшиеся 5 generated/equipment pages.
+- Визуал, CTA и контент не менял; контрольный скан показал `missing_mobile_bar_label=0`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
