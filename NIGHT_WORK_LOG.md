@@ -2502,3 +2502,9 @@
 - Добавил `fetchpriority="high"` к hero images на 7 platinum translucent silicone pages, чтобы браузер раньше приоритизировал главный hero preview.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, фасовки и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 03:11 MSK — nested silicone product hero fetch priority
+- Продолжил nested/root section `hero-picture` fetch priority pass: remaining nested silicone product pages under `kupit-silikon-v-moskve/na-osnove-platiny/` and `kupit-silikon-v-moskve/na-osnove-olova-1/` без `fetchpriority`.
+- Добавил `fetchpriority="high"` к hero images на 2 nested silicone product pages, чтобы браузер раньше приоритизировал главный hero preview.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, фасовки и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
