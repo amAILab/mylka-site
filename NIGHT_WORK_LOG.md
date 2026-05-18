@@ -2556,3 +2556,9 @@
 - Значение взято из тёмной hero/header палитры `final-site.css`, чтобы mobile/browser UI лучше совпадал с современным preview-оформлением.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 04:41 MSK — service and secondary categories theme color
+- Продолжил pass по визуальной консистентности браузерного chrome: добавил `<meta name="theme-color" content="#0b1423">` на 10 root-страницах сервисов и вторичных категорий (`3d-pechat-1.html`, `svarochnye-raboty.html`, `o-nas.html`, `services-step3d.html`, ЧПУ, адгезивы, акриловый гипс, альгинат, компаунды, пенополиуретан).
+- Значение оставил единым с тёмной hero/header палитрой `final-site.css`, чтобы мобильный UI браузера выглядел одинаково на обновлённых страницах.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие и характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
