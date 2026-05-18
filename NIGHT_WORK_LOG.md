@@ -2850,3 +2850,9 @@
 - Добавил `<meta name="color-scheme" content="light">` на 10 nested страницах, фиксируя светлую схему встроенных контролов браузера под текущий `final-site.css`.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 13:04 MSK — vacuum completion and liquid plastic color-scheme meta
+- Завершил `color-scheme` для оставшихся vacuum pump/value/vibrostol pages и начал `zhidkiy-plastik/` с раздела общего назначения.
+- Добавил `<meta name="color-scheme" content="light">` на 10 nested страницах, фиксируя светлую схему встроенных контролов браузера под текущий `final-site.css`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
