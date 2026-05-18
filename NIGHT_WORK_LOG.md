@@ -2754,3 +2754,9 @@
 - Добавил `<meta name="color-scheme" content="light">` на 10 nested страницах, фиксируя светлую схему встроенных контролов браузера под текущий `final-site.css`.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 10:12 MSK — acrylic gypsum color-scheme meta
+- Продолжил nested pass по `color-scheme`: добавил `<meta name="color-scheme" content="light">` ещё на 10 вложенных страницах `akrilovyy-gips/`.
+- Это фиксирует светлую схему встроенных контролов браузера под текущий `final-site.css`, не меняя визуальную структуру страниц и CTA.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
