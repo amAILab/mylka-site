@@ -3090,3 +3090,9 @@
 - Визуал, CTA и контент не менял; это семантическое выравнивание под текущую структуру `index.html`/`final-site.css`.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 19:49 MSK — generated, home and legacy footer landmark roles
+- Продолжил footer landmark-pass: добавил `role="contentinfo"` на `<footer class="site-footer">` у оставшихся generated preview pages, главной и первых legacy `index.php@route` pages.
+- Визуал, CTA и контент не менял; это семантическое выравнивание под текущую структуру `index.html`/`final-site.css`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
