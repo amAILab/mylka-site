@@ -2778,3 +2778,9 @@
 - Добавил `<meta name="color-scheme" content="light">` на 10 nested страницах, фиксируя светлую схему встроенных контролов браузера под текущий `final-site.css`.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, дозировки и характеристики не подключал/не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 11:04 MSK — silicone additives and generated color-scheme meta
+- Продолжил nested pass по `color-scheme`: завершил вложенные страницы `dobavki-k-silikonam/`, добавил светлую схему на `epoksidnaya-smola/index.html`, фоамиран и первые generated product preview/template pages.
+- Добавил `<meta name="color-scheme" content="light">` на 10 nested/generated страницах, фиксируя светлую схему встроенных контролов браузера под текущий `final-site.css`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
