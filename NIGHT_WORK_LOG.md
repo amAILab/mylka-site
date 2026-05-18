@@ -2862,3 +2862,9 @@
 - Добавил `<meta name="color-scheme" content="light">` на 7 nested страницах; контрольный скан показал `missing_nested_color_scheme=0`.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 13:24 MSK — generated mobile-bar accessibility labels
+- После завершения `color-scheme` перешёл к следующему безопасному единообразию: добавил `aria-label="Быстрые действия"` на мобильную нижнюю навигацию первых 10 generated preview pages.
+- Визуал и CTA не менял, только выровнял семантику mobile-bar с основными страницами и `final-site.css`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK; осталось `missing_mobile_bar_label=5` для следующей партии.
