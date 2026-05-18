@@ -2598,3 +2598,9 @@
 - Значение оставил единым с тёмной hero/header палитрой `final-site.css`, чтобы мобильный UI браузера совпадал с обновлёнными root-страницами.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 05:51 MSK — adhesive completion and acrylic gypsum theme color
+- Продолжил nested pass по визуальной консистентности браузерного chrome: завершил оставшиеся вложенные страницы адгезивов SIL-POXY, Super Instant и Ure-Bond II, затем начал `akrilovyy-gips/`.
+- Добавил `<meta name="theme-color" content="#0b1423">` на 10 nested страницах, сохранив единое значение из тёмной hero/header палитры `final-site.css`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
