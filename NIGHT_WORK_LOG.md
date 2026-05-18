@@ -2676,3 +2676,9 @@
 - Добавил `<meta name="theme-color" content="#0b1423">` на 10 nested страницах, сохранив единое значение из тёмной hero/header палитры `final-site.css`.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 08:01 MSK — vacuum equipment theme color start
+- Начал pass по вложенным страницам вакуумного оборудования: добавил theme-color на legacy chamber page, `vakuumnye-kamery/index.html`, аренду, ресивер, комплектующие и мановакуумные системы.
+- Добавил `<meta name="theme-color" content="#0b1423">` на 10 nested страницах, сохранив единое значение из тёмной hero/header палитры `final-site.css`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, комплектацию и характеристики не подключал/не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
