@@ -2664,3 +2664,9 @@
 - Добавил `<meta name="theme-color" content="#0b1423">` на 10 nested страницах, сохранив единое значение из тёмной hero/header палитры `final-site.css`.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 07:41 MSK — translucent silicone theme color
+- Продолжил nested pass по `kupit-silikon-v-moskve/`: добавил theme-color на оставшиеся полупрозрачные оловянные страницы и первые полупрозрачные платиновые страницы.
+- Добавил `<meta name="theme-color" content="#0b1423">` на 10 nested страницах, сохранив единое значение из тёмной hero/header палитры `final-site.css`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
