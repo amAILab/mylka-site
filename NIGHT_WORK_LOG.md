@@ -2574,3 +2574,9 @@
 - Значение оставил единым с тёмной hero/header палитрой `final-site.css`, чтобы мобильный UI браузера не выбивался из preview-оформления даже на служебных страницах.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, аккаунты и характеристики не подключал/не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 05:11 MSK — checkout and legal pages theme color
+- Продолжил pass по визуальной консистентности браузерного chrome: добавил `<meta name="theme-color" content="#0b1423">` на 10 оставшихся root/legacy страницах оформления, регистрации, политики и информационных соглашений.
+- Значение оставил единым с тёмной hero/header палитрой `final-site.css`, чтобы мобильный UI браузера был единым даже на закрытых служебных preview-страницах.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, регистрацию, корзину, оплату, цены, наличие, аккаунты и характеристики не подключал/не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
