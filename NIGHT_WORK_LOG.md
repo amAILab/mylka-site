@@ -2544,3 +2544,9 @@
 - Добавил `fetchpriority="high"` к hero images на 10 vacuum pump category/product pages, чтобы браузер раньше приоритизировал главный hero preview.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, комплектацию и точные характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 04:21 MSK — vibrotable hero fetch priority completion
+- Завершил текущий nested/root section `hero-picture` fetch priority pass: обработал оставшуюся страницу `vakuumnye-kamery/vibrostoly/vibrostolik-vt-350.html`.
+- Добавил `fetchpriority="high"` к hero image на странице вибростола и подтвердил, что больше HTML-страниц с `hero-picture` без `fetchpriority` не осталось.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, комплектацию и точные характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
