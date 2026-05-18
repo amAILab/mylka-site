@@ -3018,3 +3018,9 @@
 - Визуал, CTA и контент не менял; это безопасное семантическое выравнивание под текущую структуру `index.html`/`final-site.css`.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 17:47 MSK — vacuum navigation main landmark roles
+- Продолжил pass по явным landmark-ролям: добавил `role="main"` на `<main id="content">` у vacuum pump/value/vibrostol pages and first vacuum pagination pages.
+- Визуал, CTA и контент не менял; это безопасное семантическое выравнивание под текущую структуру `index.html`/`final-site.css`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
