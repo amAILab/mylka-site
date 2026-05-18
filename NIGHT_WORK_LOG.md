@@ -2538,3 +2538,9 @@
 - Добавил `fetchpriority="high"` к hero images на 9 vacuum chamber product/rental pages, чтобы браузер раньше приоритизировал главный hero preview.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, комплектацию и точные характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 04:11 MSK — vacuum pump hero fetch priority
+- Продолжил nested/root section `hero-picture` fetch priority pass: vacuum pump category and product pages under `vakuumnye-kamery/vakuumnye-nasosy/` без `fetchpriority`.
+- Добавил `fetchpriority="high"` к hero images на 10 vacuum pump category/product pages, чтобы браузер раньше приоритизировал главный hero preview.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, комплектацию и точные характеристики не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
