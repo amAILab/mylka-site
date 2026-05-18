@@ -2742,3 +2742,9 @@
 - Подтвердил скриптом, что все root `*.html` теперь имеют `color-scheme`, согласованный со светлой схемой `final-site.css`.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие и характеристики не подключал/не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 09:52 MSK — nested service and adhesive color-scheme meta
+- Начал nested pass по `color-scheme`: добавил `<meta name="color-scheme" content="light">` на вложенные страницы 3D-печати и первые страницы адгезивов (EA-40, Metalset A4, MT-13).
+- Это фиксирует светлую схему встроенных контролов браузера под текущий `final-site.css`, не меняя визуальную структуру страниц и CTA.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
