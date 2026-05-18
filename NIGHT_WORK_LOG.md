@@ -2568,3 +2568,9 @@
 - Значение оставил единым с тёмной hero/header палитрой `final-site.css`, чтобы мобильный UI браузера выглядел одинаково на обновлённых preview-страницах.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие и характеристики не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 05:01 MSK — account and utility pages theme color
+- Продолжил pass по визуальной консистентности браузерного chrome: добавил `<meta name="theme-color" content="#0b1423">` на 10 utility/root страницах (`address-book`, cart, compare, forgot-password, my-account, newsletter, order-history, returns, reward-points, wishlist).
+- Значение оставил единым с тёмной hero/header палитрой `final-site.css`, чтобы мобильный UI браузера не выбивался из preview-оформления даже на служебных страницах.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, корзину, оплату, цены, наличие, аккаунты и характеристики не подключал/не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
