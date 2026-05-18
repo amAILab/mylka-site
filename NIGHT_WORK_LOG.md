@@ -2748,3 +2748,9 @@
 - Это фиксирует светлую схему встроенных контролов браузера под текущий `final-site.css`, не меняя визуальную структуру страниц и CTA.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 10:02 MSK — adhesive completion and acrylic gypsum color-scheme meta
+- Продолжил nested pass по `color-scheme`: завершил вложенные страницы адгезивов MT-13, SIL-POXY, Super Instant и Ure-Bond II, затем начал `akrilovyy-gips/`.
+- Добавил `<meta name="color-scheme" content="light">` на 10 nested страницах, фиксируя светлую схему встроенных контролов браузера под текущий `final-site.css`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
