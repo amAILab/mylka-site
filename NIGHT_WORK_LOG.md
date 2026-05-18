@@ -2790,3 +2790,9 @@
 - Добавил `<meta name="color-scheme" content="light">` на 10 nested/generated страницах, фиксируя светлую схему встроенных контролов браузера под текущий `final-site.css`.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 11:24 MSK — polyurethane color-scheme meta
+- Продолжил nested pass по `color-scheme`: добавил светлую схему на 10 вложенных страниц `kupit-poliuretan-v-moskve/` для prepolymer, Urecoat, Polyarte Rubber, POLYS и Brush-On.
+- Добавил `<meta name="color-scheme" content="light">`, фиксируя светлую схему встроенных контролов браузера под текущий `final-site.css`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
