@@ -2874,3 +2874,9 @@
 - Визуал, CTA и контент не менял; контрольный скан показал `missing_mobile_bar_label=0`.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 13:44 MSK — equipment main-nav accessibility labels
+- Завершил небольшое семантическое выравнивание основной навигации: добавил `aria-label="Основная навигация"` на 3 оставшиеся страницы малогабаритных ЧПУ-станков.
+- Визуал, CTA и контент не менял; контрольный скан показал `missing_main_nav_label=0`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
