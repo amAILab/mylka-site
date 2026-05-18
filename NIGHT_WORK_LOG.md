@@ -2700,3 +2700,9 @@
 - Добавил `<meta name="theme-color" content="#0b1423">` на 10 nested страницах, сохранив единое значение из тёмной hero/header палитры `final-site.css`.
 - Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки/комплектацию и характеристики не подключал/не добавлял.
 - Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
+
+## 2026-05-18 08:41 MSK — all HTML theme color completion
+- Завершил pass по визуальной консистентности браузерного chrome: добавил `<meta name="theme-color" content="#0b1423">` на последние 7 вложенных страниц `zhidkiy-plastik/`.
+- Подтвердил скриптом, что все HTML-файлы репозитория теперь имеют единый `theme-color` из тёмной hero/header палитры `final-site.css`.
+- Preview-safety не менял: `noindex,nofollow`, robots/canonical/og:url остаются как были; backend, формы, корзину, оплату, цены, наличие, фасовки и характеристики не подключал/не добавлял.
+- Проверки: `python3 scripts/validate_preview.py`, `node --check final-site.js`, `git diff --check` — OK.
